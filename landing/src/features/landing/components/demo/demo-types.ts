@@ -1,0 +1,38 @@
+type DemoAction =
+  | "analyzing"
+  | "generating"
+  | "readFileContent"
+  | "retrieved"
+  | "screenshot"
+  | "searching"
+  | "toolCall";
+
+export type DemoStep = {
+  action: DemoAction;
+  chunks?: number;
+  entities?: string[];
+  id: string;
+  queries?: string[];
+  reasoning?: string;
+  thinking?: string;
+  trace?: string;
+  toolName?: string;
+  toolParams?: Record<string, unknown>;
+  toolResponse?: Record<string, unknown>;
+  topScore?: number;
+};
+
+export type DemoCitation = {
+  confidence: string;
+  fileName: string;
+  highlightText?: string;
+  id: number;
+  page: number;
+  quote: string;
+};
+
+export type DemoMessage = {
+  citations?: DemoCitation[];
+  role: "assistant" | "user";
+  text: string;
+};

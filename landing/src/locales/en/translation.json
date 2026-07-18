@@ -1,0 +1,736 @@
+{
+  "meta": {
+    "title": "Prosperify - Verifiable document intelligence for sensitive data",
+    "description": "Query sensitive corpora with sourced answers, governed access and deployment modes adapted to your perimeter."
+  },
+  "hero": {
+    "badge": "Document intelligence for sensitive data",
+    "titleLine1": "Turn confidential",
+    "titleHighlight": "documents",
+    "titleLine2": "into sourced answers.",
+    "subtitle": "Prosperify helps teams find, compare and verify information across sensitive corpora, with visible sources, governed access and a clear trust perimeter.",
+    "primaryCta": "Request a demo",
+    "secondaryCta": "See the workflow",
+    "demoCaption": "",
+    "stats": {
+      "citations": "answers linked to consulted sources",
+      "deployment": "deployment modes: cloud, hybrid, local",
+      "sources": "PDF, Word, Excel, CSV, JSON and business corpora"
+    },
+    "trust": {
+      "sources": "Cited sources",
+      "permissions": "Governed access",
+      "deployment": "Cloud, hybrid or local",
+      "audit": "Sources and usage tracked",
+      "sovereignty": "Cloud, hybrid or on-prem"
+    }
+  },
+  "workflow": {
+    "badge": "HOW IT WORKS",
+    "title": "Verifiable answers",
+    "titleHighlight": "without losing control",
+    "titleSuffix": "",
+    "subtitle": "A simple sequence: approved sources, scoped access, verifiable answers."
+  },
+  "workflowTabs": {
+    "create": {
+      "title": "Connect",
+      "heading": "Prepare only approved sources",
+      "subtitle": "Useful documents are prepared and made searchable inside a controlled corpus.",
+      "assistantNameLabel": "Assistant name",
+      "assistantNameValue": "Transaction & Legal Assistant",
+      "documentsLabel": "Verified corpus",
+      "documentsTransactionsName": "KYC_Verdi.xlsx",
+      "button": "Connect corpus",
+      "sourceStatus": "Approved",
+      "pipelineLabel": "Sources",
+      "readyBadge": "Ready to query",
+      "checkParsed": "Structure detected",
+      "checkIndexed": "Passages retrievable",
+      "checkScoped": "Scope applied",
+      "sources": ["Signed contracts", "Client files", "Internal procedures"],
+      "pipeline": ["Read", "Prepare", "Index"]
+    },
+    "unify": {
+      "title": "Scope",
+      "subtitle": "Each assistant works on its own corpus.",
+      "dropHere": "Add authorized documents",
+      "browse": "Browse files",
+      "heading": "One assistant per team",
+      "formatsInfo": "PDF, Word, Excel, CSV, JSON, reports, contracts...",
+      "filetypePdf": "PDF",
+      "filetypeCsv": "CSV",
+      "filetypeDocx": "DOCX",
+      "filetypeJson": "JSON",
+      "rolesLabel": "Mission",
+      "scopeLabel": "Corpus",
+      "matrixCorpus": "Corpus",
+      "allowedLabel": "Configured assistants",
+      "policyNote": "Segmentation happens at assistant level: corpus, mission and limits are defined before use.",
+      "rules": ["Visible sources", "Scoped answers", "Search + citations"],
+      "scopes": ["Verdi contracts", "KYC files", "HR procedures"],
+      "assistants": [
+        {
+          "name": "Legal",
+          "role": "Clauses and contracts",
+          "corpus": "Contracts",
+          "action": "Compare"
+        },
+        {
+          "name": "Compliance",
+          "role": "KYC and sensitive records",
+          "corpus": "KYC",
+          "action": "Verify"
+        },
+        {
+          "name": "HR",
+          "role": "Internal procedures",
+          "corpus": "Procedures",
+          "action": "Answer"
+        }
+      ]
+    },
+    "chat": {
+      "title": "Query",
+      "assistantName": "Verification assistant",
+      "searchPlaceholder": "Search...",
+      "newChat": "New Chat",
+      "botWelcome": "Short answers, visible sources.",
+      "userQuestion": "What is the term of the Verdi contract?",
+      "sourcesLabel": "Sources used",
+      "answer": {
+        "prefix": "Source",
+        "middle": "initial term:",
+        "highlight": "three years",
+        "suffix": "Renewal requires a written agreement."
+      },
+      "inputPlaceholder": "Ask for a verification..."
+    }
+  },
+  "cookie": {
+    "accept": "Accept all",
+    "learn": "Learn more",
+    "message": "This site uses cookies for analytics. You can choose which categories to accept.",
+    "reject": "Reject all"
+  },
+  "contact": {
+    "badge": "CONTACT",
+    "titleLine1": "See how Prosperify works",
+    "titleHighlight": "on enterprise documents",
+    "subtitle": "Send a short note or create a calendar invite with Prosperify already added as a guest.",
+    "meeting": {
+      "heading": "Schedule a working session",
+      "description": "Prefer a live discussion? Open a pre-filled Google Calendar event with Prosperify already added as a guest.",
+      "cta": "Open Google Calendar",
+      "note": "When you save or send the event, Prosperify is included on the invitation. Add Google Meet from the calendar event before sending if it is not enabled by default.",
+      "title": "Prosperify deployment discussion",
+      "details": "Discuss document scope, security requirements, deployment model and next steps with Prosperify.",
+      "location": "Google Meet"
+    },
+    "form": {
+      "namePlaceholder": "Your full name",
+      "companyPlaceholder": "Your company name",
+      "emailPlaceholder": "Your email",
+      "phonePlaceholder": "Phone (optional)",
+      "subjectPlaceholder": "Select a subject",
+      "subjectInformation": "Request a demo",
+      "subjectPartnership": "Frame a document pilot",
+      "subjectOther": "Assess a sovereign deployment",
+      "subjectApi": "Discuss an API integration",
+      "subjectVirtualPartner": "Partnership / virtual coworker",
+      "messagePlaceholder": "Your message",
+      "submit": "Send request",
+      "statusSending": "⏳ Sending...",
+      "statusSuccess": "✅ Message sent!",
+      "statusFixErrors": "❌ Please correct the errors above.",
+      "statusUnexpected": "❌ Unexpected error.",
+      "statusSendError": "❌ Sending error."
+    }
+  },
+  "aiChat": {
+    "sidebar": {
+      "history": "History"
+    },
+    "conversations": [
+      "Verdi contract",
+      "Q4 Budget",
+      "HR Procedures",
+      "Monthly report"
+    ],
+    "openDocumentFull": "Open Contrat_Verdi.pdf (page 10)",
+    "openDocumentShort": "Contrat_Verdi.pdf (page 10)",
+    "pdf": {
+      "contractNameSecondary": "Q4_Financial_Report.pdf",
+      "title": "Verdi Contract.pdf"
+    }
+  },
+  "products": {
+    "badge": "DEPLOYMENT",
+    "titlePrefix": "Deploy with the",
+    "titleMiddle": "right level",
+    "titleHighlight": "of control",
+    "subtitle": "Three deployment modes to match the right level of control, integration and operations.",
+    "offers": [
+      {
+        "badge": "",
+        "title": "Dedicated Cloud",
+        "descriptionSegments": [],
+        "features": [
+          "High-performance dedicated infrastructure",
+          "Guaranteed security and compliance",
+          "Automatic maintenance and updates",
+          "Instant scalability"
+        ]
+      },
+      {
+        "badge": "",
+        "title": "Hybrid",
+        "descriptionSegments": [],
+        "features": [
+          "Your data stays on your infrastructure",
+          "AI model hosted and maintained by us",
+          "Maximum regulatory compliance",
+          "Full control over your information"
+        ]
+      },
+      {
+        "badge": "MAXIMUM SECURITY",
+        "title": "100% Local",
+        "descriptionSegments": [],
+        "features": [
+          "Deployment on your infrastructure",
+          "Total data sovereignty",
+          "No external dependency",
+          "Maximum customization"
+        ]
+      }
+    ]
+  },
+  "features": {
+    "badge": "CAPABILITIES",
+    "title": "Document intelligence",
+    "titleHighlight": "that stays sourced and governed",
+    "subtitle": "",
+    "items": {
+      "precision": {
+        "shortTitle": "Sourced answers",
+        "title": "Sourced and reviewable answers",
+        "subtitle": "Sentence-level citations",
+        "description": "Each answer keeps the link to the excerpts used so teams can review, audit and validate results against the source material."
+      },
+      "coverage": {
+        "shortTitle": "Hybrid search",
+        "title": "Hybrid search across document corpora",
+        "subtitle": "Semantic, lexical, visual and contextual",
+        "description": "Prosperify combines semantic search, keywords, document context and visual signals to retrieve useful passages across heterogeneous corpora."
+      },
+      "performance": {
+        "shortTitle": "Reliable synthesis",
+        "title": "Synthesis framed by your sources",
+        "subtitle": "Search, compare, extract",
+        "description": "Specialized assistants help teams summarize, compare clauses and extract key information from authorized documents."
+      },
+      "governance": {
+        "shortTitle": "Controlled access",
+        "title": "Access controlled by role and assistant",
+        "subtitle": "Each user in the right perimeter",
+        "description": "Access can be limited by role, team, confidentiality level, assistant or authorized corpus."
+      },
+      "orchestration": {
+        "shortTitle": "Review Workflow",
+        "title": "A review workflow for business teams",
+        "subtitle": "Search, answer, verify",
+        "description": "Prosperify keeps retrieved passages, citations and answer context visible so teams can review important answers before using them."
+      },
+      "differentiation": {
+        "shortTitle": "Sovereignty",
+        "title": "Data sovereignty",
+        "subtitle": "Data in a defined trust perimeter",
+        "description": "Dedicated, hybrid or local deployment, with data isolation and no training of general models on client corpora."
+      }
+    },
+    "deployment": {
+      "dedicated": {
+        "title": "Dedicated Cloud",
+        "line1": "Instance dedicated to your organization",
+        "line2": "Security controls and review support",
+        "line3": "Managed maintenance and updates",
+        "line4": "Capacity adjusted to the perimeter"
+      },
+      "hybrid": {
+        "title": "Hybrid",
+        "line1": "Sensitive data inside your perimeter",
+        "line2": "Private connectors when needed",
+        "line3": "Support for internal reviews",
+        "line4": "Controlled information flows"
+      },
+      "local": {
+        "title": "Local deployment",
+        "badge": "REINFORCED CONTROL",
+        "line1": "Deployment on your infrastructure",
+        "line2": "Documents and operations inside your perimeter",
+        "line3": "External dependencies limited by scope",
+        "line4": "Runbooks adapted to your operations"
+      }
+    }
+  },
+  "sovereignty": {
+    "badge": "SECURITY & GOVERNANCE",
+    "titlePrefix": "Keep data",
+    "titleHighlight": "protected in a dedicated instance",
+    "titleSuffix": "from document to answer",
+    "subtitle": "",
+    "mainCard": {
+      "titleLine1": "A single-tenant architecture",
+      "titleLine2": "",
+      "description": "Each client gets an isolated perimeter for documents, assistants, permissions and usage traces.",
+      "chips": ["Corpora", "Permissions", "Sources"]
+    },
+    "cloud": {
+      "title": "Dedicated instance",
+      "description": "Each organization runs in its own environment, separating data, processing and sensitive operations.",
+      "chips": ["Single-tenant", "Isolated", "Dedicated"]
+    },
+    "encryption": {
+      "title": "Key management system",
+      "description": "Key management protects documents and metadata stored in the data layer.",
+      "chips": ["Stored data", "Protection", "Control"]
+    },
+    "kubernetes": {
+      "title": "Controlled access",
+      "description": "Access is limited by role, assistant, corpus and usage so each team stays within its perimeter.",
+      "chips": ["Roles", "Assistants", "Scopes"]
+    },
+    "dataProtection": {
+      "title": "Monitoring and audit",
+      "description": "Operational signals help understand usage, diagnose incidents and review sourced answers.",
+      "chips": ["Usage", "Audit", "Review"]
+    },
+    "supervision": {
+      "title": "Deployment matched to your perimeter",
+      "description": "Dedicated cloud, hybrid or local: the selected mode aligns with confidentiality and operating requirements.",
+      "badges": ["Dedicated cloud", "Hybrid", "Local"],
+      "chips": ["Dedicated cloud", "Hybrid", "Local"]
+    }
+  },
+  "integration": {
+    "badge": "INTEGRATION",
+    "titlePrefix": "A document layer",
+    "titleHighlight": "above",
+    "titleSuffix": "your existing tools",
+    "subtitle": "Prosperify can be introduced progressively on top of existing sources so authorized corpora become queryable, governed and reviewable.",
+    "steps": [
+      {
+        "title": "Scoping",
+        "description": "Clarify the use case, identify the corpus and frame access rules."
+      },
+      {
+        "title": "Pilot ingestion",
+        "description": "Prepare documents, make sources retrievable and test first queries."
+      },
+      {
+        "title": "Configuration",
+        "description": "Configure pilot users, verify access and prepare scenarios."
+      },
+      {
+        "title": "Business validation",
+        "description": "Review answer quality, identify limits and decide next steps."
+      },
+      {
+        "title": "Production and extension",
+        "description": "Track usage, supervise operations and define the expansion path."
+      }
+    ]
+  },
+  "architecture": {
+    "titlePrefix": "An architecture designed for",
+    "titleHighlight": "document trust",
+    "subtitle": "A clear chain for moving from sensitive documents to sourced, reviewable and controllable answers.",
+    "steps": [
+      {
+        "title": "Authorized corpora",
+        "description": "Bring useful documents into a controlled space without forcing a full tooling rebuild."
+      },
+      {
+        "title": "Automatic content analysis",
+        "description": "Texts, tables, pages and metadata are prepared so each document becomes easier to query."
+      },
+      {
+        "title": "Structured information",
+        "description": "Content is organized around titles, clauses, articles, appendices, versions and key elements."
+      },
+      {
+        "title": "Governed search",
+        "description": "Users retrieve relevant passages through hybrid search that combines meaning, exact terms, context and visual signals when the document supports them."
+      },
+      {
+        "title": "Answers with sources",
+        "description": "Prosperify selects useful excerpts and generates structured answers with references for review."
+      },
+      {
+        "title": "Limit verification",
+        "description": "Answers can surface uncertainty or elements that require human validation."
+      },
+      {
+        "title": "Monitoring and iteration",
+        "description": "Usage, answer quality and evolution needs can be followed over time."
+      }
+    ]
+  },
+  "technical": {
+    "badge": "DOCUMENT CHAIN",
+    "title": "A readable chain built for",
+    "titleHighlight": "evidence",
+    "subtitle": "From added document to cited answer, each step preserves the link back to the source.",
+    "footnote": "Sources, access and verification preserved at each step",
+    "steps": {
+      "ingest": {
+        "title": "Authorized corpus",
+        "body": "Documents and metadata enter a defined perimeter before use.",
+        "metric": "Clear use case // Framed corpus"
+      },
+      "parse": {
+        "title": "Preparation",
+        "body": "Text, tables and pages are prepared while preserving useful context.",
+        "metric": "Structure preserved // Sources prepared"
+      },
+      "embed": {
+        "title": "Indexing",
+        "body": "Passages are chunked and indexed for hybrid search.",
+        "metric": "Isolated corpus // Governed access"
+      },
+      "retrieve": {
+        "title": "Hybrid search",
+        "body": "Semantic and lexical retrieval work together to find useful passages.",
+        "metric": "Semantic + lexical search"
+      },
+      "cite": {
+        "title": "Citations",
+        "body": "Claims stay tied to reviewable excerpts.",
+        "metric": "Answer linked to sources"
+      },
+      "verify": {
+        "title": "Review",
+        "body": "Sources, access and quality signals remain available for human review.",
+        "metric": "Review-ready evidence"
+      }
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+    "titleLine1": "Have",
+    "titleHighlight": "questions",
+    "titleLine2": "? We have answers.",
+    "subtitle": "Key answers about sources, security, deployment and document governance with Prosperify.",
+    "items": [
+      {
+        "question": "Does the AI continuously learn from my data?",
+        "answer": "No. Client corpora are not used to train general models. They are used to generate sourced answers inside the agreed project perimeter."
+      },
+      {
+        "question": "Where are documents hosted?",
+        "answer": "It depends on the selected model: dedicated cloud, hybrid architecture or local deployment. The trust perimeter is defined with the client around security, confidentiality and operational constraints."
+      },
+      {
+        "question": "Does Prosperify replace experts?",
+        "answer": "No. Prosperify helps automate document search, synthesis, extraction and comparison. Decisions, validation and interpretation remain with business experts."
+      },
+      {
+        "question": "How are answers verified?",
+        "answer": "Answers are generated from selected document excerpts and linked back to the sources used. Insufficiently supported statements can be surfaced to support human review."
+      },
+      {
+        "question": "Can access be limited by role, assistant or corpus?",
+        "answer": "Yes. Access can be governed by role, assistant, corpus, user or confidentiality level. Out-of-scope operations are refused according to configured rules."
+      },
+      {
+        "question": "Do we need to rebuild the information system?",
+        "answer": "No. Prosperify can be added as a document intelligence layer on top of existing systems. Integration can start with one corpus, one assistant and one business use case before expanding."
+      },
+      {
+        "question": "Which formats are supported?",
+        "answer": "Prosperify is designed for structured and unstructured documents, including PDF, Word, Excel, CSV, JSON and other business corpora depending on project scope."
+      },
+      {
+        "question": "Which deployment modes are possible?",
+        "answer": "Three approaches are possible: dedicated cloud, hybrid or local. The choice depends on confidentiality level, infrastructure constraints and sovereignty needs."
+      }
+    ]
+  },
+  "team": {
+    "badge": "Team",
+    "titlePrefix": "The team behind",
+    "titleHighlight": "Prosperify",
+    "subtitle": "A focused product and engineering team building document AI for organizations that work with sensitive information."
+  },
+  "jobs": {
+    "badge": "Jobs",
+    "titlePrefix": "Build trusted",
+    "titleHighlight": "document AI",
+    "subtitle": "Open roles and hiring updates from Prosperify. We keep the team small, technical, and close to real customer problems.",
+    "apply": "Apply",
+    "emptyTitle": "No open role right now",
+    "emptyDescription": "We are not hiring for a specific seat today, but strong infrastructure, product, and applied AI profiles can still reach out.",
+    "viewAll": "View all roles"
+  },
+  "footer": {
+    "tagline": "Query your documents with verifiable answers.",
+    "product": "Product",
+    "support": "Support",
+    "legal": "Legal",
+    "links": {
+      "home": "Home",
+      "overview": "Overview",
+      "workflow": "Workflow",
+      "deployment": "Deployment",
+      "blog": "Blog",
+      "team": "Team",
+      "jobs": "Jobs",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "features": "Features",
+      "sovereignty": "Sovereignty",
+      "integration": "Integration",
+      "architecture": "Architecture",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "rgpd": "GDPR"
+    },
+    "copyright": "© 2025 Prosperify. All rights reserved.",
+    "partnersTitle": "Support & Partners"
+  },
+  "roadmap": {
+    "metaTitle": "Roadmap - Prosperify",
+    "metaDescription": "Discover Prosperify's roadmap and upcoming work in sourced document intelligence.",
+    "items": [
+      {
+        "date": "06/14/2024",
+        "titlePrefix": "Start of the",
+        "titleHighlight": "Prosperify",
+        "lead": "Official launch of Prosperify, with a simple idea: make enterprise document search easier to verify and use.",
+        "descriptionSegments": [
+          {
+            "text": "This milestone marks the birth of an ambitious project built around a single vision: enabling organizations to "
+          },
+          {
+            "text": "make better use of their document knowledge",
+            "emphasis": true
+          },
+          {
+            "text": " by reducing information silos and making sources easier to retrieve through a "
+          },
+          {
+            "text": "smart document search technology",
+            "emphasis": true
+          },
+          {
+            "text": "."
+          }
+        ],
+        "imageAlt": "Prosperify (logo, early stage)",
+        "imageSrc": "/assets/brand/logo-mark.png",
+        "imageVariant": "brandMark"
+      },
+      {
+        "date": "09/26/2024",
+        "titlePrefix": "Contact with",
+        "titleHighlight": "Orpi",
+        "lead": "First discussion with Orpi to explore a potential collaboration.",
+        "description": "A meeting dedicated to understanding the barriers related to data exploitation in French mid-sized companies, and to analysing the impact of information fragmentation on missed business opportunities.",
+        "imageAlt": "Orpi",
+        "imageSrc": "/assets/partners/orpi.webp",
+        "imageVariant": "partnerSmall"
+      },
+      {
+        "date": "10/03/2024",
+        "titlePrefix": "Design review with",
+        "titleHighlight": "ESA",
+        "lead": "Meeting with the European Space Agency for a first design review.",
+        "descriptionSegments": [
+          {
+            "text": "A discussion focused on understanding the "
+          },
+          {
+            "text": "security standards",
+            "emphasis": true
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "sovereignty requirements",
+            "emphasis": true
+          },
+          {
+            "text": " demanded by such agencies, while exploring their interest in a "
+          },
+          {
+            "text": "document search technology",
+            "emphasis": true
+          },
+          {
+            "text": " adapted to their specific needs."
+          }
+        ],
+        "imageAlt": "ESA",
+        "imageSrc": "/assets/partners/esa.png",
+        "imageVariant": "partnerMedium"
+      },
+      {
+        "date": "01/02/2025",
+        "title": "Joining Pépite France",
+        "lead": "Prosperify joins the Pépite France network to support student innovation.",
+        "imageAlt": "Pépite France",
+        "imageSrc": "/assets/partners/pepite-beelyss.png",
+        "imageVariant": "partnerLarge"
+      },
+      {
+        "date": "01/04/2025",
+        "titlePrefix": "Meeting with",
+        "titleHighlight": "TUBA",
+        "lead": "Discussion with the TUBA ecosystem around urban innovation and new digital uses.",
+        "descriptionSegments": [
+          {
+            "text": "This meeting made it possible to explore the "
+          },
+          {
+            "text": "challenges of leveraging data in urban environments",
+            "emphasis": true
+          },
+          {
+            "text": " and to identify opportunities offered by Prosperify in a context of "
+          },
+          {
+            "text": "territorial innovation",
+            "emphasis": true
+          },
+          {
+            "text": ". A key moment to understand how our technology can address the challenges of "
+          },
+          {
+            "text": "information centralization",
+            "emphasis": true
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "data valorization",
+            "emphasis": true
+          },
+          {
+            "text": " for local stakeholders."
+          }
+        ],
+        "imageAlt": "TUBA",
+        "imageSrc": "/assets/partners/tuba.png",
+        "imageVariant": "partnerWide"
+      },
+      {
+        "date": "02/17/2025",
+        "titlePrefix": "Contact with",
+        "titleHighlight": "AXA",
+        "lead": "First discussion with AXA about a potential strategic collaboration.",
+        "descriptionSegments": [
+          {
+            "text": "A two-step meeting: first, an analysis of the "
+          },
+          {
+            "text": "barriers related to document search",
+            "emphasis": true
+          },
+          {
+            "text": " in large groups, as well as of the "
+          },
+          {
+            "text": "tools currently in use",
+            "emphasis": true
+          },
+          {
+            "text": ". Then, a "
+          },
+          {
+            "text": "presentation of Prosperify",
+            "emphasis": true
+          },
+          {
+            "text": ", its mission and the "
+          },
+          {
+            "text": "technology used",
+            "emphasis": true
+          },
+          {
+            "text": " to address these challenges."
+          }
+        ],
+        "imageAlt": "AXA",
+        "imageSrc": "/assets/partners/axa.png",
+        "imageVariant": "partnerMedium"
+      },
+      {
+        "date": "05/12/2025",
+        "titlePrefix": "Joining",
+        "titleHighlight": "La French Tech",
+        "lead": "Prosperify joins La French Tech to become part of a national innovation ecosystem.",
+        "descriptionSegments": [
+          {
+            "text": "This integration marks a new milestone in Prosperify's development as a "
+          },
+          {
+            "text": "member start-up",
+            "emphasis": true
+          },
+          {
+            "text": ". It opens access to an "
+          },
+          {
+            "text": "active ecosystem of young companies",
+            "emphasis": true
+          },
+          {
+            "text": ", opening opportunities for synergies, partnerships and visibility within the French innovation network."
+          }
+        ],
+        "imageAlt": "La French Tech",
+        "imageSrc": "/assets/partners/french-tech.png",
+        "imageVariant": "partnerLarge"
+      },
+      {
+        "date": "08/2025",
+        "titlePrefix": "Official launch of",
+        "titleHighlight": "Prosperify",
+        "lead": "Go-to-market of the solution after several months of design, testing and ecosystem discussions.",
+        "descriptionSegments": [
+          {
+            "text": "The launch makes the vision concrete: offering companies a "
+          },
+          {
+            "text": "sovereign document assistant",
+            "emphasis": true
+          },
+          {
+            "text": " capable of "
+          },
+          {
+            "text": "centralizing",
+            "emphasis": true
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "simplifying access to data",
+            "emphasis": true
+          },
+          {
+            "text": ", with visible sources, governed access and a clear security perimeter."
+          }
+        ],
+        "imageAlt": "Prosperify (launch)",
+        "imageSrc": "/assets/brand/logo-full.png",
+        "imageVariant": "brandFull"
+      }
+    ]
+  }
+}
