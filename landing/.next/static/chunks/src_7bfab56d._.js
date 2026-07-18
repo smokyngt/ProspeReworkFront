@@ -3017,10 +3017,13 @@ __turbopack_context__.s([
     ()=>SovereigntySection
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/three/build/three.core.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$module$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/three/build/three.module.js [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/book-open.js [app-client] (ecmascript) <export default as BookOpen>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/building-2.js [app-client] (ecmascript) <export default as Building2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/check.js [app-client] (ecmascript) <export default as Check>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2d$xml$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Code2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/code-xml.js [app-client] (ecmascript) <export default as Code2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$cloud$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Cloud$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/cloud.js [app-client] (ecmascript) <export default as Cloud>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Code$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/code.js [app-client] (ecmascript) <export default as Code>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$database$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Database$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/database.js [app-client] (ecmascript) <export default as Database>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/file-text.js [app-client] (ecmascript) <export default as FileText>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$git$2d$branch$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GitBranch$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/git-branch.js [app-client] (ecmascript) <export default as GitBranch>");
@@ -3032,105 +3035,111 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$server$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Server$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/server.js [app-client] (ecmascript) <export default as Server>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$share$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Share2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/share-2.js [app-client] (ecmascript) <export default as Share2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-client] (ecmascript) <export default as ShieldCheck>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trending-up.js [app-client] (ecmascript) <export default as TrendingUp>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.js [app-client] (ecmascript) <export default as Users>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/zap.js [app-client] (ecmascript) <export default as Zap>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 ;
-var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature(), _s3 = __turbopack_context__.k.signature(), _s4 = __turbopack_context__.k.signature();
+var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature(), _s3 = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
-// 12 sources — even indices → inner ring, odd → outer ring
+;
 const SOURCES = [
     {
-        id: "gdrive",
         label: "Google Drive",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$hard$2d$drive$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__HardDrive$3e$__["HardDrive"],
-        color: "#4285F4"
+        slug: "googledrive",
+        fbIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$hard$2d$drive$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__HardDrive$3e$__["HardDrive"],
+        fbCol: "#4285F4"
     },
     {
-        id: "slack",
         label: "Slack",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__["MessageSquare"],
-        color: "#4A154B"
+        slug: null,
+        fbIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__["MessageSquare"],
+        fbCol: "#E01E5A"
     },
     {
-        id: "sharepoint",
         label: "SharePoint",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$share$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Share2$3e$__["Share2"],
-        color: "#0078D4"
+        slug: null,
+        fbIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$share$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Share2$3e$__["Share2"],
+        fbCol: "#0f9bd7"
     },
     {
-        id: "sap",
-        label: "SAP / ERP",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__["Building2"],
-        color: "#007DB8"
+        label: "SAP",
+        slug: "sap",
+        fbIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__["Building2"],
+        fbCol: "#3aa0d1"
     },
     {
-        id: "salesforce",
         label: "Salesforce",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__["TrendingUp"],
-        color: "#00A1E0"
+        slug: null,
+        fbIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$cloud$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Cloud$3e$__["Cloud"],
+        fbCol: "#00A1E0"
     },
     {
-        id: "postgres",
         label: "PostgreSQL",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$database$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Database$3e$__["Database"],
-        color: "#336791"
+        slug: "postgresql",
+        color: "8FB4E3",
+        fbIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$database$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Database$3e$__["Database"],
+        fbCol: "#8FB4E3"
     },
     {
-        id: "s3",
         label: "AWS S3",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$server$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Server$3e$__["Server"],
-        color: "#FF9900"
+        slug: null,
+        fbIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$server$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Server$3e$__["Server"],
+        fbCol: "#FF9900"
     },
     {
-        id: "notion",
         label: "Notion",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__["BookOpen"],
-        color: "#6B6B6B"
+        slug: "notion",
+        color: "ffffff",
+        fbIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__["BookOpen"],
+        fbCol: "#e6e6e6"
     },
     {
-        id: "email",
-        label: "Email",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"],
-        color: "#EA4335"
+        label: "Gmail",
+        slug: "gmail",
+        fbIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"],
+        fbCol: "#EA4335"
     },
     {
-        id: "github",
         label: "GitHub",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$git$2d$branch$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GitBranch$3e$__["GitBranch"],
-        color: "#6e40c9"
+        slug: "github",
+        color: "ffffff",
+        fbIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$git$2d$branch$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GitBranch$3e$__["GitBranch"],
+        fbCol: "#e6e6e6"
     },
     {
-        id: "api",
         label: "REST API",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2d$xml$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Code2$3e$__["Code2"],
-        color: "#5fa04e"
+        slug: "openapiinitiative",
+        color: "6BA539",
+        fbIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Code$3e$__["Code"],
+        fbCol: "#6BA539"
     },
     {
-        id: "pdf",
         label: "PDF / Docs",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"],
-        color: "#EC1C24"
+        slug: null,
+        fbIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"],
+        fbCol: "#EC4a52"
     }
 ];
 const STORES = [
     {
         label: "Store Juridique",
         desc: "Contrats & actes",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$scale$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Scale$3e$__["Scale"]
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$scale$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Scale$3e$__["Scale"],
+        scanDelay: "0s"
     },
     {
         label: "Store Conformité",
         desc: "KYC & AML",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"]
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"],
+        scanDelay: "1.1s"
     },
     {
         label: "Store RH",
         desc: "Procédures internes",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"]
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"],
+        scanDelay: "2.2s"
     }
 ];
 const BENEFITS = [
@@ -3150,1255 +3159,1379 @@ const BENEFITS = [
         Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"]
     }
 ];
-/* ──────────────────────────────────────────────────────── */ /*  Orbital constants (reference width 1200px)              */ /* ──────────────────────────────────────────────────────── */ const SECTION_H = 780;
-const BASE_GLOBE = 420;
-const BASE_INNER_R = 240; // inner source orbit radius
-const BASE_OUTER_R = 390; // outer source orbit radius
-const BASE_STORE_R = 252; // store orbit radius
-const REF_W = 1200;
-// Inner ring: 6 sources (even indices) spread 110°→250°
-const INNER_ANGLES = [
-    110,
-    138,
-    166,
-    194,
-    222,
-    250
-];
-// Outer ring: 6 sources (odd indices) spread 105°→255°
-const OUTER_ANGLES = [
-    105,
-    135,
-    165,
-    195,
-    225,
-    255
-];
-// Store orbit: right arc
-const STORE_ANGLES = [
-    -52,
-    0,
-    52
-];
-const innerSources = SOURCES.filter((_, i)=>i % 2 === 0);
-const outerSources = SOURCES.filter((_, i)=>i % 2 === 1);
-function orbitPos(deg, r, cx, cy) {
-    const rad = deg * Math.PI / 180;
-    return {
-        x: cx + r * Math.cos(rad),
-        y: cy + r * Math.sin(rad)
-    };
+const ACCENT = "#FF6A13";
+const N_FLUX = 6;
+const DUR_F = 5;
+/* ──────────────────────────────────────────────────────── */ /*  Three.js globe                                           */ /* ──────────────────────────────────────────────────────── */ function ThreeGlobe() {
+    _s();
+    const canvasRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const stateRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "ThreeGlobe.useEffect": ()=>{
+            const canvas = canvasRef.current;
+            if (!canvas) return;
+            const size = 300;
+            const accent = ACCENT;
+            const col = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Color"](accent);
+            const renderer = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$module$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["WebGLRenderer"]({
+                canvas,
+                alpha: true,
+                antialias: true
+            });
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+            renderer.setSize(size, size, false);
+            renderer.setClearColor(0x000000, 0);
+            const scene = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Scene"]();
+            const camera = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PerspectiveCamera"](45, 1, 0.1, 100);
+            camera.position.z = 3.4;
+            const group = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Group"]();
+            scene.add(group);
+            const core = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Mesh"](new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SphereGeometry"](1, 64, 64), new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MeshStandardMaterial"]({
+                color: col,
+                roughness: 0.5,
+                metalness: 0.2,
+                emissive: col.clone().multiplyScalar(0.28)
+            }));
+            group.add(core);
+            const wire = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LineSegments"](new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WireframeGeometry"](new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SphereGeometry"](1.004, 24, 16)), new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LineBasicMaterial"]({
+                color: 0xffffff,
+                transparent: true,
+                opacity: 0.08
+            }));
+            group.add(wire);
+            const shell = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Mesh"](new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SphereGeometry"](1.16, 48, 48), new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MeshBasicMaterial"]({
+                color: col,
+                transparent: true,
+                opacity: 0.08,
+                side: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BackSide"]
+            }));
+            group.add(shell);
+            scene.add(new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AmbientLight"](0xffffff, 0.55));
+            const key = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DirectionalLight"](0xffd9b0, 1.5);
+            key.position.set(-2, 2.2, 2.5);
+            scene.add(key);
+            const rim = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DirectionalLight"](col.clone(), 0.7);
+            rim.position.set(2.5, -1, -1.5);
+            scene.add(rim);
+            group.rotation.z = 0.35;
+            let raf = 0;
+            const animate = {
+                "ThreeGlobe.useEffect.animate": ()=>{
+                    group.rotation.y += 0.0042;
+                    renderer.render(scene, camera);
+                    raf = requestAnimationFrame(animate);
+                }
+            }["ThreeGlobe.useEffect.animate"];
+            animate();
+            stateRef.current = {
+                renderer,
+                raf
+            };
+            return ({
+                "ThreeGlobe.useEffect": ()=>{
+                    cancelAnimationFrame(raf);
+                    renderer.dispose();
+                }
+            })["ThreeGlobe.useEffect"];
+        }
+    }["ThreeGlobe.useEffect"], []);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("canvas", {
+        ref: canvasRef,
+        width: 300,
+        height: 300,
+        style: {
+            width: 300,
+            height: 300,
+            position: "relative",
+            zIndex: 1,
+            background: "transparent"
+        }
+    }, void 0, false, {
+        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+        lineNumber: 147,
+        columnNumber: 5
+    }, this);
 }
-function svgArc(cx, cy, r, a1, a2) {
-    const r1 = a1 * Math.PI / 180;
-    const r2 = a2 * Math.PI / 180;
-    const x1 = (cx + r * Math.cos(r1)).toFixed(1);
-    const y1 = (cy + r * Math.sin(r1)).toFixed(1);
-    const x2 = (cx + r * Math.cos(r2)).toFixed(1);
-    const y2 = (cy + r * Math.sin(r2)).toFixed(1);
-    return "M ".concat(x1, " ").concat(y1, " A ").concat(r, " ").concat(r, " 0 0 1 ").concat(x2, " ").concat(y2);
-}
-/* ──────────────────────────────────────────────────────── */ /*  Globe                                                    */ /* ──────────────────────────────────────────────────────── */ function ProsperifyGlobe(param) {
-    let { size } = param;
-    const DOT_COUNT = 22;
-    const outerR = size / 2 - 1;
-    const innerSz = Math.round(size * 0.72);
-    const planetSz = Math.round(size * 0.44);
-    const fz1 = Math.max(9, Math.round(planetSz * 0.076));
-    const fz2 = Math.max(7, Math.round(planetSz * 0.058));
+_s(ThreeGlobe, "mR4vbntfQePu7rahbswXFqOAz7E=");
+_c = ThreeGlobe;
+/* ──────────────────────────────────────────────────────── */ /*  Source tile                                              */ /* ──────────────────────────────────────────────────────── */ function SourceTile(param) {
+    let { src, active } = param;
+    _s1();
+    const [imgFailed, setImgFailed] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const FbIcon = src.fbIcon;
+    const iconUrl = src.slug ? "https://cdn.simpleicons.org/".concat(src.slug).concat(src.color ? "/" + src.color : "") : null;
+    const activeFilter = "drop-shadow(0 0 10px ".concat(ACCENT, ")");
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         style: {
-            width: size,
-            height: size,
-            position: "relative",
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
-            justifyContent: "center"
+            gap: 9,
+            padding: "15px 6px",
+            background: "var(--pf-bg-card-2)"
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 style: {
-                    position: "absolute",
-                    inset: 0,
-                    borderRadius: "50%",
-                    border: "1px dashed rgba(255,106,19,0.22)",
-                    animation: "pf-orbit-ring 32s linear infinite"
-                },
-                children: Array.from({
-                    length: DOT_COUNT
-                }, (_, i)=>{
-                    const big = i % 4 === 0;
-                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        style: {
-                            position: "absolute",
-                            top: "50%",
-                            left: "50%",
-                            width: big ? 7 : 3,
-                            height: big ? 7 : 3,
-                            borderRadius: "50%",
-                            background: big ? "#FF6A13" : "rgba(255,106,19,0.35)",
-                            boxShadow: big ? "0 0 9px rgba(255,106,19,0.85)" : "none",
-                            transform: "rotate(".concat(i * 360 / DOT_COUNT, "deg) translateX(").concat(outerR, "px) translateY(-50%)")
-                        }
-                    }, i, false, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 127,
-                        columnNumber: 13
-                    }, this);
-                })
-            }, void 0, false, {
-                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                lineNumber: 117,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                style: {
-                    position: "absolute",
-                    width: innerSz,
-                    height: innerSz,
-                    top: "50%",
-                    left: "50%",
-                    transform: "translate(-50%,-50%)",
-                    borderRadius: "50%",
-                    border: "1px dashed rgba(255,106,19,0.10)",
-                    animation: "pf-orbit-ring-rev 22s linear infinite"
-                }
-            }, void 0, false, {
-                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                lineNumber: 139,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                style: {
-                    width: planetSz,
-                    height: planetSz,
-                    borderRadius: "50%",
-                    background: "radial-gradient(circle at 34% 32%, #ffaa60 0%, #FF6A13 36%, #b83a00 100%)",
-                    animation: "pf-globe-glow 3.5s ease-in-out infinite",
+                    height: 34,
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "center",
-                    flexShrink: 0
+                    justifyContent: "center"
                 },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: iconUrl && !imgFailed ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                    src: iconUrl,
+                    alt: src.label,
+                    width: 34,
+                    height: 34,
+                    onError: ()=>setImgFailed(true),
                     style: {
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        gap: 3
-                    },
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            style: {
-                                fontSize: fz1,
-                                fontWeight: 800,
-                                color: "#fff",
-                                letterSpacing: "0.1em",
-                                fontFamily: "monospace",
-                                textShadow: "0 1px 8px rgba(0,0,0,0.45)"
-                            },
-                            children: "PROSPERIFY"
-                        }, void 0, false, {
-                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                            lineNumber: 153,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            style: {
-                                fontSize: fz2,
-                                color: "rgba(255,255,255,0.72)",
-                                letterSpacing: "0.1em",
-                                fontFamily: "monospace"
-                            },
-                            children: "API"
-                        }, void 0, false, {
-                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                            lineNumber: 156,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
+                        objectFit: "contain",
+                        filter: active ? activeFilter : "none",
+                        transform: active ? "scale(1.12)" : "scale(1)",
+                        transition: "all 0.5s"
+                    }
+                }, void 0, false, {
                     fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                    lineNumber: 152,
-                    columnNumber: 9
+                    lineNumber: 177,
+                    columnNumber: 11
+                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FbIcon, {
+                    size: 26,
+                    style: {
+                        color: src.fbCol,
+                        filter: active ? activeFilter : "none",
+                        transform: active ? "scale(1.12)" : "scale(1)",
+                        transition: "all 0.5s"
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                    lineNumber: 191,
+                    columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                lineNumber: 146,
+                lineNumber: 175,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                style: {
+                    fontFamily: "'JetBrains Mono', monospace",
+                    fontSize: "9.5px",
+                    color: "var(--pf-fg-dim)",
+                    letterSpacing: "0.03em",
+                    textAlign: "center",
+                    lineHeight: 1.2
+                },
+                children: src.label
+            }, void 0, false, {
+                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                lineNumber: 202,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-        lineNumber: 115,
+        lineNumber: 171,
         columnNumber: 5
     }, this);
 }
-_c = ProsperifyGlobe;
-/* ──────────────────────────────────────────────────────── */ /*  Traveling dot — z:2, hidden behind globe mask z:3       */ /* ──────────────────────────────────────────────────────── */ function TravelDot(param) {
-    let { fromX, fromY, toX, toY, delay, dur = 4 } = param;
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        style: {
-            position: "absolute",
-            left: fromX - 4,
-            top: fromY - 4,
-            width: 8,
-            height: 8,
-            borderRadius: "50%",
-            background: "#FF6A13",
-            boxShadow: "0 0 10px rgba(255,106,19,0.9)",
-            pointerEvents: "none",
-            zIndex: 2,
-            "--pf-dx": "".concat(toX - fromX, "px"),
-            "--pf-dy": "".concat(toY - fromY, "px"),
-            animation: "pf-orbit-travel ".concat(dur, "s linear ").concat(delay, "s infinite")
-        }
-    }, void 0, false, {
-        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-        lineNumber: 173,
-        columnNumber: 5
-    }, this);
-}
-_c1 = TravelDot;
-/* ──────────────────────────────────────────────────────── */ /*  Source floating icon                                    */ /* ──────────────────────────────────────────────────────── */ function SourceOrbit(param) {
-    let { label, Icon, color, x, y, index } = param;
-    _s();
-    const [active, setActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "SourceOrbit.useEffect": ()=>{
-            const t = setInterval({
-                "SourceOrbit.useEffect.t": ()=>{
-                    setActive(true);
-                    setTimeout({
-                        "SourceOrbit.useEffect.t": ()=>setActive(false)
-                    }["SourceOrbit.useEffect.t"], 1200);
-                }
-            }["SourceOrbit.useEffect.t"], 3600 + index * 430);
-            return ({
-                "SourceOrbit.useEffect": ()=>clearInterval(t)
-            })["SourceOrbit.useEffect"];
-        }
-    }["SourceOrbit.useEffect"], [
-        index
-    ]);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        style: {
-            position: "absolute",
-            left: x,
-            top: y,
-            transform: "translate(-50%,-50%)",
-            zIndex: 5
-        },
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            style: {
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                gap: 7
-            },
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    style: {
-                        width: 54,
-                        height: 54,
-                        borderRadius: "50%",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        background: active ? "".concat(color, "1E") : "var(--pf-bg-card)",
-                        border: "1.5px solid ".concat(active ? color : "".concat(color, "66")),
-                        boxShadow: active ? "0 0 22px ".concat(color, "42, 0 0 8px ").concat(color, "28") : "0 2px 12px rgba(0,0,0,0.09)",
-                        transition: "all 0.55s"
-                    },
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
-                        size: 22,
-                        style: {
-                            color,
-                            transition: "opacity 0.4s"
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 217,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                    lineNumber: 207,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    style: {
-                        fontSize: 10.5,
-                        color: "var(--pf-fg-dim)",
-                        fontFamily: "monospace",
-                        letterSpacing: "0.04em",
-                        whiteSpace: "nowrap"
-                    },
-                    children: label
-                }, void 0, false, {
-                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                    lineNumber: 219,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-            lineNumber: 206,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-        lineNumber: 205,
-        columnNumber: 5
-    }, this);
-}
-_s(SourceOrbit, "bmG2JTygrN+PZT3BxK5E30OQ5KE=");
-_c2 = SourceOrbit;
-/* ──────────────────────────────────────────────────────── */ /*  Store output card                                        */ /* ──────────────────────────────────────────────────────── */ function StoreOrbit(param) {
-    let { label, desc, Icon, x, y, storeIndex } = param;
-    _s1();
-    const [loaded, setLoaded] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "StoreOrbit.useEffect": ()=>{
-            const t = setTimeout({
-                "StoreOrbit.useEffect.t": ()=>setLoaded(true)
-            }["StoreOrbit.useEffect.t"], 2400 + storeIndex * 1000);
-            return ({
-                "StoreOrbit.useEffect": ()=>clearTimeout(t)
-            })["StoreOrbit.useEffect"];
-        }
-    }["StoreOrbit.useEffect"], [
-        storeIndex
-    ]);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        style: {
-            position: "absolute",
-            left: x,
-            top: y,
-            transform: "translate(-50%,-50%)",
-            zIndex: 5,
-            minWidth: 168
-        },
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            style: {
-                display: "flex",
-                alignItems: "center",
-                gap: 10,
-                padding: "12px 15px",
-                background: loaded ? "var(--pf-accent-bg)" : "var(--pf-bg-card)",
-                border: "1px solid ".concat(loaded ? "rgba(255,106,19,0.35)" : "var(--pf-border)"),
-                boxShadow: loaded ? "0 0 26px rgba(255,106,19,0.15), 0 4px 14px rgba(0,0,0,0.1)" : "0 2px 12px rgba(0,0,0,0.09)",
-                transition: "all 0.7s"
-            },
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    style: {
-                        width: 38,
-                        height: 38,
-                        flexShrink: 0,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        background: loaded ? "rgba(255,106,19,0.1)" : "var(--pf-bg-card-2)",
-                        border: "1px solid ".concat(loaded ? "rgba(255,106,19,0.32)" : "var(--pf-border)"),
-                        transition: "all 0.55s"
-                    },
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
-                        size: 15,
-                        style: {
-                            color: loaded ? "#FF6A13" : "var(--pf-fg-dim)",
-                            transition: "color 0.55s"
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 261,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                    lineNumber: 254,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            style: {
-                                fontSize: 12,
-                                fontWeight: 600,
-                                color: "var(--pf-fg)"
-                            },
-                            children: label
-                        }, void 0, false, {
-                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                            lineNumber: 264,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            style: {
-                                fontSize: 11,
-                                color: "var(--pf-fg-dim)",
-                                marginTop: 1
-                            },
-                            children: desc
-                        }, void 0, false, {
-                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                            lineNumber: 265,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                    lineNumber: 263,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    style: {
-                        marginLeft: "auto",
-                        paddingLeft: 10
-                    },
-                    children: loaded ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
-                        size: 13,
-                        style: {
-                            color: "#FF6A13"
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 269,
-                        columnNumber: 13
-                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        style: {
-                            width: 13,
-                            height: 13,
-                            borderRadius: "50%",
-                            border: "2px solid var(--pf-border-2)",
-                            borderTopColor: "#FF6A13",
-                            animation: "pf-orbit-ring 0.8s linear infinite"
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 271,
-                        columnNumber: 13
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                    lineNumber: 267,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-            lineNumber: 245,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-        lineNumber: 244,
-        columnNumber: 5
-    }, this);
-}
-_s1(StoreOrbit, "I8RUn14npbk54TheiKdNt4wCpsU=");
-_c3 = StoreOrbit;
-/* ──────────────────────────────────────────────────────── */ /*  Ingestion bar                                           */ /* ──────────────────────────────────────────────────────── */ function IngestionBar() {
+_s1(SourceTile, "JcPs102XE9TFjwikWKWNUDaZLtU=");
+_c1 = SourceTile;
+/* ──────────────────────────────────────────────────────── */ /*  Ingestion bar                                           */ /* ──────────────────────────────────────────────────────── */ function IngestionBar(param) {
+    let { defaultMode = "auto" } = param;
     _s2();
-    const [mode, setMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("auto");
+    const [mode, setMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(defaultMode);
+    const isAuto = mode === "auto";
+    const btnBase = {
+        fontSize: 11,
+        fontFamily: "'JetBrains Mono', monospace",
+        letterSpacing: "0.07em",
+        padding: "4px 16px",
+        cursor: "pointer",
+        transition: "all 0.15s",
+        border: "1px solid"
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex flex-wrap items-center justify-center gap-3 border border-t-0 border-[var(--pf-border)] px-6 py-3",
         style: {
-            background: "var(--pf-bg-card-2)"
+            display: "flex",
+            flexWrap: "wrap",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 14,
+            border: "1px solid var(--pf-border)",
+            borderTop: 0,
+            background: "var(--pf-bg-card-2)",
+            padding: "12px 24px"
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 style: {
                     fontSize: 11,
-                    fontFamily: "monospace",
+                    fontFamily: "'JetBrains Mono', monospace",
                     color: "var(--pf-fg-dim)",
                     letterSpacing: "0.12em"
                 },
                 children: "INGESTION"
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                lineNumber: 294,
+                lineNumber: 234,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex gap-1.5",
+                style: {
+                    display: "flex",
+                    gap: 6
+                },
                 children: [
-                    "auto",
-                    "manual"
-                ].map((m)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>setMode(m),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        onClick: ()=>setMode("auto"),
                         style: {
-                            fontSize: 11,
-                            fontFamily: "monospace",
-                            letterSpacing: "0.07em",
-                            padding: "4px 16px",
-                            background: mode === m ? "#FF6A13" : "transparent",
-                            color: mode === m ? "#fff" : "var(--pf-fg-dim)",
-                            border: "1px solid ".concat(mode === m ? "#FF6A13" : "var(--pf-border)"),
-                            cursor: "pointer",
-                            transition: "all 0.15s"
+                            ...btnBase,
+                            background: isAuto ? ACCENT : "transparent",
+                            color: isAuto ? "#0a0a0a" : "var(--pf-fg-dim)",
+                            borderColor: isAuto ? ACCENT : "var(--pf-border)"
                         },
-                        children: m === "auto" ? "AUTO" : "MANUEL"
-                    }, m, false, {
+                        children: "AUTO"
+                    }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 299,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
+                        lineNumber: 238,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        onClick: ()=>setMode("manuel"),
+                        style: {
+                            ...btnBase,
+                            background: !isAuto ? ACCENT : "transparent",
+                            color: !isAuto ? "#0a0a0a" : "var(--pf-fg-dim)",
+                            borderColor: !isAuto ? ACCENT : "var(--pf-border)"
+                        },
+                        children: "MANUEL"
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                        lineNumber: 250,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                lineNumber: 297,
+                lineNumber: 237,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 style: {
                     fontSize: 11,
-                    color: "#FF6A13",
-                    fontFamily: "monospace"
+                    color: ACCENT,
+                    fontFamily: "'JetBrains Mono', monospace"
                 },
-                children: mode === "auto" ? "Planifié · 02:00 CET" : "À la demande"
+                children: isAuto ? "Planifié · 02:00 CET" : "À la demande"
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                lineNumber: 310,
+                lineNumber: 263,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-        lineNumber: 290,
+        lineNumber: 228,
         columnNumber: 5
     }, this);
 }
-_s2(IngestionBar, "ygAuVPIevisCrZn52lKUYcjAuYQ=");
-_c4 = IngestionBar;
-/* ──────────────────────────────────────────────────────── */ /*  Mobile store tile                                        */ /* ──────────────────────────────────────────────────────── */ function MobileStoreTile(param) {
-    let { label, desc, Icon, storeIndex } = param;
-    _s3();
-    const [loaded, setLoaded] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "MobileStoreTile.useEffect": ()=>{
-            const t = setTimeout({
-                "MobileStoreTile.useEffect.t": ()=>setLoaded(true)
-            }["MobileStoreTile.useEffect.t"], 1600 + storeIndex * 700);
-            return ({
-                "MobileStoreTile.useEffect": ()=>clearTimeout(t)
-            })["MobileStoreTile.useEffect"];
-        }
-    }["MobileStoreTile.useEffect"], [
-        storeIndex
-    ]);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex items-center gap-4 px-5 py-4",
-        style: {
-            background: loaded ? "var(--pf-accent-bg)" : "var(--pf-bg-card)",
-            borderBottom: "1px solid var(--pf-border)",
-            transition: "background 0.6s"
-        },
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                style: {
-                    width: 40,
-                    height: 40,
-                    flexShrink: 0,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    background: loaded ? "rgba(255,106,19,0.1)" : "var(--pf-bg-card-2)",
-                    border: "1px solid ".concat(loaded ? "rgba(255,106,19,0.3)" : "var(--pf-border)"),
-                    transition: "all 0.5s"
-                },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
-                    size: 16,
-                    style: {
-                        color: loaded ? "#FF6A13" : "var(--pf-fg-dim)",
-                        transition: "color 0.5s"
-                    }
-                }, void 0, false, {
-                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                    lineNumber: 340,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                lineNumber: 335,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        style: {
-                            fontSize: 13,
-                            fontWeight: 600,
-                            color: "var(--pf-fg)"
-                        },
-                        children: label
-                    }, void 0, false, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 343,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        style: {
-                            fontSize: 12,
-                            color: "var(--pf-fg-dim)",
-                            marginTop: 2
-                        },
-                        children: desc
-                    }, void 0, false, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 344,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                lineNumber: 342,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                style: {
-                    marginLeft: "auto"
-                },
-                children: loaded ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
-                    size: 14,
-                    style: {
-                        color: "#FF6A13"
-                    }
-                }, void 0, false, {
-                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                    lineNumber: 348,
-                    columnNumber: 13
-                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    style: {
-                        width: 14,
-                        height: 14,
-                        borderRadius: "50%",
-                        border: "2px solid var(--pf-border-2)",
-                        borderTopColor: "#FF6A13",
-                        animation: "pf-orbit-ring 0.8s linear infinite"
-                    }
-                }, void 0, false, {
-                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                    lineNumber: 349,
-                    columnNumber: 13
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                lineNumber: 346,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-        lineNumber: 331,
-        columnNumber: 5
-    }, this);
-}
-_s3(MobileStoreTile, "I8RUn14npbk54TheiKdNt4wCpsU=");
-_c5 = MobileStoreTile;
+_s2(IngestionBar, "RNGRzu7vknPe6rmAZ5+WYKTcqBU=");
+_c2 = IngestionBar;
 function SovereigntySection() {
-    _s4();
-    const orbitRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const [cw, setCw] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(REF_W);
+    _s3();
+    const [activeIdx, setActiveIdx] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    // Stars must be client-only (Math.random() differs server vs client → hydration error)
+    const [stars, setStars] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "SovereigntySection.useEffect": ()=>{
-            const el = orbitRef.current;
-            if (!el) return;
-            const measure = {
-                "SovereigntySection.useEffect.measure": ()=>setCw(el.offsetWidth)
-            }["SovereigntySection.useEffect.measure"];
-            measure();
-            const ro = new ResizeObserver(measure);
-            ro.observe(el);
+            const rnd = {
+                "SovereigntySection.useEffect.rnd": (a, b)=>a + Math.random() * (b - a)
+            }["SovereigntySection.useEffect.rnd"];
+            setStars(Array.from({
+                length: 56
+            }, {
+                "SovereigntySection.useEffect": (_, i)=>{
+                    const sz = rnd(1.2, 3.6);
+                    const alpha = rnd(0.18, 0.9);
+                    return {
+                        key: i,
+                        left: "".concat(rnd(1, 99).toFixed(1), "%"),
+                        top: "".concat(rnd(1, 99).toFixed(1), "%"),
+                        width: "".concat(sz.toFixed(1), "px"),
+                        height: "".concat(sz.toFixed(1), "px"),
+                        bg: "rgba(255, ".concat(Math.round(rnd(120, 175)), ", ").concat(Math.round(rnd(20, 65)), ", ").concat(alpha.toFixed(2), ")"),
+                        shadow: sz > 2.8 ? "0 0 6px rgba(255,120,30,0.6)" : "none",
+                        animDur: "".concat(rnd(2.6, 6).toFixed(1), "s"),
+                        animDel: "".concat(rnd(0, 4).toFixed(1), "s")
+                    };
+                }
+            }["SovereigntySection.useEffect"]));
+        }
+    }["SovereigntySection.useEffect"], []);
+    // Cycle active source every 820 ms
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "SovereigntySection.useEffect": ()=>{
+            const t = setInterval({
+                "SovereigntySection.useEffect.t": ()=>setActiveIdx({
+                        "SovereigntySection.useEffect.t": (i)=>(i + 1) % SOURCES.length
+                    }["SovereigntySection.useEffect.t"])
+            }["SovereigntySection.useEffect.t"], 820);
             return ({
-                "SovereigntySection.useEffect": ()=>ro.disconnect()
+                "SovereigntySection.useEffect": ()=>clearInterval(t)
             })["SovereigntySection.useEffect"];
         }
     }["SovereigntySection.useEffect"], []);
-    const scale = Math.min(cw / REF_W, 1);
-    const globeSz = Math.round(BASE_GLOBE * scale);
-    const innerR = Math.round(BASE_INNER_R * scale);
-    const outerR = Math.round(BASE_OUTER_R * scale);
-    const storeR = Math.round(BASE_STORE_R * scale);
-    const cx = cw / 2;
-    const cy = SECTION_H / 2;
-    // Circular mask radius: inner ring of the globe (dots disappear here)
-    const maskR = Math.round(globeSz * 0.36); // ≈ innerSz/2
-    const innerPos = INNER_ANGLES.map((a)=>orbitPos(a, innerR, cx, cy));
-    const outerPos = OUTER_ANGLES.map((a)=>orbitPos(a, outerR, cx, cy));
-    const storePos = STORE_ANGLES.map((a)=>orbitPos(a, storeR, cx, cy));
-    // All source positions in SOURCES order for travel dots
-    const allSrcPos = SOURCES.map((_, i)=>i % 2 === 0 ? innerPos[Math.floor(i / 2)] : outerPos[Math.floor(i / 2)]);
+    // Flux dots — deterministic, no random → safe to compute inline
+    const fluxDots = Array.from({
+        length: N_FLUX
+    }, (_, i)=>({
+            key: i,
+            delay: "".concat((i * DUR_F / N_FLUX).toFixed(2), "s")
+        }));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "pb-0 pt-10 sm:pt-14",
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                style: {
+                    margin: 0,
+                    fontWeight: 700,
+                    lineHeight: 1.06,
+                    letterSpacing: "-0.02em",
+                    color: "var(--pf-fg)",
+                    fontSize: "clamp(1.9rem, 4vw, 3.1rem)",
+                    maxWidth: 820
+                },
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-[28px] font-bold leading-tight tracking-tight text-[var(--pf-fg)] sm:text-[36px] lg:text-[46px]",
-                        children: [
-                            "Connectez vos systèmes.",
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 401,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                style: {
-                                    color: "#FF6A13"
-                                },
-                                children: "Aucune refonte nécessaire."
-                            }, void 0, false, {
-                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 402,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                    "Connectez vos systèmes.",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 399,
-                        columnNumber: 9
+                        lineNumber: 324,
+                        columnNumber: 32
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "mt-5 max-w-2xl text-[15px] leading-relaxed text-[var(--pf-fg-muted)] sm:text-[16px]",
-                        children: "Prosperify est une couche qui se pose sur vos outils existants. Vos sources gravitent autour du globe et deviennent des stores interrogeables — sans migration, sans rewrite."
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        style: {
+                            color: ACCENT
+                        },
+                        children: "Aucune refonte nécessaire."
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 404,
+                        lineNumber: 325,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                lineNumber: 398,
+                lineNumber: 320,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                style: {
+                    margin: "18px 0 0",
+                    maxWidth: 640,
+                    fontSize: "1.05rem",
+                    lineHeight: 1.65,
+                    color: "var(--pf-fg-muted)"
+                },
+                children: "Vos sources alimentent un flux unique qui traverse le core Prosperify et ressort sous forme de stores interrogeables — sans migration, sans rewrite."
+            }, void 0, false, {
+                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                lineNumber: 327,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-10 hidden lg:block",
+                className: "hidden md:block",
+                style: {
+                    position: "relative",
+                    marginTop: 48,
+                    border: "1px solid var(--pf-border)",
+                    background: "var(--pf-bg-card)",
+                    overflow: "hidden",
+                    animation: "pf-fadeUp 0.6s ease"
+                },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        ref: orbitRef,
-                        className: "relative overflow-hidden border border-[var(--pf-border)]",
                         style: {
-                            height: SECTION_H,
-                            background: "var(--pf-bg-card)"
+                            position: "absolute",
+                            inset: 0,
+                            zIndex: 1,
+                            pointerEvents: "none",
+                            background: "radial-gradient(circle at 50% 46%, rgba(255,106,19,0.45) 0px, rgba(255,106,19,0.20) 90px, rgba(255,106,19,0.06) 155px, transparent 200px)"
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                        lineNumber: 341,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            display: "grid",
+                            gridTemplateColumns: "minmax(0,1fr) 30px 320px 30px minmax(0,1fr)",
+                            alignItems: "stretch"
                         },
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                style: {
-                                    position: "absolute",
-                                    inset: 0,
-                                    width: "100%",
-                                    height: "100%",
-                                    pointerEvents: "none",
-                                    zIndex: 0
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                        d: svgArc(cx, cy, innerR, INNER_ANGLES[0], INNER_ANGLES[INNER_ANGLES.length - 1]),
-                                        fill: "none",
-                                        stroke: "rgba(255,106,19,0.07)",
-                                        strokeWidth: "1",
-                                        strokeDasharray: "4 9"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                        lineNumber: 423,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                        d: svgArc(cx, cy, outerR, OUTER_ANGLES[0], OUTER_ANGLES[OUTER_ANGLES.length - 1]),
-                                        fill: "none",
-                                        stroke: "rgba(255,106,19,0.05)",
-                                        strokeWidth: "1",
-                                        strokeDasharray: "4 9"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                        lineNumber: 426,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                        d: svgArc(cx, cy, storeR, STORE_ANGLES[0], STORE_ANGLES[STORE_ANGLES.length - 1]),
-                                        fill: "none",
-                                        stroke: "rgba(255,106,19,0.09)",
-                                        strokeWidth: "1",
-                                        strokeDasharray: "4 9"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                        lineNumber: 429,
-                                        columnNumber: 13
-                                    }, this),
-                                    allSrcPos.map((p, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
-                                            x1: p.x,
-                                            y1: p.y,
-                                            x2: cx,
-                                            y2: cy,
-                                            stroke: "rgba(255,106,19,0.07)",
-                                            strokeWidth: "1",
-                                            strokeDasharray: "5 8"
-                                        }, "sl-".concat(i), false, {
-                                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                            lineNumber: 433,
-                                            columnNumber: 15
-                                        }, this)),
-                                    storePos.map((p, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
-                                            x1: cx,
-                                            y1: cy,
-                                            x2: p.x,
-                                            y2: p.y,
-                                            stroke: "rgba(255,106,19,0.13)",
-                                            strokeWidth: "1.5",
-                                            strokeDasharray: "5 8"
-                                        }, "ol-".concat(i), false, {
-                                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                            lineNumber: 439,
-                                            columnNumber: 15
-                                        }, this))
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 419,
-                                columnNumber: 11
-                            }, this),
-                            allSrcPos.flatMap((p, i)=>[
-                                    0,
-                                    1
-                                ].map((d)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(TravelDot, {
-                                        fromX: p.x,
-                                        fromY: p.y,
-                                        toX: cx,
-                                        toY: cy,
-                                        delay: i * 0.30 + d * 2.0,
-                                        dur: 4
-                                    }, "sd-".concat(i, "-").concat(d), false, {
-                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                        lineNumber: 448,
-                                        columnNumber: 15
-                                    }, this))),
-                            storePos.flatMap((p, i)=>[
-                                    0,
-                                    1
-                                ].map((d)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(TravelDot, {
-                                        fromX: cx,
-                                        fromY: cy,
-                                        toX: p.x,
-                                        toY: p.y,
-                                        delay: i * 0.8 + d * 1.8,
-                                        dur: 3.5
-                                    }, "od-".concat(i, "-").concat(d), false, {
-                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                        lineNumber: 458,
-                                        columnNumber: 15
-                                    }, this))),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 style: {
-                                    position: "absolute",
-                                    left: cx - maskR,
-                                    top: cy - maskR,
-                                    width: maskR * 2,
-                                    height: maskR * 2,
-                                    borderRadius: "50%",
+                                    position: "relative",
+                                    zIndex: 2,
                                     background: "var(--pf-bg-card)",
-                                    zIndex: 3,
-                                    pointerEvents: "none"
-                                }
-                            }, void 0, false, {
-                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 466,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                style: {
-                                    position: "absolute",
-                                    left: cx - globeSz / 2,
-                                    top: cy - globeSz / 2,
-                                    zIndex: 4
-                                },
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ProsperifyGlobe, {
-                                    size: globeSz
-                                }, void 0, false, {
-                                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                    lineNumber: 480,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 479,
-                                columnNumber: 11
-                            }, this),
-                            innerSources.map((src, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SourceOrbit, {
-                                    label: src.label,
-                                    Icon: src.Icon,
-                                    color: src.color,
-                                    x: innerPos[i].x,
-                                    y: innerPos[i].y,
-                                    index: i * 2
-                                }, src.id, false, {
-                                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                    lineNumber: 485,
-                                    columnNumber: 13
-                                }, this)),
-                            outerSources.map((src, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SourceOrbit, {
-                                    label: src.label,
-                                    Icon: src.Icon,
-                                    color: src.color,
-                                    x: outerPos[i].x,
-                                    y: outerPos[i].y,
-                                    index: i * 2 + 1
-                                }, src.id, false, {
-                                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                    lineNumber: 493,
-                                    columnNumber: 13
-                                }, this)),
-                            STORES.map((store, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StoreOrbit, {
-                                    label: store.label,
-                                    desc: store.desc,
-                                    Icon: store.Icon,
-                                    x: storePos[i].x,
-                                    y: storePos[i].y,
-                                    storeIndex: i
-                                }, store.label, false, {
-                                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                    lineNumber: 501,
-                                    columnNumber: 13
-                                }, this)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "absolute left-4 top-4 font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--pf-fg-dim)]",
-                                style: {
-                                    zIndex: 6
-                                },
-                                children: "Vos systèmes existants"
-                            }, void 0, false, {
-                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 508,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "absolute right-4 top-4 font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--pf-fg-dim)]",
-                                style: {
-                                    zIndex: 6
-                                },
-                                children: "Stores interrogeables"
-                            }, void 0, false, {
-                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 511,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 413,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IngestionBar, {}, void 0, false, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 516,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                lineNumber: 412,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-8 lg:hidden",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mb-2",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--pf-fg-dim)]",
-                            children: "Vos systèmes existants"
-                        }, void 0, false, {
-                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                            lineNumber: 522,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 521,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-px border border-[var(--pf-border)]",
-                        style: {
-                            background: "var(--pf-border)"
-                        },
-                        children: SOURCES.map((param)=>{
-                            let { id, label, Icon, color } = param;
-                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex flex-col items-center gap-2 px-3 py-4",
-                                style: {
-                                    background: "var(--pf-bg-card)"
+                                    padding: 22,
+                                    borderRight: "1px solid var(--pf-border)"
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         style: {
-                                            width: 42,
-                                            height: 42,
-                                            borderRadius: "50%",
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "center",
-                                            background: "".concat(color, "18"),
-                                            border: "1.5px solid ".concat(color, "55")
+                                            marginBottom: 14,
+                                            fontFamily: "'JetBrains Mono', monospace",
+                                            fontSize: 10,
+                                            textTransform: "uppercase",
+                                            letterSpacing: "0.15em",
+                                            color: "var(--pf-fg-dim)"
                                         },
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
-                                            size: 18,
-                                            style: {
-                                                color
-                                            }
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                            lineNumber: 534,
-                                            columnNumber: 17
-                                        }, this)
+                                        children: "Vos systèmes existants"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                        lineNumber: 533,
-                                        columnNumber: 15
+                                        lineNumber: 357,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        style: {
+                                            display: "grid",
+                                            gridTemplateColumns: "repeat(3, 1fr)",
+                                            gap: 1,
+                                            background: "var(--pf-border)",
+                                            border: "1px solid var(--pf-border)"
+                                        },
+                                        children: SOURCES.map((src, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SourceTile, {
+                                                src: src,
+                                                active: i === activeIdx
+                                            }, src.label, false, {
+                                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                lineNumber: 370,
+                                                columnNumber: 17
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                        lineNumber: 364,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                lineNumber: 352,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                lineNumber: 376,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    position: "relative",
+                                    zIndex: 3,
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    padding: "28px 0"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        style: {
+                                            position: "absolute",
+                                            inset: 0,
+                                            zIndex: 0,
+                                            overflow: "hidden"
+                                        },
+                                        children: stars.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                style: {
+                                                    position: "absolute",
+                                                    left: s.left,
+                                                    top: s.top,
+                                                    width: s.width,
+                                                    height: s.height,
+                                                    borderRadius: "50%",
+                                                    background: s.bg,
+                                                    boxShadow: s.shadow,
+                                                    animation: "pf-twinkle ".concat(s.animDur, " ease-in-out ").concat(s.animDel, " infinite")
+                                                }
+                                            }, s.key, false, {
+                                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                lineNumber: 390,
+                                                columnNumber: 17
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                        lineNumber: 386,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        style: {
+                                            position: "relative",
+                                            zIndex: 1,
+                                            width: 340,
+                                            height: 340,
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                style: {
+                                                    position: "absolute",
+                                                    width: 340,
+                                                    height: 340,
+                                                    borderRadius: "50%",
+                                                    border: "1px dashed rgba(255,106,19,0.22)",
+                                                    animation: "pf-orbit-ring 40s linear infinite"
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                lineNumber: 409,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                style: {
+                                                    position: "absolute",
+                                                    width: 288,
+                                                    height: 288,
+                                                    borderRadius: "50%",
+                                                    border: "1px dashed rgba(255,106,19,0.12)",
+                                                    animation: "pf-orbit-ring-rev 28s linear infinite"
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                lineNumber: 416,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                style: {
+                                                    position: "absolute",
+                                                    width: 232,
+                                                    height: 232,
+                                                    borderRadius: "50%",
+                                                    background: "radial-gradient(circle, rgba(255,106,19,0.4), transparent 66%)",
+                                                    filter: "blur(16px)",
+                                                    animation: "pf-pulse 3.5s ease-in-out infinite"
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                lineNumber: 423,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ThreeGlobe, {}, void 0, false, {
+                                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                lineNumber: 431,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                style: {
+                                                    position: "absolute",
+                                                    zIndex: 2,
+                                                    display: "flex",
+                                                    flexDirection: "column",
+                                                    alignItems: "center",
+                                                    gap: 4,
+                                                    pointerEvents: "none"
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        style: {
+                                                            fontSize: 17,
+                                                            fontWeight: 800,
+                                                            color: "#fff",
+                                                            letterSpacing: "0.1em",
+                                                            fontFamily: "'JetBrains Mono', monospace",
+                                                            textShadow: "0 2px 12px rgba(0,0,0,0.85)"
+                                                        },
+                                                        children: "PROSPERIFY"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                        lineNumber: 438,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        style: {
+                                                            fontSize: 11,
+                                                            color: "rgba(255,255,255,0.85)",
+                                                            letterSpacing: "0.14em",
+                                                            fontFamily: "'JetBrains Mono', monospace",
+                                                            textShadow: "0 1px 10px rgba(0,0,0,0.9)"
+                                                        },
+                                                        children: "API"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                        lineNumber: 445,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                lineNumber: 433,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                        lineNumber: 403,
+                                        columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         style: {
+                                            marginTop: 6,
+                                            fontFamily: "'JetBrains Mono', monospace",
                                             fontSize: 10,
+                                            letterSpacing: "0.15em",
                                             color: "var(--pf-fg-dim)",
-                                            fontFamily: "monospace",
-                                            textAlign: "center"
+                                            textTransform: "uppercase"
                                         },
-                                        children: label
+                                        children: "Moteur d'ingestion & RAG"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                        lineNumber: 536,
-                                        columnNumber: 15
+                                        lineNumber: 455,
+                                        columnNumber: 13
                                     }, this)
                                 ]
-                            }, id, true, {
+                            }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 531,
-                                columnNumber: 13
-                            }, this);
-                        })
-                    }, void 0, false, {
+                                lineNumber: 379,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                lineNumber: 465,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    position: "relative",
+                                    zIndex: 2,
+                                    background: "var(--pf-bg-card)",
+                                    padding: 22,
+                                    borderLeft: "1px solid var(--pf-border)",
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "center"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        style: {
+                                            marginBottom: 14,
+                                            fontFamily: "'JetBrains Mono', monospace",
+                                            fontSize: 10,
+                                            textTransform: "uppercase",
+                                            letterSpacing: "0.15em",
+                                            color: "var(--pf-fg-dim)"
+                                        },
+                                        children: "Stores interrogeables"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                        lineNumber: 474,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        style: {
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            gap: 10
+                                        },
+                                        children: STORES.map((param)=>{
+                                            let { label, desc, Icon, scanDelay } = param;
+                                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                style: {
+                                                    position: "relative",
+                                                    overflow: "hidden",
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    gap: 12,
+                                                    padding: "14px 15px",
+                                                    background: "rgba(255,106,19,0.05)",
+                                                    border: "1px solid rgba(255,106,19,0.35)",
+                                                    boxShadow: "0 0 26px rgba(255,106,19,0.1)"
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        style: {
+                                                            width: 38,
+                                                            height: 38,
+                                                            flexShrink: 0,
+                                                            display: "flex",
+                                                            alignItems: "center",
+                                                            justifyContent: "center",
+                                                            background: "rgba(255,106,19,0.1)",
+                                                            border: "1px solid rgba(255,106,19,0.32)"
+                                                        },
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                                            size: 16,
+                                                            style: {
+                                                                color: ACCENT
+                                                            }
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                            lineNumber: 497,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                        lineNumber: 491,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        style: {
+                                                            minWidth: 0
+                                                        },
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                style: {
+                                                                    fontSize: 13,
+                                                                    fontWeight: 600,
+                                                                    color: "var(--pf-fg)"
+                                                                },
+                                                                children: label
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                                lineNumber: 500,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                style: {
+                                                                    fontSize: 11,
+                                                                    color: "var(--pf-fg-dim)",
+                                                                    marginTop: 1
+                                                                },
+                                                                children: desc
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                                lineNumber: 501,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                        lineNumber: 499,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        style: {
+                                                            marginLeft: "auto",
+                                                            paddingLeft: 10,
+                                                            color: ACCENT,
+                                                            display: "flex"
+                                                        },
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
+                                                            size: 15
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                            lineNumber: 504,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                        lineNumber: 503,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        style: {
+                                                            position: "absolute",
+                                                            left: 0,
+                                                            right: 0,
+                                                            height: 40,
+                                                            pointerEvents: "none",
+                                                            background: "linear-gradient(180deg, transparent, rgba(255,106,19,0.12), transparent)",
+                                                            animation: "pf-store-scan 3.4s linear ".concat(scanDelay, " infinite")
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                        lineNumber: 507,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, label, true, {
+                                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                lineNumber: 483,
+                                                columnNumber: 17
+                                            }, this);
+                                        })
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                        lineNumber: 481,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                lineNumber: 468,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 526,
+                        lineNumber: 345,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex justify-center py-1",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative h-12 w-[2px]",
-                            style: {
-                                background: "var(--pf-border-2)"
-                            },
-                            children: [
-                                0,
-                                1
-                            ].map((i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            position: "absolute",
+                            inset: 0,
+                            zIndex: 1,
+                            pointerEvents: "none"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    position: "absolute",
+                                    top: "50%",
+                                    left: 0,
+                                    right: 0,
+                                    height: 0,
+                                    borderTop: "1px dashed rgba(255,106,19,0.22)"
+                                }
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                lineNumber: 521,
+                                columnNumber: 11
+                            }, this),
+                            fluxDots.map((param)=>{
+                                let { key, delay } = param;
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     style: {
                                         position: "absolute",
-                                        left: "50%",
-                                        transform: "translateX(-50%)",
-                                        width: 7,
-                                        height: 7,
+                                        top: "50%",
+                                        marginTop: -7,
+                                        left: -6,
+                                        width: 14,
+                                        height: 14,
                                         borderRadius: "50%",
-                                        background: "#FF6A13",
-                                        boxShadow: "0 0 8px rgba(255,106,19,0.9)",
-                                        animation: "pf-flow-through 2.5s linear ".concat(i * 1.25, "s infinite")
+                                        background: "radial-gradient(circle, #fff 0%, ".concat(ACCENT, " 55%, transparent 74%)"),
+                                        boxShadow: "0 0 18px rgba(255,106,19,0.95)",
+                                        animation: "pf-data-travel-h ".concat(DUR_F, "s linear ").concat(delay, " infinite")
                                     }
-                                }, i, false, {
+                                }, key, false, {
                                     fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                    lineNumber: 546,
-                                    columnNumber: 15
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                            lineNumber: 544,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
+                                    lineNumber: 526,
+                                    columnNumber: 13
+                                }, this);
+                            })
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 543,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex justify-center py-6",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ProsperifyGlobe, {
-                            size: 220
-                        }, void 0, false, {
-                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                            lineNumber: 557,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 556,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex justify-center py-1",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative h-12 w-[2px]",
-                            style: {
-                                background: "var(--pf-border-2)"
-                            },
-                            children: [
-                                0,
-                                1
-                            ].map((i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    style: {
-                                        position: "absolute",
-                                        left: "50%",
-                                        transform: "translateX(-50%)",
-                                        width: 7,
-                                        height: 7,
-                                        borderRadius: "50%",
-                                        background: "#FF6A13",
-                                        boxShadow: "0 0 8px rgba(255,106,19,0.9)",
-                                        animation: "pf-flow-through 2.5s linear ".concat(i * 1.25, "s infinite")
-                                    }
-                                }, i, false, {
-                                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                    lineNumber: 563,
-                                    columnNumber: 15
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                            lineNumber: 561,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 560,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mb-2",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "font-mono text-[10px] uppercase tracking-[0.15em] text-[var(--pf-fg-dim)]",
-                            children: "Stores interrogeables"
-                        }, void 0, false, {
-                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                            lineNumber: 574,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 573,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "border border-[var(--pf-border)]",
-                        children: STORES.map((s, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MobileStoreTile, {
-                                label: s.label,
-                                desc: s.desc,
-                                Icon: s.Icon,
-                                storeIndex: i
-                            }, s.label, false, {
-                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 580,
-                                columnNumber: 13
-                            }, this))
-                    }, void 0, false, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 578,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IngestionBar, {}, void 0, false, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 584,
+                        lineNumber: 520,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                lineNumber: 520,
+                lineNumber: 333,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-px grid grid-cols-1 gap-px sm:grid-cols-3",
+                className: "hidden md:block",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IngestionBar, {}, void 0, false, {
+                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                    lineNumber: 539,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                lineNumber: 538,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "md:hidden",
+                style: {
+                    marginTop: 32
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            position: "relative",
+                            overflow: "hidden",
+                            border: "1px solid var(--pf-border)",
+                            background: "var(--pf-bg-card)",
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            padding: "32px 0 18px"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    position: "absolute",
+                                    inset: 0,
+                                    background: "radial-gradient(circle at 50% 46%, rgba(255,106,19,0.45) 0%, rgba(255,106,19,0.18) 30%, rgba(255,106,19,0.05) 58%, transparent 78%)",
+                                    pointerEvents: "none"
+                                }
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                lineNumber: 552,
+                                columnNumber: 11
+                            }, this),
+                            stars.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    style: {
+                                        position: "absolute",
+                                        left: s.left,
+                                        top: s.top,
+                                        width: s.width,
+                                        height: s.height,
+                                        borderRadius: "50%",
+                                        background: s.bg,
+                                        boxShadow: s.shadow,
+                                        animation: "pf-twinkle ".concat(s.animDur, " ease-in-out ").concat(s.animDel, " infinite")
+                                    }
+                                }, s.key, false, {
+                                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                    lineNumber: 558,
+                                    columnNumber: 13
+                                }, this)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    position: "relative",
+                                    zIndex: 1,
+                                    transform: "scale(0.72)",
+                                    transformOrigin: "center center",
+                                    height: 245
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    style: {
+                                        width: 340,
+                                        height: 340,
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        position: "relative"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            style: {
+                                                position: "absolute",
+                                                width: 340,
+                                                height: 340,
+                                                borderRadius: "50%",
+                                                border: "1px dashed rgba(255,106,19,0.22)",
+                                                animation: "pf-orbit-ring 40s linear infinite"
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                            lineNumber: 570,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            style: {
+                                                position: "absolute",
+                                                width: 288,
+                                                height: 288,
+                                                borderRadius: "50%",
+                                                border: "1px dashed rgba(255,106,19,0.12)",
+                                                animation: "pf-orbit-ring-rev 28s linear infinite"
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                            lineNumber: 571,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            style: {
+                                                position: "absolute",
+                                                width: 232,
+                                                height: 232,
+                                                borderRadius: "50%",
+                                                background: "radial-gradient(circle, rgba(255,106,19,0.4), transparent 66%)",
+                                                filter: "blur(16px)",
+                                                animation: "pf-pulse 3.5s ease-in-out infinite"
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                            lineNumber: 572,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ThreeGlobe, {}, void 0, false, {
+                                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                            lineNumber: 573,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            style: {
+                                                position: "absolute",
+                                                zIndex: 2,
+                                                display: "flex",
+                                                flexDirection: "column",
+                                                alignItems: "center",
+                                                gap: 4,
+                                                pointerEvents: "none"
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    style: {
+                                                        fontSize: 17,
+                                                        fontWeight: 800,
+                                                        color: "#fff",
+                                                        letterSpacing: "0.1em",
+                                                        fontFamily: "'JetBrains Mono', monospace",
+                                                        textShadow: "0 2px 12px rgba(0,0,0,0.85)"
+                                                    },
+                                                    children: "PROSPERIFY"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                    lineNumber: 575,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    style: {
+                                                        fontSize: 11,
+                                                        color: "rgba(255,255,255,0.85)",
+                                                        letterSpacing: "0.14em",
+                                                        fontFamily: "'JetBrains Mono', monospace",
+                                                        textShadow: "0 1px 10px rgba(0,0,0,0.9)"
+                                                    },
+                                                    children: "API"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                    lineNumber: 576,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                            lineNumber: 574,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                    lineNumber: 569,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                lineNumber: 568,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                style: {
+                                    position: "relative",
+                                    zIndex: 1,
+                                    fontFamily: "'JetBrains Mono', monospace",
+                                    fontSize: 10,
+                                    letterSpacing: "0.15em",
+                                    color: "var(--pf-fg-dim)",
+                                    textTransform: "uppercase"
+                                },
+                                children: "Moteur d'ingestion & RAG"
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                lineNumber: 580,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                        lineNumber: 545,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            borderBottom: "1px solid var(--pf-border)"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    padding: "12px 16px 8px",
+                                    fontFamily: "'JetBrains Mono', monospace",
+                                    fontSize: 10,
+                                    textTransform: "uppercase",
+                                    letterSpacing: "0.15em",
+                                    color: "var(--pf-fg-dim)",
+                                    background: "var(--pf-bg-card)",
+                                    borderTop: "1px solid var(--pf-border)"
+                                },
+                                children: "Vos systèmes existants"
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                lineNumber: 587,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    display: "grid",
+                                    gridTemplateColumns: "repeat(4, 1fr)",
+                                    gap: 1,
+                                    background: "var(--pf-border)"
+                                },
+                                children: SOURCES.map((src, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SourceTile, {
+                                        src: src,
+                                        active: i === activeIdx
+                                    }, src.label, false, {
+                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                        lineNumber: 592,
+                                        columnNumber: 15
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                lineNumber: 590,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                        lineNumber: 586,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    padding: "12px 16px 8px",
+                                    fontFamily: "'JetBrains Mono', monospace",
+                                    fontSize: 10,
+                                    textTransform: "uppercase",
+                                    letterSpacing: "0.15em",
+                                    color: "var(--pf-fg-dim)",
+                                    background: "var(--pf-bg-card)",
+                                    borderTop: "1px solid var(--pf-border)"
+                                },
+                                children: "Stores interrogeables"
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                lineNumber: 599,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    gap: 0
+                                },
+                                children: STORES.map((param)=>{
+                                    let { label, desc, Icon, scanDelay } = param;
+                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        style: {
+                                            position: "relative",
+                                            overflow: "hidden",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            gap: 12,
+                                            padding: "14px 16px",
+                                            background: "rgba(255,106,19,0.05)",
+                                            borderTop: "1px solid rgba(255,106,19,0.22)"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                style: {
+                                                    width: 36,
+                                                    height: 36,
+                                                    flexShrink: 0,
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    justifyContent: "center",
+                                                    background: "rgba(255,106,19,0.1)",
+                                                    border: "1px solid rgba(255,106,19,0.28)"
+                                                },
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                                    size: 15,
+                                                    style: {
+                                                        color: ACCENT
+                                                    }
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                    lineNumber: 612,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                lineNumber: 611,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        style: {
+                                                            fontSize: 13,
+                                                            fontWeight: 600,
+                                                            color: "var(--pf-fg)"
+                                                        },
+                                                        children: label
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                        lineNumber: 615,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        style: {
+                                                            fontSize: 11,
+                                                            color: "var(--pf-fg-dim)",
+                                                            marginTop: 1
+                                                        },
+                                                        children: desc
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                        lineNumber: 616,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                lineNumber: 614,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
+                                                size: 14,
+                                                style: {
+                                                    color: ACCENT,
+                                                    marginLeft: "auto",
+                                                    flexShrink: 0
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                lineNumber: 618,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                style: {
+                                                    position: "absolute",
+                                                    left: 0,
+                                                    right: 0,
+                                                    height: 40,
+                                                    pointerEvents: "none",
+                                                    background: "linear-gradient(180deg, transparent, rgba(255,106,19,0.12), transparent)",
+                                                    animation: "pf-store-scan 3.4s linear ".concat(scanDelay, " infinite")
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                                lineNumber: 619,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, label, true, {
+                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                        lineNumber: 604,
+                                        columnNumber: 15
+                                    }, this);
+                                })
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                lineNumber: 602,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                        lineNumber: 598,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IngestionBar, {}, void 0, false, {
+                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                        lineNumber: 626,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                lineNumber: 543,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mt-6 grid grid-cols-1 gap-px border border-[var(--pf-border)] sm:grid-cols-3",
                 style: {
                     background: "var(--pf-border)"
                 },
                 children: BENEFITS.map((param)=>{
                     let { label, desc, Icon } = param;
                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-start gap-4 px-6 py-6",
                         style: {
+                            display: "flex",
+                            alignItems: "flex-start",
+                            gap: 16,
+                            padding: 24,
                             background: "var(--pf-bg-card)"
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mt-0.5 flex h-9 w-9 flex-shrink-0 items-center justify-center",
                                 style: {
-                                    background: "var(--pf-accent-bg)",
-                                    border: "1px solid var(--pf-accent-dim-border)"
+                                    marginTop: 2,
+                                    width: 36,
+                                    height: 36,
+                                    flexShrink: 0,
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    background: "rgba(255,106,19,0.05)",
+                                    border: "1px solid rgba(255,106,19,0.22)"
                                 },
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
                                     size: 16,
                                     style: {
-                                        color: "#FF6A13"
+                                        color: ACCENT
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                    lineNumber: 596,
+                                    lineNumber: 634,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 594,
+                                lineNumber: 633,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-[14px] font-semibold text-[var(--pf-fg)]",
+                                        style: {
+                                            fontSize: 14,
+                                            fontWeight: 600,
+                                            color: "var(--pf-fg)"
+                                        },
                                         children: label
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                        lineNumber: 599,
+                                        lineNumber: 637,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "mt-1 text-[13px] text-[var(--pf-fg-muted)]",
+                                        style: {
+                                            marginTop: 4,
+                                            fontSize: 13,
+                                            lineHeight: 1.5,
+                                            color: "var(--pf-fg-muted)"
+                                        },
                                         children: desc
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                        lineNumber: 600,
+                                        lineNumber: 638,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 598,
+                                lineNumber: 636,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, label, true, {
                         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 593,
+                        lineNumber: 632,
                         columnNumber: 11
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                lineNumber: 588,
+                lineNumber: 630,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-        lineNumber: 396,
+        lineNumber: 319,
         columnNumber: 5
     }, this);
 }
-_s4(SovereigntySection, "EtuAXKr2LYX6QxPzXkyN1aPB9bo=");
-_c6 = SovereigntySection;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6;
-__turbopack_context__.k.register(_c, "ProsperifyGlobe");
-__turbopack_context__.k.register(_c1, "TravelDot");
-__turbopack_context__.k.register(_c2, "SourceOrbit");
-__turbopack_context__.k.register(_c3, "StoreOrbit");
-__turbopack_context__.k.register(_c4, "IngestionBar");
-__turbopack_context__.k.register(_c5, "MobileStoreTile");
-__turbopack_context__.k.register(_c6, "SovereigntySection");
+_s3(SovereigntySection, "gffGJqegbQCm0znWYKDTsf30pYQ=");
+_c3 = SovereigntySection;
+var _c, _c1, _c2, _c3;
+__turbopack_context__.k.register(_c, "ThreeGlobe");
+__turbopack_context__.k.register(_c1, "SourceTile");
+__turbopack_context__.k.register(_c2, "IngestionBar");
+__turbopack_context__.k.register(_c3, "SovereigntySection");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
@@ -4422,16 +4555,18 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/triangle-alert.js [app-client] (ecmascript) <export default as AlertTriangle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check.js [app-client] (ecmascript) <export default as CheckCircle2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$database$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Database$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/database.js [app-client] (ecmascript) <export default as Database>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/file-text.js [app-client] (ecmascript) <export default as FileText>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$folder$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FolderOpen$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/folder-open.js [app-client] (ecmascript) <export default as FolderOpen>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Image$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/image.js [app-client] (ecmascript) <export default as Image>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/message-square.js [app-client] (ecmascript) <export default as MessageSquare>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/lock.js [app-client] (ecmascript) <export default as Lock>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$scale$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Scale$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/scale.js [app-client] (ecmascript) <export default as Scale>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/search.js [app-client] (ecmascript) <export default as Search>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-client] (ecmascript) <export default as ShieldCheck>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.js [app-client] (ecmascript) <export default as Users>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/zap.js [app-client] (ecmascript) <export default as Zap>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/index.js [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/useTranslation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-client] (ecmascript)");
@@ -4442,7 +4577,7 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
 ;
 ;
 ;
-// ─── Step 1 — CONNECTER: horizontal pipeline ─────────────────────────────────
+// ─── Step 1 — CONNECTER ───────────────────────────────────────────────────────
 function PipelineArrow() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex shrink-0 flex-col items-center justify-center px-3 py-4 md:py-0",
@@ -4451,36 +4586,36 @@ function PipelineArrow() {
             children: "→"
         }, void 0, false, {
             fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-            lineNumber: 20,
+            lineNumber: 35,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-        lineNumber: 19,
+        lineNumber: 34,
         columnNumber: 5
     }, this);
 }
 _c = PipelineArrow;
-const SOURCES = [
-    "Contrats signés",
-    "Dossiers clients",
-    "Procédures internes"
+const SOURCES_KYC = [
+    "Dossiers KYC clients",
+    "Rapports due diligence",
+    "Listes de sanctions"
 ];
 const STORES_READY = [
     {
-        label: "Store Juridique",
-        service: "Contrats & actes",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$scale$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Scale$3e$__["Scale"]
+        label: "Store KYC",
+        service: "Identité & UBO",
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"]
     },
     {
         label: "Store Conformité",
-        service: "KYC & AML",
+        service: "Sanctions & AML",
         Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"]
     },
     {
-        label: "Store RH",
-        service: "Procédures internes",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"]
+        label: "Store Due Dil",
+        service: "Rapports & alertes",
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$scale$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Scale$3e$__["Scale"]
     }
 ];
 function ConnecterPipeline(param) {
@@ -4499,12 +4634,12 @@ function ConnecterPipeline(param) {
                         children: "SOURCES"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 42,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex flex-col gap-2",
-                        children: SOURCES.map((src)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: SOURCES_KYC.map((src)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex items-center gap-2.5 border border-[var(--pf-border)] px-3 py-2.5",
                                 style: {
                                     background: "var(--pf-bg)"
@@ -4514,7 +4649,7 @@ function ConnecterPipeline(param) {
                                         className: "h-[7px] w-[7px] shrink-0 bg-[#FF6A13]"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 52,
+                                        lineNumber: 56,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4522,7 +4657,7 @@ function ConnecterPipeline(param) {
                                         children: src
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 53,
+                                        lineNumber: 57,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4530,29 +4665,29 @@ function ConnecterPipeline(param) {
                                         children: "validé"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 54,
+                                        lineNumber: 58,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, src, true, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 47,
+                                lineNumber: 55,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 45,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 38,
+                lineNumber: 51,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PipelineArrow, {}, void 0, false, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 60,
+                lineNumber: 64,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4566,7 +4701,7 @@ function ConnecterPipeline(param) {
                         children: "DB"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 67,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4577,7 +4712,7 @@ function ConnecterPipeline(param) {
                                 children: "Prosperify"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 73,
+                                lineNumber: 70,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4585,13 +4720,13 @@ function ConnecterPipeline(param) {
                                 children: "Indexation & préparation"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 76,
+                                lineNumber: 71,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 72,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4608,23 +4743,23 @@ function ConnecterPipeline(param) {
                                 children: p
                             }, p, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 82,
+                                lineNumber: 75,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 80,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 63,
+                lineNumber: 67,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PipelineArrow, {}, void 0, false, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 93,
+                lineNumber: 80,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4638,7 +4773,7 @@ function ConnecterPipeline(param) {
                         children: "STORES PRÊTS"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 100,
+                        lineNumber: 84,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4656,7 +4791,7 @@ function ConnecterPipeline(param) {
                                         className: "shrink-0 text-[#FF6A13]"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 110,
+                                        lineNumber: 88,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4667,7 +4802,7 @@ function ConnecterPipeline(param) {
                                                 children: label
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                                lineNumber: 112,
+                                                lineNumber: 90,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4675,13 +4810,13 @@ function ConnecterPipeline(param) {
                                                 children: service
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                                lineNumber: 115,
+                                                lineNumber: 91,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 111,
+                                        lineNumber: 89,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4689,36 +4824,36 @@ function ConnecterPipeline(param) {
                                         children: "✓"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 117,
+                                        lineNumber: 93,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, label, true, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 105,
+                                lineNumber: 87,
                                 columnNumber: 13
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 103,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 96,
+                lineNumber: 83,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-        lineNumber: 36,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 }
 _c1 = ConnecterPipeline;
-// ─── Step 2 — CADRER: Agent search pipeline ───────────────────────────────────
+// ─── Step 2 — INTERROGER (merged query + search + sourced answer) ─────────────
 const INDEX_TYPES = [
     {
         id: "Query",
@@ -4726,23 +4861,18 @@ const INDEX_TYPES = [
         Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"]
     },
     {
-        id: "Mixedbread",
-        label: "Mixedbread",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"]
+        id: "Sanctions",
+        label: "Sanctions",
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"]
     },
     {
-        id: "Index",
-        label: "Index",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$database$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Database$3e$__["Database"]
+        id: "KYC",
+        label: "KYC",
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"]
     },
     {
-        id: "Slack",
-        label: "Slack",
-        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__["MessageSquare"]
-    },
-    {
-        id: "Drive",
-        label: "Drive",
+        id: "Due Dil",
+        label: "Due Dil",
         Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$folder$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FolderOpen$3e$__["FolderOpen"]
     },
     {
@@ -4754,40 +4884,46 @@ const INDEX_TYPES = [
         id: "Images",
         label: "Images",
         Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Image$3e$__["Image"]
+    },
+    {
+        id: "AML",
+        label: "AML",
+        Icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$database$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Database$3e$__["Database"]
     }
 ];
-const PHASE_DURATION_MS = 1400;
+const PHASE_DURATION_MS = 1300;
 const RESULTS_BY_PHASE = [
     0,
     0,
-    87,
-    154,
-    231,
-    295,
-    295,
-    295
+    42,
+    89,
+    143,
+    198,
+    247,
+    247
 ];
-function CadrerPipeline() {
+function InterrogerPipeline() {
     var _INDEX_TYPES_activeIndex;
     _s();
     const [phase, setPhase] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "CadrerPipeline.useEffect": ()=>{
+        "InterrogerPipeline.useEffect": ()=>{
             const id = setInterval({
-                "CadrerPipeline.useEffect.id": ()=>setPhase({
-                        "CadrerPipeline.useEffect.id": (p)=>(p + 1) % 8
-                    }["CadrerPipeline.useEffect.id"])
-            }["CadrerPipeline.useEffect.id"], PHASE_DURATION_MS);
+                "InterrogerPipeline.useEffect.id": ()=>setPhase({
+                        "InterrogerPipeline.useEffect.id": (p)=>(p + 1) % 8
+                    }["InterrogerPipeline.useEffect.id"])
+            }["InterrogerPipeline.useEffect.id"], PHASE_DURATION_MS);
             return ({
-                "CadrerPipeline.useEffect": ()=>clearInterval(id)
-            })["CadrerPipeline.useEffect"];
+                "InterrogerPipeline.useEffect": ()=>clearInterval(id)
+            })["InterrogerPipeline.useEffect"];
         }
-    }["CadrerPipeline.useEffect"], []);
+    }["InterrogerPipeline.useEffect"], []);
     var _RESULTS_BY_PHASE_phase;
     const results = (_RESULTS_BY_PHASE_phase = RESULTS_BY_PHASE[phase]) !== null && _RESULTS_BY_PHASE_phase !== void 0 ? _RESULTS_BY_PHASE_phase : 0;
     const activeIndex = phase >= 2 ? phase - 2 : -1;
+    const isDone = phase === 7;
     var _INDEX_TYPES_activeIndex_label;
-    const agentStatus = phase === 0 ? "Initialisation…" : phase === 1 ? "Préparation de la requête" : phase === 7 ? "Recherche terminée ✓" : "Interrogation : ".concat((_INDEX_TYPES_activeIndex_label = (_INDEX_TYPES_activeIndex = INDEX_TYPES[activeIndex]) === null || _INDEX_TYPES_activeIndex === void 0 ? void 0 : _INDEX_TYPES_activeIndex.label) !== null && _INDEX_TYPES_activeIndex_label !== void 0 ? _INDEX_TYPES_activeIndex_label : "");
+    const agentStatus = phase === 0 ? "Initialisation…" : phase === 1 ? "Analyse de la requête" : isDone ? "Analyse terminée ✓" : "Interrogation : ".concat((_INDEX_TYPES_activeIndex_label = (_INDEX_TYPES_activeIndex = INDEX_TYPES[activeIndex]) === null || _INDEX_TYPES_activeIndex === void 0 ? void 0 : _INDEX_TYPES_activeIndex.label) !== null && _INDEX_TYPES_activeIndex_label !== void 0 ? _INDEX_TYPES_activeIndex_label : "");
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col gap-3 md:flex-row md:items-stretch",
         children: [
@@ -4799,10 +4935,10 @@ function CadrerPipeline() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mb-1 font-mono text-[10px] tracking-[0.18em] text-[var(--pf-fg-dim)]",
-                        children: "REQUÊTE"
+                        children: "REQUÊTE KYC"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 171,
+                        lineNumber: 141,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4810,10 +4946,10 @@ function CadrerPipeline() {
                         style: {
                             background: "var(--pf-bg)"
                         },
-                        children: "Quelle est la durée du contrat Verdi ?"
+                        children: "Ce client figure-t-il sur une liste de sanctions ou présente-t-il un UBO à risque ?"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 174,
+                        lineNumber: 142,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4826,32 +4962,106 @@ function CadrerPipeline() {
                                 className: "h-1.5 w-1.5 animate-pulse bg-[#FF6A13]"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 184,
+                                lineNumber: 146,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "font-mono text-[10px] text-[#FF6A13]",
-                                children: "ENVOI EN COURS"
+                                children: isDone ? "ANALYSE COMPLÈTE" : "ANALYSE EN COURS"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 185,
+                                lineNumber: 147,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 180,
+                        lineNumber: 145,
                         columnNumber: 9
+                    }, this),
+                    isDone && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "border border-[var(--pf-border)] p-3",
+                        style: {
+                            background: "var(--pf-bg)",
+                            animation: "pf-fadeUp 0.4s ease"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "m-0 text-[12.5px] leading-[1.55] text-[var(--pf-fg)]",
+                                children: [
+                                    "Source ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                        children: "ACAMS Report · p.4"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                        lineNumber: 155,
+                                        columnNumber: 22
+                                    }, this),
+                                    " — UBO non déclaré, lié à entité sanctionnée",
+                                    " ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "font-semibold",
+                                        style: {
+                                            background: "var(--pf-accent-highlight)",
+                                            padding: "1px 5px"
+                                        },
+                                        children: "(OFAC · entrée #4821)"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                        lineNumber: 156,
+                                        columnNumber: 15
+                                    }, this),
+                                    ". Risque global :",
+                                    " ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "font-bold text-[#FF6A13]",
+                                        children: "élevé"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                        lineNumber: 160,
+                                        columnNumber: 15
+                                    }, this),
+                                    "."
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                lineNumber: 154,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "mt-3 flex flex-wrap gap-1.5",
+                                children: [
+                                    "ACAMS · p.4",
+                                    "OFAC 2024",
+                                    "Kroll Report"
+                                ].map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "border border-[var(--pf-border)] px-2 py-0.5 font-mono text-[9.5px] text-[var(--pf-fg-muted)]",
+                                        children: s
+                                    }, s, false, {
+                                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                        lineNumber: 164,
+                                        columnNumber: 17
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                lineNumber: 162,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                        lineNumber: 153,
+                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 167,
+                lineNumber: 140,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PipelineArrow, {}, void 0, false, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 189,
+                lineNumber: 171,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4868,7 +5078,7 @@ function CadrerPipeline() {
                         children: "PA"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 196,
+                        lineNumber: 175,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4879,7 +5089,7 @@ function CadrerPipeline() {
                                 children: "Prosperify Agent"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 203,
+                                lineNumber: 179,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4887,13 +5097,13 @@ function CadrerPipeline() {
                                 children: agentStatus
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 204,
+                                lineNumber: 180,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 202,
+                        lineNumber: 178,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4907,32 +5117,32 @@ function CadrerPipeline() {
                                 children: results
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 214,
+                                lineNumber: 183,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "font-mono text-[9px] tracking-[0.14em] text-[var(--pf-fg-dim)]",
-                                children: "RÉSULTATS"
+                                children: "SIGNAUX"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 217,
+                                lineNumber: 184,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, results, true, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 209,
+                        lineNumber: 182,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 192,
+                lineNumber: 174,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PipelineArrow, {}, void 0, false, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 223,
+                lineNumber: 188,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4946,7 +5156,7 @@ function CadrerPipeline() {
                         children: "STORES / INDEX"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 230,
+                        lineNumber: 192,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4958,11 +5168,11 @@ function CadrerPipeline() {
                         children: INDEX_TYPES.map((param, i)=>{
                             let { id, label, Icon } = param;
                             const isActive = i === activeIndex;
-                            const isDone = phase >= 2 && i < activeIndex;
+                            const isClear = phase >= 2 && i < activeIndex;
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "relative overflow-hidden border px-2 py-2.5 text-center transition-all duration-300",
                                 style: {
-                                    borderColor: isActive ? "#FF6A13" : isDone ? "var(--pf-border-2)" : "var(--pf-border)",
+                                    borderColor: isActive ? "#FF6A13" : isClear ? "var(--pf-border-2)" : "var(--pf-border)",
                                     background: isActive ? "var(--pf-accent-bg)" : "var(--pf-bg)"
                                 },
                                 children: [
@@ -4976,38 +5186,38 @@ function CadrerPipeline() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 255,
+                                        lineNumber: 200,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
                                         className: "mx-auto mb-1.5",
                                         size: 15,
                                         style: {
-                                            color: isActive ? "#FF6A13" : isDone ? "var(--pf-fg-muted)" : "var(--pf-fg-dim)"
+                                            color: isActive ? "#FF6A13" : isClear ? "var(--pf-fg-muted)" : "var(--pf-fg-dim)"
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 265,
+                                        lineNumber: 202,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "text-[10px] font-semibold leading-tight transition-colors duration-300",
                                         style: {
-                                            color: isActive ? "#FF6A13" : isDone ? "var(--pf-fg-muted)" : "var(--pf-fg-dim)"
+                                            color: isActive ? "#FF6A13" : isClear ? "var(--pf-fg-muted)" : "var(--pf-fg-dim)"
                                         },
                                         children: label
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 272,
+                                        lineNumber: 203,
                                         columnNumber: 17
                                     }, this),
-                                    isDone && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    isClear && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "mt-0.5 font-mono text-[9px] text-[#FF6A13]",
                                         children: "✓"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 281,
-                                        columnNumber: 19
+                                        lineNumber: 206,
+                                        columnNumber: 29
                                     }, this),
                                     isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "mt-1 h-[3px] w-full overflow-hidden",
@@ -5022,41 +5232,415 @@ function CadrerPipeline() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                            lineNumber: 288,
+                                            lineNumber: 209,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 284,
+                                        lineNumber: 208,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, id, true, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 245,
+                                lineNumber: 198,
                                 columnNumber: 15
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 233,
+                        lineNumber: 193,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 226,
+                lineNumber: 191,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-        lineNumber: 165,
+        lineNumber: 138,
         columnNumber: 5
     }, this);
 }
-_s(CadrerPipeline, "DIEXBwLLGXBwEF+ZjWTTCDsojpU=");
-_c2 = CadrerPipeline;
+_s(InterrogerPipeline, "DIEXBwLLGXBwEF+ZjWTTCDsojpU=");
+_c2 = InterrogerPipeline;
+// ─── Step 3 — CONTRÔLER ───────────────────────────────────────────────────────
+const AUDIT_LOG = [
+    {
+        time: "09:14:32",
+        user: "M. Dupont",
+        action: "Requête KYC — Meridian Holdings",
+        stores: "KYC · Sanctions",
+        risk: "élevé"
+    },
+    {
+        time: "09:07:18",
+        user: "L. Fontaine",
+        action: "Vérification OFAC — Acme Corp",
+        stores: "Conformité · Due Dil",
+        risk: "faible"
+    },
+    {
+        time: "08:52:04",
+        user: "A. Mbeki",
+        action: "Due diligence — Orion Partners",
+        stores: "Due Dil · KYC",
+        risk: "moyen"
+    }
+];
+const ROLES = [
+    "Analyste",
+    "Compliance",
+    "Admin"
+];
+const STORE_PERMS = {
+    "Store KYC": [
+        true,
+        true,
+        true
+    ],
+    "Store Conformité": [
+        false,
+        true,
+        true
+    ],
+    "Store Due Dil": [
+        true,
+        true,
+        true
+    ]
+};
+const RISK_COLOR = {
+    "élevé": "#FF6A13",
+    "moyen": "#f59e0b",
+    "faible": "#22c55e"
+};
+function ControlerPipeline() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex flex-col gap-4 md:flex-row md:items-stretch",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex-1 border border-[var(--pf-border)] p-4",
+                style: {
+                    background: "var(--pf-bg-card-2)"
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-4 flex items-center gap-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
+                                size: 12,
+                                className: "text-[#FF6A13]"
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                lineNumber: 248,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "font-mono text-[10px] tracking-[0.18em] text-[var(--pf-fg-dim)]",
+                                children: "JOURNAL D'AUDIT"
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                lineNumber: 249,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                        lineNumber: 247,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col gap-2",
+                        children: AUDIT_LOG.map((entry, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "border border-[var(--pf-border)] px-3 py-2.5",
+                                style: {
+                                    background: "var(--pf-bg)",
+                                    animation: "pf-fadeUp 0.35s ease ".concat(i * 0.08, "s both")
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-start justify-between gap-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "min-w-0 flex-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-2",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-mono text-[9px] text-[var(--pf-fg-dim)]",
+                                                            children: entry.time
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                                            lineNumber: 257,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-mono text-[9px] text-[var(--pf-fg-muted)]",
+                                                            children: entry.user
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                                            lineNumber: 258,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                                    lineNumber: 256,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "mt-0.5 text-[11.5px] font-medium text-[var(--pf-fg)]",
+                                                    children: entry.action
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                                    lineNumber: 260,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "mt-0.5 font-mono text-[9px] text-[var(--pf-fg-dim)]",
+                                                    children: entry.stores
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                                    lineNumber: 261,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                            lineNumber: 255,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "mt-0.5 shrink-0 font-mono text-[10px] font-bold",
+                                            style: {
+                                                color: RISK_COLOR[entry.risk]
+                                            },
+                                            children: entry.risk
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                            lineNumber: 263,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                    lineNumber: 254,
+                                    columnNumber: 15
+                                }, this)
+                            }, i, false, {
+                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                lineNumber: 253,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                        lineNumber: 251,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-3 flex items-center gap-2 border border-[var(--pf-border)] px-3 py-2",
+                        style: {
+                            background: "var(--pf-bg)"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                size: 11,
+                                className: "text-[#FF6A13]"
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                lineNumber: 271,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "font-mono text-[9.5px] text-[var(--pf-fg-dim)]",
+                                children: "Requête enregistrée · immuable · RGPD"
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                lineNumber: 272,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                        lineNumber: 270,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                lineNumber: 246,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex-1 border border-[var(--pf-border)] p-4",
+                style: {
+                    background: "var(--pf-bg-card-2)"
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-4 flex items-center gap-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
+                                size: 12,
+                                className: "text-[#FF6A13]"
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                lineNumber: 279,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "font-mono text-[10px] tracking-[0.18em] text-[var(--pf-fg-dim)]",
+                                children: "CONTRÔLE D'ACCÈS"
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                lineNumber: 280,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                        lineNumber: 278,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
+                        className: "w-full border-collapse text-[11px]",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                            className: "pb-2 text-left font-mono text-[9.5px] font-normal tracking-[0.12em] text-[var(--pf-fg-dim)]",
+                                            children: "STORE"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                            lineNumber: 285,
+                                            columnNumber: 15
+                                        }, this),
+                                        ROLES.map((r)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                                className: "pb-2 text-center font-mono text-[9.5px] font-normal tracking-[0.12em] text-[var(--pf-fg-dim)]",
+                                                children: r
+                                            }, r, false, {
+                                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                                lineNumber: 287,
+                                                columnNumber: 17
+                                            }, this))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                    lineNumber: 284,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                lineNumber: 283,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
+                                children: Object.entries(STORE_PERMS).map((param)=>{
+                                    let [store, perms] = param;
+                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border-t border-[var(--pf-border)] py-2.5 pr-3 text-[11.5px] font-medium text-[var(--pf-fg)]",
+                                                children: store
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                                lineNumber: 294,
+                                                columnNumber: 17
+                                            }, this),
+                                            perms.map((allowed, j)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                    className: "border-t border-[var(--pf-border)] py-2.5 text-center",
+                                                    children: allowed ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                                        size: 13,
+                                                        className: "mx-auto text-[#FF6A13]"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                                        lineNumber: 298,
+                                                        columnNumber: 25
+                                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__["AlertTriangle"], {
+                                                        size: 13,
+                                                        className: "mx-auto text-[var(--pf-fg-dim)] opacity-40"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                                        lineNumber: 299,
+                                                        columnNumber: 25
+                                                    }, this)
+                                                }, j, false, {
+                                                    fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                                    lineNumber: 296,
+                                                    columnNumber: 19
+                                                }, this))
+                                        ]
+                                    }, store, true, {
+                                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                        lineNumber: 293,
+                                        columnNumber: 15
+                                    }, this);
+                                })
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                lineNumber: 291,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                        lineNumber: 282,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-4 border border-[#FF6A13] px-3 py-2.5",
+                        style: {
+                            background: "var(--pf-accent-bg)"
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-2",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"], {
+                                    size: 12,
+                                    className: "text-[#FF6A13]"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                    lineNumber: 309,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "font-mono text-[9.5px] text-[#FF6A13]",
+                                    children: "ACCÈS TRACÉ · ZÉRO DONNÉE BRUTE EXPOSÉE"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                    lineNumber: 310,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                            lineNumber: 308,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                        lineNumber: 307,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                lineNumber: 277,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+        lineNumber: 244,
+        columnNumber: 5
+    }, this);
+}
+_c3 = ControlerPipeline;
 // ─── Shared helpers ───────────────────────────────────────────────────────────
 function getStringList(value) {
     return Array.isArray(value) ? value.filter((item)=>typeof item === "string") : [];
@@ -5072,9 +5656,6 @@ function WorkflowSection() {
     const [resetKey, setResetKey] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [progress, setProgress] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [isVisible, setIsVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const createSources = getStringList(t("workflowTabs.create.sources", {
-        returnObjects: true
-    }));
     const createPipeline = getStringList(t("workflowTabs.create.pipeline", {
         returnObjects: true
     }));
@@ -5156,15 +5737,9 @@ function WorkflowSection() {
         if (Math.abs(delta) >= 42) selectStep(delta < 0 ? activeStep + 1 : activeStep - 1);
     };
     const stepLabels = [
-        t("workflowTabs.create.title", {
-            defaultValue: "Connecter"
-        }),
-        t("workflowTabs.unify.title", {
-            defaultValue: "Cadrer"
-        }),
-        t("workflowTabs.chat.title", {
-            defaultValue: "Interroger"
-        })
+        "Connecter",
+        "Interroger",
+        "Contrôler"
     ];
     const pipeline = createPipeline.length > 0 ? createPipeline : [
         "Lire",
@@ -5188,13 +5763,13 @@ function WorkflowSection() {
                         children: t("workflow.titleHighlight")
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 394,
+                        lineNumber: 402,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 389,
+                lineNumber: 397,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5202,7 +5777,7 @@ function WorkflowSection() {
                 children: t("workflow.subtitle")
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 396,
+                lineNumber: 404,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5224,7 +5799,7 @@ function WorkflowSection() {
                                         children: String(index + 1).padStart(2, "0")
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 409,
+                                        lineNumber: 417,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5238,7 +5813,7 @@ function WorkflowSection() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 404,
+                                lineNumber: 412,
                                 columnNumber: 13
                             }, this),
                             index < 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5256,23 +5831,23 @@ function WorkflowSection() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                    lineNumber: 447,
+                                    lineNumber: 435,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 439,
+                                lineNumber: 434,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, index, true, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 403,
+                        lineNumber: 411,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 401,
+                lineNumber: 409,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5294,7 +5869,7 @@ function WorkflowSection() {
                                 children: "01 / CONNECTER"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 480,
+                                lineNumber: 455,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -5307,30 +5882,30 @@ function WorkflowSection() {
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 483,
+                                lineNumber: 456,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "mb-7 mt-2.5 max-w-[560px] text-[0.92rem] text-[var(--pf-fg-muted)]",
                                 children: t("workflowTabs.create.subtitle", {
-                                    defaultValue: "Les documents utiles sont préparés et rendus interrogeables dans un corpus maîtrisé."
+                                    defaultValue: "Dossiers KYC, rapports de due diligence et listes de sanctions — indexés dans des stores dédiés."
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 491,
+                                lineNumber: 459,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ConnecterPipeline, {
                                 pipeline: pipeline
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 497,
+                                lineNumber: 462,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 474,
+                        lineNumber: 454,
                         columnNumber: 11
                     }, this),
                     activeStep === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5341,10 +5916,10 @@ function WorkflowSection() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "mb-5 font-mono text-[11px] tracking-[0.2em] text-[#FF6A13]",
-                                children: "02 / CADRER"
+                                children: "02 / INTERROGER"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 509,
+                                lineNumber: 469,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -5353,251 +5928,108 @@ function WorkflowSection() {
                                     fontSize: "clamp(1.3rem, 2.2vw, 1.8rem)"
                                 },
                                 children: t("workflowTabs.unify.heading", {
-                                    defaultValue: "Le Prosperify Agent interroge vos stores"
+                                    defaultValue: "Une question, une réponse sourcée et traçable"
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 512,
+                                lineNumber: 470,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "mb-7 mt-2.5 max-w-[560px] text-[0.92rem] text-[var(--pf-fg-muted)]",
                                 children: t("workflowTabs.unify.subtitle", {
-                                    defaultValue: "La requête est distribuée sur les index spécialisés — chaque source répond dans son périmètre."
+                                    defaultValue: "L'agent distribue la requête sur vos stores KYC et retourne un résultat cité, avec sa source exacte."
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 520,
+                                lineNumber: 473,
                                 columnNumber: 13
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CadrerPipeline, {}, void 0, false, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(InterrogerPipeline, {}, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 526,
+                                lineNumber: 476,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 503,
+                        lineNumber: 468,
                         columnNumber: 11
                     }, this),
                     activeStep === 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
-                            padding: "clamp(24px, 3vw, 44px)",
+                            padding: "clamp(24px, 3vw, 36px)",
                             animation: "pf-fadeUp 0.4s ease"
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mb-4 font-mono text-[11px] tracking-[0.2em] text-[#FF6A13]",
-                                children: "03 / INTERROGER"
+                                className: "mb-5 font-mono text-[11px] tracking-[0.2em] text-[#FF6A13]",
+                                children: "03 / CONTRÔLER"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 538,
+                                lineNumber: 483,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 className: "m-0 font-bold text-[var(--pf-fg)]",
                                 style: {
-                                    fontSize: "clamp(1.5rem, 2.6vw, 2.1rem)"
+                                    fontSize: "clamp(1.3rem, 2.2vw, 1.8rem)"
                                 },
                                 children: t("workflowTabs.chat.assistantName", {
-                                    defaultValue: "Réponse contrôlée"
+                                    defaultValue: "Chaque accès est enregistré et gouverné"
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 541,
+                                lineNumber: 484,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "mb-7 mt-3.5 max-w-[520px] text-[0.98rem] text-[var(--pf-fg-muted)]",
+                                className: "mb-7 mt-2.5 max-w-[560px] text-[0.92rem] text-[var(--pf-fg-muted)]",
                                 children: t("workflowTabs.chat.botWelcome", {
-                                    defaultValue: "Chaque réponse reste reliée aux passages utilisés."
+                                    defaultValue: "Journal d'audit immuable, contrôle d'accès par rôle, zéro donnée brute exposée."
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 549,
+                                lineNumber: 487,
                                 columnNumber: 13
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex flex-col gap-3.5",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "max-w-[440px] self-end bg-[#FF6A13] px-4 py-3.5 text-sm font-semibold text-[#080808]",
-                                        children: t("workflowTabs.chat.userQuestion", {
-                                            defaultValue: "Quelle est la durée du contrat Verdi ?"
-                                        })
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 556,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "max-w-[620px] border border-[var(--pf-border)] p-[18px]",
-                                        style: {
-                                            background: "var(--pf-bg-card-2)"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "m-0 text-[15px] leading-[1.6] text-[var(--pf-fg)]",
-                                                children: [
-                                                    t("workflowTabs.chat.answer.prefix", {
-                                                        defaultValue: "Source"
-                                                    }),
-                                                    " ",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                        children: "« Contrat Verdi.pdf »"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                                        lineNumber: 569,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    ", page 10, ",
-                                                    t("workflowTabs.chat.answer.middle", {
-                                                        defaultValue: "durée initiale :"
-                                                    }),
-                                                    " ",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "font-semibold text-[var(--pf-fg)]",
-                                                        style: {
-                                                            background: "var(--pf-accent-highlight)",
-                                                            padding: "1px 5px"
-                                                        },
-                                                        children: t("workflowTabs.chat.answer.highlight", {
-                                                            defaultValue: "trois ans"
-                                                        })
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                                        lineNumber: 574,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    ". ",
-                                                    t("workflowTabs.chat.answer.suffix", {
-                                                        defaultValue: "Le renouvellement exige un accord écrit."
-                                                    })
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                                lineNumber: 565,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "mt-4",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "mb-2 font-mono text-[10px] tracking-[0.2em] text-[#FF6A13]",
-                                                        children: t("workflowTabs.chat.sourcesLabel", {
-                                                            defaultValue: "SOURCES UTILISÉES"
-                                                        })
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                                        lineNumber: 591,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "flex flex-wrap gap-2",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "border border-[var(--pf-border)] px-2 py-1 font-mono text-[10px] text-[var(--pf-fg-muted)]",
-                                                                children: "Verdi.pdf · p.10"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                                                lineNumber: 597,
-                                                                columnNumber: 21
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "border border-[var(--pf-border)] px-2 py-1 font-mono text-[10px] text-[var(--pf-fg-muted)]",
-                                                                children: "Clause 4.1"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                                                lineNumber: 600,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                                        lineNumber: 596,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                                lineNumber: 590,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 561,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex max-w-[620px] items-center gap-3 border px-3.5 py-3",
-                                        style: {
-                                            borderColor: "var(--pf-border-2)",
-                                            background: "var(--pf-bg-card-2)"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "flex-1 text-[13px] text-[var(--pf-fg-dim)]",
-                                                children: t("workflowTabs.chat.inputPlaceholder", {
-                                                    defaultValue: "Demander une vérification…"
-                                                })
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                                lineNumber: 613,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "flex h-[30px] w-[30px] items-center justify-center bg-[#FF6A13] font-bold text-[#080808]",
-                                                children: "→"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                                lineNumber: 618,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 606,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ControlerPipeline, {}, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 555,
+                                lineNumber: 490,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 532,
+                        lineNumber: 482,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 466,
+                lineNumber: 446,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-        lineNumber: 388,
+        lineNumber: 396,
         columnNumber: 5
     }, this);
 }
-_s1(WorkflowSection, "Hrt70Xz+VAm5QI58NRw46HA17j0=", false, function() {
+_s1(WorkflowSection, "uCCmYqLUWUEy7mdxYT2iVDzAA3U=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
     ];
 });
-_c3 = WorkflowSection;
+_c4 = WorkflowSection;
 ;
-var _c, _c1, _c2, _c3;
+var _c, _c1, _c2, _c3, _c4;
 __turbopack_context__.k.register(_c, "PipelineArrow");
 __turbopack_context__.k.register(_c1, "ConnecterPipeline");
-__turbopack_context__.k.register(_c2, "CadrerPipeline");
-__turbopack_context__.k.register(_c3, "WorkflowSection");
+__turbopack_context__.k.register(_c2, "InterrogerPipeline");
+__turbopack_context__.k.register(_c3, "ControlerPipeline");
+__turbopack_context__.k.register(_c4, "WorkflowSection");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }

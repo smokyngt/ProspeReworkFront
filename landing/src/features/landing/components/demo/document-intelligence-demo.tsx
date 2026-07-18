@@ -1758,7 +1758,7 @@ export function DocumentIntelligenceDemo() {
       {!fullscreen ? (
         <button
           type="button"
-          className="absolute inset-0 z-50 flex items-center justify-center bg-background/5 opacity-0 backdrop-blur-[1px] transition-all duration-300 hover:bg-background/45 hover:opacity-100 focus-visible:bg-background/45 focus-visible:opacity-100 focus-visible:outline-none"
+          className="absolute inset-0 z-50 flex items-center justify-center bg-background/40 backdrop-blur-[2px] focus-visible:outline-none"
           onClick={openInteractiveDemo}
           aria-label={ui.openReview}
         >

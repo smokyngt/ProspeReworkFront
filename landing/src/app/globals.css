@@ -260,6 +260,11 @@ html {
   100% { transform: translate(var(--pf-dx), var(--pf-dy)) scale(0.5); opacity: 0; }
 }
 
+@keyframes pf-twinkle {
+  0%, 100% { opacity: 0.22; }
+  50%       { opacity: 1; }
+}
+
 /* Scroll animations */
 .scroll-animate {
   opacity: 0;

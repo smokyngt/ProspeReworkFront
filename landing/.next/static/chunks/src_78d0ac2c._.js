@@ -6507,7 +6507,7 @@ function DocumentIntelligenceDemo() {
             }, this),
             !fullscreen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 type: "button",
-                className: "absolute inset-0 z-50 flex items-center justify-center bg-background/5 opacity-0 backdrop-blur-[1px] transition-all duration-300 hover:bg-background/45 hover:opacity-100 focus-visible:bg-background/45 focus-visible:opacity-100 focus-visible:outline-none",
+                className: "absolute inset-0 z-50 flex items-center justify-center bg-background/40 backdrop-blur-[2px] focus-visible:outline-none",
                 onClick: openInteractiveDemo,
                 "aria-label": ui.openReview,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
