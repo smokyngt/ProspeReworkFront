@@ -1,7 +1,6 @@
 "use client";
 
 import type React from "react";
-import * as THREE from "three";
 
 import {
   BookOpen,
@@ -23,7 +22,7 @@ import {
   Users,
   Zap,
 } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 /* ──────────────────────────────────────────────────────── */
 /*  Data                                                     */
@@ -32,24 +31,25 @@ import { useEffect, useRef, useState } from "react";
 type SourceDef = {
   label: string;
   slug: string | null;
-  color?: string;      // simpleicons color override
+  color?: string;
+  darkColor?: string; // alternate color for dark mode (e.g. white icons)
   fbIcon: React.ElementType;
   fbCol: string;
 };
 
 const SOURCES: SourceDef[] = [
-  { label: "Google Drive", slug: "googledrive",                          fbIcon: HardDrive,    fbCol: "#4285F4" },
-  { label: "Slack",        slug: null,                                   fbIcon: MessageSquare, fbCol: "#E01E5A" },
-  { label: "SharePoint",   slug: null,                                   fbIcon: Share2,        fbCol: "#0f9bd7" },
-  { label: "SAP",          slug: "sap",                                  fbIcon: Building2,     fbCol: "#3aa0d1" },
-  { label: "Salesforce",   slug: null,                                   fbIcon: Cloud,         fbCol: "#00A1E0" },
-  { label: "PostgreSQL",   slug: "postgresql",  color: "8FB4E3",         fbIcon: Database,      fbCol: "#8FB4E3" },
-  { label: "AWS S3",       slug: null,                                   fbIcon: Server,        fbCol: "#FF9900" },
-  { label: "Notion",       slug: "notion",      color: "ffffff",         fbIcon: BookOpen,      fbCol: "#e6e6e6" },
-  { label: "Gmail",        slug: "gmail",                                fbIcon: Mail,          fbCol: "#EA4335" },
-  { label: "GitHub",       slug: "github",      color: "ffffff",         fbIcon: GitBranch,     fbCol: "#e6e6e6" },
-  { label: "REST API",     slug: "openapiinitiative", color: "6BA539",   fbIcon: Code,          fbCol: "#6BA539" },
-  { label: "PDF / Docs",   slug: null,                                   fbIcon: FileText,      fbCol: "#EC4a52" },
+  { label: "Google Drive", slug: "googledrive",                                         fbIcon: HardDrive,     fbCol: "#4285F4" },
+  { label: "Slack",        slug: null,                                                  fbIcon: MessageSquare, fbCol: "#E01E5A" },
+  { label: "SharePoint",   slug: null,                                                  fbIcon: Share2,        fbCol: "#0f9bd7" },
+  { label: "SAP",          slug: "sap",                                                 fbIcon: Building2,     fbCol: "#3aa0d1" },
+  { label: "Salesforce",   slug: null,                                                  fbIcon: Cloud,         fbCol: "#00A1E0" },
+  { label: "PostgreSQL",   slug: "postgresql",  color: "336791", darkColor: "8FB4E3",   fbIcon: Database,      fbCol: "#8FB4E3" },
+  { label: "AWS S3",       slug: null,                                                  fbIcon: Server,        fbCol: "#FF9900" },
+  { label: "Notion",       slug: "notion",      color: "000000", darkColor: "ffffff",   fbIcon: BookOpen,      fbCol: "#e6e6e6" },
+  { label: "Gmail",        slug: "gmail",                                               fbIcon: Mail,          fbCol: "#EA4335" },
+  { label: "GitHub",       slug: "github",      color: "181717", darkColor: "ffffff",   fbIcon: GitBranch,     fbCol: "#e6e6e6" },
+  { label: "REST API",     slug: "openapiinitiative", color: "6BA539",                  fbIcon: Code,          fbCol: "#6BA539" },
+  { label: "PDF / Docs",   slug: null,                                                  fbIcon: FileText,      fbCol: "#EC4a52" },
 ];
 
 const STORES = [
@@ -65,104 +65,38 @@ const BENEFITS = [
 ];
 
 const ACCENT = "#FF6A13";
-const N_FLUX  = 6;
-const DUR_F   = 5;
 
 /* ──────────────────────────────────────────────────────── */
-/*  Three.js globe                                           */
+/*  useIsDark — detect .dark class on root                   */
 /* ──────────────────────────────────────────────────────── */
 
-function ThreeGlobe() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const stateRef  = useRef<{ renderer: THREE.WebGLRenderer; raf: number } | null>(null);
+function useIsDark(): boolean {
+  const [dark, setDark] = useState(false);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
+    const check = () => setDark(document.documentElement.classList.contains("dark"));
+    check();
 
-    const size   = 300;
-    const accent = ACCENT;
-    const col    = new THREE.Color(accent);
-
-    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
-    renderer.setSize(size, size, false);
-    renderer.setClearColor(0x000000, 0);
-
-    const scene  = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
-    camera.position.z = 3.4;
-
-    const group = new THREE.Group();
-    scene.add(group);
-
-    const core = new THREE.Mesh(
-      new THREE.SphereGeometry(1, 64, 64),
-      new THREE.MeshStandardMaterial({
-        color: col, roughness: 0.5, metalness: 0.2,
-        emissive: col.clone().multiplyScalar(0.28),
-      }),
-    );
-    group.add(core);
-
-    const wire = new THREE.LineSegments(
-      new THREE.WireframeGeometry(new THREE.SphereGeometry(1.004, 24, 16)),
-      new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.08 }),
-    );
-    group.add(wire);
-
-    const shell = new THREE.Mesh(
-      new THREE.SphereGeometry(1.16, 48, 48),
-      new THREE.MeshBasicMaterial({ color: col, transparent: true, opacity: 0.08, side: THREE.BackSide }),
-    );
-    group.add(shell);
-
-    scene.add(new THREE.AmbientLight(0xffffff, 0.55));
-    const key = new THREE.DirectionalLight(0xffd9b0, 1.5);
-    key.position.set(-2, 2.2, 2.5);
-    scene.add(key);
-    const rim = new THREE.DirectionalLight(col.clone(), 0.7);
-    rim.position.set(2.5, -1, -1.5);
-    scene.add(rim);
-
-    group.rotation.z = 0.35;
-
-    let raf = 0;
-    const animate = () => {
-      group.rotation.y += 0.0042;
-      renderer.render(scene, camera);
-      raf = requestAnimationFrame(animate);
-    };
-    animate();
-
-    stateRef.current = { renderer, raf };
-
-    return () => {
-      cancelAnimationFrame(raf);
-      renderer.dispose();
-    };
+    const observer = new MutationObserver(check);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+    return () => observer.disconnect();
   }, []);
 
-  return (
-    <canvas
-      ref={canvasRef}
-      width={300}
-      height={300}
-      style={{ width: 300, height: 300, position: "relative", zIndex: 1, background: "transparent" }}
-    />
-  );
+  return dark;
 }
 
 /* ──────────────────────────────────────────────────────── */
 /*  Source tile                                              */
 /* ──────────────────────────────────────────────────────── */
 
-function SourceTile({ src, active }: { src: SourceDef; active: boolean }) {
+function SourceTile({ src, active, isDark }: { src: SourceDef; active: boolean; isDark: boolean }) {
   const [imgFailed, setImgFailed] = useState(false);
   const FbIcon = src.fbIcon;
 
+  // Pick color based on theme
+  const color = isDark ? (src.darkColor || src.color) : src.color;
   const iconUrl = src.slug
-    ? `https://cdn.simpleicons.org/${src.slug}${src.color ? "/" + src.color : ""}`
+    ? `https://cdn.simpleicons.org/${src.slug}${color ? "/" + color : ""}`
     : null;
 
   const activeFilter = `drop-shadow(0 0 10px ${ACCENT})`;
@@ -182,7 +116,7 @@ function SourceTile({ src, active }: { src: SourceDef; active: boolean }) {
             onError={() => setImgFailed(true)}
             style={{
               objectFit: "contain",
-              filter: active ? activeFilter : "none",
+              filter: active ? activeFilter : "drop-shadow(0 2px 5px rgba(0,0,0,0.15))",
               transform: active ? "scale(1.12)" : "scale(1)",
               transition: "all 0.5s",
             }}
@@ -240,9 +174,9 @@ function IngestionBar({ defaultMode = "auto" }: { defaultMode?: "auto" | "manuel
           onClick={() => setMode("auto")}
           style={{
             ...btnBase,
-            background: isAuto ? ACCENT : "transparent",
-            color: isAuto ? "#0a0a0a" : "var(--pf-fg-dim)",
-            borderColor: isAuto ? ACCENT : "var(--pf-border)",
+            background: isAuto ? "var(--pf-accent)" : "transparent",
+            color: isAuto ? "#fff" : "var(--pf-fg-dim)",
+            borderColor: isAuto ? "var(--pf-accent)" : "var(--pf-border)",
           }}
         >
           AUTO
@@ -252,17 +186,87 @@ function IngestionBar({ defaultMode = "auto" }: { defaultMode?: "auto" | "manuel
           onClick={() => setMode("manuel")}
           style={{
             ...btnBase,
-            background: !isAuto ? ACCENT : "transparent",
-            color: !isAuto ? "#0a0a0a" : "var(--pf-fg-dim)",
-            borderColor: !isAuto ? ACCENT : "var(--pf-border)",
+            background: !isAuto ? "var(--pf-accent)" : "transparent",
+            color: !isAuto ? "#fff" : "var(--pf-fg-dim)",
+            borderColor: !isAuto ? "var(--pf-accent)" : "var(--pf-border)",
           }}
         >
           MANUEL
         </button>
       </div>
-      <span style={{ fontSize: 11, color: ACCENT, fontFamily: "'JetBrains Mono', monospace" }}>
+      <span style={{ fontSize: 11, color: "var(--pf-accent)", fontFamily: "'JetBrains Mono', monospace" }}>
         {isAuto ? "Planifié · 02:00 CET" : "À la demande"}
       </span>
+    </div>
+  );
+}
+
+/* ──────────────────────────────────────────────────────── */
+/*  Flux SVG overlay — matches handoff design               */
+/* ──────────────────────────────────────────────────────── */
+
+function FluxOverlay({ animate, isDark }: { animate: boolean; isDark: boolean }) {
+  const dotFill = isDark ? "#fff" : ACCENT;
+  const dotFilter = isDark
+    ? `drop-shadow(0 0 5px ${ACCENT}) drop-shadow(0 0 10px ${ACCENT})`
+    : `drop-shadow(0 0 4px ${ACCENT})`;
+
+  const mainIn = "M0,200 L760,200";
+  const branchPaths = [
+    mainIn + " C788,200 796,136 812,136",
+    mainIn + " C788,200 796,220 812,220",
+    mainIn + " C788,200 796,304 812,304",
+  ];
+
+  const durF = 4.6;
+
+  const fluxDots = animate
+    ? branchPaths.flatMap((p, si) =>
+        [0, 1].map((j) => ({
+          key: `${si}-${j}`,
+          r: 3.2,
+          path: p,
+          dur: durF + "s",
+          begin: (si * 0.45 + j * (durF / 2)).toFixed(2) + "s",
+        }))
+      )
+    : [];
+
+  return (
+    <div style={{ position: "absolute", inset: 0, zIndex: 1, pointerEvents: "none" }}>
+      <svg
+        viewBox="0 0 1000 400"
+        preserveAspectRatio="none"
+        width="100%"
+        height="100%"
+        style={{ position: "absolute", inset: 0, overflow: "visible" }}
+      >
+        {/* Main trunk */}
+        <path
+          d="M0,200 L760,200"
+          fill="none"
+          stroke="var(--pf-accent)"
+          strokeOpacity={0.3}
+          strokeWidth={1.5}
+          strokeDasharray="6 6"
+          vectorEffect="non-scaling-stroke"
+        />
+        {/* Branches */}
+        <path d="M760,200 C788,200 796,136 812,136" fill="none" stroke="var(--pf-accent)" strokeOpacity={0.32} strokeWidth={1.5} strokeDasharray="6 6" vectorEffect="non-scaling-stroke" />
+        <path d="M760,200 C788,200 796,220 812,220" fill="none" stroke="var(--pf-accent)" strokeOpacity={0.32} strokeWidth={1.5} strokeDasharray="6 6" vectorEffect="non-scaling-stroke" />
+        <path d="M760,200 C788,200 796,304 812,304" fill="none" stroke="var(--pf-accent)" strokeOpacity={0.32} strokeWidth={1.5} strokeDasharray="6 6" vectorEffect="non-scaling-stroke" />
+        {/* Junction dots */}
+        <circle cx={760} cy={200} r={4.5} fill="var(--pf-accent)" vectorEffect="non-scaling-stroke" />
+        <circle cx={812} cy={136} r={3} fill="var(--pf-accent)" vectorEffect="non-scaling-stroke" />
+        <circle cx={812} cy={220} r={3} fill="var(--pf-accent)" vectorEffect="non-scaling-stroke" />
+        <circle cx={812} cy={304} r={3} fill="var(--pf-accent)" vectorEffect="non-scaling-stroke" />
+        {/* Animated dots */}
+        {fluxDots.map((d) => (
+          <circle key={d.key} r={d.r} fill={dotFill} style={{ filter: dotFilter }}>
+            <animateMotion dur={d.dur} begin={d.begin} repeatCount="indefinite" path={d.path} />
+          </circle>
+        ))}
+      </svg>
     </div>
   );
 }
@@ -273,32 +277,7 @@ function IngestionBar({ defaultMode = "auto" }: { defaultMode?: "auto" | "manuel
 
 export function SovereigntySection() {
   const [activeIdx, setActiveIdx] = useState(0);
-
-  type Star = {
-    key: number; left: string; top: string; width: string; height: string;
-    bg: string; shadow: string; animDur: string; animDel: string;
-  };
-
-  // Stars must be client-only (Math.random() differs server vs client → hydration error)
-  const [stars, setStars] = useState<Star[]>([]);
-  useEffect(() => {
-    const rnd = (a: number, b: number) => a + Math.random() * (b - a);
-    setStars(Array.from({ length: 56 }, (_, i) => {
-      const sz    = rnd(1.2, 3.6);
-      const alpha = rnd(0.18, 0.9);
-      return {
-        key: i,
-        left:    `${rnd(1, 99).toFixed(1)}%`,
-        top:     `${rnd(1, 99).toFixed(1)}%`,
-        width:   `${sz.toFixed(1)}px`,
-        height:  `${sz.toFixed(1)}px`,
-        bg:      `rgba(255, ${Math.round(rnd(120, 175))}, ${Math.round(rnd(20, 65))}, ${alpha.toFixed(2)})`,
-        shadow:  sz > 2.8 ? "0 0 6px rgba(255,120,30,0.6)" : "none",
-        animDur: `${rnd(2.6, 6).toFixed(1)}s`,
-        animDel: `${rnd(0, 4).toFixed(1)}s`,
-      };
-    }));
-  }, []);
+  const isDark = useIsDark();
 
   // Cycle active source every 820 ms
   useEffect(() => {
@@ -309,12 +288,6 @@ export function SovereigntySection() {
     return () => clearInterval(t);
   }, []);
 
-  // Flux dots — deterministic, no random → safe to compute inline
-  const fluxDots = Array.from({ length: N_FLUX }, (_, i) => ({
-    key: i,
-    delay: `${((i * DUR_F) / N_FLUX).toFixed(2)}s`,
-  }));
-
   return (
     <div>
       <h2 style={{
@@ -322,7 +295,7 @@ export function SovereigntySection() {
         color: "var(--pf-fg)", fontSize: "clamp(1.9rem, 4vw, 3.1rem)", maxWidth: 820,
       }}>
         Connectez vos systèmes.<br />
-        <span style={{ color: ACCENT }}>Aucune refonte nécessaire.</span>
+        <span style={{ color: "var(--pf-accent)" }}>Aucune refonte nécessaire.</span>
       </h2>
       <p style={{ margin: "18px 0 0", maxWidth: 640, fontSize: "1.05rem", lineHeight: 1.65, color: "var(--pf-fg-muted)" }}>
         Vos sources alimentent un flux unique qui traverse le core Prosperify et ressort
@@ -337,11 +310,6 @@ export function SovereigntySection() {
         overflow: "hidden",
         animation: "pf-fadeUp 0.6s ease",
       }}>
-        {/* Orange glow — sits at z:1, covers gap cols, hidden under panels (z:2) */}
-        <div style={{
-          position: "absolute", inset: 0, zIndex: 1, pointerEvents: "none",
-          background: "radial-gradient(circle at 50% 46%, rgba(255,106,19,0.45) 0px, rgba(255,106,19,0.20) 90px, rgba(255,106,19,0.06) 155px, transparent 200px)",
-        }} />
         <div style={{
           display: "grid",
           gridTemplateColumns: "minmax(0,1fr) 30px 320px 30px minmax(0,1fr)",
@@ -367,7 +335,7 @@ export function SovereigntySection() {
               border: "1px solid var(--pf-border)",
             }}>
               {SOURCES.map((src, i) => (
-                <SourceTile key={src.label} src={src} active={i === activeIdx} />
+                <SourceTile key={src.label} src={src} active={i === activeIdx} isDark={isDark} />
               ))}
             </div>
           </div>
@@ -375,80 +343,77 @@ export function SovereigntySection() {
           {/* gap col */}
           <div />
 
-          {/* CENTER: 3D globe */}
+          {/* CENTER: Prosperify core — matching handoff glow design */}
           <div style={{
-            position: "relative", zIndex: 3,
+            position: "relative", zIndex: 3, overflow: "hidden",
             display: "flex", flexDirection: "column",
             alignItems: "center", justifyContent: "center",
             padding: "28px 0",
           }}>
-            {/* Stars — transparent background, glow comes from outer overlay */}
+            {/* Radial glow backdrop */}
             <div style={{
-              position: "absolute", inset: 0, zIndex: 0, overflow: "hidden",
-            }}>
-              {stars.map((s) => (
-                <div key={s.key} style={{
-                  position: "absolute",
-                  left: s.left, top: s.top,
-                  width: s.width, height: s.height,
-                  borderRadius: "50%",
-                  background: s.bg,
-                  boxShadow: s.shadow,
-                  animation: `pf-twinkle ${s.animDur} ease-in-out ${s.animDel} infinite`,
-                }} />
-              ))}
-            </div>
+              position: "absolute", inset: 0, zIndex: 0,
+              background: isDark
+                ? "radial-gradient(circle at 50% 46%, rgba(255,106,19,0.10) 0%, transparent 60%)"
+                : "radial-gradient(circle at 50% 46%, rgba(255,106,19,0.08) 0%, transparent 60%)",
+            }} />
 
-            {/* Globe container */}
             <div style={{
               position: "relative", zIndex: 1,
               width: 340, height: 340,
               display: "flex", alignItems: "center", justifyContent: "center",
             }}>
-              {/* Outer dashed ring */}
+              {/* Pulsing glow orb */}
               <div style={{
-                position: "absolute", width: 340, height: 340,
+                position: "absolute", width: 230, height: 230,
                 borderRadius: "50%",
-                border: `1px dashed rgba(255,106,19,0.22)`,
-                animation: "pf-orbit-ring 40s linear infinite",
-              }} />
-              {/* Inner dashed ring */}
-              <div style={{
-                position: "absolute", width: 288, height: 288,
-                borderRadius: "50%",
-                border: `1px dashed rgba(255,106,19,0.12)`,
-                animation: "pf-orbit-ring-rev 28s linear infinite",
-              }} />
-              {/* Glow halo */}
-              <div style={{
-                position: "absolute", width: 232, height: 232,
-                borderRadius: "50%",
-                background: "radial-gradient(circle, rgba(255,106,19,0.4), transparent 66%)",
-                filter: "blur(16px)",
+                background: isDark
+                  ? "radial-gradient(circle, rgba(255,106,19,0.36), transparent 66%)"
+                  : "radial-gradient(circle, rgba(255,106,19,0.18), transparent 66%)",
+                filter: "blur(24px)",
                 animation: "pf-pulse 3.5s ease-in-out infinite",
               }} />
-              {/* Three.js canvas */}
-              <ThreeGlobe />
-              {/* Label overlay */}
+
+              {/* Logo frame */}
               <div style={{
-                position: "absolute", zIndex: 2,
+                position: "relative", zIndex: 2,
                 display: "flex", flexDirection: "column",
-                alignItems: "center", gap: 4, pointerEvents: "none",
+                alignItems: "center", gap: 18, pointerEvents: "none",
               }}>
-                <span style={{
-                  fontSize: 17, fontWeight: 800, color: "#fff",
-                  letterSpacing: "0.1em", fontFamily: "'JetBrains Mono', monospace",
-                  textShadow: "0 2px 12px rgba(0,0,0,0.85)",
+                <div style={{
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  padding: "26px 30px",
+                  background: "var(--pf-bg-card)",
+                  border: "1px solid var(--pf-accent-dim-border)",
+                  boxShadow: isDark
+                    ? "0 0 0 6px var(--pf-bg-card), 0 10px 34px rgba(0,0,0,0.6), 0 0 30px rgba(255,106,19,0.12)"
+                    : "0 0 0 6px var(--pf-bg-card), 0 10px 34px rgba(0,0,0,0.08), 0 0 30px rgba(255,106,19,0.08)",
                 }}>
-                  PROSPERIFY
-                </span>
-                <span style={{
-                  fontSize: 11, color: "rgba(255,255,255,0.85)",
-                  letterSpacing: "0.14em", fontFamily: "'JetBrains Mono', monospace",
-                  textShadow: "0 1px 10px rgba(0,0,0,0.9)",
-                }}>
-                  API
-                </span>
+                  <img
+                    src="/assets/brand/logo-icon.png"
+                    alt="Prosperify"
+                    style={{
+                      height: 104, width: "auto",
+                      filter: isDark
+                        ? "drop-shadow(0 8px 26px rgba(255,106,19,0.45))"
+                        : "drop-shadow(0 8px 26px rgba(255,106,19,0.25))",
+                    }}
+                  />
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
+                  <span style={{
+                    fontSize: 17, fontWeight: 800, color: "var(--pf-fg)",
+                    letterSpacing: "0.1em", fontFamily: "'JetBrains Mono', monospace",
+                  }}>
+                    PROSPERIFY
+                  </span>
+                  <span style={{
+                    fontSize: 11, color: "var(--pf-accent)",
+                    letterSpacing: "0.14em", fontFamily: "'JetBrains Mono', monospace",
+                  }}>
+                    CORE
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -480,34 +445,39 @@ export function SovereigntySection() {
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               {STORES.map(({ label, desc, Icon, scanDelay }) => (
-                <div key={label} style={{
-                  position: "relative", overflow: "hidden",
-                  display: "flex", alignItems: "center", gap: 12,
-                  padding: "14px 15px",
-                  background: "rgba(255,106,19,0.05)",
-                  border: "1px solid rgba(255,106,19,0.35)",
-                  boxShadow: "0 0 26px rgba(255,106,19,0.1)",
-                }}>
+                <div
+                  key={label}
+                  style={{
+                    position: "relative", overflow: "hidden",
+                    display: "flex", alignItems: "center", gap: 12,
+                    padding: "14px 15px",
+                    background: "var(--pf-accent-bg)",
+                    border: "1px solid var(--pf-accent-dim-border)",
+                    boxShadow: isDark
+                      ? "0 0 26px rgba(255,106,19,0.1)"
+                      : "0 0 20px rgba(255,106,19,0.06)",
+                  }}
+                >
                   <div style={{
                     width: 38, height: 38, flexShrink: 0,
                     display: "flex", alignItems: "center", justifyContent: "center",
-                    background: "rgba(255,106,19,0.1)",
-                    border: "1px solid rgba(255,106,19,0.32)",
+                    background: "var(--pf-accent-bg-2)",
+                    border: "1px solid var(--pf-accent-dim-border)",
                   }}>
-                    <Icon size={16} style={{ color: ACCENT }} />
+                    <Icon size={16} style={{ color: "var(--pf-accent)" }} />
                   </div>
                   <div style={{ minWidth: 0 }}>
                     <div style={{ fontSize: 13, fontWeight: 600, color: "var(--pf-fg)" }}>{label}</div>
                     <div style={{ fontSize: 11, color: "var(--pf-fg-dim)", marginTop: 1 }}>{desc}</div>
                   </div>
-                  <div style={{ marginLeft: "auto", paddingLeft: 10, color: ACCENT, display: "flex" }}>
+                  <div style={{ marginLeft: "auto", paddingLeft: 10, color: "var(--pf-accent)", display: "flex" }}>
                     <Check size={15} />
                   </div>
                   {/* Scan line */}
                   <div style={{
                     position: "absolute", left: 0, right: 0, height: 40,
                     pointerEvents: "none",
-                    background: "linear-gradient(180deg, transparent, rgba(255,106,19,0.12), transparent)",
+                    background: `linear-gradient(180deg, transparent, var(--pf-accent-highlight), transparent)`,
                     animation: `pf-store-scan 3.4s linear ${scanDelay} infinite`,
                   }} />
                 </div>
@@ -516,22 +486,8 @@ export function SovereigntySection() {
           </div>
         </div>
 
-        {/* Central flux overlay */}
-        <div style={{ position: "absolute", inset: 0, zIndex: 1, pointerEvents: "none" }}>
-          <div style={{
-            position: "absolute", top: "50%", left: 0, right: 0, height: 0,
-            borderTop: "1px dashed rgba(255,106,19,0.22)",
-          }} />
-          {fluxDots.map(({ key, delay }: { key: number; delay: string }) => (
-            <div key={key} style={{
-              position: "absolute", top: "50%", marginTop: -7, left: -6,
-              width: 14, height: 14, borderRadius: "50%",
-              background: `radial-gradient(circle, #fff 0%, ${ACCENT} 55%, transparent 74%)`,
-              boxShadow: `0 0 18px rgba(255,106,19,0.95)`,
-              animation: `pf-data-travel-h ${DUR_F}s linear ${delay} infinite`,
-            }} />
-          ))}
-        </div>
+        {/* Central flux SVG overlay */}
+        <FluxOverlay animate isDark={isDark} />
       </div>
 
       {/* Ingestion bar — desktop */}
@@ -541,7 +497,7 @@ export function SovereigntySection() {
 
       {/* ── Mobile layout ── */}
       <div className="md:hidden" style={{ marginTop: 32 }}>
-        {/* Globe centré avec halo orange */}
+        {/* Logo centré */}
         <div style={{
           position: "relative", overflow: "hidden",
           border: "1px solid var(--pf-border)",
@@ -549,35 +505,79 @@ export function SovereigntySection() {
           display: "flex", flexDirection: "column",
           alignItems: "center", padding: "32px 0 18px",
         }}>
+          {/* Radial glow */}
           <div style={{
-            position: "absolute", inset: 0,
-            background: "radial-gradient(circle at 50% 46%, rgba(255,106,19,0.45) 0%, rgba(255,106,19,0.18) 30%, rgba(255,106,19,0.05) 58%, transparent 78%)",
-            pointerEvents: "none",
+            position: "absolute", inset: 0, zIndex: 0,
+            background: isDark
+              ? "radial-gradient(circle at 50% 40%, rgba(255,106,19,0.10) 0%, transparent 60%)"
+              : "radial-gradient(circle at 50% 40%, rgba(255,106,19,0.08) 0%, transparent 60%)",
           }} />
-          {stars.map((s) => (
-            <div key={s.key} style={{
-              position: "absolute",
-              left: s.left, top: s.top,
-              width: s.width, height: s.height,
-              borderRadius: "50%",
-              background: s.bg,
-              boxShadow: s.shadow,
-              animation: `pf-twinkle ${s.animDur} ease-in-out ${s.animDel} infinite`,
-            }} />
-          ))}
-          <div style={{ position: "relative", zIndex: 1, transform: "scale(0.72)", transformOrigin: "center center", height: 245 }}>
-            <div style={{ width: 340, height: 340, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
-              <div style={{ position: "absolute", width: 340, height: 340, borderRadius: "50%", border: "1px dashed rgba(255,106,19,0.22)", animation: "pf-orbit-ring 40s linear infinite" }} />
-              <div style={{ position: "absolute", width: 288, height: 288, borderRadius: "50%", border: "1px dashed rgba(255,106,19,0.12)", animation: "pf-orbit-ring-rev 28s linear infinite" }} />
-              <div style={{ position: "absolute", width: 232, height: 232, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,106,19,0.4), transparent 66%)", filter: "blur(16px)", animation: "pf-pulse 3.5s ease-in-out infinite" }} />
-              <ThreeGlobe />
-              <div style={{ position: "absolute", zIndex: 2, display: "flex", flexDirection: "column", alignItems: "center", gap: 4, pointerEvents: "none" }}>
-                <span style={{ fontSize: 17, fontWeight: 800, color: "#fff", letterSpacing: "0.1em", fontFamily: "'JetBrains Mono', monospace", textShadow: "0 2px 12px rgba(0,0,0,0.85)" }}>PROSPERIFY</span>
-                <span style={{ fontSize: 11, color: "rgba(255,255,255,0.85)", letterSpacing: "0.14em", fontFamily: "'JetBrains Mono', monospace", textShadow: "0 1px 10px rgba(0,0,0,0.9)" }}>API</span>
+
+          <div style={{
+            position: "relative", zIndex: 1,
+            transform: "scale(0.72)", transformOrigin: "center center", height: 245,
+          }}>
+            <div style={{
+              width: 340, height: 340,
+              display: "flex", alignItems: "center", justifyContent: "center",
+              position: "relative",
+            }}>
+              {/* Pulsing glow */}
+              <div style={{
+                position: "absolute", width: 200, height: 200,
+                borderRadius: "50%",
+                background: isDark
+                  ? "radial-gradient(circle, rgba(255,106,19,0.36), transparent 66%)"
+                  : "radial-gradient(circle, rgba(255,106,19,0.18), transparent 66%)",
+                filter: "blur(20px)",
+                animation: "pf-pulse 3.5s ease-in-out infinite",
+              }} />
+
+              {/* Logo frame */}
+              <div style={{
+                position: "relative", zIndex: 2,
+                display: "flex", flexDirection: "column",
+                alignItems: "center", gap: 14, pointerEvents: "none",
+              }}>
+                <div style={{
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  padding: "22px 26px",
+                  background: "var(--pf-bg-card)",
+                  border: "1px solid var(--pf-accent-dim-border)",
+                  boxShadow: isDark
+                    ? "0 0 0 5px var(--pf-bg-card), 0 8px 28px rgba(0,0,0,0.5), 0 0 24px rgba(255,106,19,0.10)"
+                    : "0 0 0 5px var(--pf-bg-card), 0 8px 28px rgba(0,0,0,0.06), 0 0 24px rgba(255,106,19,0.06)",
+                }}>
+                  <img
+                    src="/assets/brand/logo-icon.png"
+                    alt="Prosperify"
+                    style={{
+                      height: 80, width: "auto",
+                      filter: isDark
+                        ? "drop-shadow(0 6px 20px rgba(255,106,19,0.4))"
+                        : "drop-shadow(0 6px 20px rgba(255,106,19,0.2))",
+                    }}
+                  />
+                </div>
               </div>
             </div>
           </div>
-          <span style={{ position: "relative", zIndex: 1, fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: "0.15em", color: "var(--pf-fg-dim)", textTransform: "uppercase" }}>
+
+          <div style={{
+            position: "relative", zIndex: 1, marginTop: 2,
+            display: "flex", flexDirection: "column", alignItems: "center", gap: 2,
+            padding: "9px 20px",
+            border: "1px solid var(--pf-border)",
+            background: "var(--pf-bg-card-2)",
+          }}>
+            <span style={{ fontSize: 13, fontWeight: 800, color: "var(--pf-fg)", letterSpacing: "0.1em", fontFamily: "'JetBrains Mono', monospace" }}>PROSPERIFY</span>
+            <span style={{ fontSize: 10, color: "var(--pf-accent)", letterSpacing: "0.14em", fontFamily: "'JetBrains Mono', monospace" }}>CORE</span>
+          </div>
+          <span style={{
+            position: "relative", zIndex: 1, marginTop: 6,
+            fontFamily: "'JetBrains Mono', monospace", fontSize: 10,
+            letterSpacing: "0.15em", color: "var(--pf-fg-dim)", textTransform: "uppercase",
+          }}>
             Moteur d&apos;ingestion &amp; RAG
           </span>
         </div>
@@ -589,7 +589,7 @@ export function SovereigntySection() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, background: "var(--pf-border)" }}>
             {SOURCES.map((src, i) => (
-              <SourceTile key={src.label} src={src} active={i === activeIdx} />
+              <SourceTile key={src.label} src={src} active={i === activeIdx} isDark={isDark} />
             ))}
           </div>
         </div>
@@ -605,18 +605,27 @@ export function SovereigntySection() {
                 position: "relative", overflow: "hidden",
                 display: "flex", alignItems: "center", gap: 12,
                 padding: "14px 16px",
-                background: "rgba(255,106,19,0.05)",
-                borderTop: "1px solid rgba(255,106,19,0.22)",
+                background: "var(--pf-accent-bg)",
+                borderTop: "1px solid var(--pf-accent-dim-border)",
               }}>
-                <div style={{ width: 36, height: 36, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(255,106,19,0.1)", border: "1px solid rgba(255,106,19,0.28)" }}>
-                  <Icon size={15} style={{ color: ACCENT }} />
+                <div style={{
+                  width: 36, height: 36, flexShrink: 0,
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  background: "var(--pf-accent-bg-2)",
+                  border: "1px solid var(--pf-accent-dim-border)",
+                }}>
+                  <Icon size={15} style={{ color: "var(--pf-accent)" }} />
                 </div>
                 <div>
                   <div style={{ fontSize: 13, fontWeight: 600, color: "var(--pf-fg)" }}>{label}</div>
                   <div style={{ fontSize: 11, color: "var(--pf-fg-dim)", marginTop: 1 }}>{desc}</div>
                 </div>
-                <Check size={14} style={{ color: ACCENT, marginLeft: "auto", flexShrink: 0 }} />
-                <div style={{ position: "absolute", left: 0, right: 0, height: 40, pointerEvents: "none", background: "linear-gradient(180deg, transparent, rgba(255,106,19,0.12), transparent)", animation: `pf-store-scan 3.4s linear ${scanDelay} infinite` }} />
+                <Check size={14} style={{ color: "var(--pf-accent)", marginLeft: "auto", flexShrink: 0 }} />
+                <div style={{
+                  position: "absolute", left: 0, right: 0, height: 40, pointerEvents: "none",
+                  background: `linear-gradient(180deg, transparent, var(--pf-accent-highlight), transparent)`,
+                  animation: `pf-store-scan 3.4s linear ${scanDelay} infinite`,
+                }} />
               </div>
             ))}
           </div>
@@ -630,8 +639,13 @@ export function SovereigntySection() {
       <div className="mt-6 grid grid-cols-1 gap-px border border-[var(--pf-border)] sm:grid-cols-3" style={{ background: "var(--pf-border)" }}>
         {BENEFITS.map(({ label, desc, Icon }) => (
           <div key={label} style={{ display: "flex", alignItems: "flex-start", gap: 16, padding: 24, background: "var(--pf-bg-card)" }}>
-            <div style={{ marginTop: 2, width: 36, height: 36, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(255,106,19,0.05)", border: "1px solid rgba(255,106,19,0.22)" }}>
-              <Icon size={16} style={{ color: ACCENT }} />
+            <div style={{
+              marginTop: 2, width: 36, height: 36, flexShrink: 0,
+              display: "flex", alignItems: "center", justifyContent: "center",
+              background: "var(--pf-accent-bg)",
+              border: "1px solid var(--pf-accent-dim-border)",
+            }}>
+              <Icon size={16} style={{ color: "var(--pf-accent)" }} />
             </div>
             <div>
               <div style={{ fontSize: 14, fontWeight: 600, color: "var(--pf-fg)" }}>{label}</div>

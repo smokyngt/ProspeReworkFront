@@ -1,233 +1,237 @@
-import type { getDemoCopy } from "./demo-copy";
-import type { DemoStep } from "./demo-types";
+import type { getDemoCopy } from './demo-copy';
+import type { DemoStep } from './demo-types';
 
 export function buildSteps(copy: ReturnType<typeof getDemoCopy>): DemoStep[] {
-  const fr = copy.language === "fr";
+  const fr = copy.language === 'fr';
   const stepText = fr
     ? {
         analyze:
-          "Décomposer la demande, identifier les preuves nécessaires et limiter la réponse au PDF ouvert.",
+          'Décomposer la demande : confirmer la base de valorisation, vérifier la cohérence avec le détail QoE, évaluer la fiabilité du multiple.',
         analyzeTrace:
-          "La réponse doit prouver trois éléments séparés : l'identité du document, la revendication d'architecture et le bénéfice de parallélisation. Je garde ces objectifs séparés pour éviter de réutiliser un même extrait comme preuve de tout.",
-        read: "Ouvrir le PDF chargé, lire les premières pages et isoler les passages candidats.",
+          "La réponse doit prouver trois choses : (1) l'EBITDA normalisé retenu dans la synthèse, (2) le détail du pont de normalisation, (3) la contradiction avec l'observation des conseils. Chaque point a sa propre source dans le PDF.",
+        read: 'Ouvrir le PDF et lire les sections clés : Synthèse exécutive (p.2), Analyse financière (p.4), Quality of Earnings (p.5).',
         readTrace:
-          "Lecture ciblée des pages 1 et 2 : le titre sert d'ancrage, l'abstract contient les revendications techniques. Les autres pages ne sont pas nécessaires tant que les preuves demandées sont présentes dans cette fenêtre.",
+          "Lecture ciblée des pages 2, 4 et 5 : la synthèse donne le chiffre de valorisation, le pont de normalisation détaille les retraitements, l'observation des conseils révèle la contradiction. Les pages 3, 6 et 7 sont utiles pour le contexte mais pas pour les preuves demandées.",
         screenshot:
-          "Capturer un aperçu de page pour vérifier visuellement la source.",
+          'Capturer un aperçu de page pour vérifier visuellement la source.',
         screenshotResponse:
-          "L'aperçu confirme la page de titre du papier Attention Is All You Need.",
+          "L'aperçu confirme la page de garde du rapport Projet HELIOS (Cabinet Verrière).",
         screenshotTrace:
-          "Le titre de la page 1 sert d'ancrage avant de citer l'abstract. Cette étape simule la vérification visuelle utilisée quand une réponse doit être auditée au-delà du texte extrait.",
+          "La page de garde identifie l'émetteur (Cabinet Verrière), l'opération (Projet HELIOS) et la cible (Groupe Méridien Logistique). Cette étape simule la vérification visuelle pour les réponses qui doivent être auditables au-delà du texte extrait.",
         lexical:
-          "Rechercher les formulations exactes du titre et de la revendication Transformer.",
+          'Rechercher les formulations exactes : EBITDA normalisé, multiple 8,0x, retraitement sous-traitance.',
         lexicalResults:
-          "Passages retrouvés et classés par utilité : titre, architecture Transformer, puis parallélisation.",
+          'Passages retrouvés et classés : synthèse p.2, pont de normalisation p.5, observation conseils p.5.',
         lexicalTrace:
-          "Le titre est sur la page 1 ; la revendication d'architecture est sur la page 2. Les résultats exacts sont conservés avec leur page pour que le clic citation ouvre le bon passage.",
+          "Le chiffre de 14,2 M€ est dans la synthèse p.2 ; le retraitement de 2,4 M€ est dans le tableau p.5 ; la remise en cause par les conseils est dans l'observation p.5. Chaque résultat est conservé avec son numéro de page pour un accès direct.",
         semantic:
-          "Faire une seconde recherche sémantique pour ne pas confondre la preuve d'architecture avec la preuve de parallélisation.",
+          "Faire une seconde recherche sémantique pour retrouver la conclusion et l'écart de valorisation.",
         semanticResults:
-          "Passage retrouvé dans l'abstract sur la parallélisation du Transformer.",
+          'Passage retrouvé dans la synthèse des risques p.7 : écart de VE de 19,2 M€ selon la qualification du retraitement.',
         semanticTrace:
-          "Je conserve le passage de parallélisation comme preuve distincte du passage sur l'architecture. Cela rend la note plus défendable : chaque phrase finale pointe vers un extrait précis.",
+          "Je conserve le passage de la recommandation (p.7) comme preuve autonome : il quantifie explicitement l'impact de la divergence (19,2 M€ d'écart) et confirme que le comité doit trancher.",
         reviewNote:
-          "The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality.",
+          "À 11,8 M€ d'EBITDA normalisé, le même multiple de 8,0x donnerait 94,4 M€, soit un écart de VE d'environ 19,2 M€.",
         generate:
-          "Composer une note courte avec une citation pour chaque affirmation vérifiable.",
+          'Composer une note structurée : chiffre synthèse, détail QoE, contradiction, impact.',
         generateTrace:
-          "La réponse finale garde les citations proches des phrases qu'elles justifient, puis ouvre le PDF sur le passage sélectionné.",
+          "La réponse finale présente d'abord la base de la synthèse (citation p.2), puis le détail des retraitements (citation p.5), puis l'avis des conseils (citation p.5), et enfin l'impact quantifié (citation p.7). Chaque phrase importante est associée à une citation cliquable.",
         thinking:
-          "Règle de rédaction : identifier le document, séparer la revendication sur l'architecture du bénéfice de parallélisation, puis garder chaque phrase importante reliée à sa page. Je dois aussi éviter de sur-vendre le papier : la réponse dit seulement ce que les passages cités prouvent, et laisse l'utilisateur ouvrir le PDF pour vérifier.",
+          "Règle de rédaction : la question exige une réponse qui compare deux sections du même document. Je dois présenter la synthèse et le détail côte à côte, puis laisser la contradiction parler d'elle-même. Le comité a besoin de voir les deux chiffres (14,2 vs 11,8 M€) et l'impact (19,2 M€) sans interprétation surajoutée. Les citations doivent permettre d'ouvrir chaque page pertinente.",
       }
     : {
         analyze:
-          "Breaking down the diligence request, required evidence and scope of the open PDF.",
+          'Breaking down the request: confirm the valuation basis, verify QoE consistency, assess multiple reliability.',
         analyzeTrace:
-          "The answer needs three separate proofs: document identity, architecture claim and parallelization benefit. I keep those objectives separate so one retrieved passage is not reused as evidence for every claim.",
-        read: "Opening the uploaded PDF fixture, reading the first pages and isolating candidate passages.",
+          "Three separate proofs needed: (1) normalized EBITDA used in the executive summary, (2) detailed EBITDA bridge adjustments, (3) the contradiction in the advisors' observation. Each has its own source page in the PDF.",
+        read: 'Opening the uploaded PDF and reading key sections: Executive Summary (p.2), Financial Analysis (p.4), Quality of Earnings (p.5).',
         readTrace:
-          "Targeted read of pages 1 and 2: the title anchors the file, while the abstract carries the technical claims. There is no reason to fan out across the full PDF while the requested evidence is in this window.",
-        screenshot: "Capturing page preview for visual verification.",
+          "Targeted read of pages 2, 4 and 5: the summary holds the valuation figure, the bridge details the adjustments, the advisors' observation reveals the contradiction. Pages 3, 6 and 7 provide context but not the direct evidence requested.",
+        screenshot: 'Capturing page preview for visual verification.',
         screenshotResponse:
-          "Visual capture confirms the Attention Is All You Need title page.",
+          'Visual capture confirms the Projet HELIOS cover page (Cabinet Verrière).',
         screenshotTrace:
-          "The page 1 title anchors the document before abstract claims are cited. This simulates the visual verification path used when an answer needs to be audited beyond extracted text.",
+          'The cover page identifies the issuer (Cabinet Verrière), the transaction (Projet HELIOS) and the target (Groupe Méridien Logistique). This simulates visual verification for answers that need to be auditable beyond extracted text.',
         lexical:
-          "Searching exact wording for the title and Transformer architecture claim.",
+          'Searching exact wording: normalized EBITDA, 8.0x multiple, subcontracting retreatment.',
         lexicalResults:
-          "Retrieved and ranked passages for title, Transformer architecture and parallelization.",
+          'Retrieved and ranked passages: summary p.2, EBITDA bridge p.5, advisors observation p.5.',
         lexicalTrace:
-          "The title is on page 1; the architecture claim is on page 2. Exact results are kept with page context so citation clicks can open the right passage.",
+          "The €14.2M figure is in the executive summary p.2; the €2.4M adjustment is in the bridge table p.5; the advisors' challenge is in the observation p.5. Each result keeps its page number for direct access.",
         semantic:
-          "Running a second semantic search so the architecture evidence is not conflated with the parallelization evidence.",
+          'Running a second semantic search to find the conclusion and valuation gap.',
         semanticResults:
-          "Retrieved the abstract passage about Transformer parallelization.",
+          'Retrieved the risk summary passage p.7: EV gap of €19.2M depending on retreatment qualification.',
         semanticTrace:
-          "Keep the parallelization passage separate from the architecture claim. That makes the memo defensible: every final sentence points to a precise source excerpt.",
+          'I keep the recommendation passage (p.7) as independent evidence: it explicitly quantifies the divergence impact (€19.2M gap) and confirms the committee must decide.',
         reviewNote:
-          "The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality.",
+          'At €11.8M normalized EBITDA, the same 8.0x multiple would give €94.4M, an EV gap of approximately €19.2M.',
         generate:
-          "Composing a short diligence note with one citation per checkable claim.",
+          'Composing a structured note: summary figure, QoE detail, contradiction, impact.',
         generateTrace:
-          "The final answer keeps citations close to the claims they support, then opens the PDF on the selected passage.",
+          "The final answer presents the summary basis first (citation p.2), then the adjustments detail (citation p.5), then the advisors' opinion (citation p.5), and finally the quantified impact (citation p.7). Each important sentence links to a clickable citation.",
         thinking:
-          "Drafting rule: identify the document, separate the architecture claim from the parallelization benefit, then keep each important sentence tied to its page. I should not overstate the paper; the answer only says what the cited passages prove and lets the user open the PDF to verify.",
+          'Drafting rule: the question requires comparing two sections of the same document. Present the summary and the detail side by side, then let the contradiction speak for itself. The committee needs to see both figures (€14.2M vs €11.8M) and the impact (€19.2M) without added interpretation. Citations must open each relevant page.',
       };
 
   return [
     {
-      action: "analyzing",
+      action: 'analyzing',
       entities: [
-        "Attention Is All You Need",
-        "Transformer",
-        "attention mechanisms",
+        'Projet HELIOS',
+        'EBITDA normalisé',
+        'retraitement sous-traitance',
       ],
-      id: "intent",
+      id: 'intent',
       queries: copy.retrievalQueries,
       reasoning: stepText.analyze,
       trace: stepText.analyzeTrace,
     },
     {
-      action: "readFileContent",
-      id: "read-file",
+      action: 'readFileContent',
+      id: 'read-file',
       reasoning: stepText.read,
       trace: stepText.readTrace,
-      toolName: "readFileContent",
+      toolName: 'readFileContent',
       toolParams: {
-        fileName: "attention-is-all-you-need.pdf",
-        pageRange: "1-2",
+        fileName: 'Rapport_DD_Projet_Helios.pdf',
+        pageRange: '2,4-5',
       },
       toolResponse: {
         chunks: [
           {
-            content: "Attention Is All You Need",
-            fileName: "attention-is-all-you-need.pdf",
-            pageNumber: 1,
+            content:
+              "Synthèse exécutive — EBITDA normalisé 2025 : 14,2 M€, multiple 8,0x, valeur d'entreprise 113,6 M€.",
+            fileName: 'Rapport_DD_Projet_Helios.pdf',
+            pageNumber: 2,
             score: 0.98,
           },
           {
             content:
-              "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
-            fileName: "attention-is-all-you-need.pdf",
-            pageNumber: 2,
+              "Pont de normalisation de l'EBITDA 2025 — retraitement « sous-traitance logistique ponctuelle » : +2,4 M€, qualifié non récurrent par le management.",
+            fileName: 'Rapport_DD_Projet_Helios.pdf',
+            pageNumber: 5,
             score: 0.95,
           },
           {
             content:
-              "The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality.",
-            fileName: "attention-is-all-you-need.pdf",
-            pageNumber: 2,
+              "Observation des conseils — les coûts de sous-traitance de 2,4 M€ correspondent à trois contrats pluriannuels reconduits sur 2023-2025. Retraités, l'EBITDA normalisé ressort à 11,8 M€.",
+            fileName: 'Rapport_DD_Projet_Helios.pdf',
+            pageNumber: 5,
             score: 0.91,
           },
         ],
         count: 3,
-        status: "ok",
+        status: 'ok',
       },
     },
     {
-      action: "screenshot",
-      id: "page-screenshot",
+      action: 'screenshot',
+      id: 'page-screenshot',
       reasoning: stepText.screenshot,
       trace: stepText.screenshotTrace,
-      toolName: "screenshot",
-      toolParams: { fileName: "attention-is-all-you-need.pdf", page: 1 },
+      toolName: 'screenshot',
+      toolParams: { fileName: 'Rapport_DD_Projet_Helios.pdf', page: 1 },
       toolResponse: {
         chunks: [
           {
             content: stepText.screenshotResponse,
-            fileName: "attention-is-all-you-need.pdf",
-            metadata: { type: "screenshot" },
+            fileName: 'Rapport_DD_Projet_Helios.pdf',
+            metadata: { type: 'screenshot' },
             pageNumber: 1,
             score: 0.94,
-            type: "image",
+            type: 'image',
           },
         ],
         count: 1,
-        status: "ok",
+        status: 'ok',
       },
     },
     {
-      action: "searching",
-      id: "lexical-search",
-      queries: ["Attention Is All You Need", "Transformer"],
+      action: 'searching',
+      id: 'lexical-search',
+      queries: [
+        'EBITDA normalisé 2025 valorisation',
+        'retraitement sous-traitance logistique',
+      ],
       reasoning: stepText.lexical,
       trace: stepText.lexicalTrace,
     },
     {
-      action: "retrieved",
+      action: 'retrieved',
       chunks: 8,
-      id: "lexical-results",
+      id: 'lexical-results',
       reasoning: stepText.lexicalResults,
       trace: stepText.lexicalTrace,
-      toolName: "search",
+      toolName: 'search',
       toolResponse: {
         chunks: [
           {
-            content: copy.document.articleOne,
-            fileName: "attention-is-all-you-need.pdf",
-            metadata: { section: "title", type: "text" },
-            pageNumber: 1,
+            content: copy.document.title,
+            fileName: 'Rapport_DD_Projet_Helios.pdf',
+            metadata: { section: 'Synthèse exécutive', type: 'text' },
+            pageNumber: 2,
             score: 0.91,
           },
           {
-            content: copy.document.verifiedClause,
-            fileName: "attention-is-all-you-need.pdf",
-            metadata: { section: "abstract", type: "text" },
+            content: copy.document.articleOne,
+            fileName: 'Rapport_DD_Projet_Helios.pdf',
+            metadata: { section: 'Synthèse exécutive', type: 'text' },
             pageNumber: 2,
             score: 0.89,
           },
           {
             content: copy.document.articleThree,
-            fileName: "attention-is-all-you-need.pdf",
-            metadata: { section: "abstract", type: "text" },
-            pageNumber: 2,
+            fileName: 'Rapport_DD_Projet_Helios.pdf',
+            metadata: { section: 'Quality of Earnings', type: 'text' },
+            pageNumber: 5,
             score: 0.84,
           },
         ],
         count: 3,
-        status: "ok",
+        status: 'ok',
       },
       topScore: 0.91,
     },
     {
-      action: "searching",
-      id: "semantic-search",
-      queries: ["Transformer based solely on attention mechanisms"],
+      action: 'searching',
+      id: 'semantic-search',
+      queries: ['impact écart valorisation EBITDA normalisé comité'],
       reasoning: stepText.semantic,
       trace: stepText.semanticTrace,
     },
     {
-      action: "retrieved",
+      action: 'retrieved',
       chunks: 12,
-      id: "semantic-results",
+      id: 'semantic-results',
       reasoning: stepText.semanticResults,
       trace: stepText.semanticTrace,
-      toolName: "search",
+      toolName: 'search',
       toolResponse: {
         chunks: [
           {
             content: copy.document.verifiedClause,
-            fileName: "attention-is-all-you-need.pdf",
-            metadata: { section: "abstract", type: "text" },
-            pageNumber: 2,
+            fileName: 'Rapport_DD_Projet_Helios.pdf',
+            metadata: { section: 'Observation des conseils', type: 'text' },
+            pageNumber: 5,
             score: 0.86,
           },
           {
             content: stepText.reviewNote,
-            fileName: "attention-is-all-you-need.pdf",
-            metadata: { section: "abstract", type: "text" },
-            pageNumber: 2,
+            fileName: 'Rapport_DD_Projet_Helios.pdf',
+            metadata: { section: 'Synthèse des risques', type: 'text' },
+            pageNumber: 7,
             score: 0.74,
           },
         ],
         count: 2,
-        status: "ok",
+        status: 'ok',
       },
       topScore: 0.86,
     },
     {
-      action: "generating",
-      id: "answer",
+      action: 'generating',
+      id: 'answer',
       reasoning: stepText.generate,
       trace: stepText.generateTrace,
       thinking: `${copy.reasoning}\n\n${stepText.thinking}`,

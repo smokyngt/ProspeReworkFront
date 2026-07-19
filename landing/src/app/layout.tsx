@@ -10,7 +10,7 @@ import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 
 const siteDescription =
-  "Déployez des assistants sourcés pour vos documents confidentiels avec recherche hybride, permissions, audit et contrôle du déploiement.";
+  "Déployez Prosperify Agent sur vos stores documentaires confidentiels, avec recherche hybride, permissions, audit et contrôle du déploiement.";
 const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
 
 const inter = Inter({
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Prosperify - Intelligence documentaire gouvernée",
     description:
-      "Assistants sourcés pour les connaissances confidentielles de l'entreprise.",
+      "Prosperify Agent, sourcé, sur les connaissances confidentielles de l'entreprise.",
     url: "https://prosperify.app",
     siteName: "Prosperify",
     images: [

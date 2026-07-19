@@ -1,11 +1,11 @@
-import type { getDemoUi } from "./demo-ui";
-import type { Step } from "react-joyride";
+import type { getDemoUi } from './demo-ui';
+import type { Step } from 'react-joyride';
 export function getGuidedTourSteps(
   ui: ReturnType<typeof getDemoUi>,
   isMobile = false,
 ): Step[] {
-  const edgePlacement = isMobile ? "center" : "right";
-  const documentPlacement = isMobile ? "center" : "left";
+  const edgePlacement = isMobile ? 'center' : 'right';
+  const documentPlacement = isMobile ? 'center' : 'left';
 
   return [
     {
@@ -28,7 +28,7 @@ export function getGuidedTourSteps(
     },
     {
       content: ui.tourSendContent,
-      placement: isMobile ? "center" : "top",
+      placement: isMobile ? 'center' : 'top',
       skipBeacon: true,
       skipScroll: true,
       target: "[data-demo-tour='send']",
@@ -36,7 +36,7 @@ export function getGuidedTourSteps(
     },
     {
       content: ui.tourOrchestrationContent,
-      placement: "center",
+      placement: 'center',
       skipBeacon: true,
       skipScroll: true,
       targetWaitTimeout: 8000,

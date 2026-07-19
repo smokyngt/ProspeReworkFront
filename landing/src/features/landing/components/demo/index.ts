@@ -1,1 +1,1 @@
-export * from "./document-intelligence-demo";
+export * from './document-intelligence-demo';

@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import "react-pdf/dist/esm/Page/TextLayer.css";
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
 
 import {
   ChevronDown,
@@ -22,29 +22,35 @@ import {
   X,
   ZoomIn,
   ZoomOut,
-} from "lucide-react";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { createPortal } from "react-dom";
-import { useTranslation } from "react-i18next";
+} from 'lucide-react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
+import { useTranslation } from 'react-i18next';
 import {
   ACTIONS,
   type EventData,
   EVENTS,
   Joyride,
   STATUS,
-} from "react-joyride";
-import { Document, Page, pdfjs } from "react-pdf";
+} from 'react-joyride';
+import { Document, Page, pdfjs } from 'react-pdf';
 
-import { Safari } from "@/components/shared";
-import { Button } from "@/components/ui/button";
+import { Safari } from '@/components/shared';
+import { Button } from '@/components/ui/button';
 import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/components/ui/resizable";
-import { cn } from "@/lib/utils";
+} from '@/components/ui/resizable';
+import {
+  applyLandingTheme,
+  getCurrentLandingTheme,
+  initializeLandingTheme,
+  LANDING_THEME_CHANGE_EVENT,
+} from '@/features/landing/lib/theme';
+import { cn } from '@/lib/utils';
 
-import { ChatPanel, Spinner, ThreadSidebar } from "./chat";
+import { ChatPanel, Spinner, ThreadSidebar } from './chat';
 import {
   demoChunks,
   demoDocumentConfig,
@@ -52,22 +58,22 @@ import {
   demoOrchestrationDelays,
   demoPdfLines,
   demoPdfUrl,
-} from "./demo-config";
-import { getDemoCopy } from "./demo-copy";
-import { buildSteps } from "./demo-steps";
-import { getGuidedTourSteps } from "./demo-tour";
-import { getDemoUi } from "./demo-ui";
+} from './demo-config';
+import { getDemoCopy } from './demo-copy';
+import { buildSteps } from './demo-steps';
+import { getGuidedTourSteps } from './demo-tour';
+import { getDemoUi } from './demo-ui';
 import {
   fuzzyMatch,
   readTextLayer,
   styleTextLayerSpans,
   type TextHit,
-} from "./pdf-highlight";
+} from './pdf-highlight';
 
-import type { DemoCitation, DemoMessage } from "./demo-types";
-import type { PDFDocumentProxy } from "pdfjs-dist";
+import type { DemoCitation, DemoMessage } from './demo-types';
+import type { PDFDocumentProxy } from 'pdfjs-dist';
 
-pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
+pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
 
 const sourcePanelIcons = {
   chunks: Layers,
@@ -131,20 +137,20 @@ function PdfSidebar({
   sourcePanelOpen,
 }: {
   activeCitation: DemoCitation;
-  activeTab: "chunks" | "entities" | "metadata";
+  activeTab: 'chunks' | 'entities' | 'metadata';
   citationFocusTick: number;
   sourceOnly?: boolean;
   onSourcePanelOpenChange: (open: boolean) => void;
-  onTabChange: (tab: "chunks" | "entities" | "metadata") => void;
+  onTabChange: (tab: 'chunks' | 'entities' | 'metadata') => void;
   sourcePanelOpen: boolean;
 }) {
   const { i18n } = useTranslation();
   const ui = useMemo(() => getDemoUi(i18n.language), [i18n.language]);
   const [findOpen, setFindOpen] = useState(false);
-  const [findQuery, setFindQuery] = useState("");
-  const [highlightQuery, setHighlightQuery] = useState("");
-  const [highlightedEntity, setHighlightedEntity] = useState("");
-  const [entityFilter, setEntityFilter] = useState("");
+  const [findQuery, setFindQuery] = useState('');
+  const [highlightQuery, setHighlightQuery] = useState('');
+  const [highlightedEntity, setHighlightedEntity] = useState('');
+  const [entityFilter, setEntityFilter] = useState('');
   const [findIndex, setFindIndex] = useState(0);
   const [pageNumber, setPageNumber] = useState(activeCitation.page);
   const [zoom, setZoom] = useState(100);
@@ -155,6 +161,27 @@ function PdfSidebar({
   const [numPages, setNumPages] = useState(demoDocumentConfig.pdf.totalPages);
   const [pageRenderTick, setPageRenderTick] = useState(0);
   const [pdfLoadError, setPdfLoadError] = useState(false);
+  const [viewerWidth, setViewerWidth] = useState(0);
+  useEffect(() => {
+    const container = scrollRef.current;
+    if (!container) {
+      return;
+    }
+
+    const updateWidth = () => setViewerWidth(container.clientWidth);
+    updateWidth();
+
+    const observer = new ResizeObserver(updateWidth);
+    observer.observe(container);
+
+    return () => observer.disconnect();
+  }, []);
+
+  const mobilePageWidth =
+    viewerWidth > 0 && viewerWidth < 640
+      ? Math.max(280, viewerWidth - 24)
+      : undefined;
+
   const scrollPdfToElement = useCallback((element: HTMLElement | undefined) => {
     const container = scrollRef.current;
     if (!container || !element) {
@@ -171,7 +198,7 @@ function PdfSidebar({
       elementRect.height / 2;
 
     container.scrollTo({
-      behavior: "smooth",
+      behavior: 'smooth',
       top: Math.max(0, nextTop),
     });
   }, []);
@@ -183,13 +210,13 @@ function PdfSidebar({
     }
     const citationQuery =
       activeCitation.highlightText ??
-      activeCitation.quote.replace("...", "").trim();
+      activeCitation.quote.replace('...', '').trim();
     if (citationQuery) {
       setFindOpen(false);
-      setFindQuery("");
+      setFindQuery('');
       setHighlightQuery(citationQuery);
       setFindIndex(0);
-      setHighlightedEntity("");
+      setHighlightedEntity('');
     }
   }, [
     activeCitation.highlightText,
@@ -209,7 +236,7 @@ function PdfSidebar({
 
     for (const chunk of chunks) {
       for (const entity of chunk.entities) {
-        const key = `${entity.text.toLowerCase()}::${entity.type ?? ""}`;
+        const key = `${entity.text.toLowerCase()}::${entity.type ?? ''}`;
         const current = map.get(key);
         if (current) {
           current.count += 1;
@@ -233,7 +260,7 @@ function PdfSidebar({
     ? entities.filter(
         (entity) =>
           entity.label.toLowerCase().includes(entityFilter.toLowerCase()) ||
-          (entity.type ?? "")
+          (entity.type ?? '')
             .toLowerCase()
             .includes(entityFilter.toLowerCase()),
       )
@@ -277,7 +304,7 @@ function PdfSidebar({
     (spans: HTMLElement[] | undefined, active: boolean) => {
       for (const span of spans ?? []) {
         const marks =
-          span.dataset.demoPdfHighlight === "true"
+          span.dataset.demoPdfHighlight === 'true'
             ? [span]
             : Array.from(
                 span.querySelectorAll<HTMLElement>(
@@ -287,11 +314,11 @@ function PdfSidebar({
 
         for (const mark of marks) {
           mark.style.backgroundColor = active
-            ? "rgba(16, 185, 129, 0.48)"
-            : "rgba(34, 197, 94, 0.34)";
+            ? 'rgba(16, 185, 129, 0.48)'
+            : 'rgba(34, 197, 94, 0.34)';
           mark.style.boxShadow = active
-            ? "0 0 0 1px rgba(5, 150, 105, 0.25)"
-            : "none";
+            ? '0 0 0 1px rgba(5, 150, 105, 0.25)'
+            : 'none';
         }
       }
     },
@@ -301,20 +328,20 @@ function PdfSidebar({
   useEffect(() => {
     window.getSelection()?.removeAllRanges();
     for (const element of markedRef.current) {
-      if (element.dataset.demoPdfHighlight === "true") {
+      if (element.dataset.demoPdfHighlight === 'true') {
         element.remove();
         continue;
       }
-      element.style.removeProperty("background-color");
-      element.style.removeProperty("background-image");
-      element.style.removeProperty("background-repeat");
-      element.style.removeProperty("background-size");
-      element.style.removeProperty("border-radius");
-      element.style.removeProperty("box-decoration-break");
-      element.style.removeProperty("box-shadow");
-      element.style.removeProperty("mix-blend-mode");
-      element.style.removeProperty("outline");
-      element.style.removeProperty("-webkit-box-decoration-break");
+      element.style.removeProperty('background-color');
+      element.style.removeProperty('background-image');
+      element.style.removeProperty('background-repeat');
+      element.style.removeProperty('background-size');
+      element.style.removeProperty('border-radius');
+      element.style.removeProperty('box-decoration-break');
+      element.style.removeProperty('box-shadow');
+      element.style.removeProperty('mix-blend-mode');
+      element.style.removeProperty('outline');
+      element.style.removeProperty('-webkit-box-decoration-break');
     }
     markedRef.current = [];
     setTextHits([]);
@@ -350,8 +377,8 @@ function PdfSidebar({
         readyPages += 1;
 
         const hay = layer.raw.toLowerCase();
-        const normalizedHay = hay.replace(/\s+/g, " ");
-        const normalizedQuery = query.replace(/\s+/g, " ");
+        const normalizedHay = hay.replace(/\s+/g, ' ');
+        const normalizedQuery = query.replace(/\s+/g, ' ');
         let match = null as null | { end: number; start: number };
         const exactIndex = hay.indexOf(query);
         if (exactIndex !== -1) {
@@ -449,10 +476,10 @@ function PdfSidebar({
     <div
       data-demo-tour="entities"
       className={cn(
-        "flex min-h-0 flex-col border-l border-border/40 bg-background",
+        'flex min-h-0 flex-col border-l border-border/40 bg-background',
         sourceOnly
-          ? "h-full w-full border-l-0"
-          : "hidden w-56 shrink-0 lg:flex",
+          ? 'h-full w-full border-l-0'
+          : 'hidden w-56 shrink-0 lg:flex',
       )}
     >
       <div className="grid grid-cols-3 gap-1 border-b border-border/40 bg-muted/20 p-1.5">
@@ -464,10 +491,10 @@ function PdfSidebar({
             <button
               key={value}
               className={cn(
-                "flex items-center justify-center gap-1 rounded-md px-1 py-1 text-[10px] font-medium transition-all",
+                'flex items-center justify-center gap-1 rounded-md px-1 py-1 text-[10px] font-medium transition-all',
                 activeTab === value
-                  ? "border border-border/50 bg-background text-foreground shadow-sm"
-                  : "text-muted-foreground hover:bg-muted/60 hover:text-foreground",
+                  ? 'border border-border/50 bg-background text-foreground shadow-sm'
+                  : 'text-muted-foreground hover:bg-muted/60 hover:text-foreground',
               )}
               onClick={() => onTabChange(value)}
             >
@@ -478,7 +505,7 @@ function PdfSidebar({
         })}
       </div>
       <div className="min-h-0 flex-1 overflow-y-auto p-3 text-xs">
-        {activeTab === "entities" ? (
+        {activeTab === 'entities' ? (
           <div className="flex h-full min-h-0 flex-col">
             <div className="px-0 pb-2">
               <div className="relative">
@@ -502,7 +529,7 @@ function PdfSidebar({
                 <span className="shrink-0 text-[10px] tabular-nums text-muted-foreground">
                   {effectiveHitCount > 0
                     ? `${Math.min(findIndex + 1, effectiveHitCount)}/${effectiveHitCount}`
-                    : "0/0"}
+                    : '0/0'}
                 </span>
                 <button
                   className="shrink-0 rounded p-0.5 hover:bg-primary/10"
@@ -526,15 +553,15 @@ function PdfSidebar({
 
                 return (
                   <button
-                    key={`${entity.label}-${entity.type ?? "entity"}-${index}`}
+                    key={`${entity.label}-${entity.type ?? 'entity'}-${index}`}
                     className={cn(
-                      "group inline-flex max-w-full items-center rounded-full border px-2 py-1 text-[10px] font-medium shadow-sm transition-colors hover:bg-primary hover:text-primary-foreground dark:hover:border-orange-500 dark:hover:bg-orange-500 dark:hover:text-white",
+                      'group inline-flex max-w-full items-center rounded-full border px-2 py-1 text-[10px] font-medium shadow-sm transition-colors hover:bg-primary hover:text-primary-foreground dark:hover:border-orange-500 dark:hover:bg-orange-500 dark:hover:text-white',
                       isActive
-                        ? "border-primary bg-primary/10 text-primary ring-1 ring-primary dark:border-orange-500 dark:bg-orange-500/15 dark:text-orange-200 dark:ring-orange-500/70"
-                        : "border-neutral-200 bg-white text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200",
+                        ? 'border-primary bg-primary/10 text-primary ring-1 ring-primary dark:border-orange-500 dark:bg-orange-500/15 dark:text-orange-200 dark:ring-orange-500/70'
+                        : 'border-neutral-200 bg-white text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200',
                     )}
                     onClick={() => {
-                      const next = isActive ? "" : entity.label;
+                      const next = isActive ? '' : entity.label;
                       setHighlightedEntity(next);
                       setFindOpen(Boolean(next));
                       setFindQuery(next);
@@ -551,11 +578,11 @@ function PdfSidebar({
                     ) : null}
                     <span className="ml-1 text-[9px] opacity-70">
                       {entity.pages.length <= 3
-                        ? entity.pages.map((page) => `p.${page}`).join(", ")
+                        ? entity.pages.map((page) => `p.${page}`).join(', ')
                         : `${entity.pages
                             .slice(0, 2)
                             .map((page) => `p.${page}`)
-                            .join(", ")} +${entity.pages.length - 2}`}
+                            .join(', ')} +${entity.pages.length - 2}`}
                     </span>
                   </button>
                 );
@@ -563,7 +590,7 @@ function PdfSidebar({
             </div>
           </div>
         ) : null}
-        {activeTab === "metadata" ? (
+        {activeTab === 'metadata' ? (
           <div className="space-y-1.5 text-muted-foreground">
             {demoDocumentConfig.metadataRows.map((row) => {
               const label = row.labelKey
@@ -595,7 +622,7 @@ function PdfSidebar({
             })}
           </div>
         ) : null}
-        {activeTab === "chunks" ? (
+        {activeTab === 'chunks' ? (
           <div className="space-y-2">
             <p className="px-1 text-[10px] text-muted-foreground">
               {chunks.length} {ui.chunks}
@@ -684,13 +711,34 @@ function PdfSidebar({
           <Button
             variant="ghost"
             size="icon"
+            className="h-7 w-7 text-muted-foreground hover:text-foreground lg:hidden"
+            aria-label={
+              sourcePanelOpen ? 'Close entity rail' : 'Open entity rail'
+            }
+            onClick={() => {
+              const next = !sourcePanelOpen;
+              if (next) {
+                onTabChange('entities');
+              }
+              onSourcePanelOpenChange(next);
+            }}
+          >
+            {sourcePanelOpen ? (
+              <PanelRightClose className="h-4 w-4" />
+            ) : (
+              <PanelRightOpen className="h-4 w-4" />
+            )}
+          </Button>
+          <Button
+            variant="ghost"
+            size="icon"
             className="h-7 w-7 text-muted-foreground hover:text-foreground"
             aria-label={ui.pdfSearch}
             onClick={() => {
               setFindOpen((open) => {
                 const next = !open;
                 if (next) {
-                  setFindQuery("");
+                  setFindQuery('');
                 }
                 return next;
               });
@@ -777,7 +825,7 @@ function PdfSidebar({
             onChange={(event) => {
               setFindQuery(event.target.value);
               setHighlightQuery(event.target.value);
-              setHighlightedEntity("");
+              setHighlightedEntity('');
             }}
             className="h-7 min-w-0 flex-1 rounded-md border border-border/50 bg-background px-2 text-xs outline-none focus:border-primary/40"
             placeholder={ui.pdfSearch}
@@ -812,9 +860,9 @@ function PdfSidebar({
             aria-label={ui.closeReview}
             onClick={() => {
               setFindOpen(false);
-              setFindQuery("");
-              setHighlightQuery("");
-              setHighlightedEntity("");
+              setFindQuery('');
+              setHighlightQuery('');
+              setHighlightedEntity('');
             }}
           >
             <X className="h-3.5 w-3.5" />
@@ -822,10 +870,11 @@ function PdfSidebar({
         </div>
       ) : null}
 
-      <div className="flex min-h-0 flex-1">
+      <div className="relative flex min-h-0 flex-1">
         <div
           ref={scrollRef}
-          className="min-w-0 flex-1 overflow-y-auto bg-muted/20 p-4 scrollbar-thin"
+          className="min-w-0 flex-1 overflow-auto bg-muted/20 p-3 scrollbar-thin sm:p-4"
+          style={{ touchAction: 'pan-x pan-y pinch-zoom' }}
         >
           {pdfLoadError ? (
             <PdfLoadError onRetry={() => setPdfLoadError(false)} />
@@ -843,7 +892,7 @@ function PdfSidebar({
               }}
             >
               <div
-                className="mx-auto flex w-fit flex-col gap-4"
+                className="mx-auto flex w-fit max-w-full flex-col gap-4"
                 data-demo-pdf-pages
               >
                 {Array.from({ length: numPages }, (_, index) => index + 1).map(
@@ -858,8 +907,8 @@ function PdfSidebar({
                         }
                       }}
                       className={cn(
-                        "relative overflow-hidden rounded border border-border/60 bg-white shadow-sm",
-                        pageNumber === page && "ring-1 ring-primary/25",
+                        'relative overflow-hidden rounded border border-border/60 bg-white shadow-sm',
+                        pageNumber === page && 'ring-1 ring-primary/25',
                       )}
                       data-page={page}
                     >
@@ -870,6 +919,7 @@ function PdfSidebar({
                         pageNumber={page}
                         renderAnnotationLayer
                         renderTextLayer
+                        width={mobilePageWidth}
                         scale={Math.max(0.75, Math.min(1.5, zoom / 100))}
                       />
                     </div>
@@ -885,12 +935,12 @@ function PdfSidebar({
             size="icon"
             className="h-7 w-7"
             aria-label={
-              sourcePanelOpen ? "Close entity rail" : "Open entity rail"
+              sourcePanelOpen ? 'Close entity rail' : 'Open entity rail'
             }
             onClick={() => {
               const next = !sourcePanelOpen;
               if (next) {
-                onTabChange("entities");
+                onTabChange('entities');
               }
               onSourcePanelOpenChange(next);
             }}
@@ -905,7 +955,7 @@ function PdfSidebar({
         {sourcePanelOpen ? (
           <div
             data-demo-tour="entities"
-            className="hidden w-56 shrink-0 flex-col border-l border-border/40 bg-background lg:flex"
+            className="absolute inset-y-0 right-0 z-40 flex w-[min(84vw,20rem)] shrink-0 flex-col border-l border-border/40 bg-background shadow-2xl lg:static lg:w-56 lg:shadow-none"
           >
             <div className="grid grid-cols-3 gap-1 border-b border-border/40 bg-muted/20 p-1.5">
               {demoDocumentConfig.sourcePanelTabs.map(
@@ -917,10 +967,10 @@ function PdfSidebar({
                     <button
                       key={value}
                       className={cn(
-                        "flex items-center justify-center gap-1 rounded-md px-1 py-1 text-[10px] font-medium transition-all",
+                        'flex items-center justify-center gap-1 rounded-md px-1 py-1 text-[10px] font-medium transition-all',
                         activeTab === value
-                          ? "border border-border/50 bg-background text-foreground shadow-sm"
-                          : "text-muted-foreground hover:bg-muted/60 hover:text-foreground",
+                          ? 'border border-border/50 bg-background text-foreground shadow-sm'
+                          : 'text-muted-foreground hover:bg-muted/60 hover:text-foreground',
                       )}
                       onClick={() => onTabChange(value)}
                     >
@@ -932,7 +982,7 @@ function PdfSidebar({
               )}
             </div>
             <div className="min-h-0 flex-1 overflow-y-auto p-3 text-xs">
-              {activeTab === "entities" ? (
+              {activeTab === 'entities' ? (
                 <div className="flex h-full min-h-0 flex-col">
                   <div className="px-0 pb-2">
                     <div className="relative">
@@ -958,7 +1008,7 @@ function PdfSidebar({
                       <span className="shrink-0 text-[10px] tabular-nums text-muted-foreground">
                         {effectiveHitCount > 0
                           ? `${Math.min(findIndex + 1, effectiveHitCount)}/${effectiveHitCount}`
-                          : "0/0"}
+                          : '0/0'}
                       </span>
                       <button
                         className="shrink-0 rounded p-0.5 hover:bg-primary/10"
@@ -982,15 +1032,15 @@ function PdfSidebar({
 
                       return (
                         <button
-                          key={`${entity.label}-${entity.type ?? "entity"}-${index}`}
+                          key={`${entity.label}-${entity.type ?? 'entity'}-${index}`}
                           className={cn(
-                            "group inline-flex max-w-full items-center rounded-full border px-2 py-1 text-[10px] font-medium shadow-sm transition-colors hover:bg-primary hover:text-primary-foreground dark:hover:border-orange-500 dark:hover:bg-orange-500 dark:hover:text-white",
+                            'group inline-flex max-w-full items-center rounded-full border px-2 py-1 text-[10px] font-medium shadow-sm transition-colors hover:bg-primary hover:text-primary-foreground dark:hover:border-orange-500 dark:hover:bg-orange-500 dark:hover:text-white',
                             isActive
-                              ? "border-primary bg-primary/10 text-primary ring-1 ring-primary dark:border-orange-500 dark:bg-orange-500/15 dark:text-orange-200 dark:ring-orange-500/70"
-                              : "border-neutral-200 bg-white text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200",
+                              ? 'border-primary bg-primary/10 text-primary ring-1 ring-primary dark:border-orange-500 dark:bg-orange-500/15 dark:text-orange-200 dark:ring-orange-500/70'
+                              : 'border-neutral-200 bg-white text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200',
                           )}
                           onClick={() => {
-                            const next = isActive ? "" : entity.label;
+                            const next = isActive ? '' : entity.label;
                             setHighlightedEntity(next);
                             setFindOpen(Boolean(next));
                             setFindQuery(next);
@@ -1009,11 +1059,11 @@ function PdfSidebar({
                             {entity.pages.length <= 3
                               ? entity.pages
                                   .map((page) => `p.${page}`)
-                                  .join(", ")
+                                  .join(', ')
                               : `${entity.pages
                                   .slice(0, 2)
                                   .map((page) => `p.${page}`)
-                                  .join(", ")} +${entity.pages.length - 2}`}
+                                  .join(', ')} +${entity.pages.length - 2}`}
                           </span>
                         </button>
                       );
@@ -1021,7 +1071,7 @@ function PdfSidebar({
                   </div>
                 </div>
               ) : null}
-              {activeTab === "metadata" ? (
+              {activeTab === 'metadata' ? (
                 <div className="space-y-1.5 text-muted-foreground">
                   {demoDocumentConfig.metadataRows.map((row) => {
                     const label = row.labelKey
@@ -1053,7 +1103,7 @@ function PdfSidebar({
                   })}
                 </div>
               ) : null}
-              {activeTab === "chunks" ? (
+              {activeTab === 'chunks' ? (
                 <div className="space-y-2">
                   <p className="px-1 text-[10px] text-muted-foreground">
                     {chunks.length} {ui.chunks}
@@ -1120,23 +1170,18 @@ export function DocumentIntelligenceDemo() {
 
   const [activeCitation, setActiveCitation] = useState(copy.citations[0]);
   const [activePdfTab, setActivePdfTab] = useState<
-    "chunks" | "entities" | "metadata"
-  >("entities");
+    'chunks' | 'entities' | 'metadata'
+  >('entities');
   const [currentStepIndex, setCurrentStepIndex] = useState(-1);
   const [documentOpen, setDocumentOpen] = useState(false);
   const [isRunning, setIsRunning] = useState(false);
   const [messages, setMessages] = useState<DemoMessage[]>([]);
-  const [streamedText, setStreamedText] = useState("");
+  const [streamedText, setStreamedText] = useState('');
   const [threadOpen, setThreadOpen] = useState(true);
   const [fullscreen, setFullscreen] = useState(false);
   const [hasRun, setHasRun] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const [demoDark, setDemoDark] = useState(() => {
-    if (typeof window === "undefined") {
-      return false;
-    }
-    return document.documentElement.classList.contains("dark");
-  });
+  const [demoDark, setDemoDark] = useState(false);
   const [citationFocusTick, setCitationFocusTick] = useState(0);
   const [documentEmpty, setDocumentEmpty] = useState(false);
   const [sourcePanelOpen, setSourcePanelOpen] = useState(false);
@@ -1149,17 +1194,17 @@ export function DocumentIntelligenceDemo() {
   );
 
   useEffect(() => {
-    const mql = window.matchMedia("(max-width: 767px)");
+    const mql = window.matchMedia('(max-width: 767px)');
     setIsMobile(mql.matches);
     const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
-    mql.addEventListener("change", handler);
-    return () => mql.removeEventListener("change", handler);
+    mql.addEventListener('change', handler);
+    return () => mql.removeEventListener('change', handler);
   }, []);
 
   const resetDemo = useCallback(
     (options?: { keepFullscreen?: boolean }) => {
       setActiveCitation(copy.citations[0]);
-      setActivePdfTab("entities");
+      setActivePdfTab('entities');
       setCurrentStepIndex(-1);
       setDocumentOpen(false);
       setDocumentEmpty(false);
@@ -1167,7 +1212,7 @@ export function DocumentIntelligenceDemo() {
       setIsRunning(false);
       setMessages([]);
       setSourcePanelOpen(false);
-      setStreamedText("");
+      setStreamedText('');
       setThreadOpen(true);
       setTourRun(false);
       setTourStep(0);
@@ -1184,38 +1229,28 @@ export function DocumentIntelligenceDemo() {
 
   useEffect(() => {
     const syncDemoTheme = () => {
-      const nextDark = document.documentElement.classList.contains("dark");
+      const nextDark = getCurrentLandingTheme() === 'dark';
       setDemoDark((current) => (current === nextDark ? current : nextDark));
     };
 
-    syncDemoTheme();
+    setDemoDark(initializeLandingTheme());
 
     const observer = new MutationObserver(syncDemoTheme);
     observer.observe(document.documentElement, {
-      attributeFilter: ["class"],
+      attributeFilter: ['class'],
       attributes: true,
     });
 
-    window.addEventListener("prosperify-theme-change", syncDemoTheme);
+    window.addEventListener(LANDING_THEME_CHANGE_EVENT, syncDemoTheme);
 
     return () => {
       observer.disconnect();
-      window.removeEventListener("prosperify-theme-change", syncDemoTheme);
+      window.removeEventListener(LANDING_THEME_CHANGE_EVENT, syncDemoTheme);
     };
   }, []);
 
   const setSyncedTheme = useCallback((nextDark: boolean) => {
-    document.documentElement.classList.toggle("dark", nextDark);
-    window.localStorage.setItem(
-      "prosperify-theme",
-      nextDark ? "dark" : "light",
-    );
-    window.dispatchEvent(
-      new CustomEvent("prosperify-theme-change", {
-        detail: { dark: nextDark },
-      }),
-    );
-    setDemoDark(nextDark);
+    setDemoDark(applyLandingTheme(nextDark ? 'dark' : 'light'));
   }, []);
 
   useEffect(() => {
@@ -1229,7 +1264,7 @@ export function DocumentIntelligenceDemo() {
     }
 
     const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = 'hidden';
 
     return () => {
       document.body.style.overflow = previousOverflow;
@@ -1242,14 +1277,14 @@ export function DocumentIntelligenceDemo() {
     }
 
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
+      if (event.key === 'Escape') {
         resetDemo();
       }
     };
 
-    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener('keydown', handleKeyDown);
 
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, [fullscreen, resetDemo]);
 
   const runDemo = useCallback(() => {
@@ -1259,8 +1294,8 @@ export function DocumentIntelligenceDemo() {
 
     setHasRun(true);
     setIsRunning(true);
-    setMessages([{ role: "user", text: copy.question }]);
-    setStreamedText("");
+    setMessages([{ role: 'user', text: copy.question }]);
+    setStreamedText('');
     setCurrentStepIndex(-1);
 
     let elapsed = 0;
@@ -1272,29 +1307,30 @@ export function DocumentIntelligenceDemo() {
     });
 
     window.setTimeout(() => {
-      const words = copy.finalAnswer.split(" ");
+      const words = copy.finalAnswer.split(' ');
       let cursor = 0;
 
       const streamNext = () => {
         cursor += 1;
-        setStreamedText(words.slice(0, cursor).join(" "));
+        setStreamedText(words.slice(0, cursor).join(' '));
 
         if (cursor >= words.length) {
           setIsRunning(false);
           setCurrentStepIndex(steps.length - 1);
           setMessages([
-            { role: "user", text: copy.question },
+            { role: 'user', text: copy.question },
             {
               citations: copy.citations,
-              role: "assistant",
+              hallucinations: copy.hallucinations,
+              role: 'assistant',
               text: copy.finalAnswer,
             },
           ]);
-          setStreamedText("");
+          setStreamedText('');
           return;
         }
 
-        const lastWord = words[Math.max(0, cursor - 1)] ?? "";
+        const lastWord = words[Math.max(0, cursor - 1)] ?? '';
         const pause = /[.:;]$/.test(lastWord)
           ? 320
           : /[,]$/.test(lastWord)
@@ -1310,6 +1346,7 @@ export function DocumentIntelligenceDemo() {
   }, [
     copy.citations,
     copy.finalAnswer,
+    copy.hallucinations,
     copy.question,
     hasRun,
     isRunning,
@@ -1317,7 +1354,7 @@ export function DocumentIntelligenceDemo() {
   ]);
 
   const hasAssistantAnswer = messages.some(
-    (message) => message.role === "assistant",
+    (message) => message.role === 'assistant',
   );
 
   const openEmptyDocumentWorkspace = useCallback(() => {
@@ -1336,12 +1373,17 @@ export function DocumentIntelligenceDemo() {
 
   const handleRunDemo = useCallback(() => {
     setThreadOpen(false);
-    openEmptyDocumentWorkspace();
+    if (isMobile) {
+      setDocumentOpen(false);
+      setDocumentEmpty(false);
+    } else {
+      openEmptyDocumentWorkspace();
+    }
     runDemo();
     if (tourRun && tourStep <= 2) {
       window.setTimeout(() => setTourStep(3), 650);
     }
-  }, [openEmptyDocumentWorkspace, runDemo, tourRun, tourStep]);
+  }, [isMobile, openEmptyDocumentWorkspace, runDemo, tourRun, tourStep]);
 
   useEffect(() => {
     if (!tourRun || tourStep !== 3 || !hasAssistantAnswer) {
@@ -1351,7 +1393,7 @@ export function DocumentIntelligenceDemo() {
     const timeout = window.setTimeout(() => {
       document
         .querySelector("[data-demo-tour='citations']")
-        ?.scrollIntoView({ behavior: "smooth", block: "center" });
+        ?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       setTourStep(4);
     }, 700);
 
@@ -1360,10 +1402,8 @@ export function DocumentIntelligenceDemo() {
 
   const handleCitationSelect = useCallback((citation: DemoCitation) => {
     setActiveCitation(citation);
-    setActivePdfTab("entities");
     setDocumentOpen(true);
     setDocumentEmpty(false);
-    setSourcePanelOpen(true);
     setCitationFocusTick((tick) => tick + 1);
   }, []);
 
@@ -1384,8 +1424,8 @@ export function DocumentIntelligenceDemo() {
   }, [isMobile, openEmptyDocumentWorkspace, tourRun, tourStep]);
 
   const selectMobilePanel = useCallback(
-    (panel: "threads" | "chat" | "document") => {
-      if (panel === "threads") {
+    (panel: 'threads' | 'chat' | 'document') => {
+      if (panel === 'threads') {
         setThreadOpen(true);
         setDocumentOpen(false);
         return;
@@ -1393,7 +1433,7 @@ export function DocumentIntelligenceDemo() {
 
       setThreadOpen(false);
 
-      if (panel === "document") {
+      if (panel === 'document') {
         openDocumentWorkspace();
         return;
       }
@@ -1446,7 +1486,7 @@ export function DocumentIntelligenceDemo() {
         setDocumentOpen(true);
         setDocumentEmpty(false);
         setSourcePanelOpen(true);
-        setActivePdfTab("entities");
+        setActivePdfTab('entities');
         window.setTimeout(() => setTourStep(6), 120);
         return;
       }
@@ -1455,7 +1495,7 @@ export function DocumentIntelligenceDemo() {
         setDocumentOpen(true);
         setDocumentEmpty(false);
         setSourcePanelOpen(true);
-        setActivePdfTab("metadata");
+        setActivePdfTab('metadata');
         window.setTimeout(() => setTourStep(7), 120);
         return;
       }
@@ -1495,8 +1535,8 @@ export function DocumentIntelligenceDemo() {
   const fullscreenControls = fullscreen ? (
     <div
       className={cn(
-        "client-ui relative z-[10001] flex items-center gap-1.5",
-        demoDark && "dark",
+        'client-ui relative z-[10001] flex items-center gap-1.5',
+        demoDark && 'dark',
       )}
     >
       <Button
@@ -1505,7 +1545,7 @@ export function DocumentIntelligenceDemo() {
         size="icon"
         className="h-7 w-7 rounded-full bg-background/95 shadow-sm backdrop-blur"
         onClick={() => setSyncedTheme(!demoDark)}
-        aria-label={demoDark ? "Light theme" : "Dark theme"}
+        aria-label={demoDark ? 'Light theme' : 'Dark theme'}
       >
         {demoDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
       </Button>
@@ -1529,17 +1569,17 @@ export function DocumentIntelligenceDemo() {
   const demoShell = (
     <div
       className={cn(
-        "client-ui relative overflow-hidden rounded-[8px] border border-border/60 bg-background shadow-2xl transition-all duration-500 ease-out",
-        fullscreen ? "h-full w-full" : "mx-auto w-full max-w-7xl",
-        demoDark && "dark",
+        'client-ui relative overflow-hidden rounded-[8px] border border-border/60 bg-background shadow-2xl transition-all duration-500 ease-out',
+        fullscreen ? 'h-full w-full' : 'mx-auto w-full max-w-7xl',
+        demoDark && 'dark',
       )}
     >
       <Safari
         url="prosperify.ai/chat"
         headerActions={fullscreenControls}
         className={cn(
-          "w-full",
-          fullscreen ? "h-full" : "max-sm:h-[520px] h-[720px]",
+          'w-full',
+          fullscreen ? 'h-full' : 'max-sm:h-[520px] h-[720px]',
         )}
       >
         <div className="relative h-full min-w-0 overflow-hidden bg-background text-foreground">
@@ -1584,29 +1624,29 @@ export function DocumentIntelligenceDemo() {
                     active: showThreadPanel,
                     icon: PanelLeftOpen,
                     label: ui.mobileThreads,
-                    panel: "threads" as const,
+                    panel: 'threads' as const,
                   },
                   {
                     active: showChatPanel,
                     icon: Search,
                     label: ui.mobileChat,
-                    panel: "chat" as const,
+                    panel: 'chat' as const,
                   },
                   {
                     active: showDocumentPanel,
                     icon: FileText,
                     label: ui.mobileDocument,
-                    panel: "document" as const,
+                    panel: 'document' as const,
                   },
                 ].map(({ active, icon: Icon, label, panel }) => (
                   <button
                     key={panel}
                     type="button"
                     className={cn(
-                      "flex h-9 min-w-0 items-center justify-center gap-1.5 rounded-full px-2 text-xs font-medium transition-colors",
+                      'flex h-9 min-w-0 items-center justify-center gap-1.5 rounded-full px-2 text-xs font-medium transition-colors',
                       active
-                        ? "bg-primary text-primary-foreground shadow-sm"
-                        : "text-muted-foreground hover:bg-muted hover:text-foreground",
+                        ? 'bg-primary text-primary-foreground shadow-sm'
+                        : 'text-muted-foreground hover:bg-muted hover:text-foreground',
                     )}
                     onClick={() => selectMobilePanel(panel)}
                   >
@@ -1643,7 +1683,6 @@ export function DocumentIntelligenceDemo() {
                     citationFocusTick={citationFocusTick}
                     onSourcePanelOpenChange={setSourcePanelOpen}
                     onTabChange={setActivePdfTab}
-                    sourceOnly
                     sourcePanelOpen={sourcePanelOpen}
                   />
                 )
@@ -1729,7 +1768,7 @@ export function DocumentIntelligenceDemo() {
                   />
                   <ResizablePanel
                     id="chat-docs"
-                    defaultSize={showThreadPanel ? "44%" : "52%"}
+                    defaultSize={showThreadPanel ? '44%' : '52%'}
                     minSize="18%"
                     maxSize="68%"
                     collapsible
@@ -1758,7 +1797,7 @@ export function DocumentIntelligenceDemo() {
       {!fullscreen ? (
         <button
           type="button"
-          className="absolute inset-0 z-50 flex items-center justify-center bg-background/40 backdrop-blur-[2px] focus-visible:outline-none"
+          className="absolute inset-0 z-50 flex items-center justify-center bg-background/45 opacity-100 backdrop-blur-[1px] transition-all duration-300 focus-visible:outline-none sm:bg-background/5 sm:opacity-0 sm:hover:bg-background/45 sm:hover:opacity-100 sm:focus-visible:bg-background/45 sm:focus-visible:opacity-100"
           onClick={openInteractiveDemo}
           aria-label={ui.openReview}
         >
@@ -1785,21 +1824,21 @@ export function DocumentIntelligenceDemo() {
           }}
           onEvent={handleTour}
           options={{
-            arrowColor: demoDark ? "hsl(240 10% 3.9%)" : "#fff",
-            backgroundColor: demoDark ? "hsl(240 10% 3.9%)" : "#fff",
+            arrowColor: demoDark ? 'hsl(240 10% 3.9%)' : '#fff',
+            backgroundColor: demoDark ? 'hsl(240 10% 3.9%)' : '#fff',
             blockTargetInteraction: false,
-            buttons: ["back", "skip", "primary"],
-            closeButtonAction: "skip",
+            buttons: ['back', 'skip', 'primary'],
+            closeButtonAction: 'skip',
             hideOverlay: true,
             overlayClickAction: false,
-            overlayColor: "rgba(0, 0, 0, 0)",
-            primaryColor: "#f97316",
+            overlayColor: 'rgba(0, 0, 0, 0)',
+            primaryColor: '#f97316',
             scrollDuration: 0,
             scrollOffset: 20,
             showProgress: true,
             skipScroll: true,
             spotlightPadding: 6,
-            textColor: demoDark ? "hsl(0 0% 98%)" : "hsl(240 10% 3.9%)",
+            textColor: demoDark ? 'hsl(0 0% 98%)' : 'hsl(240 10% 3.9%)',
             zIndex: 20000,
           }}
           run={tourRun}
@@ -1807,20 +1846,20 @@ export function DocumentIntelligenceDemo() {
           steps={tourSteps}
           styles={{
             floater: {
-              filter: "drop-shadow(0 18px 40px rgba(15, 23, 42, 0.18))",
+              filter: 'drop-shadow(0 18px 40px rgba(15, 23, 42, 0.18))',
             },
             overlay: {
-              backgroundColor: "rgba(0, 0, 0, 0)",
+              backgroundColor: 'rgba(0, 0, 0, 0)',
             },
             spotlight: {
-              fill: "rgba(0, 0, 0, 0)",
-              stroke: "rgba(249, 115, 22, 0.45)",
+              fill: 'rgba(0, 0, 0, 0)',
+              stroke: 'rgba(249, 115, 22, 0.45)',
               strokeWidth: 2,
             },
             tooltip: {
               borderRadius: 12,
-              maxWidth: isMobile ? "calc(100vw - 32px)" : 360,
-              width: isMobile ? "calc(100vw - 32px)" : undefined,
+              maxWidth: isMobile ? 'calc(100vw - 32px)' : 360,
+              width: isMobile ? 'calc(100vw - 32px)' : undefined,
             },
           }}
         />

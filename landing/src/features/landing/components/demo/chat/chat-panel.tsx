@@ -1,4 +1,5 @@
 import {
+  AlertTriangle,
   Archive,
   ArrowDown,
   Brain,
@@ -25,25 +26,30 @@ import {
   Trash2,
   X,
   Zap,
-} from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { useTranslation } from "react-i18next";
+} from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
-import { demoChatConfig } from "../demo-config";
-import { getDemoUi } from "../demo-ui";
+import { demoChatConfig } from '../demo-config';
+import { getDemoUi } from '../demo-ui';
 
-import type { DemoCitation, DemoMessage, DemoStep } from "../demo-types";
+import type {
+  DemoCitation,
+  DemoHallucination,
+  DemoMessage,
+  DemoStep,
+} from '../demo-types';
 export function Spinner({ className }: { className?: string }) {
   return (
     <span
       className={cn(
-        "inline-block h-3 w-3 animate-spin rounded-full border border-[#F47331]/30 border-t-[#F47331]",
+        'inline-block h-3 w-3 animate-spin rounded-full border border-[#F47331]/30 border-t-[#F47331]',
         className,
       )}
     />
@@ -55,7 +61,7 @@ function AssistantAvatar() {
     <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-background text-foreground ring-1 ring-border/40">
       <Image
         src="/assets/brand/logo-icon.png"
-        alt=""
+        alt="Prosperify assistant icon"
         width={22}
         height={22}
         className="h-5 w-5 object-contain"
@@ -153,8 +159,8 @@ export function ThreadSidebar({
                 <div
                   key={thread}
                   className={cn(
-                    "group flex min-w-0 items-center gap-2 rounded-xl px-3 py-2 cursor-pointer transition-colors hover:bg-muted/80",
-                    active === thread && "bg-muted",
+                    'group flex min-w-0 items-center gap-2 rounded-xl px-3 py-2 cursor-pointer transition-colors hover:bg-muted/80',
+                    active === thread && 'bg-muted',
                   )}
                   onClick={onRunDemo}
                 >
@@ -210,7 +216,7 @@ export function ChatHeader({ assistantName }: { assistantName: string }) {
   const assistants = demoChatConfig.assistants.map((assistant) => ({
     ...assistant,
     label:
-      assistant.labelKey === "activeAssistant"
+      assistant.labelKey === 'activeAssistant'
         ? assistantName
         : (assistant.label ?? assistantName),
   }));
@@ -238,8 +244,8 @@ export function ChatHeader({ assistantName }: { assistantName: string }) {
             >
               <ChevronDown
                 className={cn(
-                  "h-4 w-4 shrink-0 text-muted-foreground transition-transform",
-                  assistantMenuOpen && "rotate-180",
+                  'h-4 w-4 shrink-0 text-muted-foreground transition-transform',
+                  assistantMenuOpen && 'rotate-180',
                 )}
               />
             </button>
@@ -249,10 +255,10 @@ export function ChatHeader({ assistantName }: { assistantName: string }) {
                   <button
                     key={assistant.label}
                     className={cn(
-                      "flex w-full items-center gap-2 rounded-md px-2 py-2 text-left text-xs",
+                      'flex w-full items-center gap-2 rounded-md px-2 py-2 text-left text-xs',
                       assistant.disabled
-                        ? "cursor-not-allowed bg-white text-muted-foreground opacity-60 dark:bg-neutral-950"
-                        : "bg-orange-50 text-foreground dark:bg-orange-500/10",
+                        ? 'cursor-not-allowed bg-white text-muted-foreground opacity-60 dark:bg-neutral-950'
+                        : 'bg-orange-50 text-foreground dark:bg-orange-500/10',
                     )}
                     disabled={assistant.disabled}
                     type="button"
@@ -277,7 +283,7 @@ export function ChatHeader({ assistantName }: { assistantName: string }) {
   );
 }
 
-function StepIcon({ action }: { action: DemoStep["action"] }) {
+function StepIcon({ action }: { action: DemoStep['action'] }) {
   const icons = {
     analyzing: BrainCircuit,
     generating: Sparkles,
@@ -299,8 +305,8 @@ function asChunks(
     : [];
 }
 
-function scoreLabel(score: unknown, verified = "verified") {
-  return typeof score === "number" ? `${Math.round(score * 100)}%` : verified;
+function scoreLabel(score: unknown, verified = 'verified') {
+  return typeof score === 'number' ? `${Math.round(score * 100)}%` : verified;
 }
 
 function ToolResponsePreview({ step }: { step: DemoStep }) {
@@ -312,7 +318,7 @@ function ToolResponsePreview({ step }: { step: DemoStep }) {
     return null;
   }
 
-  if (step.action === "readFileContent") {
+  if (step.action === 'readFileContent') {
     return (
       <div className="mt-1.5 flex flex-wrap gap-1">
         {chunks.map((chunk, index) => (
@@ -332,7 +338,7 @@ function ToolResponsePreview({ step }: { step: DemoStep }) {
     );
   }
 
-  if (step.action === "screenshot") {
+  if (step.action === 'screenshot') {
     return (
       <div className="mt-1.5 space-y-1.5">
         {chunks.map((chunk, index) => (
@@ -438,12 +444,12 @@ function StepTimeline({
           return (
             <div
               key={step.id}
-              className={cn("relative pl-5 py-0.5", isDone && "opacity-75")}
+              className={cn('relative pl-5 py-0.5', isDone && 'opacity-75')}
             >
               <span
                 className={cn(
-                  "absolute left-0 top-[6px] h-3 w-3 rounded-full flex items-center justify-center z-10",
-                  isRunning ? "bg-primary" : "bg-emerald-500/70",
+                  'absolute left-0 top-[6px] h-3 w-3 rounded-full flex items-center justify-center z-10',
+                  isRunning ? 'bg-primary' : 'bg-emerald-500/70',
                 )}
               >
                 {isRunning ? (
@@ -476,8 +482,8 @@ function StepTimeline({
                   >
                     <span
                       className={cn(
-                        "min-w-0 flex-1 leading-relaxed",
-                        isRunning ? "text-foreground" : "text-foreground/85",
+                        'min-w-0 flex-1 leading-relaxed',
+                        isRunning ? 'text-foreground' : 'text-foreground/85',
                       )}
                     >
                       {step.reasoning ?? step.action}
@@ -491,8 +497,8 @@ function StepTimeline({
                     {hasDetails ? (
                       <ChevronDown
                         className={cn(
-                          "h-3.5 w-3.5 text-muted-foreground/60 transition-transform",
-                          expanded && "rotate-180",
+                          'h-3.5 w-3.5 text-muted-foreground/60 transition-transform',
+                          expanded && 'rotate-180',
                         )}
                       />
                     ) : null}
@@ -609,8 +615,8 @@ function RetrievalMeta({
         </span>
         <ChevronDown
           className={cn(
-            "h-3 w-3 transition-transform",
-            expanded && "rotate-180",
+            'h-3 w-3 transition-transform',
+            expanded && 'rotate-180',
           )}
         />
       </Button>
@@ -677,9 +683,10 @@ function CitationList({
 }) {
   const { i18n } = useTranslation();
   const ui = useMemo(() => getDemoUi(i18n.language), [i18n.language]);
+  const [hoveredId, setHoveredId] = useState<number | null>(null);
   const pages = Array.from(new Set(citations.map((citation) => citation.page)))
     .sort((left, right) => left - right)
-    .join(", ");
+    .join(', ');
 
   return (
     <div data-demo-tour="citations" className="mt-2 max-w-[78%] space-y-2">
@@ -699,28 +706,62 @@ function CitationList({
         <div className="mt-2 flex flex-wrap gap-1.5">
           {citations.map((citation) => {
             const confidence = Number.parseInt(citation.confidence, 10);
+            const isHovered = hoveredId === citation.id;
 
             return (
-              <button
-                key={citation.id}
-                className="inline-flex items-center gap-1.5 rounded-md border border-border/70 bg-background px-2 py-1.5 text-[11px] font-medium text-foreground transition-all hover:border-primary/40 hover:bg-primary/5"
-                onClick={() => onSelect(citation)}
-                type="button"
-              >
-                <Link2 className="h-3 w-3 text-primary" />
-                <span className="rounded bg-primary/10 px-1.5 py-0.5 text-[10px] font-semibold text-primary">
-                  p.{citation.page}
-                </span>
-                <span className="text-[10px] text-muted-foreground">
-                  {ui.sourceMatch}
-                </span>
-                <Badge
-                  variant="secondary"
-                  className="ml-0.5 px-1.5 text-[10px]"
+              <span key={citation.id} className="relative inline-flex">
+                <button
+                  className="inline-flex items-center gap-1.5 rounded-md border border-border/70 bg-background px-2 py-1.5 text-[11px] font-medium text-foreground transition-all hover:border-primary/40 hover:bg-primary/5"
+                  onClick={() => onSelect(citation)}
+                  onMouseEnter={() => setHoveredId(citation.id)}
+                  onMouseLeave={() => setHoveredId(null)}
+                  type="button"
                 >
-                  {confidence}%
-                </Badge>
-              </button>
+                  <Link2 className="h-3 w-3 text-primary" />
+                  <span className="rounded bg-primary/10 px-1.5 py-0.5 text-[10px] font-semibold text-primary">
+                    p.{citation.page}
+                  </span>
+                  <span className="text-[10px] text-muted-foreground">
+                    {ui.sourceMatch}
+                  </span>
+                  <Badge
+                    variant="secondary"
+                    className="ml-0.5 px-1.5 text-[10px]"
+                  >
+                    {confidence}%
+                  </Badge>
+                </button>
+                {isHovered && (
+                  <span className="absolute bottom-[calc(100%+0.45rem)] left-1/2 z-50 w-72 -translate-x-1/2 rounded-lg border border-border/60 bg-popover p-3 text-left text-xs leading-relaxed text-popover-foreground shadow-xl">
+                    <span className="mb-2 flex items-center gap-2">
+                      <FileText className="h-3.5 w-3.5 shrink-0 text-primary" />
+                      <span className="min-w-0 flex-1 truncate font-semibold">
+                        {citation.fileName}
+                      </span>
+                      <span className="rounded border border-border/60 bg-muted/40 px-1.5 py-0.5 font-mono text-[10px] text-muted-foreground">
+                        p.{citation.page}
+                      </span>
+                    </span>
+                    <span className="block border-l-2 border-primary/50 pl-2 italic text-muted-foreground">
+                      &ldquo;{citation.quote}&rdquo;
+                    </span>
+                    <span className="mt-2 flex items-center gap-2">
+                      <span className="min-w-[48px] text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+                        {ui.confidence ?? 'Confidence'}
+                      </span>
+                      <span className="h-1.5 flex-1 overflow-hidden rounded-full bg-muted/80">
+                        <span
+                          className="block h-full rounded-full bg-primary/60"
+                          style={{ width: `${confidence}%` }}
+                        />
+                      </span>
+                      <span className="text-[10px] font-mono tabular-nums text-muted-foreground">
+                        {confidence}%
+                      </span>
+                    </span>
+                  </span>
+                )}
+              </span>
             );
           })}
         </div>
@@ -729,93 +770,324 @@ function CitationList({
   );
 }
 
+function HallucinationSummary({
+  hallucinations,
+  onCitationSelect,
+}: {
+  hallucinations: DemoHallucination[];
+  onCitationSelect?: (citation: DemoCitation) => void;
+}) {
+  const [isHovered, setIsHovered] = useState(false);
+  const maxScore = Math.round(
+    Math.max(...hallucinations.map((h) => h.score)) * 100,
+  );
+
+  return (
+    <span
+      className="relative inline-flex"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <span className="inline-flex items-center gap-2 rounded-md border border-border/60 bg-muted/40 px-2.5 py-1 text-xs cursor-help">
+        <AlertTriangle className="h-3.5 w-3.5 shrink-0 text-warning" />
+        <span>
+          {hallucinations.length} hallucination
+          {hallucinations.length > 1 ? 's' : ''} detected
+        </span>
+        <span className="text-muted-foreground">·</span>
+        <span>Highest risk: {maxScore}%</span>
+      </span>
+      {isHovered && (
+        <span className="absolute bottom-[calc(100%+0.45rem)] left-1/2 z-50 w-72 -translate-x-1/2 rounded-lg border border-border/60 bg-popover p-3 text-left text-xs leading-relaxed text-popover-foreground shadow-xl">
+          {hallucinations.map((h, i) => {
+            const canOpen = !!h.citation && !!onCitationSelect;
+            return (
+              <span
+                key={i}
+                className={cn(
+                  i > 0 ? 'mt-2 block border-t border-border/40 pt-2' : 'block',
+                  canOpen
+                    ? 'cursor-pointer rounded-sm px-0.5 -mx-0.5 transition-colors hover:bg-warning/15'
+                    : '',
+                )}
+                onClick={
+                  canOpen
+                    ? () => onCitationSelect(h.citation as DemoCitation)
+                    : undefined
+                }
+                role={canOpen ? 'button' : undefined}
+                tabIndex={canOpen ? 0 : undefined}
+                onKeyDown={
+                  canOpen
+                    ? (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          onCitationSelect(h.citation as DemoCitation);
+                        }
+                      }
+                    : undefined
+                }
+              >
+                <span className="flex items-center gap-2 text-foreground">
+                  <AlertTriangle className="h-3 w-3 shrink-0 text-warning" />
+                  <span className="text-[11px] font-semibold">
+                    Potential inaccuracy
+                  </span>
+                </span>
+                <span className="mt-1 block text-[11px] leading-relaxed text-muted-foreground">
+                  {h.reason}
+                </span>
+                {h.citation && (
+                  <span className="mt-1 inline-flex items-center gap-1.5 rounded bg-primary/10 px-1.5 py-0.5 text-[10px] font-semibold text-primary">
+                    <Link2 className="h-2.5 w-2.5" />
+                    p.{h.citation.page}
+                  </span>
+                )}
+                <span className="mt-1.5 flex items-center gap-2">
+                  <span className="min-w-[48px] text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+                    Risk
+                  </span>
+                  <span className="h-1.5 flex-1 overflow-hidden rounded-full bg-muted/80">
+                    <span
+                      className="block h-full rounded-full bg-warning/70"
+                      style={{ width: `${Math.round(h.score * 100)}%` }}
+                    />
+                  </span>
+                  <span className="text-[10px] font-mono tabular-nums text-muted-foreground">
+                    {Math.round(h.score * 100)}%
+                  </span>
+                </span>
+              </span>
+            );
+          })}
+        </span>
+      )}
+    </span>
+  );
+}
+
 function stripCitationMarkers(value: string) {
-  return value.replace(/\s*\[(\d+)\]/g, "");
+  return value.replace(/\s*\[(\d+)\]/g, '');
 }
 
 function AssistantAnswer({
   citations = [],
+  hallucinations = [],
   onCitationSelect,
+  potentialInaccuracyLabel,
   text,
 }: {
   citations?: DemoCitation[];
+  hallucinations?: DemoHallucination[];
   onCitationSelect: (citation: DemoCitation) => void;
+  potentialInaccuracyLabel: string;
   text: string;
 }) {
   const [activePreviewIndex, setActivePreviewIndex] = useState<number | null>(
     null,
   );
-  const parts: Array<{ citation?: DemoCitation; text: string }> = [];
+  const [activeHallucinationIndex, setActiveHallucinationIndex] = useState<
+    number | null
+  >(null);
+
+  type Segment = {
+    citation?: DemoCitation;
+    hallucination?: DemoHallucination;
+    text: string;
+  };
+
+  const segments: Segment[] = [];
+
   const citationPattern = /([^[]+?)\s*\[(\d+)\]/g;
   let cursor = 0;
   let match: RegExpExecArray | null;
 
   while ((match = citationPattern.exec(text)) !== null) {
     if (match.index > cursor) {
-      parts.push({ text: text.slice(cursor, match.index) });
+      segments.push({ text: text.slice(cursor, match.index) });
     }
 
     const citation = citations[Number(match[2]) - 1];
-    parts.push({ citation, text: match[1] });
+    segments.push({ citation, text: match[1] });
     cursor = match.index + match[0].length;
   }
 
   if (cursor < text.length) {
-    parts.push({ text: text.slice(cursor) });
+    segments.push({ text: text.slice(cursor) });
   }
 
+  const hallucinationSegments: Segment[] = [];
+  for (const segment of segments) {
+    const startOffset = text.indexOf(segment.text);
+
+    const overlapping = hallucinations.filter(
+      (h) => h.start < startOffset + segment.text.length && h.end > startOffset,
+    );
+
+    if (overlapping.length === 0) {
+      hallucinationSegments.push(segment);
+      continue;
+    }
+
+    let segCursor = 0;
+    for (const h of overlapping.sort((a, b) => a.start - b.start)) {
+      const localStart = Math.max(0, h.start - startOffset);
+      const localEnd = Math.min(segment.text.length, h.end - startOffset);
+
+      if (localStart > segCursor) {
+        hallucinationSegments.push({
+          text: segment.text.slice(segCursor, localStart),
+        });
+      }
+
+      hallucinationSegments.push({
+        text: segment.text.slice(localStart, localEnd),
+        citation: segment.citation,
+        hallucination: h,
+      });
+      segCursor = localEnd;
+    }
+
+    if (segCursor < segment.text.length) {
+      hallucinationSegments.push({
+        text: segment.text.slice(segCursor),
+        citation: segment.citation,
+      });
+    }
+  }
+
+  const finalSegments =
+    hallucinationSegments.length > 0 ? hallucinationSegments : segments;
+
   return (
-    <p>
-      {parts.map((part, index) => {
-        if (!part.citation) {
-          return <span key={`${part.text}-${index}`}>{part.text}</span>;
+    <span>
+      {finalSegments.map((segment, index) => {
+        if (segment.hallucination) {
+          const isOpen = activeHallucinationIndex === index;
+          const canOpenCitation = !!segment.citation;
+          return (
+            <span
+              key={`h-${index}`}
+              className={cn(
+                'relative inline rounded-sm bg-warning/8 text-foreground underline decoration-wavy decoration-warning/50 underline-offset-4',
+                canOpenCitation &&
+                  'decoration-2 cursor-pointer hover:bg-warning/15',
+              )}
+              onClick={
+                canOpenCitation
+                  ? () => onCitationSelect(segment.citation as DemoCitation)
+                  : undefined
+              }
+              onKeyDown={
+                canOpenCitation
+                  ? (event) => {
+                      if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        onCitationSelect(segment.citation as DemoCitation);
+                      }
+                    }
+                  : undefined
+              }
+              onMouseEnter={() => setActiveHallucinationIndex(index)}
+              onMouseLeave={() => setActiveHallucinationIndex(null)}
+              role={canOpenCitation ? 'button' : 'note'}
+              tabIndex={canOpenCitation ? 0 : undefined}
+            >
+              {segment.text}
+              {isOpen && (
+                <span className="absolute left-0 top-[calc(100%+0.45rem)] z-50 w-72 rounded-lg border border-border/60 bg-popover p-3 text-left text-xs leading-relaxed text-popover-foreground shadow-xl">
+                  <span className="flex items-center gap-2 text-foreground">
+                    <AlertTriangle className="h-3.5 w-3.5 shrink-0 text-warning" />
+                    <span className="text-xs font-semibold tracking-wide">
+                      {potentialInaccuracyLabel}
+                    </span>
+                    {segment.citation && (
+                      <span className="ml-auto rounded border border-border/60 bg-muted/40 px-1.5 py-0.5 font-mono text-[10px] text-muted-foreground">
+                        p.{segment.citation.page}
+                      </span>
+                    )}
+                  </span>
+                  <span className="mt-2 block text-xs leading-relaxed text-muted-foreground">
+                    {segment.hallucination.reason}
+                  </span>
+                  {segment.citation && (
+                    <span className="mt-1.5 inline-flex items-center gap-1 rounded bg-primary/10 px-1.5 py-0.5 text-[10px] font-semibold text-primary">
+                      <FileText className="h-2.5 w-2.5" />
+                      {segment.citation.fileName}
+                    </span>
+                  )}
+                  <span className="mt-2 flex items-center gap-2">
+                    <span className="min-w-[64px] text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+                      Risk
+                    </span>
+                    <span className="h-1.5 flex-1 overflow-hidden rounded-full bg-muted/80">
+                      <span
+                        className="block h-full rounded-full bg-warning/70"
+                        style={{
+                          width: `${Math.round(segment.hallucination.score * 100)}%`,
+                        }}
+                      />
+                    </span>
+                    <span className="text-[10px] font-mono tabular-nums text-muted-foreground">
+                      {Math.round(segment.hallucination.score * 100)}%
+                    </span>
+                  </span>
+                </span>
+              )}
+            </span>
+          );
+        }
+
+        if (!segment.citation) {
+          return (
+            <span key={`t-${index}`} className="inline">
+              {segment.text}
+            </span>
+          );
         }
 
         const isPreviewOpen = activePreviewIndex === index;
 
         return (
           <span
-            key={`${part.text}-${index}`}
-            className="relative cursor-pointer rounded-sm bg-primary/10 px-0.5 underline decoration-solid decoration-primary/40 underline-offset-4 transition-colors hover:bg-primary/20 hover:decoration-primary/70"
-            onClick={() => onCitationSelect(part.citation as DemoCitation)}
+            key={`c-${index}`}
+            className="relative inline cursor-pointer rounded-sm bg-primary/10 px-0.5 underline decoration-solid decoration-primary/40 underline-offset-4 transition-colors hover:bg-primary/20 hover:decoration-primary/70"
+            onClick={() => onCitationSelect(segment.citation as DemoCitation)}
             onBlur={() => setActivePreviewIndex(null)}
             onFocus={() => setActivePreviewIndex(index)}
             onKeyDown={(event) => {
-              if (event.key !== "Enter" && event.key !== " ") {
+              if (event.key !== 'Enter' && event.key !== ' ') {
                 return;
               }
               event.preventDefault();
-              onCitationSelect(part.citation as DemoCitation);
+              onCitationSelect(segment.citation as DemoCitation);
             }}
             onMouseEnter={() => setActivePreviewIndex(index)}
             onMouseLeave={() => setActivePreviewIndex(null)}
             role="button"
             tabIndex={0}
           >
-            {part.text}
-            <span
-              className={cn(
-                "pointer-events-none absolute left-0 top-[calc(100%+0.45rem)] z-50 w-72 rounded-lg border border-border/60 bg-popover p-3 text-left text-xs leading-relaxed text-popover-foreground shadow-xl",
-                isPreviewOpen ? "block" : "hidden",
-              )}
-            >
-              <span className="mb-2 flex items-center gap-2">
-                <FileText className="h-3.5 w-3.5 shrink-0 text-primary" />
-                <span className="min-w-0 flex-1 truncate font-semibold">
-                  {part.citation.fileName}
+            {segment.text}
+            {isPreviewOpen && (
+              <span className="absolute left-0 top-[calc(100%+0.45rem)] z-50 w-72 rounded-lg border border-border/60 bg-popover p-3 text-left text-xs leading-relaxed text-popover-foreground shadow-xl">
+                <span className="mb-2 flex items-center gap-2">
+                  <FileText className="h-3.5 w-3.5 shrink-0 text-primary" />
+                  <span className="min-w-0 flex-1 truncate font-semibold">
+                    {segment.citation.fileName}
+                  </span>
+                  <span className="rounded border border-border/60 bg-muted/40 px-1.5 py-0.5 font-mono text-[10px] text-muted-foreground">
+                    p.{segment.citation.page}
+                  </span>
                 </span>
-                <span className="rounded border border-border/60 bg-muted/40 px-1.5 py-0.5 font-mono text-[10px] text-muted-foreground">
-                  p.{part.citation.page}
+                <span className="block border-l-2 border-primary/50 pl-2 italic text-muted-foreground">
+                  &ldquo;{segment.citation.quote}&rdquo;
                 </span>
               </span>
-              <span className="block border-l-2 border-primary/50 pl-2 italic text-muted-foreground">
-                &ldquo;{part.citation.quote}&rdquo;
-              </span>
-            </span>
+            )}
           </span>
         );
       })}
-    </p>
+    </span>
   );
 }
 
@@ -915,7 +1187,7 @@ export function ChatMessages({
       return;
     }
     container.scrollTo({
-      behavior: "smooth",
+      behavior: 'smooth',
       top: container.scrollHeight,
     });
   }, []);
@@ -947,7 +1219,7 @@ export function ChatMessages({
             {messages.length === 0 ? <div className="h-[360px]" /> : null}
 
             {messages.map((message, index) =>
-              message.role === "user" ? (
+              message.role === 'user' ? (
                 <div
                   key={`${message.role}-${index}`}
                   className="group flex flex-row-reverse gap-4 py-4 opacity-100 duration-200"
@@ -998,7 +1270,9 @@ export function ChatMessages({
                     <div className="max-w-[78%] rounded-xl border border-border/40 bg-muted/70 px-4 py-3 text-sm leading-relaxed text-foreground shadow-sm">
                       <AssistantAnswer
                         citations={message.citations}
+                        hallucinations={message.hallucinations}
                         onCitationSelect={onCitationSelect}
+                        potentialInaccuracyLabel={ui.potentialInaccuracy}
                         text={message.text}
                       />
                     </div>
@@ -1006,6 +1280,13 @@ export function ChatMessages({
                       <CitationList
                         citations={message.citations}
                         onSelect={onCitationSelect}
+                      />
+                    ) : null}
+                    {message.hallucinations &&
+                    message.hallucinations.length > 0 ? (
+                      <HallucinationSummary
+                        hallucinations={message.hallucinations}
+                        onCitationSelect={onCitationSelect}
                       />
                     ) : null}
                     <MessageActions />
@@ -1101,8 +1382,8 @@ export function ChatMessages({
                 <div className="max-h-72 space-y-0.5 overflow-y-auto p-2">
                   <button
                     className={cn(
-                      "flex w-full cursor-pointer items-center gap-1.5 rounded-md px-2 py-1 text-left transition-colors hover:bg-accent",
-                      selectedFolder === ui.papers && "bg-primary/10",
+                      'flex w-full cursor-pointer items-center gap-1.5 rounded-md px-2 py-1 text-left transition-colors hover:bg-accent',
+                      selectedFolder === ui.papers && 'bg-primary/10',
                     )}
                     onClick={() => setSelectedFolder(ui.papers)}
                     type="button"
@@ -1152,8 +1433,8 @@ export function ChatMessages({
                   variant="ghost"
                   size="sm"
                   className={cn(
-                    "h-8 gap-1.5 px-2.5",
-                    selectedFilterCount > 0 && "text-primary",
+                    'h-8 gap-1.5 px-2.5',
+                    selectedFilterCount > 0 && 'text-primary',
                   )}
                   onClick={() => setFilterOpen((open) => !open)}
                 >
@@ -1172,7 +1453,7 @@ export function ChatMessages({
                   aria-label="Chat message"
                   readOnly
                   data-chat-input
-                  value={hasRun ? "" : question}
+                  value={hasRun ? '' : question}
                   className="min-h-[42px] max-h-[132px] w-full resize-none overflow-hidden border-0 bg-transparent px-1 py-2 text-[15px] leading-6 shadow-none outline-none focus-visible:ring-0 focus-visible:ring-offset-0 [field-sizing:content]"
                   rows={1}
                 />
@@ -1203,10 +1484,10 @@ export function ChatMessages({
                     type="button"
                     aria-label={`${String(level)} mode`}
                     className={cn(
-                      "flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-medium transition-all",
+                      'flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-medium transition-all',
                       level === ui.balanced
-                        ? "bg-background text-orange-600 shadow-sm"
-                        : "text-muted-foreground hover:bg-background/50 hover:text-foreground",
+                        ? 'bg-background text-orange-600 shadow-sm'
+                        : 'text-muted-foreground hover:bg-background/50 hover:text-foreground',
                     )}
                   >
                     <Icon className="h-3 w-3" />

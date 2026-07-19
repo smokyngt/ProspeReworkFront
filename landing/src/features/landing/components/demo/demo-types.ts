@@ -1,11 +1,11 @@
 type DemoAction =
-  | "analyzing"
-  | "generating"
-  | "readFileContent"
-  | "retrieved"
-  | "screenshot"
-  | "searching"
-  | "toolCall";
+  | 'analyzing'
+  | 'generating'
+  | 'readFileContent'
+  | 'retrieved'
+  | 'screenshot'
+  | 'searching'
+  | 'toolCall';
 
 export type DemoStep = {
   action: DemoAction;
@@ -31,8 +31,17 @@ export type DemoCitation = {
   quote: string;
 };
 
+export type DemoHallucination = {
+  end: number;
+  reason: string;
+  score: number;
+  start: number;
+  citation?: DemoCitation;
+};
+
 export type DemoMessage = {
   citations?: DemoCitation[];
-  role: "assistant" | "user";
+  hallucinations?: DemoHallucination[];
+  role: 'assistant' | 'user';
   text: string;
 };

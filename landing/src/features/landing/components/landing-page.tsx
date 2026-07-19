@@ -138,23 +138,35 @@ function HeroSectionWrapper() {
     lang === "fr"
       ? {
           badge: "Intelligence documentaire · données sensibles",
-          title1: "Transformez vos documents",
-          highlight: "confidentiels",
-          title2: "en réponses sourcées.",
+          title1: "L'intelligence documentaire",
+          highlight: "souveraine",
+          title2: "pour les entreprises exigeantes.",
           subtitle:
             "Prosperify aide les équipes à interroger leurs corpus financiers, juridiques et immobiliers avec des sources visibles, des accès gouvernés et un périmètre de déploiement clair.",
           primary: "Demander une démo",
           secondary: "Voir le workflow",
+          guarantees: [
+            "Réponses sourcées",
+            "Single-tenant",
+            "Aucun entraînement sur vos données",
+            "Cloud dédié · Hybride · Local",
+          ],
         }
       : {
           badge: "Document intelligence for sensitive data",
-          title1: "Turn confidential",
-          highlight: "documents",
-          title2: "into sourced answers.",
+          title1: "Sovereign",
+          highlight: "document intelligence",
+          title2: "for demanding enterprises.",
           subtitle:
             "Prosperify helps teams query financial, legal and real-estate corpora with visible sources, governed access and a clear deployment perimeter.",
           primary: "Request a demo",
           secondary: "See the workflow",
+          guarantees: [
+            "Sourced answers",
+            "Single-tenant",
+            "No training on your data",
+            "Dedicated cloud · Hybrid · On-prem",
+          ],
         };
 
   return (
@@ -208,6 +220,14 @@ function HeroSectionWrapper() {
               {copy.secondary}
             </a>
           </div>
+          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium uppercase tracking-[0.14em] text-[var(--pf-fg-dim)]">
+            {copy.guarantees.map((item) => (
+              <span key={item} className="inline-flex items-center gap-2">
+                <span className="h-1 w-1 rounded-full bg-[#FF6A13]" />
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* Right: démo interactive — INCHANGÉE */}
@@ -258,8 +278,8 @@ function ContactSectionWrapper() {
     lang === "fr"
       ? {
           title: "Cadrons votre premier cas d'usage documentaire",
-          lead: "Identifiez un corpus sensible, un assistant métier ou un workflow à fiabiliser. Prosperify vous aide à cadrer un pilote mesurable, sécurisé et aligné sur vos exigences de confidentialité.",
-          checks: ["Corpus sensible", "Assistant métier", "Pilote sécurisé"],
+          lead: "Identifiez un corpus sensible, un store métier ou un workflow à fiabiliser. Prosperify vous aide à cadrer un pilote mesurable, sécurisé et aligné sur vos exigences de confidentialité.",
+          checks: ["Corpus sensible", "Store métier", "Pilote sécurisé"],
         }
       : {
           title: "See how Prosperify fits your environment.",

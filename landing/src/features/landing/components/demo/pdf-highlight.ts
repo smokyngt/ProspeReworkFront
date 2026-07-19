@@ -9,21 +9,21 @@ export type TextHit = {
 
 const normCharRe = /[\u2010-\u2015\u2212\u2018-\u201B\u201C-\u201F]/g;
 const normCharMap: Record<string, string> = {
-  "\u2010": "-",
-  "\u2011": "-",
-  "\u2012": "-",
-  "\u2013": "-",
-  "\u2014": "-",
-  "\u2015": "-",
-  "\u2018": "'",
-  "\u2019": "'",
-  "\u201A": "'",
-  "\u201B": "'",
-  "\u201C": '"',
-  "\u201D": '"',
-  "\u201E": '"',
-  "\u201F": '"',
-  "\u2212": "-",
+  '\u2010': '-',
+  '\u2011': '-',
+  '\u2012': '-',
+  '\u2013': '-',
+  '\u2014': '-',
+  '\u2015': '-',
+  '\u2018': "'",
+  '\u2019': "'",
+  '\u201A': "'",
+  '\u201B': "'",
+  '\u201C': '"',
+  '\u201D': '"',
+  '\u201E': '"',
+  '\u201F': '"',
+  '\u2212': '-',
 };
 
 function normChars(value: string) {
@@ -40,12 +40,12 @@ export function fuzzyMatch(
   const needleC = normChars(needle);
 
   const mapped: number[] = [];
-  let norm = "";
+  let norm = '';
   let wasSpace = true;
   for (let i = 0; i < hayC.length; i += 1) {
     if (/\s/.test(hayC[i])) {
       if (!wasSpace && norm.length) {
-        norm += " ";
+        norm += ' ';
         mapped.push(i);
       }
       wasSpace = true;
@@ -55,12 +55,12 @@ export function fuzzyMatch(
       wasSpace = false;
     }
   }
-  if (norm.endsWith(" ")) {
+  if (norm.endsWith(' ')) {
     norm = norm.slice(0, -1);
     mapped.pop();
   }
 
-  const nNeedle = needleC.replace(/\s+/g, " ").trim();
+  const nNeedle = needleC.replace(/\s+/g, ' ').trim();
   if (!nNeedle || !norm) {
     return null;
   }
@@ -154,30 +154,30 @@ export function fuzzyMatch(
 }
 
 export function readTextLayer(root: HTMLElement): null | TextLayer {
-  const container = root.querySelector(".react-pdf__Page__textContent");
+  const container = root.querySelector('.react-pdf__Page__textContent');
   if (!container) {
     return null;
   }
 
   const elements = Array.from(
-    container.querySelectorAll("span:not(.markedContent)"),
+    container.querySelectorAll('span:not(.markedContent)'),
   ) as HTMLElement[];
   if (elements.length === 0) {
     return null;
   }
 
-  let raw = "";
+  let raw = '';
   const spans: TextLayerSpan[] = [];
 
   for (const element of elements) {
-    const text = element.textContent ?? "";
+    const text = element.textContent ?? '';
     if (
       raw.length > 0 &&
       text.length > 0 &&
       !/\s$/.test(raw) &&
       !/^\s/.test(text)
     ) {
-      raw += " ";
+      raw += ' ';
     }
     spans.push({ el: element, from: raw.length, to: raw.length + text.length });
     raw += text;
@@ -199,7 +199,7 @@ export function styleTextLayerSpans(
       continue;
     }
 
-    const text = el.textContent ?? "";
+    const text = el.textContent ?? '';
     const localStart = Math.max(from, spanFrom) - spanFrom;
     const localEnd = Math.min(to, spanTo) - spanFrom;
 
@@ -207,7 +207,7 @@ export function styleTextLayerSpans(
       continue;
     }
 
-    const page = el.closest<HTMLElement>("[data-page]");
+    const page = el.closest<HTMLElement>('[data-page]');
     if (!page || text.length === 0) {
       continue;
     }
@@ -216,17 +216,17 @@ export function styleTextLayerSpans(
     const pageRect = page.getBoundingClientRect();
     const startRatio = localStart / text.length;
     const endRatio = localEnd / text.length;
-    const overlay = document.createElement("span");
-    overlay.dataset.demoPdfHighlight = "true";
-    overlay.style.position = "absolute";
+    const overlay = document.createElement('span');
+    overlay.dataset.demoPdfHighlight = 'true';
+    overlay.style.position = 'absolute';
     overlay.style.left = `${spanRect.left - pageRect.left + spanRect.width * startRatio}px`;
     overlay.style.top = `${spanRect.top - pageRect.top + spanRect.height * 0.34}px`;
     overlay.style.width = `${Math.max(2, spanRect.width * (endRatio - startRatio))}px`;
     overlay.style.height = `${Math.max(2, spanRect.height * 0.52)}px`;
-    overlay.style.borderRadius = "2px";
-    overlay.style.backgroundColor = "rgba(34, 197, 94, 0.34)";
-    overlay.style.pointerEvents = "none";
-    overlay.style.zIndex = "3";
+    overlay.style.borderRadius = '2px';
+    overlay.style.backgroundColor = 'rgba(34, 197, 94, 0.34)';
+    overlay.style.pointerEvents = 'none';
+    overlay.style.zIndex = '3';
     page.appendChild(overlay);
 
     out.push(overlay);

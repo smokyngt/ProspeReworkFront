@@ -115,7 +115,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2
 ;
 ;
 ;
-const siteDescription = "Déployez des assistants sourcés pour vos documents confidentiels avec recherche hybride, permissions, audit et contrôle du déploiement.";
+const siteDescription = "Déployez Prosperify Agent sur vos stores documentaires confidentiels, avec recherche hybride, permissions, audit et contrôle du déploiement.";
 const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
 const metadata = {
     metadataBase: new URL("https://prosperify.app"),
@@ -139,7 +139,7 @@ const metadata = {
     },
     openGraph: {
         title: "Prosperify - Intelligence documentaire gouvernée",
-        description: "Assistants sourcés pour les connaissances confidentielles de l'entreprise.",
+        description: "Prosperify Agent, sourcé, sur les connaissances confidentielles de l'entreprise.",
         url: "https://prosperify.app",
         siteName: "Prosperify",
         images: [

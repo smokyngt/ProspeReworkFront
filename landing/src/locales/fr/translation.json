@@ -36,7 +36,7 @@
     "create": {
       "title": "Connecter",
       "heading": "Préparez uniquement les sources validées",
-      "subtitle": "Les documents utiles sont préparés et rendus interrogeables dans un corpus maîtrisé.",
+      "subtitle": "Dossiers KYC, rapports de due diligence et listes de sanctions — indexés dans des stores dédiés.",
       "assistantNameLabel": "Assistant cible",
       "assistantNameValue": "Assistant Juridique & Patrimonial",
       "documentsLabel": "Corpus vérifié",
@@ -48,15 +48,23 @@
       "checkParsed": "Structure détectée",
       "checkIndexed": "Passages retrouvables",
       "checkScoped": "Périmètre appliqué",
-      "sources": ["Contrats signés", "Dossiers clients", "Procédures internes"],
-      "pipeline": ["Lire", "Préparer", "Indexer"]
+      "sources": [
+        "Contrats signés",
+        "Dossiers clients",
+        "Procédures internes"
+      ],
+      "pipeline": [
+        "Lire",
+        "Préparer",
+        "Indexer"
+      ]
     },
     "unify": {
       "title": "Cadrer",
-      "subtitle": "Chaque assistant travaille sur son propre corpus.",
+      "subtitle": "L'agent distribue la requête sur vos stores KYC et retourne un résultat cité, avec sa source exacte.",
       "dropHere": "Ajoutez les documents autorisés",
       "browse": "Parcourir les fichiers",
-      "heading": "Un assistant par équipe",
+      "heading": "Une question, une réponse sourcée et traçable",
       "formatsInfo": "PDF, Word, Excel, CSV, JSON, rapports, contrats...",
       "filetypePdf": "PDF",
       "filetypeCsv": "CSV",
@@ -72,7 +80,11 @@
         "Réponses cadrées",
         "Recherche + citations"
       ],
-      "scopes": ["Contrats Verdi", "Dossiers KYC", "Procédures RH"],
+      "scopes": [
+        "Contrats Verdi",
+        "Dossiers KYC",
+        "Procédures RH"
+      ],
       "assistants": [
         {
           "name": "Juridique",
@@ -96,10 +108,10 @@
     },
     "chat": {
       "title": "Interroger",
-      "assistantName": "Réponse contrôlée",
+      "assistantName": "Chaque accès est enregistré et gouverné",
       "searchPlaceholder": "Rechercher...",
       "newChat": "Nouveau Chat",
-      "botWelcome": "Chaque réponse reste reliée aux passages utilisés.",
+      "botWelcome": "Journal d'audit immuable, contrôle d'accès par rôle, zéro donnée brute exposée.",
       "userQuestion": "Quelle est la durée du contrat Verdi ?",
       "sourcesLabel": "Sources utilisées",
       "answer": {
@@ -232,13 +244,13 @@
         "shortTitle": "Synthèses fiables",
         "title": "Synthèses cadrées par vos sources",
         "subtitle": "Recherche, comparaison, extraction",
-        "description": "Les assistants spécialisés aident vos équipes à synthétiser, comparer des clauses ou extraire des informations clés à partir des documents autorisés."
+        "description": "Prosperify Agent aide vos équipes à synthétiser, comparer des clauses ou extraire des informations clés à partir de vos stores documentaires."
       },
       "governance": {
         "shortTitle": "Accès contrôlés",
-        "title": "Accès contrôlés par rôle et assistant",
+        "title": "Accès contrôlés par rôle et par store",
         "subtitle": "Chaque utilisateur dans le bon périmètre",
-        "description": "Les accès peuvent être limités selon le rôle, le service, le niveau de confidentialité, l'assistant ou le corpus autorisé."
+        "description": "Les accès peuvent être limités selon le rôle, le service, le niveau de confidentialité, le store ou le corpus autorisé."
       },
       "orchestration": {
         "shortTitle": "Revue métier",
@@ -287,34 +299,62 @@
     "mainCard": {
       "titleLine1": "Une architecture single-tenant",
       "titleLine2": "",
-      "description": "Chaque client dispose d'un périmètre isolé pour les documents, les assistants, les droits et les traces d'usage.",
-      "chips": ["Corpus", "Droits", "Sources"]
+      "description": "Chaque client dispose d'un périmètre isolé pour les documents, les stores, les droits et les traces d'usage.",
+      "chips": [
+        "Corpus",
+        "Droits",
+        "Sources"
+      ]
     },
     "cloud": {
       "title": "Instance dédiée",
       "description": "Un environnement propre à chaque organisation sépare les données, les traitements et les opérations sensibles.",
-      "chips": ["Single-tenant", "Isolé", "Dédié"]
+      "chips": [
+        "Single-tenant",
+        "Isolé",
+        "Dédié"
+      ]
     },
     "encryption": {
       "title": "Système de gestion des clés",
       "description": "La gestion des clés protège les documents et métadonnées stockés dans la couche données.",
-      "chips": ["Données stockées", "Protection", "Contrôle"]
+      "chips": [
+        "Données stockées",
+        "Protection",
+        "Contrôle"
+      ]
     },
     "kubernetes": {
       "title": "Accès maîtrisés",
-      "description": "Les accès sont limités par rôle, assistant, corpus et usage afin que chaque équipe reste dans son périmètre.",
-      "chips": ["Rôles", "Assistants", "Scopes"]
+      "description": "Les accès sont limités par rôle, store, corpus et usage afin que chaque équipe reste dans son périmètre.",
+      "chips": [
+        "Rôles",
+        "Assistants",
+        "Scopes"
+      ]
     },
     "dataProtection": {
       "title": "Suivi et audit",
       "description": "Les éléments de suivi aident à comprendre l'usage, diagnostiquer les incidents et examiner les réponses sourcées.",
-      "chips": ["Usage", "Audit", "Revue"]
+      "chips": [
+        "Usage",
+        "Audit",
+        "Revue"
+      ]
     },
     "supervision": {
       "title": "Déploiement adapté au périmètre",
       "description": "Cloud dédié, hybride ou local : le mode retenu s'aligne sur vos exigences de confidentialité et d'exploitation.",
-      "badges": ["Cloud dédié", "Hybride", "Local"],
-      "chips": ["Cloud dédié", "Hybride", "Local"]
+      "badges": [
+        "Cloud dédié",
+        "Hybride",
+        "Local"
+      ],
+      "chips": [
+        "Cloud dédié",
+        "Hybride",
+        "Local"
+      ]
     }
   },
   "integration": {
@@ -350,36 +390,7 @@
     "titlePrefix": "Une architecture pensée pour la",
     "titleHighlight": "confiance documentaire",
     "subtitle": "Une chaîne claire pour passer de documents sensibles à des réponses sourcées, relisibles et contrôlables.",
-    "steps": [
-      {
-        "title": "Corpus autorisés",
-        "description": "Rassemblez les documents utiles dans un espace contrôlé, sans imposer une refonte complète de vos outils."
-      },
-      {
-        "title": "Contenu analysé automatiquement",
-        "description": "Les textes, tableaux, pages et métadonnées sont préparés pour rendre chaque document plus facile à interroger."
-      },
-      {
-        "title": "Informations structurées",
-        "description": "Les contenus sont organisés selon leur logique : titres, clauses, articles, annexes, versions et éléments clés."
-      },
-      {
-        "title": "Recherche gouvernée",
-        "description": "Les utilisateurs retrouvent les passages pertinents grâce à une recherche hybride qui combine sens, termes exacts, contexte et éléments visuels lorsque le document s'y prête."
-      },
-      {
-        "title": "Réponses avec sources",
-        "description": "Prosperify sélectionne les extraits utiles et génère des réponses structurées, accompagnées des références nécessaires à la vérification."
-      },
-      {
-        "title": "Vérification des limites",
-        "description": "Les réponses peuvent signaler les zones d'incertitude ou les éléments qui nécessitent une validation humaine."
-      },
-      {
-        "title": "Suivi et amélioration continue",
-        "description": "Les usages, la qualité des réponses et les besoins d'évolution peuvent être suivis pour améliorer le service dans le temps."
-      }
-    ]
+    "footerNote": "Sources, accès et vérification conservés à chaque étape"
   },
   "technical": {
     "badge": "CHAÎNE DOCUMENTAIRE",
@@ -444,12 +455,12 @@
         "answer": "Les réponses sont générées à partir d'extraits documentaires retenus, puis reliées aux sources utilisées. Les affirmations insuffisamment étayées peuvent être signalées afin de faciliter la revue humaine."
       },
       {
-        "question": "Peut-on limiter l'accès par rôle, assistant ou corpus ?",
-        "answer": "Oui. Les accès peuvent être gouvernés par rôle, assistant, corpus, utilisateur ou niveau de confidentialité. Les opérations hors périmètre sont refusées selon les règles configurées."
+        "question": "Peut-on limiter l'accès par rôle, store ou corpus ?",
+        "answer": "Oui. Les accès peuvent être gouvernés par rôle, store, corpus, utilisateur ou niveau de confidentialité. Les opérations hors périmètre sont refusées selon les règles configurées."
       },
       {
         "question": "Faut-il refondre le système d'information ?",
-        "answer": "Non. Prosperify s'ajoute comme couche d'intelligence documentaire au-dessus des systèmes existants. L'intégration peut commencer avec un corpus, un assistant et un cas métier avant extension."
+        "answer": "Non. Prosperify s'ajoute comme couche d'intelligence documentaire au-dessus des systèmes existants. L'intégration peut commencer avec un corpus, un store et un cas métier avant extension."
       },
       {
         "question": "Quels formats sont pris en charge ?",

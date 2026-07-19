@@ -36,7 +36,7 @@
     "create": {
       "title": "Connect",
       "heading": "Prepare only approved sources",
-      "subtitle": "Useful documents are prepared and made searchable inside a controlled corpus.",
+      "subtitle": "KYC files, due-diligence reports and sanctions lists — indexed into dedicated stores.",
       "assistantNameLabel": "Assistant name",
       "assistantNameValue": "Transaction & Legal Assistant",
       "documentsLabel": "Verified corpus",
@@ -48,15 +48,23 @@
       "checkParsed": "Structure detected",
       "checkIndexed": "Passages retrievable",
       "checkScoped": "Scope applied",
-      "sources": ["Signed contracts", "Client files", "Internal procedures"],
-      "pipeline": ["Read", "Prepare", "Index"]
+      "sources": [
+        "Signed contracts",
+        "Client files",
+        "Internal procedures"
+      ],
+      "pipeline": [
+        "Read",
+        "Prepare",
+        "Index"
+      ]
     },
     "unify": {
       "title": "Scope",
-      "subtitle": "Each assistant works on its own corpus.",
+      "subtitle": "The agent fans the query out across your KYC stores and returns a cited result, down to the exact source.",
       "dropHere": "Add authorized documents",
       "browse": "Browse files",
-      "heading": "One assistant per team",
+      "heading": "One question, one sourced and traceable answer",
       "formatsInfo": "PDF, Word, Excel, CSV, JSON, reports, contracts...",
       "filetypePdf": "PDF",
       "filetypeCsv": "CSV",
@@ -67,8 +75,16 @@
       "matrixCorpus": "Corpus",
       "allowedLabel": "Configured assistants",
       "policyNote": "Segmentation happens at assistant level: corpus, mission and limits are defined before use.",
-      "rules": ["Visible sources", "Scoped answers", "Search + citations"],
-      "scopes": ["Verdi contracts", "KYC files", "HR procedures"],
+      "rules": [
+        "Visible sources",
+        "Scoped answers",
+        "Search + citations"
+      ],
+      "scopes": [
+        "Verdi contracts",
+        "KYC files",
+        "HR procedures"
+      ],
       "assistants": [
         {
           "name": "Legal",
@@ -92,10 +108,10 @@
     },
     "chat": {
       "title": "Query",
-      "assistantName": "Verification assistant",
+      "assistantName": "Every access is logged and governed",
       "searchPlaceholder": "Search...",
       "newChat": "New Chat",
-      "botWelcome": "Short answers, visible sources.",
+      "botWelcome": "Immutable audit log, role-based access control, zero raw data exposed.",
       "userQuestion": "What is the term of the Verdi contract?",
       "sourcesLabel": "Sources used",
       "answer": {
@@ -228,13 +244,13 @@
         "shortTitle": "Reliable synthesis",
         "title": "Synthesis framed by your sources",
         "subtitle": "Search, compare, extract",
-        "description": "Specialized assistants help teams summarize, compare clauses and extract key information from authorized documents."
+        "description": "Prosperify Agent helps teams summarize, compare clauses and extract key information from your document stores."
       },
       "governance": {
         "shortTitle": "Controlled access",
-        "title": "Access controlled by role and assistant",
+        "title": "Access controlled by role and store",
         "subtitle": "Each user in the right perimeter",
-        "description": "Access can be limited by role, team, confidentiality level, assistant or authorized corpus."
+        "description": "Access can be limited by role, team, confidentiality level, store or authorized corpus."
       },
       "orchestration": {
         "shortTitle": "Review Workflow",
@@ -283,34 +299,62 @@
     "mainCard": {
       "titleLine1": "A single-tenant architecture",
       "titleLine2": "",
-      "description": "Each client gets an isolated perimeter for documents, assistants, permissions and usage traces.",
-      "chips": ["Corpora", "Permissions", "Sources"]
+      "description": "Each client gets an isolated perimeter for documents, stores, permissions and usage traces.",
+      "chips": [
+        "Corpora",
+        "Permissions",
+        "Sources"
+      ]
     },
     "cloud": {
       "title": "Dedicated instance",
       "description": "Each organization runs in its own environment, separating data, processing and sensitive operations.",
-      "chips": ["Single-tenant", "Isolated", "Dedicated"]
+      "chips": [
+        "Single-tenant",
+        "Isolated",
+        "Dedicated"
+      ]
     },
     "encryption": {
       "title": "Key management system",
       "description": "Key management protects documents and metadata stored in the data layer.",
-      "chips": ["Stored data", "Protection", "Control"]
+      "chips": [
+        "Stored data",
+        "Protection",
+        "Control"
+      ]
     },
     "kubernetes": {
       "title": "Controlled access",
-      "description": "Access is limited by role, assistant, corpus and usage so each team stays within its perimeter.",
-      "chips": ["Roles", "Assistants", "Scopes"]
+      "description": "Access is limited by role, store, corpus and usage so each team stays within its perimeter.",
+      "chips": [
+        "Roles",
+        "Assistants",
+        "Scopes"
+      ]
     },
     "dataProtection": {
       "title": "Monitoring and audit",
       "description": "Operational signals help understand usage, diagnose incidents and review sourced answers.",
-      "chips": ["Usage", "Audit", "Review"]
+      "chips": [
+        "Usage",
+        "Audit",
+        "Review"
+      ]
     },
     "supervision": {
       "title": "Deployment matched to your perimeter",
       "description": "Dedicated cloud, hybrid or local: the selected mode aligns with confidentiality and operating requirements.",
-      "badges": ["Dedicated cloud", "Hybrid", "Local"],
-      "chips": ["Dedicated cloud", "Hybrid", "Local"]
+      "badges": [
+        "Dedicated cloud",
+        "Hybrid",
+        "Local"
+      ],
+      "chips": [
+        "Dedicated cloud",
+        "Hybrid",
+        "Local"
+      ]
     }
   },
   "integration": {
@@ -346,36 +390,7 @@
     "titlePrefix": "An architecture designed for",
     "titleHighlight": "document trust",
     "subtitle": "A clear chain for moving from sensitive documents to sourced, reviewable and controllable answers.",
-    "steps": [
-      {
-        "title": "Authorized corpora",
-        "description": "Bring useful documents into a controlled space without forcing a full tooling rebuild."
-      },
-      {
-        "title": "Automatic content analysis",
-        "description": "Texts, tables, pages and metadata are prepared so each document becomes easier to query."
-      },
-      {
-        "title": "Structured information",
-        "description": "Content is organized around titles, clauses, articles, appendices, versions and key elements."
-      },
-      {
-        "title": "Governed search",
-        "description": "Users retrieve relevant passages through hybrid search that combines meaning, exact terms, context and visual signals when the document supports them."
-      },
-      {
-        "title": "Answers with sources",
-        "description": "Prosperify selects useful excerpts and generates structured answers with references for review."
-      },
-      {
-        "title": "Limit verification",
-        "description": "Answers can surface uncertainty or elements that require human validation."
-      },
-      {
-        "title": "Monitoring and iteration",
-        "description": "Usage, answer quality and evolution needs can be followed over time."
-      }
-    ]
+    "footerNote": "Sources, access and verification kept at every step"
   },
   "technical": {
     "badge": "DOCUMENT CHAIN",
@@ -440,12 +455,12 @@
         "answer": "Answers are generated from selected document excerpts and linked back to the sources used. Insufficiently supported statements can be surfaced to support human review."
       },
       {
-        "question": "Can access be limited by role, assistant or corpus?",
-        "answer": "Yes. Access can be governed by role, assistant, corpus, user or confidentiality level. Out-of-scope operations are refused according to configured rules."
+        "question": "Can access be limited by role, store or corpus?",
+        "answer": "Yes. Access can be governed by role, store, corpus, user or confidentiality level. Out-of-scope operations are refused according to configured rules."
       },
       {
         "question": "Do we need to rebuild the information system?",
-        "answer": "No. Prosperify can be added as a document intelligence layer on top of existing systems. Integration can start with one corpus, one assistant and one business use case before expanding."
+        "answer": "No. Prosperify can be added as a document intelligence layer on top of existing systems. Integration can start with one corpus, one store and one business use case before expanding."
       },
       {
         "question": "Which formats are supported?",
