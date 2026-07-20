@@ -1343,7 +1343,7 @@ function DocDropIcon() {
 _c2 = DocDropIcon;
 function DocReadIcon() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex w-[42px] flex-col gap-1 p-1.5",
+        className: "relative flex w-[42px] flex-col gap-1 overflow-hidden p-1.5",
         style: {
             height: 52,
             border: "1px solid var(--pf-border-2)",
@@ -1401,6 +1401,18 @@ function DocReadIcon() {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
                 lineNumber: 88,
                 columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "pointer-events-none absolute inset-x-0",
+                style: {
+                    height: 14,
+                    background: "linear-gradient(180deg, transparent, ".concat(ACCENT, "66, transparent)"),
+                    animation: "pf-store-scan 2.6s linear infinite"
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
+                lineNumber: 89,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
@@ -1412,7 +1424,7 @@ function DocReadIcon() {
 _c3 = DocReadIcon;
 function ChunkIcon() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex w-[58px] flex-col gap-1.5",
+        className: "flex w-[58px] max-w-full flex-col gap-1.5",
         children: [
             100,
             84,
@@ -1424,16 +1436,18 @@ function ChunkIcon() {
                     width: "".concat(w, "%"),
                     background: "var(--pf-bg)",
                     border: "1px solid var(--pf-border-2)",
-                    borderLeft: "2px solid ".concat(ACCENT)
+                    borderLeft: "2px solid ".concat(ACCENT),
+                    transformOrigin: "left",
+                    animation: "pf-integration-appear 0.45s ease ".concat(i * 0.12, "s both")
                 }
             }, i, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 97,
+                lineNumber: 101,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-        lineNumber: 95,
+        lineNumber: 99,
         columnNumber: 5
     }, this);
 }
@@ -1470,16 +1484,17 @@ function EmbedIcon() {
         children: EMBED_PATTERN.flat().map((on, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 className: "h-[7px] w-[7px]",
                 style: {
-                    background: on ? ACCENT : "var(--pf-border-2)"
+                    background: on ? ACCENT : "var(--pf-border-2)",
+                    animation: on ? "pf-dot-blink 1.8s ease-in-out ".concat(i % 5 * 0.15, "s infinite") : undefined
                 }
             }, i, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 113,
+                lineNumber: 128,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-        lineNumber: 111,
+        lineNumber: 126,
         columnNumber: 5
     }, this);
 }
@@ -1504,16 +1519,19 @@ function EncryptedIcon() {
                         }
                     }, i, false, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 124,
+                        lineNumber: 146,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 122,
+                lineNumber: 144,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute -right-2.5 -top-3 flex flex-col items-center",
+                style: {
+                    animation: "pf-source-ping 2.2s ease-in-out infinite"
+                },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "h-2 w-[11px] rounded-t-[6px]",
@@ -1523,7 +1541,7 @@ function EncryptedIcon() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 128,
+                        lineNumber: 150,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1533,19 +1551,19 @@ function EncryptedIcon() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 129,
+                        lineNumber: 151,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 127,
+                lineNumber: 149,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-        lineNumber: 121,
+        lineNumber: 143,
         columnNumber: 5
     }, this);
 }
@@ -1554,15 +1572,16 @@ _c6 = EncryptedIcon;
 function QuestionIcon(param) {
     let { text } = param;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "max-w-[130px] px-2.5 py-2 text-[11px] font-semibold leading-[1.35]",
+        className: "w-full max-w-[130px] px-2.5 py-2 text-[11px] font-semibold leading-[1.35]",
         style: {
             background: ACCENT,
-            color: "#080808"
+            color: "#080808",
+            animation: "pf-integration-appear 0.4s ease"
         },
         children: text
     }, void 0, false, {
         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-        lineNumber: 139,
+        lineNumber: 161,
         columnNumber: 5
     }, this);
 }
@@ -1580,7 +1599,7 @@ function IntentIcon() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 151,
+                lineNumber: 173,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1593,7 +1612,7 @@ function IntentIcon() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 153,
+                        lineNumber: 175,
                         columnNumber: 9
                     }, this),
                     [
@@ -1605,23 +1624,25 @@ function IntentIcon() {
                             style: {
                                 width: "".concat(w, "%"),
                                 background: "var(--pf-bg)",
-                                border: "1px solid var(--pf-border)"
+                                border: "1px solid var(--pf-border)",
+                                transformOrigin: "left",
+                                animation: "pf-integration-appear 0.4s ease ".concat(0.2 + i * 0.15, "s both")
                             }
                         }, i, false, {
                             fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                            lineNumber: 155,
+                            lineNumber: 177,
                             columnNumber: 11
                         }, this))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 152,
+                lineNumber: 174,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-        lineNumber: 150,
+        lineNumber: 172,
         columnNumber: 5
     }, this);
 }
@@ -1651,56 +1672,59 @@ function HybridSearchIcon() {
                 ].map((on, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "h-[7px] w-[7px]",
                         style: {
-                            background: on ? ACCENT : "var(--pf-border-2)"
+                            background: on ? ACCENT : "var(--pf-border-2)",
+                            animation: on ? "pf-dot-blink 1.6s ease-in-out ".concat(i % 4 * 0.2, "s infinite") : undefined
                         }
                     }, i, false, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 167,
+                        lineNumber: 199,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 165,
+                lineNumber: 197,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex gap-1.5",
+                className: "flex flex-wrap justify-center gap-1.5",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "font-mono text-[9px]",
                         style: {
                             color: ACCENT,
                             border: "1px solid rgba(255,106,19,0.35)",
-                            padding: "2px 6px"
+                            padding: "2px 6px",
+                            animation: "pf-pulse 2.4s ease-in-out infinite"
                         },
                         children: "sens"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 171,
+                        lineNumber: 210,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "font-mono text-[9px] text-[var(--pf-fg-muted)]",
                         style: {
                             border: "1px solid var(--pf-border)",
-                            padding: "2px 6px"
+                            padding: "2px 6px",
+                            animation: "pf-pulse 2.4s ease-in-out 1.2s infinite"
                         },
                         children: "mots-clés"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 172,
+                        lineNumber: 211,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 170,
+                lineNumber: 209,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-        lineNumber: 164,
+        lineNumber: 196,
         columnNumber: 5
     }, this);
 }
@@ -1721,7 +1745,7 @@ function VerifyIcon() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 181,
+                lineNumber: 220,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1731,7 +1755,7 @@ function VerifyIcon() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 182,
+                lineNumber: 221,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1741,7 +1765,7 @@ function VerifyIcon() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 183,
+                lineNumber: 222,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1751,13 +1775,14 @@ function VerifyIcon() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 184,
+                lineNumber: 223,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 className: "absolute -bottom-1.5 -right-1.5 flex h-[19px] w-[19px] items-center justify-center",
                 style: {
-                    background: ACCENT
+                    background: ACCENT,
+                    animation: "pf-counter-pop 2s ease-in-out 0.5s infinite"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                     className: "h-[9px] w-[5px] -translate-y-0.5 rotate-45",
@@ -1767,28 +1792,29 @@ function VerifyIcon() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                    lineNumber: 189,
+                    lineNumber: 228,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 185,
+                lineNumber: 224,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-        lineNumber: 180,
+        lineNumber: 219,
         columnNumber: 5
     }, this);
 }
 _c10 = VerifyIcon;
 function AnswerIcon() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "w-[132px] px-2.5 py-2",
+        className: "w-full max-w-[150px] px-2.5 py-2",
         style: {
             border: "1px solid var(--pf-border)",
-            background: "var(--pf-bg)"
+            background: "var(--pf-bg)",
+            animation: "pf-integration-appear 0.4s ease"
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1798,7 +1824,7 @@ function AnswerIcon() {
                         children: "durée :"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 199,
+                        lineNumber: 238,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1811,13 +1837,13 @@ function AnswerIcon() {
                         children: "trois ans"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 200,
+                        lineNumber: 239,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 198,
+                lineNumber: 237,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1827,7 +1853,7 @@ function AnswerIcon() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 202,
+                lineNumber: 241,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1842,7 +1868,7 @@ function AnswerIcon() {
                         children: "p.10"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 204,
+                        lineNumber: 243,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1854,19 +1880,19 @@ function AnswerIcon() {
                         children: "Clause 4.1"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 205,
+                        lineNumber: 244,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 203,
+                lineNumber: 242,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-        lineNumber: 197,
+        lineNumber: 236,
         columnNumber: 5
     }, this);
 }
@@ -1875,118 +1901,116 @@ function ArchitectureDemo() {
     _s();
     const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"])();
     const [phase, setPhase] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("index");
-    const tt = (key, defaultValue)=>t("architecture.arch.".concat(key), {
-            defaultValue
-        });
+    const tt = (key)=>t("architecture.arch.".concat(key));
     const indexNodes = [
         {
-            tag: tt("index.deposit.tag", "dépôt"),
-            title: tt("index.deposit.title", "Un document arrive"),
-            desc: tt("index.deposit.desc", "Vous déposez un fichier — PDF, Word, Excel… — dans un corpus autorisé."),
+            tag: tt("index.deposit.tag"),
+            title: tt("index.deposit.title"),
+            desc: tt("index.deposit.desc"),
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DocDropIcon, {}, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 222,
-                columnNumber: 214
+                lineNumber: 261,
+                columnNumber: 109
             }, this)
         },
         {
-            tag: tt("index.read.tag", "lecture"),
-            title: tt("index.read.title", "Lecture multi-modale"),
-            desc: tt("index.read.desc", "Prosperify lit tout : le texte, mais aussi les tableaux et les images."),
+            tag: tt("index.read.tag"),
+            title: tt("index.read.title"),
+            desc: tt("index.read.desc"),
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DocReadIcon, {}, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 223,
-                columnNumber: 209
+                lineNumber: 262,
+                columnNumber: 100
             }, this)
         },
         {
-            tag: tt("index.chunk.tag", "chunking"),
-            title: tt("index.chunk.title", "Découpage en passages"),
-            desc: tt("index.chunk.desc", "Le document est coupé en petits morceaux cohérents, faciles à retrouver."),
+            tag: tt("index.chunk.tag"),
+            title: tt("index.chunk.title"),
+            desc: tt("index.chunk.desc"),
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ChunkIcon, {}, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 224,
-                columnNumber: 216
+                lineNumber: 263,
+                columnNumber: 103
             }, this)
         },
         {
-            tag: tt("index.embed.tag", "embeddings"),
-            title: tt("index.embed.title", "Empreinte sémantique"),
-            desc: tt("index.embed.desc", "Chaque passage devient une « empreinte » que l'IA compare par le sens."),
+            tag: tt("index.embed.tag"),
+            title: tt("index.embed.title"),
+            desc: tt("index.embed.desc"),
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(EmbedIcon, {}, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 225,
-                columnNumber: 215
+                lineNumber: 264,
+                columnNumber: 103
             }, this)
         },
         {
-            tag: tt("index.store.tag", "chiffré"),
-            title: tt("index.store.title", "Index chiffré"),
-            desc: tt("index.store.desc", "Tout est rangé dans un index chiffré au repos, prêt à être interrogé."),
+            tag: tt("index.store.tag"),
+            title: tt("index.store.title"),
+            desc: tt("index.store.desc"),
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(EncryptedIcon, {}, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 226,
-                columnNumber: 204
+                lineNumber: 265,
+                columnNumber: 103
             }, this)
         }
     ];
-    const questionText = tt("query.question.bubble", "Quelle est la durée du contrat Verdi ?");
+    const questionText = tt("query.question.bubble");
     const queryNodes = [
         {
-            tag: tt("query.question.tag", "question"),
-            title: tt("query.question.title", "Votre question"),
-            desc: tt("query.question.desc", "Vous demandez en langage naturel, comme à un collègue."),
+            tag: tt("query.question.tag"),
+            title: tt("query.question.title"),
+            desc: tt("query.question.desc"),
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(QuestionIcon, {
                 text: questionText
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 231,
-                columnNumber: 200
+                lineNumber: 270,
+                columnNumber: 112
             }, this)
         },
         {
-            tag: tt("query.intent.tag", "intention"),
-            title: tt("query.intent.title", "Analyse d'intention"),
-            desc: tt("query.intent.desc", "Prosperify Agent comprend le besoin et découpe les questions complexes."),
+            tag: tt("query.intent.tag"),
+            title: tt("query.intent.title"),
+            desc: tt("query.intent.desc"),
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(IntentIcon, {}, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 232,
-                columnNumber: 217
+                lineNumber: 271,
+                columnNumber: 106
             }, this)
         },
         {
-            tag: tt("query.search.tag", "recherche"),
-            title: tt("query.search.title", "Recherche hybride"),
-            desc: tt("query.search.desc", "Il fouille l'index par le sens ET par les mots-clés, en parallèle."),
+            tag: tt("query.search.tag"),
+            title: tt("query.search.title"),
+            desc: tt("query.search.desc"),
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HybridSearchIcon, {}, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 233,
-                columnNumber: 210
+                lineNumber: 272,
+                columnNumber: 106
             }, this)
         },
         {
-            tag: tt("query.verify.tag", "vérif."),
-            title: tt("query.verify.title", "Génération vérifiée"),
-            desc: tt("query.verify.desc", "La réponse est rédigée puis recomparée aux passages retenus."),
+            tag: tt("query.verify.tag"),
+            title: tt("query.verify.title"),
+            desc: tt("query.verify.desc"),
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(VerifyIcon, {}, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 234,
-                columnNumber: 203
+                lineNumber: 273,
+                columnNumber: 106
             }, this)
         },
         {
-            tag: tt("query.answer.tag", "réponse"),
-            title: tt("query.answer.title", "Réponse sourcée"),
-            desc: tt("query.answer.desc", "Vous recevez la réponse avec ses sources exactes : page, clause."),
+            tag: tt("query.answer.tag"),
+            title: tt("query.answer.title"),
+            desc: tt("query.answer.desc"),
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AnswerIcon, {}, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 235,
-                columnNumber: 204
+                lineNumber: 274,
+                columnNumber: 106
             }, this)
         }
     ];
     const nodes = phase === "index" ? indexNodes : queryNodes;
-    const phaseDesc = phase === "index" ? tt("phaseDesc.index", "On ne le fait qu'une fois : chaque document déposé est lu, découpé en passages, transformé en empreintes, puis rangé dans un index chiffré interrogeable.") : tt("phaseDesc.query", "À chaque question, Prosperify Agent fouille l'index, assemble les meilleurs passages, rédige une réponse, puis la vérifie face aux sources avant de vous la montrer.");
+    const phaseDesc = phase === "index" ? tt("phaseDesc.index") : tt("phaseDesc.query");
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1995,7 +2019,7 @@ function ArchitectureDemo() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         type: "button",
                         onClick: ()=>setPhase("index"),
-                        className: "flex items-center gap-2.5 px-4 py-3 text-left transition-all duration-200",
+                        className: "flex flex-1 flex-wrap items-center gap-x-2.5 gap-y-1 px-4 py-3 text-left transition-all duration-200 sm:flex-none",
                         style: {
                             border: "1px solid ".concat(phase === "index" ? ACCENT : "var(--pf-border)"),
                             background: phase === "index" ? "var(--pf-bg-active)" : "transparent",
@@ -2007,35 +2031,35 @@ function ArchitectureDemo() {
                                 children: "01"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 264,
+                                lineNumber: 294,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "text-sm font-bold",
-                                children: tt("tabs.index.label", "Indexation")
+                                children: tt("tabs.index.label")
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 265,
+                                lineNumber: 295,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "text-xs opacity-70",
-                                children: tt("tabs.index.sub", "— préparer les documents")
+                                children: tt("tabs.index.sub")
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 266,
+                                lineNumber: 296,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 254,
+                        lineNumber: 284,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         type: "button",
                         onClick: ()=>setPhase("query"),
-                        className: "flex items-center gap-2.5 px-4 py-3 text-left transition-all duration-200",
+                        className: "flex flex-1 flex-wrap items-center gap-x-2.5 gap-y-1 px-4 py-3 text-left transition-all duration-200 sm:flex-none",
                         style: {
                             border: "1px solid ".concat(phase === "query" ? ACCENT : "var(--pf-border)"),
                             background: phase === "query" ? "var(--pf-bg-active)" : "transparent",
@@ -2047,35 +2071,35 @@ function ArchitectureDemo() {
                                 children: "02"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 278,
+                                lineNumber: 308,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "text-sm font-bold",
-                                children: tt("tabs.query.label", "Interrogation")
+                                children: tt("tabs.query.label")
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 279,
+                                lineNumber: 309,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "text-xs opacity-70",
-                                children: tt("tabs.query.sub", "— poser une question")
+                                children: tt("tabs.query.sub")
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 280,
+                                lineNumber: 310,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 268,
+                        lineNumber: 298,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 253,
+                lineNumber: 283,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2083,16 +2107,16 @@ function ArchitectureDemo() {
                 children: phaseDesc
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 283,
+                lineNumber: 313,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "mt-7 flex flex-col md:flex-row md:items-stretch",
-                style: {
-                    animation: "pf-fadeUp 0.4s ease"
-                },
                 children: nodes.map((node, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex flex-col md:flex-row md:flex-1 md:items-stretch",
+                        style: {
+                            animation: "pf-fadeUp 0.5s ease ".concat(i * 0.09, "s both")
+                        },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FlowNode, {
                                 n: String(i + 1).padStart(2, "0"),
@@ -2102,25 +2126,25 @@ function ArchitectureDemo() {
                                 desc: node.desc
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 289,
+                                lineNumber: 323,
                                 columnNumber: 13
                             }, this),
                             i < nodes.length - 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FlowArrow, {
                                 delay: i * 0.3
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 290,
+                                lineNumber: 324,
                                 columnNumber: 38
                             }, this)
                         ]
                     }, node.tag, true, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 288,
+                        lineNumber: 318,
                         columnNumber: 11
                     }, this))
             }, phase, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 286,
+                lineNumber: 316,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2133,22 +2157,20 @@ function ArchitectureDemo() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 296,
+                        lineNumber: 330,
                         columnNumber: 9
                     }, this),
-                    t("architecture.footerNote", {
-                        defaultValue: "Sources, accès et vérification conservés à chaque étape"
-                    })
+                    t("architecture.footerNote")
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 295,
+                lineNumber: 329,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-        lineNumber: 251,
+        lineNumber: 281,
         columnNumber: 5
     }, this);
 }
@@ -3038,10 +3060,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 "[project]/src/locales/en/translation.json (json)", ((__turbopack_context__) => {
 
-__turbopack_context__.v(JSON.parse("{\"meta\":{\"title\":\"Prosperify - Verifiable document intelligence for sensitive data\",\"description\":\"Query sensitive corpora with sourced answers, governed access and deployment modes adapted to your perimeter.\"},\"hero\":{\"badge\":\"Document intelligence for sensitive data\",\"titleLine1\":\"Turn confidential\",\"titleHighlight\":\"documents\",\"titleLine2\":\"into sourced answers.\",\"subtitle\":\"Prosperify helps teams find, compare and verify information across sensitive corpora, with visible sources, governed access and a clear trust perimeter.\",\"primaryCta\":\"Request a demo\",\"secondaryCta\":\"See the workflow\",\"demoCaption\":\"\",\"stats\":{\"citations\":\"answers linked to consulted sources\",\"deployment\":\"deployment modes: cloud, hybrid, local\",\"sources\":\"PDF, Word, Excel, CSV, JSON and business corpora\"},\"trust\":{\"sources\":\"Cited sources\",\"permissions\":\"Governed access\",\"deployment\":\"Cloud, hybrid or local\",\"audit\":\"Sources and usage tracked\",\"sovereignty\":\"Cloud, hybrid or on-prem\"}},\"workflow\":{\"badge\":\"HOW IT WORKS\",\"title\":\"Verifiable answers\",\"titleHighlight\":\"without losing control\",\"titleSuffix\":\"\",\"subtitle\":\"A simple sequence: approved sources, scoped access, verifiable answers.\"},\"workflowTabs\":{\"create\":{\"title\":\"Connect\",\"heading\":\"Prepare only approved sources\",\"subtitle\":\"KYC files, due-diligence reports and sanctions lists — indexed into dedicated stores.\",\"assistantNameLabel\":\"Assistant name\",\"assistantNameValue\":\"Transaction & Legal Assistant\",\"documentsLabel\":\"Verified corpus\",\"documentsTransactionsName\":\"KYC_Verdi.xlsx\",\"button\":\"Connect corpus\",\"sourceStatus\":\"Approved\",\"pipelineLabel\":\"Sources\",\"readyBadge\":\"Ready to query\",\"checkParsed\":\"Structure detected\",\"checkIndexed\":\"Passages retrievable\",\"checkScoped\":\"Scope applied\",\"sources\":[\"Signed contracts\",\"Client files\",\"Internal procedures\"],\"pipeline\":[\"Read\",\"Prepare\",\"Index\"]},\"unify\":{\"title\":\"Scope\",\"subtitle\":\"The agent fans the query out across your KYC stores and returns a cited result, down to the exact source.\",\"dropHere\":\"Add authorized documents\",\"browse\":\"Browse files\",\"heading\":\"One question, one sourced and traceable answer\",\"formatsInfo\":\"PDF, Word, Excel, CSV, JSON, reports, contracts...\",\"filetypePdf\":\"PDF\",\"filetypeCsv\":\"CSV\",\"filetypeDocx\":\"DOCX\",\"filetypeJson\":\"JSON\",\"rolesLabel\":\"Mission\",\"scopeLabel\":\"Corpus\",\"matrixCorpus\":\"Corpus\",\"allowedLabel\":\"Configured assistants\",\"policyNote\":\"Segmentation happens at assistant level: corpus, mission and limits are defined before use.\",\"rules\":[\"Visible sources\",\"Scoped answers\",\"Search + citations\"],\"scopes\":[\"Verdi contracts\",\"KYC files\",\"HR procedures\"],\"assistants\":[{\"name\":\"Legal\",\"role\":\"Clauses and contracts\",\"corpus\":\"Contracts\",\"action\":\"Compare\"},{\"name\":\"Compliance\",\"role\":\"KYC and sensitive records\",\"corpus\":\"KYC\",\"action\":\"Verify\"},{\"name\":\"HR\",\"role\":\"Internal procedures\",\"corpus\":\"Procedures\",\"action\":\"Answer\"}]},\"chat\":{\"title\":\"Query\",\"assistantName\":\"Every access is logged and governed\",\"searchPlaceholder\":\"Search...\",\"newChat\":\"New Chat\",\"botWelcome\":\"Immutable audit log, role-based access control, zero raw data exposed.\",\"userQuestion\":\"What is the term of the Verdi contract?\",\"sourcesLabel\":\"Sources used\",\"answer\":{\"prefix\":\"Source\",\"middle\":\"initial term:\",\"highlight\":\"three years\",\"suffix\":\"Renewal requires a written agreement.\"},\"inputPlaceholder\":\"Ask for a verification...\"}},\"cookie\":{\"accept\":\"Accept all\",\"learn\":\"Learn more\",\"message\":\"This site uses cookies for analytics. You can choose which categories to accept.\",\"reject\":\"Reject all\"},\"contact\":{\"badge\":\"CONTACT\",\"titleLine1\":\"See how Prosperify works\",\"titleHighlight\":\"on enterprise documents\",\"subtitle\":\"Send a short note or create a calendar invite with Prosperify already added as a guest.\",\"meeting\":{\"heading\":\"Schedule a working session\",\"description\":\"Prefer a live discussion? Open a pre-filled Google Calendar event with Prosperify already added as a guest.\",\"cta\":\"Open Google Calendar\",\"note\":\"When you save or send the event, Prosperify is included on the invitation. Add Google Meet from the calendar event before sending if it is not enabled by default.\",\"title\":\"Prosperify deployment discussion\",\"details\":\"Discuss document scope, security requirements, deployment model and next steps with Prosperify.\",\"location\":\"Google Meet\"},\"form\":{\"namePlaceholder\":\"Your full name\",\"companyPlaceholder\":\"Your company name\",\"emailPlaceholder\":\"Your email\",\"phonePlaceholder\":\"Phone (optional)\",\"subjectPlaceholder\":\"Select a subject\",\"subjectInformation\":\"Request a demo\",\"subjectPartnership\":\"Frame a document pilot\",\"subjectOther\":\"Assess a sovereign deployment\",\"subjectApi\":\"Discuss an API integration\",\"subjectVirtualPartner\":\"Partnership / virtual coworker\",\"messagePlaceholder\":\"Your message\",\"submit\":\"Send request\",\"statusSending\":\"⏳ Sending...\",\"statusSuccess\":\"✅ Message sent!\",\"statusFixErrors\":\"❌ Please correct the errors above.\",\"statusUnexpected\":\"❌ Unexpected error.\",\"statusSendError\":\"❌ Sending error.\"}},\"aiChat\":{\"sidebar\":{\"history\":\"History\"},\"conversations\":[\"Verdi contract\",\"Q4 Budget\",\"HR Procedures\",\"Monthly report\"],\"openDocumentFull\":\"Open Contrat_Verdi.pdf (page 10)\",\"openDocumentShort\":\"Contrat_Verdi.pdf (page 10)\",\"pdf\":{\"contractNameSecondary\":\"Q4_Financial_Report.pdf\",\"title\":\"Verdi Contract.pdf\"}},\"products\":{\"badge\":\"DEPLOYMENT\",\"titlePrefix\":\"Deploy with the\",\"titleMiddle\":\"right level\",\"titleHighlight\":\"of control\",\"subtitle\":\"Three deployment modes to match the right level of control, integration and operations.\",\"offers\":[{\"badge\":\"\",\"title\":\"Dedicated Cloud\",\"descriptionSegments\":[],\"features\":[\"High-performance dedicated infrastructure\",\"Guaranteed security and compliance\",\"Automatic maintenance and updates\",\"Instant scalability\"]},{\"badge\":\"\",\"title\":\"Hybrid\",\"descriptionSegments\":[],\"features\":[\"Your data stays on your infrastructure\",\"AI model hosted and maintained by us\",\"Maximum regulatory compliance\",\"Full control over your information\"]},{\"badge\":\"MAXIMUM SECURITY\",\"title\":\"100% Local\",\"descriptionSegments\":[],\"features\":[\"Deployment on your infrastructure\",\"Total data sovereignty\",\"No external dependency\",\"Maximum customization\"]}]},\"features\":{\"badge\":\"CAPABILITIES\",\"title\":\"Document intelligence\",\"titleHighlight\":\"that stays sourced and governed\",\"subtitle\":\"\",\"items\":{\"precision\":{\"shortTitle\":\"Sourced answers\",\"title\":\"Sourced and reviewable answers\",\"subtitle\":\"Sentence-level citations\",\"description\":\"Each answer keeps the link to the excerpts used so teams can review, audit and validate results against the source material.\"},\"coverage\":{\"shortTitle\":\"Hybrid search\",\"title\":\"Hybrid search across document corpora\",\"subtitle\":\"Semantic, lexical, visual and contextual\",\"description\":\"Prosperify combines semantic search, keywords, document context and visual signals to retrieve useful passages across heterogeneous corpora.\"},\"performance\":{\"shortTitle\":\"Reliable synthesis\",\"title\":\"Synthesis framed by your sources\",\"subtitle\":\"Search, compare, extract\",\"description\":\"Prosperify Agent helps teams summarize, compare clauses and extract key information from your document stores.\"},\"governance\":{\"shortTitle\":\"Controlled access\",\"title\":\"Access controlled by role and store\",\"subtitle\":\"Each user in the right perimeter\",\"description\":\"Access can be limited by role, team, confidentiality level, store or authorized corpus.\"},\"orchestration\":{\"shortTitle\":\"Review Workflow\",\"title\":\"A review workflow for business teams\",\"subtitle\":\"Search, answer, verify\",\"description\":\"Prosperify keeps retrieved passages, citations and answer context visible so teams can review important answers before using them.\"},\"differentiation\":{\"shortTitle\":\"Sovereignty\",\"title\":\"Data sovereignty\",\"subtitle\":\"Data in a defined trust perimeter\",\"description\":\"Dedicated, hybrid or local deployment, with data isolation and no training of general models on client corpora.\"}},\"deployment\":{\"dedicated\":{\"title\":\"Dedicated Cloud\",\"line1\":\"Instance dedicated to your organization\",\"line2\":\"Security controls and review support\",\"line3\":\"Managed maintenance and updates\",\"line4\":\"Capacity adjusted to the perimeter\"},\"hybrid\":{\"title\":\"Hybrid\",\"line1\":\"Sensitive data inside your perimeter\",\"line2\":\"Private connectors when needed\",\"line3\":\"Support for internal reviews\",\"line4\":\"Controlled information flows\"},\"local\":{\"title\":\"Local deployment\",\"badge\":\"REINFORCED CONTROL\",\"line1\":\"Deployment on your infrastructure\",\"line2\":\"Documents and operations inside your perimeter\",\"line3\":\"External dependencies limited by scope\",\"line4\":\"Runbooks adapted to your operations\"}}},\"sovereignty\":{\"badge\":\"SECURITY & GOVERNANCE\",\"titlePrefix\":\"Keep data\",\"titleHighlight\":\"protected in a dedicated instance\",\"titleSuffix\":\"from document to answer\",\"subtitle\":\"\",\"mainCard\":{\"titleLine1\":\"A single-tenant architecture\",\"titleLine2\":\"\",\"description\":\"Each client gets an isolated perimeter for documents, stores, permissions and usage traces.\",\"chips\":[\"Corpora\",\"Permissions\",\"Sources\"]},\"cloud\":{\"title\":\"Dedicated instance\",\"description\":\"Each organization runs in its own environment, separating data, processing and sensitive operations.\",\"chips\":[\"Single-tenant\",\"Isolated\",\"Dedicated\"]},\"encryption\":{\"title\":\"Key management system\",\"description\":\"Key management protects documents and metadata stored in the data layer.\",\"chips\":[\"Stored data\",\"Protection\",\"Control\"]},\"kubernetes\":{\"title\":\"Controlled access\",\"description\":\"Access is limited by role, store, corpus and usage so each team stays within its perimeter.\",\"chips\":[\"Roles\",\"Assistants\",\"Scopes\"]},\"dataProtection\":{\"title\":\"Monitoring and audit\",\"description\":\"Operational signals help understand usage, diagnose incidents and review sourced answers.\",\"chips\":[\"Usage\",\"Audit\",\"Review\"]},\"supervision\":{\"title\":\"Deployment matched to your perimeter\",\"description\":\"Dedicated cloud, hybrid or local: the selected mode aligns with confidentiality and operating requirements.\",\"badges\":[\"Dedicated cloud\",\"Hybrid\",\"Local\"],\"chips\":[\"Dedicated cloud\",\"Hybrid\",\"Local\"]}},\"integration\":{\"badge\":\"INTEGRATION\",\"titlePrefix\":\"A document layer\",\"titleHighlight\":\"above\",\"titleSuffix\":\"your existing tools\",\"subtitle\":\"Prosperify can be introduced progressively on top of existing sources so authorized corpora become queryable, governed and reviewable.\",\"steps\":[{\"title\":\"Scoping\",\"description\":\"Clarify the use case, identify the corpus and frame access rules.\"},{\"title\":\"Pilot ingestion\",\"description\":\"Prepare documents, make sources retrievable and test first queries.\"},{\"title\":\"Configuration\",\"description\":\"Configure pilot users, verify access and prepare scenarios.\"},{\"title\":\"Business validation\",\"description\":\"Review answer quality, identify limits and decide next steps.\"},{\"title\":\"Production and extension\",\"description\":\"Track usage, supervise operations and define the expansion path.\"}]},\"architecture\":{\"titlePrefix\":\"An architecture designed for\",\"titleHighlight\":\"document trust\",\"subtitle\":\"A clear chain for moving from sensitive documents to sourced, reviewable and controllable answers.\",\"footerNote\":\"Sources, access and verification kept at every step\"},\"technical\":{\"badge\":\"DOCUMENT CHAIN\",\"title\":\"A readable chain built for\",\"titleHighlight\":\"evidence\",\"subtitle\":\"From added document to cited answer, each step preserves the link back to the source.\",\"footnote\":\"Sources, access and verification preserved at each step\",\"steps\":{\"ingest\":{\"title\":\"Authorized corpus\",\"body\":\"Documents and metadata enter a defined perimeter before use.\",\"metric\":\"Clear use case // Framed corpus\"},\"parse\":{\"title\":\"Preparation\",\"body\":\"Text, tables and pages are prepared while preserving useful context.\",\"metric\":\"Structure preserved // Sources prepared\"},\"embed\":{\"title\":\"Indexing\",\"body\":\"Passages are chunked and indexed for hybrid search.\",\"metric\":\"Isolated corpus // Governed access\"},\"retrieve\":{\"title\":\"Hybrid search\",\"body\":\"Semantic and lexical retrieval work together to find useful passages.\",\"metric\":\"Semantic + lexical search\"},\"cite\":{\"title\":\"Citations\",\"body\":\"Claims stay tied to reviewable excerpts.\",\"metric\":\"Answer linked to sources\"},\"verify\":{\"title\":\"Review\",\"body\":\"Sources, access and quality signals remain available for human review.\",\"metric\":\"Review-ready evidence\"}}},\"faq\":{\"badge\":\"FAQ\",\"titleLine1\":\"Have\",\"titleHighlight\":\"questions\",\"titleLine2\":\"? We have answers.\",\"subtitle\":\"Key answers about sources, security, deployment and document governance with Prosperify.\",\"items\":[{\"question\":\"Does the AI continuously learn from my data?\",\"answer\":\"No. Client corpora are not used to train general models. They are used to generate sourced answers inside the agreed project perimeter.\"},{\"question\":\"Where are documents hosted?\",\"answer\":\"It depends on the selected model: dedicated cloud, hybrid architecture or local deployment. The trust perimeter is defined with the client around security, confidentiality and operational constraints.\"},{\"question\":\"Does Prosperify replace experts?\",\"answer\":\"No. Prosperify helps automate document search, synthesis, extraction and comparison. Decisions, validation and interpretation remain with business experts.\"},{\"question\":\"How are answers verified?\",\"answer\":\"Answers are generated from selected document excerpts and linked back to the sources used. Insufficiently supported statements can be surfaced to support human review.\"},{\"question\":\"Can access be limited by role, store or corpus?\",\"answer\":\"Yes. Access can be governed by role, store, corpus, user or confidentiality level. Out-of-scope operations are refused according to configured rules.\"},{\"question\":\"Do we need to rebuild the information system?\",\"answer\":\"No. Prosperify can be added as a document intelligence layer on top of existing systems. Integration can start with one corpus, one store and one business use case before expanding.\"},{\"question\":\"Which formats are supported?\",\"answer\":\"Prosperify is designed for structured and unstructured documents, including PDF, Word, Excel, CSV, JSON and other business corpora depending on project scope.\"},{\"question\":\"Which deployment modes are possible?\",\"answer\":\"Three approaches are possible: dedicated cloud, hybrid or local. The choice depends on confidentiality level, infrastructure constraints and sovereignty needs.\"}]},\"team\":{\"badge\":\"Team\",\"titlePrefix\":\"The team behind\",\"titleHighlight\":\"Prosperify\",\"subtitle\":\"A focused product and engineering team building document AI for organizations that work with sensitive information.\"},\"jobs\":{\"badge\":\"Jobs\",\"titlePrefix\":\"Build trusted\",\"titleHighlight\":\"document AI\",\"subtitle\":\"Open roles and hiring updates from Prosperify. We keep the team small, technical, and close to real customer problems.\",\"apply\":\"Apply\",\"emptyTitle\":\"No open role right now\",\"emptyDescription\":\"We are not hiring for a specific seat today, but strong infrastructure, product, and applied AI profiles can still reach out.\",\"viewAll\":\"View all roles\"},\"footer\":{\"tagline\":\"Query your documents with verifiable answers.\",\"product\":\"Product\",\"support\":\"Support\",\"legal\":\"Legal\",\"links\":{\"home\":\"Home\",\"overview\":\"Overview\",\"workflow\":\"Workflow\",\"deployment\":\"Deployment\",\"blog\":\"Blog\",\"team\":\"Team\",\"jobs\":\"Jobs\",\"faq\":\"FAQ\",\"contact\":\"Contact\",\"features\":\"Features\",\"sovereignty\":\"Sovereignty\",\"integration\":\"Integration\",\"architecture\":\"Architecture\",\"privacy\":\"Privacy\",\"terms\":\"Terms\",\"rgpd\":\"GDPR\"},\"copyright\":\"© 2025 Prosperify. All rights reserved.\",\"partnersTitle\":\"Support & Partners\"},\"roadmap\":{\"metaTitle\":\"Roadmap - Prosperify\",\"metaDescription\":\"Discover Prosperify's roadmap and upcoming work in sourced document intelligence.\",\"items\":[{\"date\":\"06/14/2024\",\"titlePrefix\":\"Start of the\",\"titleHighlight\":\"Prosperify\",\"lead\":\"Official launch of Prosperify, with a simple idea: make enterprise document search easier to verify and use.\",\"descriptionSegments\":[{\"text\":\"This milestone marks the birth of an ambitious project built around a single vision: enabling organizations to \"},{\"text\":\"make better use of their document knowledge\",\"emphasis\":true},{\"text\":\" by reducing information silos and making sources easier to retrieve through a \"},{\"text\":\"smart document search technology\",\"emphasis\":true},{\"text\":\".\"}],\"imageAlt\":\"Prosperify (logo, early stage)\",\"imageSrc\":\"/assets/brand/logo-mark.png\",\"imageVariant\":\"brandMark\"},{\"date\":\"09/26/2024\",\"titlePrefix\":\"Contact with\",\"titleHighlight\":\"Orpi\",\"lead\":\"First discussion with Orpi to explore a potential collaboration.\",\"description\":\"A meeting dedicated to understanding the barriers related to data exploitation in French mid-sized companies, and to analysing the impact of information fragmentation on missed business opportunities.\",\"imageAlt\":\"Orpi\",\"imageSrc\":\"/assets/partners/orpi.webp\",\"imageVariant\":\"partnerSmall\"},{\"date\":\"10/03/2024\",\"titlePrefix\":\"Design review with\",\"titleHighlight\":\"ESA\",\"lead\":\"Meeting with the European Space Agency for a first design review.\",\"descriptionSegments\":[{\"text\":\"A discussion focused on understanding the \"},{\"text\":\"security standards\",\"emphasis\":true},{\"text\":\" and \"},{\"text\":\"sovereignty requirements\",\"emphasis\":true},{\"text\":\" demanded by such agencies, while exploring their interest in a \"},{\"text\":\"document search technology\",\"emphasis\":true},{\"text\":\" adapted to their specific needs.\"}],\"imageAlt\":\"ESA\",\"imageSrc\":\"/assets/partners/esa.png\",\"imageVariant\":\"partnerMedium\"},{\"date\":\"01/02/2025\",\"title\":\"Joining Pépite France\",\"lead\":\"Prosperify joins the Pépite France network to support student innovation.\",\"imageAlt\":\"Pépite France\",\"imageSrc\":\"/assets/partners/pepite-beelyss.png\",\"imageVariant\":\"partnerLarge\"},{\"date\":\"01/04/2025\",\"titlePrefix\":\"Meeting with\",\"titleHighlight\":\"TUBA\",\"lead\":\"Discussion with the TUBA ecosystem around urban innovation and new digital uses.\",\"descriptionSegments\":[{\"text\":\"This meeting made it possible to explore the \"},{\"text\":\"challenges of leveraging data in urban environments\",\"emphasis\":true},{\"text\":\" and to identify opportunities offered by Prosperify in a context of \"},{\"text\":\"territorial innovation\",\"emphasis\":true},{\"text\":\". A key moment to understand how our technology can address the challenges of \"},{\"text\":\"information centralization\",\"emphasis\":true},{\"text\":\" and \"},{\"text\":\"data valorization\",\"emphasis\":true},{\"text\":\" for local stakeholders.\"}],\"imageAlt\":\"TUBA\",\"imageSrc\":\"/assets/partners/tuba.png\",\"imageVariant\":\"partnerWide\"},{\"date\":\"02/17/2025\",\"titlePrefix\":\"Contact with\",\"titleHighlight\":\"AXA\",\"lead\":\"First discussion with AXA about a potential strategic collaboration.\",\"descriptionSegments\":[{\"text\":\"A two-step meeting: first, an analysis of the \"},{\"text\":\"barriers related to document search\",\"emphasis\":true},{\"text\":\" in large groups, as well as of the \"},{\"text\":\"tools currently in use\",\"emphasis\":true},{\"text\":\". Then, a \"},{\"text\":\"presentation of Prosperify\",\"emphasis\":true},{\"text\":\", its mission and the \"},{\"text\":\"technology used\",\"emphasis\":true},{\"text\":\" to address these challenges.\"}],\"imageAlt\":\"AXA\",\"imageSrc\":\"/assets/partners/axa.png\",\"imageVariant\":\"partnerMedium\"},{\"date\":\"05/12/2025\",\"titlePrefix\":\"Joining\",\"titleHighlight\":\"La French Tech\",\"lead\":\"Prosperify joins La French Tech to become part of a national innovation ecosystem.\",\"descriptionSegments\":[{\"text\":\"This integration marks a new milestone in Prosperify's development as a \"},{\"text\":\"member start-up\",\"emphasis\":true},{\"text\":\". It opens access to an \"},{\"text\":\"active ecosystem of young companies\",\"emphasis\":true},{\"text\":\", opening opportunities for synergies, partnerships and visibility within the French innovation network.\"}],\"imageAlt\":\"La French Tech\",\"imageSrc\":\"/assets/partners/french-tech.png\",\"imageVariant\":\"partnerLarge\"},{\"date\":\"08/2025\",\"titlePrefix\":\"Official launch of\",\"titleHighlight\":\"Prosperify\",\"lead\":\"Go-to-market of the solution after several months of design, testing and ecosystem discussions.\",\"descriptionSegments\":[{\"text\":\"The launch makes the vision concrete: offering companies a \"},{\"text\":\"sovereign document assistant\",\"emphasis\":true},{\"text\":\" capable of \"},{\"text\":\"centralizing\",\"emphasis\":true},{\"text\":\" and \"},{\"text\":\"simplifying access to data\",\"emphasis\":true},{\"text\":\", with visible sources, governed access and a clear security perimeter.\"}],\"imageAlt\":\"Prosperify (launch)\",\"imageSrc\":\"/assets/brand/logo-full.png\",\"imageVariant\":\"brandFull\"}]}}"));}),
+__turbopack_context__.v(JSON.parse("{\"meta\":{\"title\":\"Prosperify - Verifiable document intelligence for sensitive data\",\"description\":\"Query sensitive corpora with sourced answers, governed access and deployment modes adapted to your perimeter.\"},\"hero\":{\"badge\":\"Document intelligence for sensitive data\",\"titleLine1\":\"Turn confidential\",\"titleHighlight\":\"documents\",\"titleLine2\":\"into sourced answers.\",\"subtitle\":\"Prosperify helps teams find, compare and verify information across sensitive corpora, with visible sources, governed access and a clear trust perimeter.\",\"primaryCta\":\"Request a demo\",\"secondaryCta\":\"See the workflow\",\"demoCaption\":\"\",\"stats\":{\"citations\":\"answers linked to consulted sources\",\"deployment\":\"deployment modes: cloud, hybrid, local\",\"sources\":\"PDF, Word, Excel, CSV, JSON and business corpora\"},\"trust\":{\"sources\":\"Cited sources\",\"permissions\":\"Governed access\",\"deployment\":\"Cloud, hybrid or local\",\"audit\":\"Sources and usage tracked\",\"sovereignty\":\"Cloud, hybrid or on-prem\"}},\"workflow\":{\"badge\":\"HOW IT WORKS\",\"title\":\"Verifiable answers\",\"titleHighlight\":\"without losing control\",\"titleSuffix\":\"\",\"subtitle\":\"A simple sequence: approved sources, scoped access, verifiable answers.\"},\"workflowTabs\":{\"create\":{\"title\":\"Connect\",\"heading\":\"Prepare only approved sources\",\"subtitle\":\"KYC files, due-diligence reports and sanctions lists — indexed into dedicated stores.\",\"assistantNameLabel\":\"Assistant name\",\"assistantNameValue\":\"Transaction & Legal Assistant\",\"documentsLabel\":\"Verified corpus\",\"documentsTransactionsName\":\"KYC_Verdi.xlsx\",\"button\":\"Connect corpus\",\"sourceStatus\":\"Approved\",\"pipelineLabel\":\"Sources\",\"readyBadge\":\"Ready to query\",\"checkParsed\":\"Structure detected\",\"checkIndexed\":\"Passages retrievable\",\"checkScoped\":\"Scope applied\",\"sources\":[\"Signed contracts\",\"Client files\",\"Internal procedures\"],\"pipeline\":[\"Read\",\"Prepare\",\"Index\"]},\"unify\":{\"title\":\"Scope\",\"subtitle\":\"The agent fans the query out across your KYC stores and returns a cited result, down to the exact source.\",\"dropHere\":\"Add authorized documents\",\"browse\":\"Browse files\",\"heading\":\"One question, one sourced and traceable answer\",\"formatsInfo\":\"PDF, Word, Excel, CSV, JSON, reports, contracts...\",\"filetypePdf\":\"PDF\",\"filetypeCsv\":\"CSV\",\"filetypeDocx\":\"DOCX\",\"filetypeJson\":\"JSON\",\"rolesLabel\":\"Mission\",\"scopeLabel\":\"Corpus\",\"matrixCorpus\":\"Corpus\",\"allowedLabel\":\"Configured assistants\",\"policyNote\":\"Segmentation happens at assistant level: corpus, mission and limits are defined before use.\",\"rules\":[\"Visible sources\",\"Scoped answers\",\"Search + citations\"],\"scopes\":[\"Verdi contracts\",\"KYC files\",\"HR procedures\"],\"assistants\":[{\"name\":\"Legal\",\"role\":\"Clauses and contracts\",\"corpus\":\"Contracts\",\"action\":\"Compare\"},{\"name\":\"Compliance\",\"role\":\"KYC and sensitive records\",\"corpus\":\"KYC\",\"action\":\"Verify\"},{\"name\":\"HR\",\"role\":\"Internal procedures\",\"corpus\":\"Procedures\",\"action\":\"Answer\"}]},\"chat\":{\"title\":\"Query\",\"assistantName\":\"Every access is logged and governed\",\"searchPlaceholder\":\"Search...\",\"newChat\":\"New Chat\",\"botWelcome\":\"Immutable audit log, role-based access control, zero raw data exposed.\",\"userQuestion\":\"What is the term of the Verdi contract?\",\"sourcesLabel\":\"Sources used\",\"answer\":{\"prefix\":\"Source\",\"middle\":\"initial term:\",\"highlight\":\"three years\",\"suffix\":\"Renewal requires a written agreement.\"},\"inputPlaceholder\":\"Ask for a verification...\"}},\"cookie\":{\"accept\":\"Accept all\",\"learn\":\"Learn more\",\"message\":\"This site uses cookies for analytics. You can choose which categories to accept.\",\"reject\":\"Reject all\"},\"contact\":{\"badge\":\"CONTACT\",\"titleLine1\":\"See how Prosperify works\",\"titleHighlight\":\"on enterprise documents\",\"subtitle\":\"Send a short note or create a calendar invite with Prosperify already added as a guest.\",\"meeting\":{\"heading\":\"Schedule a working session\",\"description\":\"Prefer a live discussion? Open a pre-filled Google Calendar event with Prosperify already added as a guest.\",\"cta\":\"Open Google Calendar\",\"note\":\"When you save or send the event, Prosperify is included on the invitation. Add Google Meet from the calendar event before sending if it is not enabled by default.\",\"title\":\"Prosperify deployment discussion\",\"details\":\"Discuss document scope, security requirements, deployment model and next steps with Prosperify.\",\"location\":\"Google Meet\"},\"form\":{\"namePlaceholder\":\"Your full name\",\"companyPlaceholder\":\"Your company name\",\"emailPlaceholder\":\"Your email\",\"phonePlaceholder\":\"Phone (optional)\",\"subjectPlaceholder\":\"Select a subject\",\"subjectInformation\":\"Request a demo\",\"subjectPartnership\":\"Frame a document pilot\",\"subjectOther\":\"Assess a sovereign deployment\",\"subjectApi\":\"Discuss an API integration\",\"subjectVirtualPartner\":\"Partnership / virtual coworker\",\"messagePlaceholder\":\"Your message\",\"submit\":\"Send request\",\"statusSending\":\"⏳ Sending...\",\"statusSuccess\":\"✅ Message sent!\",\"statusFixErrors\":\"❌ Please correct the errors above.\",\"statusUnexpected\":\"❌ Unexpected error.\",\"statusSendError\":\"❌ Sending error.\"}},\"aiChat\":{\"sidebar\":{\"history\":\"History\"},\"conversations\":[\"Verdi contract\",\"Q4 Budget\",\"HR Procedures\",\"Monthly report\"],\"openDocumentFull\":\"Open Contrat_Verdi.pdf (page 10)\",\"openDocumentShort\":\"Contrat_Verdi.pdf (page 10)\",\"pdf\":{\"contractNameSecondary\":\"Q4_Financial_Report.pdf\",\"title\":\"Verdi Contract.pdf\"}},\"products\":{\"badge\":\"DEPLOYMENT\",\"titlePrefix\":\"Deploy with the\",\"titleMiddle\":\"right level\",\"titleHighlight\":\"of control\",\"subtitle\":\"Three deployment modes to match the right level of control, integration and operations.\",\"offers\":[{\"badge\":\"\",\"title\":\"Dedicated Cloud\",\"descriptionSegments\":[],\"features\":[\"High-performance dedicated infrastructure\",\"Guaranteed security and compliance\",\"Automatic maintenance and updates\",\"Instant scalability\"]},{\"badge\":\"\",\"title\":\"Hybrid\",\"descriptionSegments\":[],\"features\":[\"Your data stays on your infrastructure\",\"AI model hosted and maintained by us\",\"Maximum regulatory compliance\",\"Full control over your information\"]},{\"badge\":\"MAXIMUM SECURITY\",\"title\":\"100% Local\",\"descriptionSegments\":[],\"features\":[\"Deployment on your infrastructure\",\"Total data sovereignty\",\"No external dependency\",\"Maximum customization\"]}]},\"features\":{\"badge\":\"CAPABILITIES\",\"title\":\"Document intelligence\",\"titleHighlight\":\"that stays sourced and governed\",\"subtitle\":\"\",\"items\":{\"precision\":{\"shortTitle\":\"Sourced answers\",\"title\":\"Sourced and reviewable answers\",\"subtitle\":\"Sentence-level citations\",\"description\":\"Each answer keeps the link to the excerpts used so teams can review, audit and validate results against the source material.\"},\"coverage\":{\"shortTitle\":\"Hybrid search\",\"title\":\"Hybrid search across document corpora\",\"subtitle\":\"Semantic, lexical, visual and contextual\",\"description\":\"Prosperify combines semantic search, keywords, document context and visual signals to retrieve useful passages across heterogeneous corpora.\"},\"performance\":{\"shortTitle\":\"Reliable synthesis\",\"title\":\"Synthesis framed by your sources\",\"subtitle\":\"Search, compare, extract\",\"description\":\"Prosperify Agent helps teams summarize, compare clauses and extract key information from your document stores.\"},\"governance\":{\"shortTitle\":\"Controlled access\",\"title\":\"Access controlled by role and store\",\"subtitle\":\"Each user in the right perimeter\",\"description\":\"Access can be limited by role, team, confidentiality level, store or authorized corpus.\"},\"orchestration\":{\"shortTitle\":\"Review Workflow\",\"title\":\"A review workflow for business teams\",\"subtitle\":\"Search, answer, verify\",\"description\":\"Prosperify keeps retrieved passages, citations and answer context visible so teams can review important answers before using them.\"},\"differentiation\":{\"shortTitle\":\"Sovereignty\",\"title\":\"Data sovereignty\",\"subtitle\":\"Data in a defined trust perimeter\",\"description\":\"Dedicated, hybrid or local deployment, with data isolation and no training of general models on client corpora.\"}},\"deployment\":{\"dedicated\":{\"title\":\"Dedicated Cloud\",\"line1\":\"Instance dedicated to your organization\",\"line2\":\"Security controls and review support\",\"line3\":\"Managed maintenance and updates\",\"line4\":\"Capacity adjusted to the perimeter\"},\"hybrid\":{\"title\":\"Hybrid\",\"line1\":\"Sensitive data inside your perimeter\",\"line2\":\"Private connectors when needed\",\"line3\":\"Support for internal reviews\",\"line4\":\"Controlled information flows\"},\"local\":{\"title\":\"Local deployment\",\"badge\":\"REINFORCED CONTROL\",\"line1\":\"Deployment on your infrastructure\",\"line2\":\"Documents and operations inside your perimeter\",\"line3\":\"External dependencies limited by scope\",\"line4\":\"Runbooks adapted to your operations\"}}},\"sovereignty\":{\"badge\":\"SECURITY & GOVERNANCE\",\"titlePrefix\":\"Keep data\",\"titleHighlight\":\"protected in a dedicated instance\",\"titleSuffix\":\"from document to answer\",\"subtitle\":\"\",\"mainCard\":{\"titleLine1\":\"A single-tenant architecture\",\"titleLine2\":\"\",\"description\":\"Each client gets an isolated perimeter for documents, stores, permissions and usage traces.\",\"chips\":[\"Corpora\",\"Permissions\",\"Sources\"]},\"cloud\":{\"title\":\"Dedicated instance\",\"description\":\"Each organization runs in its own environment, separating data, processing and sensitive operations.\",\"chips\":[\"Single-tenant\",\"Isolated\",\"Dedicated\"]},\"encryption\":{\"title\":\"Key management system\",\"description\":\"Key management protects documents and metadata stored in the data layer.\",\"chips\":[\"Stored data\",\"Protection\",\"Control\"]},\"kubernetes\":{\"title\":\"Controlled access\",\"description\":\"Access is limited by role, store, corpus and usage so each team stays within its perimeter.\",\"chips\":[\"Roles\",\"Assistants\",\"Scopes\"]},\"dataProtection\":{\"title\":\"Monitoring and audit\",\"description\":\"Operational signals help understand usage, diagnose incidents and review sourced answers.\",\"chips\":[\"Usage\",\"Audit\",\"Review\"]},\"supervision\":{\"title\":\"Deployment matched to your perimeter\",\"description\":\"Dedicated cloud, hybrid or local: the selected mode aligns with confidentiality and operating requirements.\",\"badges\":[\"Dedicated cloud\",\"Hybrid\",\"Local\"],\"chips\":[\"Dedicated cloud\",\"Hybrid\",\"Local\"]}},\"integration\":{\"badge\":\"INTEGRATION\",\"titlePrefix\":\"A document layer\",\"titleHighlight\":\"above\",\"titleSuffix\":\"your existing tools\",\"subtitle\":\"Prosperify can be introduced progressively on top of existing sources so authorized corpora become queryable, governed and reviewable.\",\"steps\":[{\"title\":\"Scoping\",\"description\":\"Clarify the use case, identify the corpus and frame access rules.\"},{\"title\":\"Pilot ingestion\",\"description\":\"Prepare documents, make sources retrievable and test first queries.\"},{\"title\":\"Configuration\",\"description\":\"Configure pilot users, verify access and prepare scenarios.\"},{\"title\":\"Business validation\",\"description\":\"Review answer quality, identify limits and decide next steps.\"},{\"title\":\"Production and extension\",\"description\":\"Track usage, supervise operations and define the expansion path.\"}]},\"architecture\":{\"titlePrefix\":\"An architecture designed for\",\"titleHighlight\":\"document trust\",\"subtitle\":\"A clear pipeline that turns sensitive documents into sourced, verifiable and traceable answers.\",\"footerNote\":\"Sources, access and verification kept at every step\",\"arch\":{\"tabs\":{\"index\":{\"label\":\"Indexing\",\"sub\":\"— structuring the corpus\"},\"query\":{\"label\":\"Querying\",\"sub\":\"— interrogating the index\"}},\"phaseDesc\":{\"index\":\"This step runs once per document: multimodal parsing, segmentation into passages, semantic vectorization, then storage in a queryable encrypted index.\",\"query\":\"For every question, the agent queries the index with hybrid search, selects the most relevant passages, drafts an answer, then verifies it against the sources before returning it.\"},\"index\":{\"deposit\":{\"tag\":\"ingest\",\"title\":\"Document ingestion\",\"desc\":\"The file — PDF, Word, Excel… — joins a corpus whose access perimeter has been defined in advance.\"},\"read\":{\"tag\":\"parsing\",\"title\":\"Multimodal parsing\",\"desc\":\"Text, tables and images are analyzed together to preserve the document's structure.\"},\"chunk\":{\"tag\":\"segmentation\",\"title\":\"Segmentation into passages\",\"desc\":\"Content is split into coherent passages, sized for precise retrieval.\"},\"embed\":{\"tag\":\"embeddings\",\"title\":\"Semantic vectorization\",\"desc\":\"Each passage is converted into a numerical vector (embedding) that encodes its meaning for semantic comparison.\"},\"store\":{\"tag\":\"encrypted\",\"title\":\"Encrypted index\",\"desc\":\"Vectors and metadata are stored in an index encrypted at rest, ready to be queried.\"}},\"query\":{\"question\":{\"tag\":\"question\",\"title\":\"Your question\",\"desc\":\"The question is asked in natural language, with no special search syntax.\",\"bubble\":\"What is the term of the Verdi contract?\"},\"intent\":{\"tag\":\"intent\",\"title\":\"Intent analysis\",\"desc\":\"The agent identifies the intent and breaks multi-part questions into sub-queries.\"},\"search\":{\"tag\":\"search\",\"title\":\"Hybrid search\",\"desc\":\"The index is queried in parallel by semantic similarity and lexical matching.\"},\"verify\":{\"tag\":\"verif.\",\"title\":\"Verified generation\",\"desc\":\"The model drafts an answer, then each claim is cross-checked against the retained source passages.\"},\"answer\":{\"tag\":\"answer\",\"title\":\"Sourced answer\",\"desc\":\"The answer is returned with precise references: document, page, clause.\"}}}},\"technical\":{\"badge\":\"DOCUMENT CHAIN\",\"title\":\"A readable chain built for\",\"titleHighlight\":\"evidence\",\"subtitle\":\"From added document to cited answer, each step preserves the link back to the source.\",\"footnote\":\"Sources, access and verification preserved at each step\",\"steps\":{\"ingest\":{\"title\":\"Authorized corpus\",\"body\":\"Documents and metadata enter a defined perimeter before use.\",\"metric\":\"Clear use case // Framed corpus\"},\"parse\":{\"title\":\"Preparation\",\"body\":\"Text, tables and pages are prepared while preserving useful context.\",\"metric\":\"Structure preserved // Sources prepared\"},\"embed\":{\"title\":\"Indexing\",\"body\":\"Passages are chunked and indexed for hybrid search.\",\"metric\":\"Isolated corpus // Governed access\"},\"retrieve\":{\"title\":\"Hybrid search\",\"body\":\"Semantic and lexical retrieval work together to find useful passages.\",\"metric\":\"Semantic + lexical search\"},\"cite\":{\"title\":\"Citations\",\"body\":\"Claims stay tied to reviewable excerpts.\",\"metric\":\"Answer linked to sources\"},\"verify\":{\"title\":\"Review\",\"body\":\"Sources, access and quality signals remain available for human review.\",\"metric\":\"Review-ready evidence\"}}},\"faq\":{\"badge\":\"FAQ\",\"titleLine1\":\"Have\",\"titleHighlight\":\"questions\",\"titleLine2\":\"? We have answers.\",\"subtitle\":\"Key answers about sources, security, deployment and document governance with Prosperify.\",\"items\":[{\"question\":\"Does the AI continuously learn from my data?\",\"answer\":\"No. Client corpora are not used to train general models. They are used to generate sourced answers inside the agreed project perimeter.\"},{\"question\":\"Where are documents hosted?\",\"answer\":\"It depends on the selected model: dedicated cloud, hybrid architecture or local deployment. The trust perimeter is defined with the client around security, confidentiality and operational constraints.\"},{\"question\":\"Does Prosperify replace experts?\",\"answer\":\"No. Prosperify helps automate document search, synthesis, extraction and comparison. Decisions, validation and interpretation remain with business experts.\"},{\"question\":\"How are answers verified?\",\"answer\":\"Answers are generated from selected document excerpts and linked back to the sources used. Insufficiently supported statements can be surfaced to support human review.\"},{\"question\":\"Can access be limited by role, store or corpus?\",\"answer\":\"Yes. Access can be governed by role, store, corpus, user or confidentiality level. Out-of-scope operations are refused according to configured rules.\"},{\"question\":\"Do we need to rebuild the information system?\",\"answer\":\"No. Prosperify can be added as a document intelligence layer on top of existing systems. Integration can start with one corpus, one store and one business use case before expanding.\"},{\"question\":\"Which formats are supported?\",\"answer\":\"Prosperify is designed for structured and unstructured documents, including PDF, Word, Excel, CSV, JSON and other business corpora depending on project scope.\"},{\"question\":\"Which deployment modes are possible?\",\"answer\":\"Three approaches are possible: dedicated cloud, hybrid or local. The choice depends on confidentiality level, infrastructure constraints and sovereignty needs.\"}]},\"team\":{\"badge\":\"Team\",\"titlePrefix\":\"The team behind\",\"titleHighlight\":\"Prosperify\",\"subtitle\":\"A focused product and engineering team building document AI for organizations that work with sensitive information.\"},\"jobs\":{\"badge\":\"Jobs\",\"titlePrefix\":\"Build trusted\",\"titleHighlight\":\"document AI\",\"subtitle\":\"Open roles and hiring updates from Prosperify. We keep the team small, technical, and close to real customer problems.\",\"apply\":\"Apply\",\"emptyTitle\":\"No open role right now\",\"emptyDescription\":\"We are not hiring for a specific seat today, but strong infrastructure, product, and applied AI profiles can still reach out.\",\"viewAll\":\"View all roles\"},\"footer\":{\"tagline\":\"Query your documents with verifiable answers.\",\"product\":\"Product\",\"support\":\"Support\",\"legal\":\"Legal\",\"links\":{\"home\":\"Home\",\"overview\":\"Overview\",\"workflow\":\"Workflow\",\"deployment\":\"Deployment\",\"blog\":\"Blog\",\"team\":\"Team\",\"jobs\":\"Jobs\",\"faq\":\"FAQ\",\"contact\":\"Contact\",\"features\":\"Features\",\"sovereignty\":\"Sovereignty\",\"integration\":\"Integration\",\"architecture\":\"Architecture\",\"privacy\":\"Privacy\",\"terms\":\"Terms\",\"rgpd\":\"GDPR\"},\"copyright\":\"© 2025 Prosperify. All rights reserved.\",\"partnersTitle\":\"Support & Partners\"},\"roadmap\":{\"metaTitle\":\"Roadmap - Prosperify\",\"metaDescription\":\"Discover Prosperify's roadmap and upcoming work in sourced document intelligence.\",\"items\":[{\"date\":\"06/14/2024\",\"titlePrefix\":\"Start of the\",\"titleHighlight\":\"Prosperify\",\"lead\":\"Official launch of Prosperify, with a simple idea: make enterprise document search easier to verify and use.\",\"descriptionSegments\":[{\"text\":\"This milestone marks the birth of an ambitious project built around a single vision: enabling organizations to \"},{\"text\":\"make better use of their document knowledge\",\"emphasis\":true},{\"text\":\" by reducing information silos and making sources easier to retrieve through a \"},{\"text\":\"smart document search technology\",\"emphasis\":true},{\"text\":\".\"}],\"imageAlt\":\"Prosperify (logo, early stage)\",\"imageSrc\":\"/assets/brand/logo-mark.png\",\"imageVariant\":\"brandMark\"},{\"date\":\"09/26/2024\",\"titlePrefix\":\"Contact with\",\"titleHighlight\":\"Orpi\",\"lead\":\"First discussion with Orpi to explore a potential collaboration.\",\"description\":\"A meeting dedicated to understanding the barriers related to data exploitation in French mid-sized companies, and to analysing the impact of information fragmentation on missed business opportunities.\",\"imageAlt\":\"Orpi\",\"imageSrc\":\"/assets/partners/orpi.webp\",\"imageVariant\":\"partnerSmall\"},{\"date\":\"10/03/2024\",\"titlePrefix\":\"Design review with\",\"titleHighlight\":\"ESA\",\"lead\":\"Meeting with the European Space Agency for a first design review.\",\"descriptionSegments\":[{\"text\":\"A discussion focused on understanding the \"},{\"text\":\"security standards\",\"emphasis\":true},{\"text\":\" and \"},{\"text\":\"sovereignty requirements\",\"emphasis\":true},{\"text\":\" demanded by such agencies, while exploring their interest in a \"},{\"text\":\"document search technology\",\"emphasis\":true},{\"text\":\" adapted to their specific needs.\"}],\"imageAlt\":\"ESA\",\"imageSrc\":\"/assets/partners/esa.png\",\"imageVariant\":\"partnerMedium\"},{\"date\":\"01/02/2025\",\"title\":\"Joining Pépite France\",\"lead\":\"Prosperify joins the Pépite France network to support student innovation.\",\"imageAlt\":\"Pépite France\",\"imageSrc\":\"/assets/partners/pepite-beelyss.png\",\"imageVariant\":\"partnerLarge\"},{\"date\":\"01/04/2025\",\"titlePrefix\":\"Meeting with\",\"titleHighlight\":\"TUBA\",\"lead\":\"Discussion with the TUBA ecosystem around urban innovation and new digital uses.\",\"descriptionSegments\":[{\"text\":\"This meeting made it possible to explore the \"},{\"text\":\"challenges of leveraging data in urban environments\",\"emphasis\":true},{\"text\":\" and to identify opportunities offered by Prosperify in a context of \"},{\"text\":\"territorial innovation\",\"emphasis\":true},{\"text\":\". A key moment to understand how our technology can address the challenges of \"},{\"text\":\"information centralization\",\"emphasis\":true},{\"text\":\" and \"},{\"text\":\"data valorization\",\"emphasis\":true},{\"text\":\" for local stakeholders.\"}],\"imageAlt\":\"TUBA\",\"imageSrc\":\"/assets/partners/tuba.png\",\"imageVariant\":\"partnerWide\"},{\"date\":\"02/17/2025\",\"titlePrefix\":\"Contact with\",\"titleHighlight\":\"AXA\",\"lead\":\"First discussion with AXA about a potential strategic collaboration.\",\"descriptionSegments\":[{\"text\":\"A two-step meeting: first, an analysis of the \"},{\"text\":\"barriers related to document search\",\"emphasis\":true},{\"text\":\" in large groups, as well as of the \"},{\"text\":\"tools currently in use\",\"emphasis\":true},{\"text\":\". Then, a \"},{\"text\":\"presentation of Prosperify\",\"emphasis\":true},{\"text\":\", its mission and the \"},{\"text\":\"technology used\",\"emphasis\":true},{\"text\":\" to address these challenges.\"}],\"imageAlt\":\"AXA\",\"imageSrc\":\"/assets/partners/axa.png\",\"imageVariant\":\"partnerMedium\"},{\"date\":\"05/12/2025\",\"titlePrefix\":\"Joining\",\"titleHighlight\":\"La French Tech\",\"lead\":\"Prosperify joins La French Tech to become part of a national innovation ecosystem.\",\"descriptionSegments\":[{\"text\":\"This integration marks a new milestone in Prosperify's development as a \"},{\"text\":\"member start-up\",\"emphasis\":true},{\"text\":\". It opens access to an \"},{\"text\":\"active ecosystem of young companies\",\"emphasis\":true},{\"text\":\", opening opportunities for synergies, partnerships and visibility within the French innovation network.\"}],\"imageAlt\":\"La French Tech\",\"imageSrc\":\"/assets/partners/french-tech.png\",\"imageVariant\":\"partnerLarge\"},{\"date\":\"08/2025\",\"titlePrefix\":\"Official launch of\",\"titleHighlight\":\"Prosperify\",\"lead\":\"Go-to-market of the solution after several months of design, testing and ecosystem discussions.\",\"descriptionSegments\":[{\"text\":\"The launch makes the vision concrete: offering companies a \"},{\"text\":\"sovereign document assistant\",\"emphasis\":true},{\"text\":\" capable of \"},{\"text\":\"centralizing\",\"emphasis\":true},{\"text\":\" and \"},{\"text\":\"simplifying access to data\",\"emphasis\":true},{\"text\":\", with visible sources, governed access and a clear security perimeter.\"}],\"imageAlt\":\"Prosperify (launch)\",\"imageSrc\":\"/assets/brand/logo-full.png\",\"imageVariant\":\"brandFull\"}]}}"));}),
 "[project]/src/locales/fr/translation.json (json)", ((__turbopack_context__) => {
 
-__turbopack_context__.v(JSON.parse("{\"meta\":{\"title\":\"Prosperify - Intelligence documentaire vérifiable pour données sensibles\",\"description\":\"Interrogez vos corpus sensibles avec des réponses sourcées, des accès gouvernés et des modes de déploiement adaptés à votre périmètre.\"},\"hero\":{\"badge\":\"Intelligence documentaire pour données sensibles\",\"titleLine1\":\"Transformez vos documents\",\"titleHighlight\":\"confidentiels\",\"titleLine2\":\"en réponses sourcées.\",\"subtitle\":\"Prosperify aide les équipes à retrouver, comparer et vérifier l'information dans leurs corpus sensibles, avec des sources visibles, des accès gouvernés et un périmètre de confiance clair.\",\"primaryCta\":\"Demander une démo\",\"secondaryCta\":\"Voir le workflow\",\"demoCaption\":\"\",\"stats\":{\"citations\":\"réponses reliées aux sources consultées\",\"deployment\":\"modes de déploiement : cloud, hybride, local\",\"sources\":\"PDF, Word, Excel, CSV, JSON et corpus métier\"},\"trust\":{\"sources\":\"Sources citées\",\"permissions\":\"Accès gouvernés\",\"deployment\":\"Cloud, hybride ou local\",\"audit\":\"Sources et usage suivis\",\"sovereignty\":\"Cloud, hybride ou sur site\"}},\"workflow\":{\"badge\":\"WORKFLOW\",\"title\":\"Des réponses vérifiables\",\"titleHighlight\":\"sans perdre le contrôle\",\"titleSuffix\":\"\",\"subtitle\":\"Une séquence simple : sources validées, accès cadrés, réponse vérifiable.\"},\"workflowTabs\":{\"create\":{\"title\":\"Connecter\",\"heading\":\"Préparez uniquement les sources validées\",\"subtitle\":\"Dossiers KYC, rapports de due diligence et listes de sanctions — indexés dans des stores dédiés.\",\"assistantNameLabel\":\"Assistant cible\",\"assistantNameValue\":\"Assistant Juridique & Patrimonial\",\"documentsLabel\":\"Corpus vérifié\",\"documentsTransactionsName\":\"KYC_Verdi.xlsx\",\"button\":\"Connecter le corpus\",\"sourceStatus\":\"Validé\",\"pipelineLabel\":\"Sources\",\"readyBadge\":\"Prêt à interroger\",\"checkParsed\":\"Structure détectée\",\"checkIndexed\":\"Passages retrouvables\",\"checkScoped\":\"Périmètre appliqué\",\"sources\":[\"Contrats signés\",\"Dossiers clients\",\"Procédures internes\"],\"pipeline\":[\"Lire\",\"Préparer\",\"Indexer\"]},\"unify\":{\"title\":\"Cadrer\",\"subtitle\":\"L'agent distribue la requête sur vos stores KYC et retourne un résultat cité, avec sa source exacte.\",\"dropHere\":\"Ajoutez les documents autorisés\",\"browse\":\"Parcourir les fichiers\",\"heading\":\"Une question, une réponse sourcée et traçable\",\"formatsInfo\":\"PDF, Word, Excel, CSV, JSON, rapports, contrats...\",\"filetypePdf\":\"PDF\",\"filetypeCsv\":\"CSV\",\"filetypeDocx\":\"DOCX\",\"filetypeJson\":\"JSON\",\"rolesLabel\":\"Mission\",\"scopeLabel\":\"Corpus\",\"matrixCorpus\":\"Corpus\",\"allowedLabel\":\"Assistants configurés\",\"policyNote\":\"La segmentation se fait au niveau de l'assistant : corpus, mission et limites sont définis avant usage.\",\"rules\":[\"Sources visibles\",\"Réponses cadrées\",\"Recherche + citations\"],\"scopes\":[\"Contrats Verdi\",\"Dossiers KYC\",\"Procédures RH\"],\"assistants\":[{\"name\":\"Juridique\",\"role\":\"Clauses et contrats\",\"corpus\":\"Contrats\",\"action\":\"Comparer\"},{\"name\":\"Conformité\",\"role\":\"KYC et pièces sensibles\",\"corpus\":\"KYC\",\"action\":\"Vérifier\"},{\"name\":\"RH\",\"role\":\"Procédures internes\",\"corpus\":\"Procédures\",\"action\":\"Répondre\"}]},\"chat\":{\"title\":\"Interroger\",\"assistantName\":\"Chaque accès est enregistré et gouverné\",\"searchPlaceholder\":\"Rechercher...\",\"newChat\":\"Nouveau Chat\",\"botWelcome\":\"Journal d'audit immuable, contrôle d'accès par rôle, zéro donnée brute exposée.\",\"userQuestion\":\"Quelle est la durée du contrat Verdi ?\",\"sourcesLabel\":\"Sources utilisées\",\"answer\":{\"prefix\":\"Source\",\"middle\":\"durée initiale :\",\"highlight\":\"trois ans\",\"suffix\":\"Le renouvellement exige un accord écrit.\"},\"inputPlaceholder\":\"Demander une vérification...\"}},\"cookie\":{\"accept\":\"Tout accepter\",\"learn\":\"En savoir plus\",\"message\":\"Ce site utilise des cookies à des fins d'analyse. Vous pouvez choisir les catégories à accepter.\",\"reject\":\"Tout refuser\"},\"contact\":{\"badge\":\"CONTACT\",\"titleLine1\":\"Voyez Prosperify en action\",\"titleHighlight\":\"sur des documents entreprise\",\"subtitle\":\"Envoyez une note courte ou créez une invitation calendrier avec Prosperify déjà ajouté en invité.\",\"meeting\":{\"heading\":\"Planifier une session de travail\",\"description\":\"Vous préférez un échange direct ? Ouvrez un événement Google Calendar prérempli avec Prosperify déjà ajouté en invité.\",\"cta\":\"Ouvrir Google Calendar\",\"note\":\"Quand vous enregistrez ou envoyez l'événement, Prosperify est inclus dans l'invitation. Ajoutez Google Meet depuis l'événement si ce n'est pas activé par défaut.\",\"title\":\"Discussion de déploiement Prosperify\",\"details\":\"Échanger sur le périmètre documentaire, les exigences de sécurité, le modèle de déploiement et les prochaines étapes avec Prosperify.\",\"location\":\"Google Meet\"},\"form\":{\"namePlaceholder\":\"Votre nom complet\",\"companyPlaceholder\":\"Nom de votre entreprise\",\"emailPlaceholder\":\"Votre email\",\"phonePlaceholder\":\"Téléphone (optionnel)\",\"subjectPlaceholder\":\"Sélectionnez l'objet\",\"subjectInformation\":\"Demander une démonstration\",\"subjectPartnership\":\"Cadrer un pilote documentaire\",\"subjectOther\":\"Évaluer un déploiement souverain\",\"subjectApi\":\"Discuter d'une intégration API\",\"subjectVirtualPartner\":\"Partenariat / collaborateur virtuel\",\"messagePlaceholder\":\"Votre message\",\"submit\":\"Envoyer ma demande\",\"statusSending\":\"⏳ Envoi en cours...\",\"statusSuccess\":\"✅ Message envoyé !\",\"statusFixErrors\":\"❌ Merci de corriger les erreurs ci-dessus.\",\"statusUnexpected\":\"❌ Erreur inattendue.\",\"statusSendError\":\"❌ Erreur d'envoi.\"}},\"aiChat\":{\"sidebar\":{\"history\":\"Historique\"},\"conversations\":[\"Contrat Verdi\",\"Budget T4\",\"Procédures RH\",\"Rapport mensuel\"],\"openDocumentFull\":\"Ouvrir Contrat_Verdi.pdf (page 10)\",\"openDocumentShort\":\"Contrat_Verdi.pdf (page 10)\",\"pdf\":{\"contractNameSecondary\":\"Rapport_Financier_T4.pdf\",\"title\":\"Contrat Verdi.pdf\"}},\"products\":{\"badge\":\"NOS OFFRES\",\"titlePrefix\":\"Une solution,\",\"titleMiddle\":\"trois niveaux de\",\"titleHighlight\":\"contrôle\",\"subtitle\":\"Trois modes de déploiement pour choisir le bon niveau de contrôle, d'intégration et d'exploitation.\",\"offers\":[{\"badge\":\"\",\"title\":\"Cloud Dédié\",\"descriptionSegments\":[],\"features\":[\"Infrastructure dédiée haute performance\",\"Sécurité et conformité garanties\",\"Maintenance et mises à jour automatiques\",\"Scalabilité instantanée\"]},{\"badge\":\"\",\"title\":\"Hybride\",\"descriptionSegments\":[],\"features\":[\"Vos données restent sur votre infrastructure\",\"Modèle IA hébergé et maintenu par nos soins\",\"Conformité réglementaire maximale\",\"Contrôle total de vos informations\"]},{\"badge\":\"SÉCURITÉ MAXIMALE\",\"title\":\"100% Local\",\"descriptionSegments\":[],\"features\":[\"Déploiement sur votre infrastructure\",\"Souveraineté totale des données\",\"Aucune dépendance externe\",\"Personnalisation maximale\"]}]},\"features\":{\"badge\":\"FONCTIONNALITÉS\",\"title\":\"Une intelligence documentaire\",\"titleHighlight\":\"sourcée, gouvernée et vérifiable\",\"subtitle\":\"\",\"items\":{\"precision\":{\"shortTitle\":\"Réponses sourcées\",\"title\":\"Réponses sourcées et vérifiables\",\"subtitle\":\"Citations phrase par phrase\",\"description\":\"Chaque réponse conserve le lien avec les extraits utilisés afin de faciliter la revue, l'audit et la validation métier.\"},\"coverage\":{\"shortTitle\":\"Recherche hybride\",\"title\":\"Recherche hybride dans tous vos documents\",\"subtitle\":\"Sémantique, lexicale, visuelle et contextuelle\",\"description\":\"Prosperify combine recherche sémantique, mots-clés, contexte documentaire et signaux visuels pour retrouver les passages utiles dans des corpus hétérogènes.\"},\"performance\":{\"shortTitle\":\"Synthèses fiables\",\"title\":\"Synthèses cadrées par vos sources\",\"subtitle\":\"Recherche, comparaison, extraction\",\"description\":\"Prosperify Agent aide vos équipes à synthétiser, comparer des clauses ou extraire des informations clés à partir de vos stores documentaires.\"},\"governance\":{\"shortTitle\":\"Accès contrôlés\",\"title\":\"Accès contrôlés par rôle et par store\",\"subtitle\":\"Chaque utilisateur dans le bon périmètre\",\"description\":\"Les accès peuvent être limités selon le rôle, le service, le niveau de confidentialité, le store ou le corpus autorisé.\"},\"orchestration\":{\"shortTitle\":\"Revue métier\",\"title\":\"Un workflow de revue pour les équipes métier\",\"subtitle\":\"Recherche, réponse, vérification\",\"description\":\"Prosperify garde les passages retrouvés, les citations et le contexte visibles afin d'aider les équipes à relire les réponses importantes avant usage.\"},\"differentiation\":{\"shortTitle\":\"Souveraineté\",\"title\":\"Souveraineté des données\",\"subtitle\":\"Données dans un périmètre de confiance\",\"description\":\"Déploiement dédié, hybride ou local, avec isolation des données et sans entraînement de modèles généraux sur les corpus clients.\"}},\"deployment\":{\"dedicated\":{\"title\":\"Cloud Dédié\",\"line1\":\"Instance dédiée à votre organisation\",\"line2\":\"Contrôles de sécurité et support de revue\",\"line3\":\"Maintenance et mises à jour gérées\",\"line4\":\"Capacité ajustable selon le périmètre\"},\"hybrid\":{\"title\":\"Hybride\",\"line1\":\"Données sensibles dans votre périmètre\",\"line2\":\"Connecteurs privés selon besoin\",\"line3\":\"Support pour vos revues internes\",\"line4\":\"Flux d'information contrôlés\"},\"local\":{\"title\":\"Déploiement local\",\"badge\":\"CONTRÔLE RENFORCÉ\",\"line1\":\"Déploiement sur votre infrastructure\",\"line2\":\"Documents et opérations dans votre périmètre\",\"line3\":\"Dépendances externes limitées selon le périmètre\",\"line4\":\"Runbooks adaptés à vos opérations\"}}},\"sovereignty\":{\"badge\":\"SÉCURITÉ & GOUVERNANCE\",\"titlePrefix\":\"Vos données\",\"titleHighlight\":\"protégées en instance dédiée\",\"titleSuffix\":\"du document à la réponse\",\"subtitle\":\"\",\"mainCard\":{\"titleLine1\":\"Une architecture single-tenant\",\"titleLine2\":\"\",\"description\":\"Chaque client dispose d'un périmètre isolé pour les documents, les stores, les droits et les traces d'usage.\",\"chips\":[\"Corpus\",\"Droits\",\"Sources\"]},\"cloud\":{\"title\":\"Instance dédiée\",\"description\":\"Un environnement propre à chaque organisation sépare les données, les traitements et les opérations sensibles.\",\"chips\":[\"Single-tenant\",\"Isolé\",\"Dédié\"]},\"encryption\":{\"title\":\"Système de gestion des clés\",\"description\":\"La gestion des clés protège les documents et métadonnées stockés dans la couche données.\",\"chips\":[\"Données stockées\",\"Protection\",\"Contrôle\"]},\"kubernetes\":{\"title\":\"Accès maîtrisés\",\"description\":\"Les accès sont limités par rôle, store, corpus et usage afin que chaque équipe reste dans son périmètre.\",\"chips\":[\"Rôles\",\"Assistants\",\"Scopes\"]},\"dataProtection\":{\"title\":\"Suivi et audit\",\"description\":\"Les éléments de suivi aident à comprendre l'usage, diagnostiquer les incidents et examiner les réponses sourcées.\",\"chips\":[\"Usage\",\"Audit\",\"Revue\"]},\"supervision\":{\"title\":\"Déploiement adapté au périmètre\",\"description\":\"Cloud dédié, hybride ou local : le mode retenu s'aligne sur vos exigences de confidentialité et d'exploitation.\",\"badges\":[\"Cloud dédié\",\"Hybride\",\"Local\"],\"chips\":[\"Cloud dédié\",\"Hybride\",\"Local\"]}},\"integration\":{\"badge\":\"INTÉGRATION\",\"titlePrefix\":\"Une couche\",\"titleHighlight\":\"documentaire\",\"titleSuffix\":\"au-dessus de vos outils\",\"subtitle\":\"Prosperify s'ajoute progressivement à vos sources existantes pour rendre les corpus autorisés interrogeables, gouvernés et vérifiables.\",\"steps\":[{\"title\":\"Cadrage\",\"description\":\"Cas d'usage clarifié, corpus identifié, règles d'accès cadrées.\"},{\"title\":\"Ingestion pilote\",\"description\":\"Documents préparés, sources retrouvables, premières requêtes testées.\"},{\"title\":\"Configuration\",\"description\":\"Utilisateurs pilotes configurés, accès vérifiés, scénarios prêts.\"},{\"title\":\"Validation métier\",\"description\":\"Qualité des réponses relue, limites identifiées, arbitrages réalisés.\"},{\"title\":\"Production & extension\",\"description\":\"Usages suivis, supervision active, trajectoire d'extension définie.\"}]},\"architecture\":{\"titlePrefix\":\"Une architecture pensée pour la\",\"titleHighlight\":\"confiance documentaire\",\"subtitle\":\"Une chaîne claire pour passer de documents sensibles à des réponses sourcées, relisibles et contrôlables.\",\"footerNote\":\"Sources, accès et vérification conservés à chaque étape\"},\"technical\":{\"badge\":\"CHAÎNE DOCUMENTAIRE\",\"title\":\"Une chaîne lisible, conçue pour la\",\"titleHighlight\":\"preuve\",\"subtitle\":\"Du document ajouté à la réponse citée, chaque étape conserve le lien avec la source.\",\"footnote\":\"Sources, accès et vérification conservés à chaque étape\",\"steps\":{\"ingest\":{\"title\":\"Corpus autorisé\",\"body\":\"Documents et métadonnées rejoignent un périmètre défini avant usage.\",\"metric\":\"Cas d'usage clair // Corpus cadré\"},\"parse\":{\"title\":\"Préparation\",\"body\":\"Textes, tableaux et pages sont préparés en conservant le contexte utile.\",\"metric\":\"Structure conservée // Sources préparées\"},\"embed\":{\"title\":\"Indexation\",\"body\":\"Les passages sont découpés et indexés pour la recherche hybride.\",\"metric\":\"Corpus isolé // Accès gouvernés\"},\"retrieve\":{\"title\":\"Recherche hybride\",\"body\":\"Recherche sémantique et lexicale travaillent ensemble pour retrouver les passages utiles.\",\"metric\":\"Recherche sémantique + lexicale\"},\"cite\":{\"title\":\"Citations\",\"body\":\"Les affirmations restent reliées aux extraits consultables.\",\"metric\":\"Réponse reliée aux sources\"},\"verify\":{\"title\":\"Revue\",\"body\":\"Les sources, accès et signaux de qualité restent disponibles pour l'examen humain.\",\"metric\":\"Éléments utiles pour la revue\"}}},\"faq\":{\"badge\":\"FAQ\",\"titleLine1\":\"Questions\",\"titleHighlight\":\"fréquentes\",\"titleLine2\":\"\",\"subtitle\":\"Les réponses essentielles sur les sources, la sécurité, le déploiement et la gouvernance documentaire avec Prosperify.\",\"items\":[{\"question\":\"Mes données servent-elles à entraîner des modèles ?\",\"answer\":\"Non. Les corpus clients ne sont pas utilisés pour entraîner les modèles. Prosperify interroge vos documents dans un périmètre dédié afin de produire des réponses sourcées, sans réutiliser votre capital documentaire.\"},{\"question\":\"Où sont hébergées les données ?\",\"answer\":\"Cela dépend du mode retenu : cloud dédié, architecture hybride ou déploiement local. Le périmètre de confiance est défini avec le client selon ses contraintes de sécurité, de confidentialité et d'exploitation.\"},{\"question\":\"Prosperify remplace-t-il les experts ?\",\"answer\":\"Non. Prosperify automatise la recherche, la synthèse, l'extraction et la comparaison documentaire. Les décisions, validations et interprétations restent portées par les experts métiers.\"},{\"question\":\"Comment les réponses sont-elles vérifiées ?\",\"answer\":\"Les réponses sont générées à partir d'extraits documentaires retenus, puis reliées aux sources utilisées. Les affirmations insuffisamment étayées peuvent être signalées afin de faciliter la revue humaine.\"},{\"question\":\"Peut-on limiter l'accès par rôle, store ou corpus ?\",\"answer\":\"Oui. Les accès peuvent être gouvernés par rôle, store, corpus, utilisateur ou niveau de confidentialité. Les opérations hors périmètre sont refusées selon les règles configurées.\"},{\"question\":\"Faut-il refondre le système d'information ?\",\"answer\":\"Non. Prosperify s'ajoute comme couche d'intelligence documentaire au-dessus des systèmes existants. L'intégration peut commencer avec un corpus, un store et un cas métier avant extension.\"},{\"question\":\"Quels formats sont pris en charge ?\",\"answer\":\"Prosperify est conçu pour traiter des documents structurés et non structurés, notamment PDF, Word, Excel, CSV, JSON et autres corpus métier selon le périmètre du projet.\"},{\"question\":\"Quels modes de déploiement sont possibles ?\",\"answer\":\"Trois approches sont possibles : cloud dédié, hybride ou local. Le choix dépend du niveau de confidentialité, des contraintes d'infrastructure et du besoin de souveraineté.\"}]},\"team\":{\"badge\":\"Équipe\",\"titlePrefix\":\"L'équipe derrière\",\"titleHighlight\":\"Prosperify\",\"subtitle\":\"Une équipe produit et ingénierie concentrée sur l'IA documentaire pour les organisations qui manipulent des informations sensibles.\"},\"jobs\":{\"badge\":\"Recrutement\",\"titlePrefix\":\"Construire l'IA documentaire\",\"titleHighlight\":\"de confiance\",\"subtitle\":\"Postes ouverts et actualités recrutement de Prosperify. Nous gardons une équipe resserrée, technique et proche des problèmes clients.\",\"apply\":\"Candidater\",\"emptyTitle\":\"Aucun poste ouvert pour le moment\",\"emptyDescription\":\"Nous ne recrutons pas sur un poste précis aujourd'hui, mais les profils infrastructure, produit et IA appliquée peuvent nous écrire.\",\"viewAll\":\"Voir les postes\"},\"footer\":{\"tagline\":\"Interrogez vos documents avec des réponses vérifiables.\",\"product\":\"Produit\",\"support\":\"Support\",\"legal\":\"Légal\",\"links\":{\"home\":\"Accueil\",\"overview\":\"Aperçu\",\"workflow\":\"Workflow\",\"deployment\":\"Déploiement\",\"blog\":\"Blog\",\"team\":\"Équipe\",\"jobs\":\"Recrutement\",\"faq\":\"FAQ\",\"contact\":\"Contact\",\"features\":\"Fonctionnalités\",\"sovereignty\":\"Souveraineté\",\"integration\":\"Intégration\",\"architecture\":\"Architecture\",\"privacy\":\"Confidentialité\",\"terms\":\"Conditions\",\"rgpd\":\"RGPD\"},\"copyright\":\"© 2025 Prosperify. Tous droits réservés.\",\"partnersTitle\":\"Accompagnement & Partenaires\"},\"roadmap\":{\"metaTitle\":\"Roadmap - Prosperify\",\"metaDescription\":\"Découvrez la feuille de route de Prosperify et nos prochaines évolutions en intelligence documentaire sourcée.\",\"items\":[{\"date\":\"14/06/2024\",\"titlePrefix\":\"Début du projet\",\"titleHighlight\":\"Prosperify\",\"lead\":\"Lancement officiel de Prosperify, avec une idée simple : rendre la recherche documentaire en entreprise plus exploitable et vérifiable.\",\"descriptionSegments\":[{\"text\":\"Cette étape marque la naissance d'un projet construit autour d'une vision : aider les organisations à \"},{\"text\":\"mieux exploiter leurs données documentaires\",\"emphasis\":true},{\"text\":\" en réduisant les silos d'information et en rendant les sources plus faciles à retrouver grâce à une \"},{\"text\":\"technologie de recherche documentaire intelligente\",\"emphasis\":true},{\"text\":\".\"}],\"imageAlt\":\"Prosperify (logo historique)\",\"imageSrc\":\"/assets/brand/logo-mark.png\",\"imageVariant\":\"brandMark\"},{\"date\":\"26/09/2024\",\"titlePrefix\":\"Contact avec\",\"titleHighlight\":\"Orpi\",\"lead\":\"Premier échange avec Orpi pour explorer une potentielle collaboration.\",\"description\":\"Rendez-vous dédié à la compréhension des barrages liés à l'exploitation des données dans les ETI françaises, ainsi qu'à l'analyse de l'impact de la fragmentation de l'information sur les opportunités commerciales manquées.\",\"imageAlt\":\"Orpi\",\"imageSrc\":\"/assets/partners/orpi.webp\",\"imageVariant\":\"partnerSmall\"},{\"date\":\"03/10/2024\",\"titlePrefix\":\"Revue de design avec\",\"titleHighlight\":\"ESA\",\"lead\":\"Rendez-vous avec l'Agence Spatiale Européenne pour une première revue de design.\",\"descriptionSegments\":[{\"text\":\"Rencontre axée sur la compréhension des \"},{\"text\":\"standards de sécurité\",\"emphasis\":true},{\"text\":\" et de \"},{\"text\":\"souveraineté\",\"emphasis\":true},{\"text\":\" exigés par ce type d'agences, tout en explorant leur intérêt pour une \"},{\"text\":\"technologie de recherche documentaire\",\"emphasis\":true},{\"text\":\" adaptée à leurs besoins spécifiques.\"}],\"imageAlt\":\"ESA\",\"imageSrc\":\"/assets/partners/esa.png\",\"imageVariant\":\"partnerMedium\"},{\"date\":\"02/01/2025\",\"title\":\"Intégration Pépite France\",\"lead\":\"Prosperify rejoint le réseau Pépite France pour soutenir l'innovation étudiante.\",\"imageAlt\":\"Pépite France\",\"imageSrc\":\"/assets/partners/pepite-beelyss.png\",\"imageVariant\":\"partnerLarge\"},{\"date\":\"04/01/2025\",\"titlePrefix\":\"Rencontre avec\",\"titleHighlight\":\"TUBA\",\"lead\":\"Échange avec l'écosystème TUBA autour de l'innovation urbaine et des nouveaux usages numériques.\",\"descriptionSegments\":[{\"text\":\"Cette rencontre a permis d'explorer les \"},{\"text\":\"défis liés à l'exploitation des données en milieu urbain\",\"emphasis\":true},{\"text\":\" et d'identifier les opportunités offertes par Prosperify dans un contexte d'\"},{\"text\":\"innovation territoriale\",\"emphasis\":true},{\"text\":\". Un moment clé pour comprendre comment notre technologie peut répondre aux enjeux de \"},{\"text\":\"centralisation de l'information\",\"emphasis\":true},{\"text\":\" et de \"},{\"text\":\"valorisation des données\",\"emphasis\":true},{\"text\":\" au service des acteurs locaux.\"}],\"imageAlt\":\"TUBA\",\"imageSrc\":\"/assets/partners/tuba.png\",\"imageVariant\":\"partnerWide\"},{\"date\":\"17/02/2025\",\"titlePrefix\":\"Contact avec\",\"titleHighlight\":\"AXA\",\"lead\":\"Premier échange avec AXA autour d'une potentielle collaboration stratégique.\",\"descriptionSegments\":[{\"text\":\"Rencontre en deux phases : d'abord, une analyse des \"},{\"text\":\"barrages liés à l'exploitation de la recherche documentaire\",\"emphasis\":true},{\"text\":\" dans les grands groupes, ainsi que des \"},{\"text\":\"outils actuellement utilisés\",\"emphasis\":true},{\"text\":\". Ensuite, une \"},{\"text\":\"présentation de Prosperify\",\"emphasis\":true},{\"text\":\", de sa mission et de la \"},{\"text\":\"technologie employée\",\"emphasis\":true},{\"text\":\" pour répondre à ces enjeux.\"}],\"imageAlt\":\"AXA\",\"imageSrc\":\"/assets/partners/axa.png\",\"imageVariant\":\"partnerMedium\"},{\"date\":\"12/05/2025\",\"titlePrefix\":\"Intégration\",\"titleHighlight\":\"La French Tech\",\"lead\":\"Prosperify rejoint La French Tech afin de s'inscrire dans un écosystème national d'innovation.\",\"descriptionSegments\":[{\"text\":\"Cette intégration marque une nouvelle étape dans le développement de Prosperify en tant que \"},{\"text\":\"start-up membre\",\"emphasis\":true},{\"text\":\". Elle ouvre l'accès à un \"},{\"text\":\"écosystème actif de jeunes entreprises\",\"emphasis\":true},{\"text\":\", ouvrant des opportunités de synergies, de partenariats et de visibilité au sein du réseau français de l'innovation.\"}],\"imageAlt\":\"La French Tech\",\"imageSrc\":\"/assets/partners/french-tech.png\",\"imageVariant\":\"partnerLarge\"},{\"date\":\"08/2025\",\"titlePrefix\":\"Lancement officiel de\",\"titleHighlight\":\"Prosperify\",\"lead\":\"Mise sur le marché de la solution après plusieurs mois de conception, de tests et d'échanges avec l'écosystème.\",\"descriptionSegments\":[{\"text\":\"Le lancement concrétise une vision : proposer aux entreprises un \"},{\"text\":\"assistant documentaire souverain\",\"emphasis\":true},{\"text\":\", capable de \"},{\"text\":\"centraliser\",\"emphasis\":true},{\"text\":\" et \"},{\"text\":\"simplifier l'accès aux données\",\"emphasis\":true},{\"text\":\", avec des sources visibles, des accès gouvernés et un périmètre de sécurité clair.\"}],\"imageAlt\":\"Prosperify (lancement)\",\"imageSrc\":\"/assets/brand/logo-full.png\",\"imageVariant\":\"brandFull\"}]}}"));}),
+__turbopack_context__.v(JSON.parse("{\"meta\":{\"title\":\"Prosperify - Intelligence documentaire vérifiable pour données sensibles\",\"description\":\"Interrogez vos corpus sensibles avec des réponses sourcées, des accès gouvernés et des modes de déploiement adaptés à votre périmètre.\"},\"hero\":{\"badge\":\"Intelligence documentaire pour données sensibles\",\"titleLine1\":\"Transformez vos documents\",\"titleHighlight\":\"confidentiels\",\"titleLine2\":\"en réponses sourcées.\",\"subtitle\":\"Prosperify aide les équipes à retrouver, comparer et vérifier l'information dans leurs corpus sensibles, avec des sources visibles, des accès gouvernés et un périmètre de confiance clair.\",\"primaryCta\":\"Demander une démo\",\"secondaryCta\":\"Voir le workflow\",\"demoCaption\":\"\",\"stats\":{\"citations\":\"réponses reliées aux sources consultées\",\"deployment\":\"modes de déploiement : cloud, hybride, local\",\"sources\":\"PDF, Word, Excel, CSV, JSON et corpus métier\"},\"trust\":{\"sources\":\"Sources citées\",\"permissions\":\"Accès gouvernés\",\"deployment\":\"Cloud, hybride ou local\",\"audit\":\"Sources et usage suivis\",\"sovereignty\":\"Cloud, hybride ou sur site\"}},\"workflow\":{\"badge\":\"WORKFLOW\",\"title\":\"Des réponses vérifiables\",\"titleHighlight\":\"sans perdre le contrôle\",\"titleSuffix\":\"\",\"subtitle\":\"Une séquence simple : sources validées, accès cadrés, réponse vérifiable.\"},\"workflowTabs\":{\"create\":{\"title\":\"Connecter\",\"heading\":\"Préparez uniquement les sources validées\",\"subtitle\":\"Dossiers KYC, rapports de due diligence et listes de sanctions — indexés dans des stores dédiés.\",\"assistantNameLabel\":\"Assistant cible\",\"assistantNameValue\":\"Assistant Juridique & Patrimonial\",\"documentsLabel\":\"Corpus vérifié\",\"documentsTransactionsName\":\"KYC_Verdi.xlsx\",\"button\":\"Connecter le corpus\",\"sourceStatus\":\"Validé\",\"pipelineLabel\":\"Sources\",\"readyBadge\":\"Prêt à interroger\",\"checkParsed\":\"Structure détectée\",\"checkIndexed\":\"Passages retrouvables\",\"checkScoped\":\"Périmètre appliqué\",\"sources\":[\"Contrats signés\",\"Dossiers clients\",\"Procédures internes\"],\"pipeline\":[\"Lire\",\"Préparer\",\"Indexer\"]},\"unify\":{\"title\":\"Cadrer\",\"subtitle\":\"L'agent distribue la requête sur vos stores KYC et retourne un résultat cité, avec sa source exacte.\",\"dropHere\":\"Ajoutez les documents autorisés\",\"browse\":\"Parcourir les fichiers\",\"heading\":\"Une question, une réponse sourcée et traçable\",\"formatsInfo\":\"PDF, Word, Excel, CSV, JSON, rapports, contrats...\",\"filetypePdf\":\"PDF\",\"filetypeCsv\":\"CSV\",\"filetypeDocx\":\"DOCX\",\"filetypeJson\":\"JSON\",\"rolesLabel\":\"Mission\",\"scopeLabel\":\"Corpus\",\"matrixCorpus\":\"Corpus\",\"allowedLabel\":\"Assistants configurés\",\"policyNote\":\"La segmentation se fait au niveau de l'assistant : corpus, mission et limites sont définis avant usage.\",\"rules\":[\"Sources visibles\",\"Réponses cadrées\",\"Recherche + citations\"],\"scopes\":[\"Contrats Verdi\",\"Dossiers KYC\",\"Procédures RH\"],\"assistants\":[{\"name\":\"Juridique\",\"role\":\"Clauses et contrats\",\"corpus\":\"Contrats\",\"action\":\"Comparer\"},{\"name\":\"Conformité\",\"role\":\"KYC et pièces sensibles\",\"corpus\":\"KYC\",\"action\":\"Vérifier\"},{\"name\":\"RH\",\"role\":\"Procédures internes\",\"corpus\":\"Procédures\",\"action\":\"Répondre\"}]},\"chat\":{\"title\":\"Interroger\",\"assistantName\":\"Chaque accès est enregistré et gouverné\",\"searchPlaceholder\":\"Rechercher...\",\"newChat\":\"Nouveau Chat\",\"botWelcome\":\"Journal d'audit immuable, contrôle d'accès par rôle, zéro donnée brute exposée.\",\"userQuestion\":\"Quelle est la durée du contrat Verdi ?\",\"sourcesLabel\":\"Sources utilisées\",\"answer\":{\"prefix\":\"Source\",\"middle\":\"durée initiale :\",\"highlight\":\"trois ans\",\"suffix\":\"Le renouvellement exige un accord écrit.\"},\"inputPlaceholder\":\"Demander une vérification...\"}},\"cookie\":{\"accept\":\"Tout accepter\",\"learn\":\"En savoir plus\",\"message\":\"Ce site utilise des cookies à des fins d'analyse. Vous pouvez choisir les catégories à accepter.\",\"reject\":\"Tout refuser\"},\"contact\":{\"badge\":\"CONTACT\",\"titleLine1\":\"Voyez Prosperify en action\",\"titleHighlight\":\"sur des documents entreprise\",\"subtitle\":\"Envoyez une note courte ou créez une invitation calendrier avec Prosperify déjà ajouté en invité.\",\"meeting\":{\"heading\":\"Planifier une session de travail\",\"description\":\"Vous préférez un échange direct ? Ouvrez un événement Google Calendar prérempli avec Prosperify déjà ajouté en invité.\",\"cta\":\"Ouvrir Google Calendar\",\"note\":\"Quand vous enregistrez ou envoyez l'événement, Prosperify est inclus dans l'invitation. Ajoutez Google Meet depuis l'événement si ce n'est pas activé par défaut.\",\"title\":\"Discussion de déploiement Prosperify\",\"details\":\"Échanger sur le périmètre documentaire, les exigences de sécurité, le modèle de déploiement et les prochaines étapes avec Prosperify.\",\"location\":\"Google Meet\"},\"form\":{\"namePlaceholder\":\"Votre nom complet\",\"companyPlaceholder\":\"Nom de votre entreprise\",\"emailPlaceholder\":\"Votre email\",\"phonePlaceholder\":\"Téléphone (optionnel)\",\"subjectPlaceholder\":\"Sélectionnez l'objet\",\"subjectInformation\":\"Demander une démonstration\",\"subjectPartnership\":\"Cadrer un pilote documentaire\",\"subjectOther\":\"Évaluer un déploiement souverain\",\"subjectApi\":\"Discuter d'une intégration API\",\"subjectVirtualPartner\":\"Partenariat / collaborateur virtuel\",\"messagePlaceholder\":\"Votre message\",\"submit\":\"Envoyer ma demande\",\"statusSending\":\"⏳ Envoi en cours...\",\"statusSuccess\":\"✅ Message envoyé !\",\"statusFixErrors\":\"❌ Merci de corriger les erreurs ci-dessus.\",\"statusUnexpected\":\"❌ Erreur inattendue.\",\"statusSendError\":\"❌ Erreur d'envoi.\"}},\"aiChat\":{\"sidebar\":{\"history\":\"Historique\"},\"conversations\":[\"Contrat Verdi\",\"Budget T4\",\"Procédures RH\",\"Rapport mensuel\"],\"openDocumentFull\":\"Ouvrir Contrat_Verdi.pdf (page 10)\",\"openDocumentShort\":\"Contrat_Verdi.pdf (page 10)\",\"pdf\":{\"contractNameSecondary\":\"Rapport_Financier_T4.pdf\",\"title\":\"Contrat Verdi.pdf\"}},\"products\":{\"badge\":\"NOS OFFRES\",\"titlePrefix\":\"Une solution,\",\"titleMiddle\":\"trois niveaux de\",\"titleHighlight\":\"contrôle\",\"subtitle\":\"Trois modes de déploiement pour choisir le bon niveau de contrôle, d'intégration et d'exploitation.\",\"offers\":[{\"badge\":\"\",\"title\":\"Cloud Dédié\",\"descriptionSegments\":[],\"features\":[\"Infrastructure dédiée haute performance\",\"Sécurité et conformité garanties\",\"Maintenance et mises à jour automatiques\",\"Scalabilité instantanée\"]},{\"badge\":\"\",\"title\":\"Hybride\",\"descriptionSegments\":[],\"features\":[\"Vos données restent sur votre infrastructure\",\"Modèle IA hébergé et maintenu par nos soins\",\"Conformité réglementaire maximale\",\"Contrôle total de vos informations\"]},{\"badge\":\"SÉCURITÉ MAXIMALE\",\"title\":\"100% Local\",\"descriptionSegments\":[],\"features\":[\"Déploiement sur votre infrastructure\",\"Souveraineté totale des données\",\"Aucune dépendance externe\",\"Personnalisation maximale\"]}]},\"features\":{\"badge\":\"FONCTIONNALITÉS\",\"title\":\"Une intelligence documentaire\",\"titleHighlight\":\"sourcée, gouvernée et vérifiable\",\"subtitle\":\"\",\"items\":{\"precision\":{\"shortTitle\":\"Réponses sourcées\",\"title\":\"Réponses sourcées et vérifiables\",\"subtitle\":\"Citations phrase par phrase\",\"description\":\"Chaque réponse conserve le lien avec les extraits utilisés afin de faciliter la revue, l'audit et la validation métier.\"},\"coverage\":{\"shortTitle\":\"Recherche hybride\",\"title\":\"Recherche hybride dans tous vos documents\",\"subtitle\":\"Sémantique, lexicale, visuelle et contextuelle\",\"description\":\"Prosperify combine recherche sémantique, mots-clés, contexte documentaire et signaux visuels pour retrouver les passages utiles dans des corpus hétérogènes.\"},\"performance\":{\"shortTitle\":\"Synthèses fiables\",\"title\":\"Synthèses cadrées par vos sources\",\"subtitle\":\"Recherche, comparaison, extraction\",\"description\":\"Prosperify Agent aide vos équipes à synthétiser, comparer des clauses ou extraire des informations clés à partir de vos stores documentaires.\"},\"governance\":{\"shortTitle\":\"Accès contrôlés\",\"title\":\"Accès contrôlés par rôle et par store\",\"subtitle\":\"Chaque utilisateur dans le bon périmètre\",\"description\":\"Les accès peuvent être limités selon le rôle, le service, le niveau de confidentialité, le store ou le corpus autorisé.\"},\"orchestration\":{\"shortTitle\":\"Revue métier\",\"title\":\"Un workflow de revue pour les équipes métier\",\"subtitle\":\"Recherche, réponse, vérification\",\"description\":\"Prosperify garde les passages retrouvés, les citations et le contexte visibles afin d'aider les équipes à relire les réponses importantes avant usage.\"},\"differentiation\":{\"shortTitle\":\"Souveraineté\",\"title\":\"Souveraineté des données\",\"subtitle\":\"Données dans un périmètre de confiance\",\"description\":\"Déploiement dédié, hybride ou local, avec isolation des données et sans entraînement de modèles généraux sur les corpus clients.\"}},\"deployment\":{\"dedicated\":{\"title\":\"Cloud Dédié\",\"line1\":\"Instance dédiée à votre organisation\",\"line2\":\"Contrôles de sécurité et support de revue\",\"line3\":\"Maintenance et mises à jour gérées\",\"line4\":\"Capacité ajustable selon le périmètre\"},\"hybrid\":{\"title\":\"Hybride\",\"line1\":\"Données sensibles dans votre périmètre\",\"line2\":\"Connecteurs privés selon besoin\",\"line3\":\"Support pour vos revues internes\",\"line4\":\"Flux d'information contrôlés\"},\"local\":{\"title\":\"Déploiement local\",\"badge\":\"CONTRÔLE RENFORCÉ\",\"line1\":\"Déploiement sur votre infrastructure\",\"line2\":\"Documents et opérations dans votre périmètre\",\"line3\":\"Dépendances externes limitées selon le périmètre\",\"line4\":\"Runbooks adaptés à vos opérations\"}}},\"sovereignty\":{\"badge\":\"SÉCURITÉ & GOUVERNANCE\",\"titlePrefix\":\"Vos données\",\"titleHighlight\":\"protégées en instance dédiée\",\"titleSuffix\":\"du document à la réponse\",\"subtitle\":\"\",\"mainCard\":{\"titleLine1\":\"Une architecture single-tenant\",\"titleLine2\":\"\",\"description\":\"Chaque client dispose d'un périmètre isolé pour les documents, les stores, les droits et les traces d'usage.\",\"chips\":[\"Corpus\",\"Droits\",\"Sources\"]},\"cloud\":{\"title\":\"Instance dédiée\",\"description\":\"Un environnement propre à chaque organisation sépare les données, les traitements et les opérations sensibles.\",\"chips\":[\"Single-tenant\",\"Isolé\",\"Dédié\"]},\"encryption\":{\"title\":\"Système de gestion des clés\",\"description\":\"La gestion des clés protège les documents et métadonnées stockés dans la couche données.\",\"chips\":[\"Données stockées\",\"Protection\",\"Contrôle\"]},\"kubernetes\":{\"title\":\"Accès maîtrisés\",\"description\":\"Les accès sont limités par rôle, store, corpus et usage afin que chaque équipe reste dans son périmètre.\",\"chips\":[\"Rôles\",\"Assistants\",\"Scopes\"]},\"dataProtection\":{\"title\":\"Suivi et audit\",\"description\":\"Les éléments de suivi aident à comprendre l'usage, diagnostiquer les incidents et examiner les réponses sourcées.\",\"chips\":[\"Usage\",\"Audit\",\"Revue\"]},\"supervision\":{\"title\":\"Déploiement adapté au périmètre\",\"description\":\"Cloud dédié, hybride ou local : le mode retenu s'aligne sur vos exigences de confidentialité et d'exploitation.\",\"badges\":[\"Cloud dédié\",\"Hybride\",\"Local\"],\"chips\":[\"Cloud dédié\",\"Hybride\",\"Local\"]}},\"integration\":{\"badge\":\"INTÉGRATION\",\"titlePrefix\":\"Une couche\",\"titleHighlight\":\"documentaire\",\"titleSuffix\":\"au-dessus de vos outils\",\"subtitle\":\"Prosperify s'ajoute progressivement à vos sources existantes pour rendre les corpus autorisés interrogeables, gouvernés et vérifiables.\",\"steps\":[{\"title\":\"Cadrage\",\"description\":\"Cas d'usage clarifié, corpus identifié, règles d'accès cadrées.\"},{\"title\":\"Ingestion pilote\",\"description\":\"Documents préparés, sources retrouvables, premières requêtes testées.\"},{\"title\":\"Configuration\",\"description\":\"Utilisateurs pilotes configurés, accès vérifiés, scénarios prêts.\"},{\"title\":\"Validation métier\",\"description\":\"Qualité des réponses relue, limites identifiées, arbitrages réalisés.\"},{\"title\":\"Production & extension\",\"description\":\"Usages suivis, supervision active, trajectoire d'extension définie.\"}]},\"architecture\":{\"titlePrefix\":\"Une architecture pensée pour la\",\"titleHighlight\":\"confiance documentaire\",\"subtitle\":\"Une chaîne claire pour transformer des documents sensibles en réponses sourcées, vérifiables et traçables.\",\"footerNote\":\"Sources, accès et vérification conservés à chaque étape\",\"arch\":{\"tabs\":{\"index\":{\"label\":\"Indexation\",\"sub\":\"— structurer le corpus\"},\"query\":{\"label\":\"Interrogation\",\"sub\":\"— interroger l'index\"}},\"phaseDesc\":{\"index\":\"Cette étape s'exécute une seule fois par document : lecture multimodale, segmentation en passages, vectorisation sémantique, puis stockage dans un index chiffré interrogeable.\",\"query\":\"À chaque question, l'agent interroge l'index par recherche hybride, sélectionne les passages les plus pertinents, rédige une réponse, puis la vérifie par recoupement avec les sources avant de vous la restituer.\"},\"index\":{\"deposit\":{\"tag\":\"dépôt\",\"title\":\"Ingestion du document\",\"desc\":\"Le fichier — PDF, Word, Excel… — rejoint un corpus dont le périmètre d'accès a été défini au préalable.\"},\"read\":{\"tag\":\"lecture\",\"title\":\"Lecture multimodale\",\"desc\":\"Le texte, les tableaux et les images sont analysés conjointement pour préserver la structure du document.\"},\"chunk\":{\"tag\":\"segmentation\",\"title\":\"Découpage en passages\",\"desc\":\"Le contenu est segmenté en passages cohérents, dimensionnés pour une recherche précise.\"},\"embed\":{\"tag\":\"embeddings\",\"title\":\"Vectorisation sémantique\",\"desc\":\"Chaque passage est converti en vecteur numérique (embedding) qui encode son sens pour permettre des comparaisons sémantiques.\"},\"store\":{\"tag\":\"chiffré\",\"title\":\"Index chiffré\",\"desc\":\"Vecteurs et métadonnées sont stockés dans un index chiffré au repos, prêt à être interrogé.\"}},\"query\":{\"question\":{\"tag\":\"question\",\"title\":\"Votre question\",\"desc\":\"La question est posée en langage naturel, sans syntaxe de recherche particulière.\",\"bubble\":\"Quelle est la durée du contrat Verdi ?\"},\"intent\":{\"tag\":\"intention\",\"title\":\"Analyse d'intention\",\"desc\":\"L'agent identifie l'intention et décompose les questions à plusieurs volets en sous-requêtes.\"},\"search\":{\"tag\":\"recherche\",\"title\":\"Recherche hybride\",\"desc\":\"L'index est interrogé en parallèle par similarité sémantique et par correspondance lexicale.\"},\"verify\":{\"tag\":\"vérif.\",\"title\":\"Génération vérifiée\",\"desc\":\"Le modèle rédige une réponse, puis chaque affirmation est recoupée avec les passages source retenus.\"},\"answer\":{\"tag\":\"réponse\",\"title\":\"Réponse sourcée\",\"desc\":\"La réponse est restituée avec ses références précises : document, page, clause.\"}}}},\"technical\":{\"badge\":\"CHAÎNE DOCUMENTAIRE\",\"title\":\"Une chaîne lisible, conçue pour la\",\"titleHighlight\":\"preuve\",\"subtitle\":\"Du document ajouté à la réponse citée, chaque étape conserve le lien avec la source.\",\"footnote\":\"Sources, accès et vérification conservés à chaque étape\",\"steps\":{\"ingest\":{\"title\":\"Corpus autorisé\",\"body\":\"Documents et métadonnées rejoignent un périmètre défini avant usage.\",\"metric\":\"Cas d'usage clair // Corpus cadré\"},\"parse\":{\"title\":\"Préparation\",\"body\":\"Textes, tableaux et pages sont préparés en conservant le contexte utile.\",\"metric\":\"Structure conservée // Sources préparées\"},\"embed\":{\"title\":\"Indexation\",\"body\":\"Les passages sont découpés et indexés pour la recherche hybride.\",\"metric\":\"Corpus isolé // Accès gouvernés\"},\"retrieve\":{\"title\":\"Recherche hybride\",\"body\":\"Recherche sémantique et lexicale travaillent ensemble pour retrouver les passages utiles.\",\"metric\":\"Recherche sémantique + lexicale\"},\"cite\":{\"title\":\"Citations\",\"body\":\"Les affirmations restent reliées aux extraits consultables.\",\"metric\":\"Réponse reliée aux sources\"},\"verify\":{\"title\":\"Revue\",\"body\":\"Les sources, accès et signaux de qualité restent disponibles pour l'examen humain.\",\"metric\":\"Éléments utiles pour la revue\"}}},\"faq\":{\"badge\":\"FAQ\",\"titleLine1\":\"Questions\",\"titleHighlight\":\"fréquentes\",\"titleLine2\":\"\",\"subtitle\":\"Les réponses essentielles sur les sources, la sécurité, le déploiement et la gouvernance documentaire avec Prosperify.\",\"items\":[{\"question\":\"Mes données servent-elles à entraîner des modèles ?\",\"answer\":\"Non. Les corpus clients ne sont pas utilisés pour entraîner les modèles. Prosperify interroge vos documents dans un périmètre dédié afin de produire des réponses sourcées, sans réutiliser votre capital documentaire.\"},{\"question\":\"Où sont hébergées les données ?\",\"answer\":\"Cela dépend du mode retenu : cloud dédié, architecture hybride ou déploiement local. Le périmètre de confiance est défini avec le client selon ses contraintes de sécurité, de confidentialité et d'exploitation.\"},{\"question\":\"Prosperify remplace-t-il les experts ?\",\"answer\":\"Non. Prosperify automatise la recherche, la synthèse, l'extraction et la comparaison documentaire. Les décisions, validations et interprétations restent portées par les experts métiers.\"},{\"question\":\"Comment les réponses sont-elles vérifiées ?\",\"answer\":\"Les réponses sont générées à partir d'extraits documentaires retenus, puis reliées aux sources utilisées. Les affirmations insuffisamment étayées peuvent être signalées afin de faciliter la revue humaine.\"},{\"question\":\"Peut-on limiter l'accès par rôle, store ou corpus ?\",\"answer\":\"Oui. Les accès peuvent être gouvernés par rôle, store, corpus, utilisateur ou niveau de confidentialité. Les opérations hors périmètre sont refusées selon les règles configurées.\"},{\"question\":\"Faut-il refondre le système d'information ?\",\"answer\":\"Non. Prosperify s'ajoute comme couche d'intelligence documentaire au-dessus des systèmes existants. L'intégration peut commencer avec un corpus, un store et un cas métier avant extension.\"},{\"question\":\"Quels formats sont pris en charge ?\",\"answer\":\"Prosperify est conçu pour traiter des documents structurés et non structurés, notamment PDF, Word, Excel, CSV, JSON et autres corpus métier selon le périmètre du projet.\"},{\"question\":\"Quels modes de déploiement sont possibles ?\",\"answer\":\"Trois approches sont possibles : cloud dédié, hybride ou local. Le choix dépend du niveau de confidentialité, des contraintes d'infrastructure et du besoin de souveraineté.\"}]},\"team\":{\"badge\":\"Équipe\",\"titlePrefix\":\"L'équipe derrière\",\"titleHighlight\":\"Prosperify\",\"subtitle\":\"Une équipe produit et ingénierie concentrée sur l'IA documentaire pour les organisations qui manipulent des informations sensibles.\"},\"jobs\":{\"badge\":\"Recrutement\",\"titlePrefix\":\"Construire l'IA documentaire\",\"titleHighlight\":\"de confiance\",\"subtitle\":\"Postes ouverts et actualités recrutement de Prosperify. Nous gardons une équipe resserrée, technique et proche des problèmes clients.\",\"apply\":\"Candidater\",\"emptyTitle\":\"Aucun poste ouvert pour le moment\",\"emptyDescription\":\"Nous ne recrutons pas sur un poste précis aujourd'hui, mais les profils infrastructure, produit et IA appliquée peuvent nous écrire.\",\"viewAll\":\"Voir les postes\"},\"footer\":{\"tagline\":\"Interrogez vos documents avec des réponses vérifiables.\",\"product\":\"Produit\",\"support\":\"Support\",\"legal\":\"Légal\",\"links\":{\"home\":\"Accueil\",\"overview\":\"Aperçu\",\"workflow\":\"Workflow\",\"deployment\":\"Déploiement\",\"blog\":\"Blog\",\"team\":\"Équipe\",\"jobs\":\"Recrutement\",\"faq\":\"FAQ\",\"contact\":\"Contact\",\"features\":\"Fonctionnalités\",\"sovereignty\":\"Souveraineté\",\"integration\":\"Intégration\",\"architecture\":\"Architecture\",\"privacy\":\"Confidentialité\",\"terms\":\"Conditions\",\"rgpd\":\"RGPD\"},\"copyright\":\"© 2025 Prosperify. Tous droits réservés.\",\"partnersTitle\":\"Accompagnement & Partenaires\"},\"roadmap\":{\"metaTitle\":\"Roadmap - Prosperify\",\"metaDescription\":\"Découvrez la feuille de route de Prosperify et nos prochaines évolutions en intelligence documentaire sourcée.\",\"items\":[{\"date\":\"14/06/2024\",\"titlePrefix\":\"Début du projet\",\"titleHighlight\":\"Prosperify\",\"lead\":\"Lancement officiel de Prosperify, avec une idée simple : rendre la recherche documentaire en entreprise plus exploitable et vérifiable.\",\"descriptionSegments\":[{\"text\":\"Cette étape marque la naissance d'un projet construit autour d'une vision : aider les organisations à \"},{\"text\":\"mieux exploiter leurs données documentaires\",\"emphasis\":true},{\"text\":\" en réduisant les silos d'information et en rendant les sources plus faciles à retrouver grâce à une \"},{\"text\":\"technologie de recherche documentaire intelligente\",\"emphasis\":true},{\"text\":\".\"}],\"imageAlt\":\"Prosperify (logo historique)\",\"imageSrc\":\"/assets/brand/logo-mark.png\",\"imageVariant\":\"brandMark\"},{\"date\":\"26/09/2024\",\"titlePrefix\":\"Contact avec\",\"titleHighlight\":\"Orpi\",\"lead\":\"Premier échange avec Orpi pour explorer une potentielle collaboration.\",\"description\":\"Rendez-vous dédié à la compréhension des barrages liés à l'exploitation des données dans les ETI françaises, ainsi qu'à l'analyse de l'impact de la fragmentation de l'information sur les opportunités commerciales manquées.\",\"imageAlt\":\"Orpi\",\"imageSrc\":\"/assets/partners/orpi.webp\",\"imageVariant\":\"partnerSmall\"},{\"date\":\"03/10/2024\",\"titlePrefix\":\"Revue de design avec\",\"titleHighlight\":\"ESA\",\"lead\":\"Rendez-vous avec l'Agence Spatiale Européenne pour une première revue de design.\",\"descriptionSegments\":[{\"text\":\"Rencontre axée sur la compréhension des \"},{\"text\":\"standards de sécurité\",\"emphasis\":true},{\"text\":\" et de \"},{\"text\":\"souveraineté\",\"emphasis\":true},{\"text\":\" exigés par ce type d'agences, tout en explorant leur intérêt pour une \"},{\"text\":\"technologie de recherche documentaire\",\"emphasis\":true},{\"text\":\" adaptée à leurs besoins spécifiques.\"}],\"imageAlt\":\"ESA\",\"imageSrc\":\"/assets/partners/esa.png\",\"imageVariant\":\"partnerMedium\"},{\"date\":\"02/01/2025\",\"title\":\"Intégration Pépite France\",\"lead\":\"Prosperify rejoint le réseau Pépite France pour soutenir l'innovation étudiante.\",\"imageAlt\":\"Pépite France\",\"imageSrc\":\"/assets/partners/pepite-beelyss.png\",\"imageVariant\":\"partnerLarge\"},{\"date\":\"04/01/2025\",\"titlePrefix\":\"Rencontre avec\",\"titleHighlight\":\"TUBA\",\"lead\":\"Échange avec l'écosystème TUBA autour de l'innovation urbaine et des nouveaux usages numériques.\",\"descriptionSegments\":[{\"text\":\"Cette rencontre a permis d'explorer les \"},{\"text\":\"défis liés à l'exploitation des données en milieu urbain\",\"emphasis\":true},{\"text\":\" et d'identifier les opportunités offertes par Prosperify dans un contexte d'\"},{\"text\":\"innovation territoriale\",\"emphasis\":true},{\"text\":\". Un moment clé pour comprendre comment notre technologie peut répondre aux enjeux de \"},{\"text\":\"centralisation de l'information\",\"emphasis\":true},{\"text\":\" et de \"},{\"text\":\"valorisation des données\",\"emphasis\":true},{\"text\":\" au service des acteurs locaux.\"}],\"imageAlt\":\"TUBA\",\"imageSrc\":\"/assets/partners/tuba.png\",\"imageVariant\":\"partnerWide\"},{\"date\":\"17/02/2025\",\"titlePrefix\":\"Contact avec\",\"titleHighlight\":\"AXA\",\"lead\":\"Premier échange avec AXA autour d'une potentielle collaboration stratégique.\",\"descriptionSegments\":[{\"text\":\"Rencontre en deux phases : d'abord, une analyse des \"},{\"text\":\"barrages liés à l'exploitation de la recherche documentaire\",\"emphasis\":true},{\"text\":\" dans les grands groupes, ainsi que des \"},{\"text\":\"outils actuellement utilisés\",\"emphasis\":true},{\"text\":\". Ensuite, une \"},{\"text\":\"présentation de Prosperify\",\"emphasis\":true},{\"text\":\", de sa mission et de la \"},{\"text\":\"technologie employée\",\"emphasis\":true},{\"text\":\" pour répondre à ces enjeux.\"}],\"imageAlt\":\"AXA\",\"imageSrc\":\"/assets/partners/axa.png\",\"imageVariant\":\"partnerMedium\"},{\"date\":\"12/05/2025\",\"titlePrefix\":\"Intégration\",\"titleHighlight\":\"La French Tech\",\"lead\":\"Prosperify rejoint La French Tech afin de s'inscrire dans un écosystème national d'innovation.\",\"descriptionSegments\":[{\"text\":\"Cette intégration marque une nouvelle étape dans le développement de Prosperify en tant que \"},{\"text\":\"start-up membre\",\"emphasis\":true},{\"text\":\". Elle ouvre l'accès à un \"},{\"text\":\"écosystème actif de jeunes entreprises\",\"emphasis\":true},{\"text\":\", ouvrant des opportunités de synergies, de partenariats et de visibilité au sein du réseau français de l'innovation.\"}],\"imageAlt\":\"La French Tech\",\"imageSrc\":\"/assets/partners/french-tech.png\",\"imageVariant\":\"partnerLarge\"},{\"date\":\"08/2025\",\"titlePrefix\":\"Lancement officiel de\",\"titleHighlight\":\"Prosperify\",\"lead\":\"Mise sur le marché de la solution après plusieurs mois de conception, de tests et d'échanges avec l'écosystème.\",\"descriptionSegments\":[{\"text\":\"Le lancement concrétise une vision : proposer aux entreprises un \"},{\"text\":\"assistant documentaire souverain\",\"emphasis\":true},{\"text\":\", capable de \"},{\"text\":\"centraliser\",\"emphasis\":true},{\"text\":\" et \"},{\"text\":\"simplifier l'accès aux données\",\"emphasis\":true},{\"text\":\", avec des sources visibles, des accès gouvernés et un périmètre de sécurité clair.\"}],\"imageAlt\":\"Prosperify (lancement)\",\"imageSrc\":\"/assets/brand/logo-full.png\",\"imageVariant\":\"brandFull\"}]}}"));}),
 "[project]/src/lib/i18n.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -3163,7 +3185,7 @@ function ProsperifyLogo() {
         priority: true
     }, void 0, false, {
         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-        lineNumber: 25,
+        lineNumber: 26,
         columnNumber: 5
     }, this);
 }
@@ -3185,20 +3207,20 @@ function SunIcon() {
                 r: "4"
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                lineNumber: 39,
+                lineNumber: 40,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                lineNumber: 40,
+                lineNumber: 41,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-        lineNumber: 38,
+        lineNumber: 39,
         columnNumber: 5
     }, this);
 }
@@ -3217,12 +3239,12 @@ function MoonIcon() {
             d: "M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
         }, void 0, false, {
             fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-            lineNumber: 48,
+            lineNumber: 49,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-        lineNumber: 47,
+        lineNumber: 48,
         columnNumber: 5
     }, this);
 }
@@ -3332,12 +3354,12 @@ function LandingNavbar() {
                         "aria-label": "Prosperify",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ProsperifyLogo, {}, void 0, false, {
                             fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                            lineNumber: 128,
+                            lineNumber: 129,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                        lineNumber: 127,
+                        lineNumber: 128,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3354,19 +3376,19 @@ function LandingNavbar() {
                                         className: "absolute inset-x-3 -bottom-[13px] h-0.5 bg-[#FF6A13]"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 150,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, link.href, true, {
                                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                lineNumber: 136,
+                                lineNumber: 137,
                                 columnNumber: 15
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                        lineNumber: 132,
+                        lineNumber: 133,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3385,7 +3407,7 @@ function LandingNavbar() {
                                         children: "FR"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                        lineNumber: 163,
+                                        lineNumber: 164,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3395,13 +3417,13 @@ function LandingNavbar() {
                                         children: "EN"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                        lineNumber: 175,
+                                        lineNumber: 176,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                lineNumber: 159,
+                                lineNumber: 160,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3414,16 +3436,16 @@ function LandingNavbar() {
                                 "aria-label": "Toggle theme",
                                 children: isDark ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SunIcon, {}, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                    lineNumber: 197,
+                                    lineNumber: 198,
                                     columnNumber: 23
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MoonIcon, {}, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                    lineNumber: 197,
+                                    lineNumber: 198,
                                     columnNumber: 37
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                lineNumber: 190,
+                                lineNumber: 191,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -3435,7 +3457,7 @@ function LandingNavbar() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                lineNumber: 200,
+                                lineNumber: 201,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3447,30 +3469,30 @@ function LandingNavbar() {
                                     className: "h-6 w-6"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                    lineNumber: 214,
+                                    lineNumber: 215,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconMenu2$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconMenu2$3e$__["IconMenu2"], {
                                     className: "h-6 w-6"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                    lineNumber: 216,
+                                    lineNumber: 217,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                lineNumber: 207,
+                                lineNumber: 208,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                        lineNumber: 157,
+                        lineNumber: 158,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                lineNumber: 126,
+                lineNumber: 127,
                 columnNumber: 7
             }, this),
             mobileOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3489,7 +3511,7 @@ function LandingNavbar() {
                                 children: currentLang === "en" ? link.labelEn : link.labelFr
                             }, link.href, false, {
                                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                lineNumber: 230,
+                                lineNumber: 231,
                                 columnNumber: 15
                             }, this)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3508,7 +3530,7 @@ function LandingNavbar() {
                                             children: "FR"
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                            lineNumber: 252,
+                                            lineNumber: 253,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3518,13 +3540,13 @@ function LandingNavbar() {
                                             children: "EN"
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                            lineNumber: 264,
+                                            lineNumber: 265,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                    lineNumber: 248,
+                                    lineNumber: 249,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3537,22 +3559,22 @@ function LandingNavbar() {
                                     "aria-label": "Toggle theme",
                                     children: isDark ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SunIcon, {}, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                        lineNumber: 284,
+                                        lineNumber: 285,
                                         columnNumber: 27
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MoonIcon, {}, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                        lineNumber: 284,
+                                        lineNumber: 285,
                                         columnNumber: 41
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                    lineNumber: 277,
+                                    lineNumber: 278,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                            lineNumber: 247,
+                            lineNumber: 248,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -3565,24 +3587,24 @@ function LandingNavbar() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                            lineNumber: 288,
+                            lineNumber: 289,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                    lineNumber: 228,
+                    lineNumber: 229,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                lineNumber: 224,
+                lineNumber: 225,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-        lineNumber: 122,
+        lineNumber: 123,
         columnNumber: 5
     }, this);
 }

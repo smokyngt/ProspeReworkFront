@@ -68,6 +68,40 @@ export default function ProsperifyFeatures() {
 
   const currentId = featureIds[activeTab];
 
+  const renderDetailPanel = (extraClassName?: string) => (
+    <div
+      className={cn("flex flex-1 flex-col justify-center", extraClassName)}
+      style={{
+        padding: "clamp(24px, 4vw, 56px)",
+        background: "var(--pf-bg-card)",
+      }}
+    >
+      <div className="flex items-center gap-3.5">
+        <span
+          className="flex h-[52px] w-[52px] shrink-0 items-center justify-center border border-[#FF6A13]"
+          style={{ background: "var(--pf-accent-bg-2)" }}
+        >
+          <span className="h-4 w-4 border-2 border-[#FF6A13]" />
+        </span>
+        <span className="font-mono text-xs text-[var(--pf-fg-dim)]">
+          {String(activeTab + 1).padStart(2, "0")} / 06
+        </span>
+      </div>
+      <h3
+        className="m-0 mt-6 font-bold leading-[1.12] text-[var(--pf-fg)] md:min-h-[88px]"
+        style={{ fontSize: "clamp(1.5rem, 2.6vw, 2.2rem)" }}
+      >
+        {t(`features.items.${currentId}.title`)}
+      </h3>
+      <p className="mt-3.5 text-sm font-semibold text-[#FF6A13]">
+        {t(`features.items.${currentId}.subtitle`)}
+      </p>
+      <p className="mt-[18px] max-w-[620px] text-base leading-[1.7] text-[var(--pf-fg-muted)]">
+        {t(`features.items.${currentId}.description`)}
+      </p>
+    </div>
+  );
+
   return (
     <div ref={rootRef} className="[overflow-anchor:none]">
       <h2
@@ -78,11 +112,54 @@ export default function ProsperifyFeatures() {
         <span className="text-[#FF6A13]">{t("features.titleHighlight")}</span>
       </h2>
 
-      {/* Sidebar + detail grid */}
+      {/* Mobile: buttons on top (wrap, never overflow), detail card below */}
       <div
-        className="mt-11 touch-pan-y border border-[var(--pf-border)]"
+        className="mt-11 touch-pan-y border border-[var(--pf-border)] md:hidden"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
+        <div
+          className="flex flex-wrap gap-2 p-3"
+          style={{ background: "var(--pf-bg-card)", borderBottom: "1px solid var(--pf-border)" }}
+          onPointerEnter={() => setIsPaused(true)}
+          onPointerLeave={() => setIsPaused(false)}
+        >
+          {featureIds.map((id, i) => (
+            <button
+              key={id}
+              type="button"
+              onClick={() => selectSlide(i, true)}
+              className="flex shrink-0 cursor-pointer items-center gap-2 border px-2.5 py-2 transition-all duration-300"
+              style={{
+                borderColor: activeTab === i ? "#FF6A13" : "var(--pf-border)",
+                background: activeTab === i ? "var(--pf-bg-active)" : "transparent",
+              }}
+            >
+              <span
+                className="flex h-6 w-6 shrink-0 items-center justify-center border font-mono text-[10px] font-semibold"
+                style={{
+                  borderColor: activeTab === i ? "#FF6A13" : "var(--pf-border)",
+                  color: activeTab === i ? "#FF6A13" : "var(--pf-fg-dim)",
+                }}
+              >
+                {i + 1}
+              </span>
+              <span
+                className="whitespace-nowrap text-xs font-semibold"
+                style={{ color: activeTab === i ? "var(--pf-fg)" : "var(--pf-fg-muted)" }}
+              >
+                {t(`features.items.${id}.shortTitle`)}
+              </span>
+            </button>
+          ))}
+        </div>
+        {renderDetailPanel()}
+      </div>
+
+      {/* Desktop: sidebar + detail grid */}
+      <div
+        className="mt-11 hidden touch-pan-y border border-[var(--pf-border)] md:grid"
         style={{
-          display: "grid",
           gridTemplateColumns: "clamp(180px, 30%, 320px) 1fr",
           gap: "1px",
           background: "var(--pf-border)",
@@ -143,39 +220,7 @@ export default function ProsperifyFeatures() {
         </div>
 
         {/* Detail panel */}
-        <div
-          className="flex min-h-[460px] flex-col justify-center"
-          style={{
-            padding: "clamp(32px, 4vw, 56px)",
-            background: "var(--pf-bg-card)",
-          }}
-          onPointerEnter={() => setIsPaused(true)}
-          onPointerLeave={() => setIsPaused(false)}
-        >
-          <div className="flex items-center gap-3.5">
-            <span
-              className="flex h-[52px] w-[52px] items-center justify-center border border-[#FF6A13]"
-              style={{ background: "var(--pf-accent-bg-2)" }}
-            >
-              <span className="h-4 w-4 border-2 border-[#FF6A13]" />
-            </span>
-            <span className="font-mono text-xs text-[var(--pf-fg-dim)]">
-              {String(activeTab + 1).padStart(2, "0")} / 06
-            </span>
-          </div>
-          <h3
-            className="m-0 mt-6 min-h-[88px] font-bold leading-[1.12] text-[var(--pf-fg)]"
-            style={{ fontSize: "clamp(1.5rem, 2.6vw, 2.2rem)" }}
-          >
-            {t(`features.items.${currentId}.title`)}
-          </h3>
-          <p className="mt-3.5 text-sm font-semibold text-[#FF6A13]">
-            {t(`features.items.${currentId}.subtitle`)}
-          </p>
-          <p className="mt-[18px] max-w-[620px] text-base leading-[1.7] text-[var(--pf-fg-muted)]">
-            {t(`features.items.${currentId}.description`)}
-          </p>
-        </div>
+        {renderDetailPanel("min-h-[460px]")}
       </div>
     </div>
   );

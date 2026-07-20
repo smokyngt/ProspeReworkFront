@@ -1915,7 +1915,10 @@ function ArchitectureDemo() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-wrap gap-2.5",
+                className: "sticky top-16 z-30 -mx-5 flex flex-wrap gap-2.5 border-b border-[var(--pf-border)] px-5 py-2 backdrop-blur-xl sm:-mx-8 sm:px-8 lg:-mx-12 lg:px-12",
+                style: {
+                    background: "var(--pf-nav-bg)"
+                },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         type: "button",
@@ -1932,7 +1935,7 @@ function ArchitectureDemo() {
                                 children: "01"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 294,
+                                lineNumber: 297,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1940,7 +1943,7 @@ function ArchitectureDemo() {
                                 children: tt("tabs.index.label")
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 295,
+                                lineNumber: 298,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1948,13 +1951,13 @@ function ArchitectureDemo() {
                                 children: tt("tabs.index.sub")
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 296,
+                                lineNumber: 299,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 284,
+                        lineNumber: 287,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1972,7 +1975,7 @@ function ArchitectureDemo() {
                                 children: "02"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 308,
+                                lineNumber: 311,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1980,7 +1983,7 @@ function ArchitectureDemo() {
                                 children: tt("tabs.query.label")
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 309,
+                                lineNumber: 312,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1988,13 +1991,13 @@ function ArchitectureDemo() {
                                 children: tt("tabs.query.sub")
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 310,
+                                lineNumber: 313,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 298,
+                        lineNumber: 301,
                         columnNumber: 9
                     }, this)
                 ]
@@ -2008,7 +2011,7 @@ function ArchitectureDemo() {
                 children: phaseDesc
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 313,
+                lineNumber: 316,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2027,25 +2030,25 @@ function ArchitectureDemo() {
                                 desc: node.desc
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 323,
+                                lineNumber: 326,
                                 columnNumber: 13
                             }, this),
                             i < nodes.length - 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FlowArrow, {
                                 delay: i * 0.3
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                                lineNumber: 324,
+                                lineNumber: 327,
                                 columnNumber: 38
                             }, this)
                         ]
                     }, node.tag, true, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 318,
+                        lineNumber: 321,
                         columnNumber: 11
                     }, this))
             }, phase, false, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 316,
+                lineNumber: 319,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2058,14 +2061,14 @@ function ArchitectureDemo() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                        lineNumber: 330,
+                        lineNumber: 333,
                         columnNumber: 9
                     }, this),
                     t("architecture.footerNote")
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/architecture/architecture-demo.tsx",
-                lineNumber: 329,
+                lineNumber: 332,
                 columnNumber: 7
             }, this)
         ]
@@ -2345,6 +2348,83 @@ function ProsperifyFeatures() {
         window.setTimeout(()=>setIsPaused(false), 300);
     };
     const currentId = featureIds[activeTab];
+    const renderDetailPanel = (extraClassName)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex flex-1 flex-col justify-center", extraClassName),
+            style: {
+                padding: "clamp(24px, 4vw, 56px)",
+                background: "var(--pf-bg-card)"
+            },
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex items-center gap-3.5",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "flex h-[52px] w-[52px] shrink-0 items-center justify-center border border-[#FF6A13]",
+                            style: {
+                                background: "var(--pf-accent-bg-2)"
+                            },
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "h-4 w-4 border-2 border-[#FF6A13]"
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
+                                lineNumber: 84,
+                                columnNumber: 11
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
+                            lineNumber: 80,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "font-mono text-xs text-[var(--pf-fg-dim)]",
+                            children: [
+                                String(activeTab + 1).padStart(2, "0"),
+                                " / 06"
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
+                            lineNumber: 86,
+                            columnNumber: 9
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
+                    lineNumber: 79,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                    className: "m-0 mt-6 font-bold leading-[1.12] text-[var(--pf-fg)] md:min-h-[88px]",
+                    style: {
+                        fontSize: "clamp(1.5rem, 2.6vw, 2.2rem)"
+                    },
+                    children: t(`features.items.${currentId}.title`)
+                }, void 0, false, {
+                    fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
+                    lineNumber: 90,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "mt-3.5 text-sm font-semibold text-[#FF6A13]",
+                    children: t(`features.items.${currentId}.subtitle`)
+                }, void 0, false, {
+                    fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
+                    lineNumber: 96,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "mt-[18px] max-w-[620px] text-base leading-[1.7] text-[var(--pf-fg-muted)]",
+                    children: t(`features.items.${currentId}.description`)
+                }, void 0, false, {
+                    fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
+                    lineNumber: 99,
+                    columnNumber: 7
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
+            lineNumber: 72,
+            columnNumber: 5
+        }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         ref: rootRef,
         className: "[overflow-anchor:none]",
@@ -2362,19 +2442,81 @@ function ProsperifyFeatures() {
                         children: t("features.titleHighlight")
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                        lineNumber: 78,
+                        lineNumber: 112,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                lineNumber: 73,
+                lineNumber: 107,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-11 touch-pan-y border border-[var(--pf-border)]",
+                className: "mt-11 touch-pan-y border border-[var(--pf-border)] md:hidden",
+                onTouchStart: handleTouchStart,
+                onTouchEnd: handleTouchEnd,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-wrap gap-2 p-3",
+                        style: {
+                            background: "var(--pf-bg-card)",
+                            borderBottom: "1px solid var(--pf-border)"
+                        },
+                        onPointerEnter: ()=>setIsPaused(true),
+                        onPointerLeave: ()=>setIsPaused(false),
+                        children: featureIds.map((id, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                onClick: ()=>selectSlide(i, true),
+                                className: "flex shrink-0 cursor-pointer items-center gap-2 border px-2.5 py-2 transition-all duration-300",
+                                style: {
+                                    borderColor: activeTab === i ? "#FF6A13" : "var(--pf-border)",
+                                    background: activeTab === i ? "var(--pf-bg-active)" : "transparent"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "flex h-6 w-6 shrink-0 items-center justify-center border font-mono text-[10px] font-semibold",
+                                        style: {
+                                            borderColor: activeTab === i ? "#FF6A13" : "var(--pf-border)",
+                                            color: activeTab === i ? "#FF6A13" : "var(--pf-fg-dim)"
+                                        },
+                                        children: i + 1
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
+                                        lineNumber: 138,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "whitespace-nowrap text-xs font-semibold",
+                                        style: {
+                                            color: activeTab === i ? "var(--pf-fg)" : "var(--pf-fg-muted)"
+                                        },
+                                        children: t(`features.items.${id}.shortTitle`)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
+                                        lineNumber: 147,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, id, true, {
+                                fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
+                                lineNumber: 128,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
+                        lineNumber: 121,
+                        columnNumber: 9
+                    }, this),
+                    renderDetailPanel()
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
+                lineNumber: 116,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mt-11 hidden touch-pan-y border border-[var(--pf-border)] md:grid",
                 style: {
-                    display: "grid",
                     gridTemplateColumns: "clamp(180px, 30%, 320px) 1fr",
                     gap: "1px",
                     background: "var(--pf-border)"
@@ -2411,7 +2553,7 @@ function ProsperifyFeatures() {
                                         children: String(i + 1).padStart(2, "0")
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                                        lineNumber: 120,
+                                        lineNumber: 197,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2419,109 +2561,31 @@ function ProsperifyFeatures() {
                                         children: t(`features.items.${id}.shortTitle`)
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                                        lineNumber: 133,
+                                        lineNumber: 210,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, id, true, {
                                 fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                                lineNumber: 100,
+                                lineNumber: 177,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                        lineNumber: 94,
+                        lineNumber: 171,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex min-h-[460px] flex-col justify-center",
-                        style: {
-                            padding: "clamp(32px, 4vw, 56px)",
-                            background: "var(--pf-bg-card)"
-                        },
-                        onPointerEnter: ()=>setIsPaused(true),
-                        onPointerLeave: ()=>setIsPaused(false),
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-3.5",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "flex h-[52px] w-[52px] items-center justify-center border border-[#FF6A13]",
-                                        style: {
-                                            background: "var(--pf-accent-bg-2)"
-                                        },
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "h-4 w-4 border-2 border-[#FF6A13]"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                                            lineNumber: 160,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                                        lineNumber: 156,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-mono text-xs text-[var(--pf-fg-dim)]",
-                                        children: [
-                                            String(activeTab + 1).padStart(2, "0"),
-                                            " / 06"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                                        lineNumber: 162,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                                lineNumber: 155,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "m-0 mt-6 min-h-[88px] font-bold leading-[1.12] text-[var(--pf-fg)]",
-                                style: {
-                                    fontSize: "clamp(1.5rem, 2.6vw, 2.2rem)"
-                                },
-                                children: t(`features.items.${currentId}.title`)
-                            }, void 0, false, {
-                                fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                                lineNumber: 166,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "mt-3.5 text-sm font-semibold text-[#FF6A13]",
-                                children: t(`features.items.${currentId}.subtitle`)
-                            }, void 0, false, {
-                                fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                                lineNumber: 172,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "mt-[18px] max-w-[620px] text-base leading-[1.7] text-[var(--pf-fg-muted)]",
-                                children: t(`features.items.${currentId}.description`)
-                            }, void 0, false, {
-                                fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                                lineNumber: 175,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                        lineNumber: 146,
-                        columnNumber: 9
-                    }, this)
+                    renderDetailPanel("min-h-[460px]")
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-                lineNumber: 82,
+                lineNumber: 160,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/features/prosperify-features.tsx",
-        lineNumber: 72,
+        lineNumber: 106,
         columnNumber: 5
     }, this);
 }
@@ -2855,6 +2919,105 @@ __turbopack_context__.s([]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$footer$2f$footer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/landing/components/footer/footer.tsx [app-ssr] (ecmascript)");
 ;
 }),
+"[project]/src/features/landing/lib/theme.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "LANDING_LANGUAGE_CHANGE_EVENT",
+    ()=>LANDING_LANGUAGE_CHANGE_EVENT,
+    "LANDING_LANGUAGE_STORAGE_KEY",
+    ()=>LANDING_LANGUAGE_STORAGE_KEY,
+    "LANDING_THEME_CHANGE_EVENT",
+    ()=>LANDING_THEME_CHANGE_EVENT,
+    "LANDING_THEME_STORAGE_KEY",
+    ()=>LANDING_THEME_STORAGE_KEY,
+    "applyLandingLanguage",
+    ()=>applyLandingLanguage,
+    "applyLandingTheme",
+    ()=>applyLandingTheme,
+    "getCurrentLandingLanguage",
+    ()=>getCurrentLandingLanguage,
+    "getCurrentLandingTheme",
+    ()=>getCurrentLandingTheme,
+    "initializeLandingLanguage",
+    ()=>initializeLandingLanguage,
+    "initializeLandingTheme",
+    ()=>initializeLandingTheme,
+    "normalizeLandingLanguage",
+    ()=>normalizeLandingLanguage,
+    "normalizeLandingTheme",
+    ()=>normalizeLandingTheme,
+    "readStoredLandingLanguage",
+    ()=>readStoredLandingLanguage,
+    "readStoredLandingTheme",
+    ()=>readStoredLandingTheme
+]);
+const LANDING_THEME_STORAGE_KEY = 'prosperify-theme';
+const LANDING_LANGUAGE_STORAGE_KEY = 'prosperify-language';
+const LANDING_THEME_CHANGE_EVENT = 'prosperify-theme-change';
+const LANDING_LANGUAGE_CHANGE_EVENT = 'prosperify-language-change';
+function normalizeLandingTheme(theme) {
+    return theme === 'dark' ? 'dark' : 'light';
+}
+function normalizeLandingLanguage(language) {
+    return language === 'en' ? 'en' : 'fr';
+}
+function readStoredLandingTheme() {
+    if ("TURBOPACK compile-time truthy", 1) {
+        return 'light';
+    }
+    //TURBOPACK unreachable
+    ;
+}
+function readStoredLandingLanguage() {
+    if ("TURBOPACK compile-time truthy", 1) {
+        return 'fr';
+    }
+    //TURBOPACK unreachable
+    ;
+}
+function getCurrentLandingTheme() {
+    if (typeof document === 'undefined') {
+        return 'light';
+    }
+    return document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+}
+function getCurrentLandingLanguage() {
+    if (typeof document === 'undefined') {
+        return 'fr';
+    }
+    return normalizeLandingLanguage(document.documentElement.dataset.lang ?? null);
+}
+function applyLandingTheme(theme) {
+    const dark = theme === 'dark';
+    document.documentElement.classList.toggle('dark', dark);
+    window.localStorage.setItem(LANDING_THEME_STORAGE_KEY, theme);
+    window.dispatchEvent(new CustomEvent(LANDING_THEME_CHANGE_EVENT, {
+        detail: {
+            dark,
+            theme
+        }
+    }));
+    return dark;
+}
+function applyLandingLanguage(language) {
+    document.documentElement.dataset.lang = language;
+    document.documentElement.lang = language;
+    window.localStorage.setItem(LANDING_LANGUAGE_STORAGE_KEY, language);
+    window.dispatchEvent(new CustomEvent(LANDING_LANGUAGE_CHANGE_EVENT, {
+        detail: {
+            language
+        }
+    }));
+    return language;
+}
+function initializeLandingTheme() {
+    return applyLandingTheme(readStoredLandingTheme());
+}
+function initializeLandingLanguage() {
+    return applyLandingLanguage(readStoredLandingLanguage());
+}
+}),
 "[project]/src/locales/en/translation.json (json)", ((__turbopack_context__) => {
 
 __turbopack_context__.v(JSON.parse("{\"meta\":{\"title\":\"Prosperify - Verifiable document intelligence for sensitive data\",\"description\":\"Query sensitive corpora with sourced answers, governed access and deployment modes adapted to your perimeter.\"},\"hero\":{\"badge\":\"Document intelligence for sensitive data\",\"titleLine1\":\"Turn confidential\",\"titleHighlight\":\"documents\",\"titleLine2\":\"into sourced answers.\",\"subtitle\":\"Prosperify helps teams find, compare and verify information across sensitive corpora, with visible sources, governed access and a clear trust perimeter.\",\"primaryCta\":\"Request a demo\",\"secondaryCta\":\"See the workflow\",\"demoCaption\":\"\",\"stats\":{\"citations\":\"answers linked to consulted sources\",\"deployment\":\"deployment modes: cloud, hybrid, local\",\"sources\":\"PDF, Word, Excel, CSV, JSON and business corpora\"},\"trust\":{\"sources\":\"Cited sources\",\"permissions\":\"Governed access\",\"deployment\":\"Cloud, hybrid or local\",\"audit\":\"Sources and usage tracked\",\"sovereignty\":\"Cloud, hybrid or on-prem\"}},\"workflow\":{\"badge\":\"HOW IT WORKS\",\"title\":\"Verifiable answers\",\"titleHighlight\":\"without losing control\",\"titleSuffix\":\"\",\"subtitle\":\"A simple sequence: approved sources, scoped access, verifiable answers.\"},\"workflowTabs\":{\"create\":{\"title\":\"Connect\",\"heading\":\"Prepare only approved sources\",\"subtitle\":\"KYC files, due-diligence reports and sanctions lists — indexed into dedicated stores.\",\"assistantNameLabel\":\"Assistant name\",\"assistantNameValue\":\"Transaction & Legal Assistant\",\"documentsLabel\":\"Verified corpus\",\"documentsTransactionsName\":\"KYC_Verdi.xlsx\",\"button\":\"Connect corpus\",\"sourceStatus\":\"Approved\",\"pipelineLabel\":\"Sources\",\"readyBadge\":\"Ready to query\",\"checkParsed\":\"Structure detected\",\"checkIndexed\":\"Passages retrievable\",\"checkScoped\":\"Scope applied\",\"sources\":[\"Signed contracts\",\"Client files\",\"Internal procedures\"],\"pipeline\":[\"Read\",\"Prepare\",\"Index\"]},\"unify\":{\"title\":\"Scope\",\"subtitle\":\"The agent fans the query out across your KYC stores and returns a cited result, down to the exact source.\",\"dropHere\":\"Add authorized documents\",\"browse\":\"Browse files\",\"heading\":\"One question, one sourced and traceable answer\",\"formatsInfo\":\"PDF, Word, Excel, CSV, JSON, reports, contracts...\",\"filetypePdf\":\"PDF\",\"filetypeCsv\":\"CSV\",\"filetypeDocx\":\"DOCX\",\"filetypeJson\":\"JSON\",\"rolesLabel\":\"Mission\",\"scopeLabel\":\"Corpus\",\"matrixCorpus\":\"Corpus\",\"allowedLabel\":\"Configured assistants\",\"policyNote\":\"Segmentation happens at assistant level: corpus, mission and limits are defined before use.\",\"rules\":[\"Visible sources\",\"Scoped answers\",\"Search + citations\"],\"scopes\":[\"Verdi contracts\",\"KYC files\",\"HR procedures\"],\"assistants\":[{\"name\":\"Legal\",\"role\":\"Clauses and contracts\",\"corpus\":\"Contracts\",\"action\":\"Compare\"},{\"name\":\"Compliance\",\"role\":\"KYC and sensitive records\",\"corpus\":\"KYC\",\"action\":\"Verify\"},{\"name\":\"HR\",\"role\":\"Internal procedures\",\"corpus\":\"Procedures\",\"action\":\"Answer\"}]},\"chat\":{\"title\":\"Query\",\"assistantName\":\"Every access is logged and governed\",\"searchPlaceholder\":\"Search...\",\"newChat\":\"New Chat\",\"botWelcome\":\"Immutable audit log, role-based access control, zero raw data exposed.\",\"userQuestion\":\"What is the term of the Verdi contract?\",\"sourcesLabel\":\"Sources used\",\"answer\":{\"prefix\":\"Source\",\"middle\":\"initial term:\",\"highlight\":\"three years\",\"suffix\":\"Renewal requires a written agreement.\"},\"inputPlaceholder\":\"Ask for a verification...\"}},\"cookie\":{\"accept\":\"Accept all\",\"learn\":\"Learn more\",\"message\":\"This site uses cookies for analytics. You can choose which categories to accept.\",\"reject\":\"Reject all\"},\"contact\":{\"badge\":\"CONTACT\",\"titleLine1\":\"See how Prosperify works\",\"titleHighlight\":\"on enterprise documents\",\"subtitle\":\"Send a short note or create a calendar invite with Prosperify already added as a guest.\",\"meeting\":{\"heading\":\"Schedule a working session\",\"description\":\"Prefer a live discussion? Open a pre-filled Google Calendar event with Prosperify already added as a guest.\",\"cta\":\"Open Google Calendar\",\"note\":\"When you save or send the event, Prosperify is included on the invitation. Add Google Meet from the calendar event before sending if it is not enabled by default.\",\"title\":\"Prosperify deployment discussion\",\"details\":\"Discuss document scope, security requirements, deployment model and next steps with Prosperify.\",\"location\":\"Google Meet\"},\"form\":{\"namePlaceholder\":\"Your full name\",\"companyPlaceholder\":\"Your company name\",\"emailPlaceholder\":\"Your email\",\"phonePlaceholder\":\"Phone (optional)\",\"subjectPlaceholder\":\"Select a subject\",\"subjectInformation\":\"Request a demo\",\"subjectPartnership\":\"Frame a document pilot\",\"subjectOther\":\"Assess a sovereign deployment\",\"subjectApi\":\"Discuss an API integration\",\"subjectVirtualPartner\":\"Partnership / virtual coworker\",\"messagePlaceholder\":\"Your message\",\"submit\":\"Send request\",\"statusSending\":\"⏳ Sending...\",\"statusSuccess\":\"✅ Message sent!\",\"statusFixErrors\":\"❌ Please correct the errors above.\",\"statusUnexpected\":\"❌ Unexpected error.\",\"statusSendError\":\"❌ Sending error.\"}},\"aiChat\":{\"sidebar\":{\"history\":\"History\"},\"conversations\":[\"Verdi contract\",\"Q4 Budget\",\"HR Procedures\",\"Monthly report\"],\"openDocumentFull\":\"Open Contrat_Verdi.pdf (page 10)\",\"openDocumentShort\":\"Contrat_Verdi.pdf (page 10)\",\"pdf\":{\"contractNameSecondary\":\"Q4_Financial_Report.pdf\",\"title\":\"Verdi Contract.pdf\"}},\"products\":{\"badge\":\"DEPLOYMENT\",\"titlePrefix\":\"Deploy with the\",\"titleMiddle\":\"right level\",\"titleHighlight\":\"of control\",\"subtitle\":\"Three deployment modes to match the right level of control, integration and operations.\",\"offers\":[{\"badge\":\"\",\"title\":\"Dedicated Cloud\",\"descriptionSegments\":[],\"features\":[\"High-performance dedicated infrastructure\",\"Guaranteed security and compliance\",\"Automatic maintenance and updates\",\"Instant scalability\"]},{\"badge\":\"\",\"title\":\"Hybrid\",\"descriptionSegments\":[],\"features\":[\"Your data stays on your infrastructure\",\"AI model hosted and maintained by us\",\"Maximum regulatory compliance\",\"Full control over your information\"]},{\"badge\":\"MAXIMUM SECURITY\",\"title\":\"100% Local\",\"descriptionSegments\":[],\"features\":[\"Deployment on your infrastructure\",\"Total data sovereignty\",\"No external dependency\",\"Maximum customization\"]}]},\"features\":{\"badge\":\"CAPABILITIES\",\"title\":\"Document intelligence\",\"titleHighlight\":\"that stays sourced and governed\",\"subtitle\":\"\",\"items\":{\"precision\":{\"shortTitle\":\"Sourced answers\",\"title\":\"Sourced and reviewable answers\",\"subtitle\":\"Sentence-level citations\",\"description\":\"Each answer keeps the link to the excerpts used so teams can review, audit and validate results against the source material.\"},\"coverage\":{\"shortTitle\":\"Hybrid search\",\"title\":\"Hybrid search across document corpora\",\"subtitle\":\"Semantic, lexical, visual and contextual\",\"description\":\"Prosperify combines semantic search, keywords, document context and visual signals to retrieve useful passages across heterogeneous corpora.\"},\"performance\":{\"shortTitle\":\"Reliable synthesis\",\"title\":\"Synthesis framed by your sources\",\"subtitle\":\"Search, compare, extract\",\"description\":\"Prosperify Agent helps teams summarize, compare clauses and extract key information from your document stores.\"},\"governance\":{\"shortTitle\":\"Controlled access\",\"title\":\"Access controlled by role and store\",\"subtitle\":\"Each user in the right perimeter\",\"description\":\"Access can be limited by role, team, confidentiality level, store or authorized corpus.\"},\"orchestration\":{\"shortTitle\":\"Review Workflow\",\"title\":\"A review workflow for business teams\",\"subtitle\":\"Search, answer, verify\",\"description\":\"Prosperify keeps retrieved passages, citations and answer context visible so teams can review important answers before using them.\"},\"differentiation\":{\"shortTitle\":\"Sovereignty\",\"title\":\"Data sovereignty\",\"subtitle\":\"Data in a defined trust perimeter\",\"description\":\"Dedicated, hybrid or local deployment, with data isolation and no training of general models on client corpora.\"}},\"deployment\":{\"dedicated\":{\"title\":\"Dedicated Cloud\",\"line1\":\"Instance dedicated to your organization\",\"line2\":\"Security controls and review support\",\"line3\":\"Managed maintenance and updates\",\"line4\":\"Capacity adjusted to the perimeter\"},\"hybrid\":{\"title\":\"Hybrid\",\"line1\":\"Sensitive data inside your perimeter\",\"line2\":\"Private connectors when needed\",\"line3\":\"Support for internal reviews\",\"line4\":\"Controlled information flows\"},\"local\":{\"title\":\"Local deployment\",\"badge\":\"REINFORCED CONTROL\",\"line1\":\"Deployment on your infrastructure\",\"line2\":\"Documents and operations inside your perimeter\",\"line3\":\"External dependencies limited by scope\",\"line4\":\"Runbooks adapted to your operations\"}}},\"sovereignty\":{\"badge\":\"SECURITY & GOVERNANCE\",\"titlePrefix\":\"Keep data\",\"titleHighlight\":\"protected in a dedicated instance\",\"titleSuffix\":\"from document to answer\",\"subtitle\":\"\",\"mainCard\":{\"titleLine1\":\"A single-tenant architecture\",\"titleLine2\":\"\",\"description\":\"Each client gets an isolated perimeter for documents, stores, permissions and usage traces.\",\"chips\":[\"Corpora\",\"Permissions\",\"Sources\"]},\"cloud\":{\"title\":\"Dedicated instance\",\"description\":\"Each organization runs in its own environment, separating data, processing and sensitive operations.\",\"chips\":[\"Single-tenant\",\"Isolated\",\"Dedicated\"]},\"encryption\":{\"title\":\"Key management system\",\"description\":\"Key management protects documents and metadata stored in the data layer.\",\"chips\":[\"Stored data\",\"Protection\",\"Control\"]},\"kubernetes\":{\"title\":\"Controlled access\",\"description\":\"Access is limited by role, store, corpus and usage so each team stays within its perimeter.\",\"chips\":[\"Roles\",\"Assistants\",\"Scopes\"]},\"dataProtection\":{\"title\":\"Monitoring and audit\",\"description\":\"Operational signals help understand usage, diagnose incidents and review sourced answers.\",\"chips\":[\"Usage\",\"Audit\",\"Review\"]},\"supervision\":{\"title\":\"Deployment matched to your perimeter\",\"description\":\"Dedicated cloud, hybrid or local: the selected mode aligns with confidentiality and operating requirements.\",\"badges\":[\"Dedicated cloud\",\"Hybrid\",\"Local\"],\"chips\":[\"Dedicated cloud\",\"Hybrid\",\"Local\"]}},\"integration\":{\"badge\":\"INTEGRATION\",\"titlePrefix\":\"A document layer\",\"titleHighlight\":\"above\",\"titleSuffix\":\"your existing tools\",\"subtitle\":\"Prosperify can be introduced progressively on top of existing sources so authorized corpora become queryable, governed and reviewable.\",\"steps\":[{\"title\":\"Scoping\",\"description\":\"Clarify the use case, identify the corpus and frame access rules.\"},{\"title\":\"Pilot ingestion\",\"description\":\"Prepare documents, make sources retrievable and test first queries.\"},{\"title\":\"Configuration\",\"description\":\"Configure pilot users, verify access and prepare scenarios.\"},{\"title\":\"Business validation\",\"description\":\"Review answer quality, identify limits and decide next steps.\"},{\"title\":\"Production and extension\",\"description\":\"Track usage, supervise operations and define the expansion path.\"}]},\"architecture\":{\"titlePrefix\":\"An architecture designed for\",\"titleHighlight\":\"document trust\",\"subtitle\":\"A clear pipeline that turns sensitive documents into sourced, verifiable and traceable answers.\",\"footerNote\":\"Sources, access and verification kept at every step\",\"arch\":{\"tabs\":{\"index\":{\"label\":\"Indexing\",\"sub\":\"— structuring the corpus\"},\"query\":{\"label\":\"Querying\",\"sub\":\"— interrogating the index\"}},\"phaseDesc\":{\"index\":\"This step runs once per document: multimodal parsing, segmentation into passages, semantic vectorization, then storage in a queryable encrypted index.\",\"query\":\"For every question, the agent queries the index with hybrid search, selects the most relevant passages, drafts an answer, then verifies it against the sources before returning it.\"},\"index\":{\"deposit\":{\"tag\":\"ingest\",\"title\":\"Document ingestion\",\"desc\":\"The file — PDF, Word, Excel… — joins a corpus whose access perimeter has been defined in advance.\"},\"read\":{\"tag\":\"parsing\",\"title\":\"Multimodal parsing\",\"desc\":\"Text, tables and images are analyzed together to preserve the document's structure.\"},\"chunk\":{\"tag\":\"segmentation\",\"title\":\"Segmentation into passages\",\"desc\":\"Content is split into coherent passages, sized for precise retrieval.\"},\"embed\":{\"tag\":\"embeddings\",\"title\":\"Semantic vectorization\",\"desc\":\"Each passage is converted into a numerical vector (embedding) that encodes its meaning for semantic comparison.\"},\"store\":{\"tag\":\"encrypted\",\"title\":\"Encrypted index\",\"desc\":\"Vectors and metadata are stored in an index encrypted at rest, ready to be queried.\"}},\"query\":{\"question\":{\"tag\":\"question\",\"title\":\"Your question\",\"desc\":\"The question is asked in natural language, with no special search syntax.\",\"bubble\":\"What is the term of the Verdi contract?\"},\"intent\":{\"tag\":\"intent\",\"title\":\"Intent analysis\",\"desc\":\"The agent identifies the intent and breaks multi-part questions into sub-queries.\"},\"search\":{\"tag\":\"search\",\"title\":\"Hybrid search\",\"desc\":\"The index is queried in parallel by semantic similarity and lexical matching.\"},\"verify\":{\"tag\":\"verif.\",\"title\":\"Verified generation\",\"desc\":\"The model drafts an answer, then each claim is cross-checked against the retained source passages.\"},\"answer\":{\"tag\":\"answer\",\"title\":\"Sourced answer\",\"desc\":\"The answer is returned with precise references: document, page, clause.\"}}}},\"technical\":{\"badge\":\"DOCUMENT CHAIN\",\"title\":\"A readable chain built for\",\"titleHighlight\":\"evidence\",\"subtitle\":\"From added document to cited answer, each step preserves the link back to the source.\",\"footnote\":\"Sources, access and verification preserved at each step\",\"steps\":{\"ingest\":{\"title\":\"Authorized corpus\",\"body\":\"Documents and metadata enter a defined perimeter before use.\",\"metric\":\"Clear use case // Framed corpus\"},\"parse\":{\"title\":\"Preparation\",\"body\":\"Text, tables and pages are prepared while preserving useful context.\",\"metric\":\"Structure preserved // Sources prepared\"},\"embed\":{\"title\":\"Indexing\",\"body\":\"Passages are chunked and indexed for hybrid search.\",\"metric\":\"Isolated corpus // Governed access\"},\"retrieve\":{\"title\":\"Hybrid search\",\"body\":\"Semantic and lexical retrieval work together to find useful passages.\",\"metric\":\"Semantic + lexical search\"},\"cite\":{\"title\":\"Citations\",\"body\":\"Claims stay tied to reviewable excerpts.\",\"metric\":\"Answer linked to sources\"},\"verify\":{\"title\":\"Review\",\"body\":\"Sources, access and quality signals remain available for human review.\",\"metric\":\"Review-ready evidence\"}}},\"faq\":{\"badge\":\"FAQ\",\"titleLine1\":\"Have\",\"titleHighlight\":\"questions\",\"titleLine2\":\"? We have answers.\",\"subtitle\":\"Key answers about sources, security, deployment and document governance with Prosperify.\",\"items\":[{\"question\":\"Does the AI continuously learn from my data?\",\"answer\":\"No. Client corpora are not used to train general models. They are used to generate sourced answers inside the agreed project perimeter.\"},{\"question\":\"Where are documents hosted?\",\"answer\":\"It depends on the selected model: dedicated cloud, hybrid architecture or local deployment. The trust perimeter is defined with the client around security, confidentiality and operational constraints.\"},{\"question\":\"Does Prosperify replace experts?\",\"answer\":\"No. Prosperify helps automate document search, synthesis, extraction and comparison. Decisions, validation and interpretation remain with business experts.\"},{\"question\":\"How are answers verified?\",\"answer\":\"Answers are generated from selected document excerpts and linked back to the sources used. Insufficiently supported statements can be surfaced to support human review.\"},{\"question\":\"Can access be limited by role, store or corpus?\",\"answer\":\"Yes. Access can be governed by role, store, corpus, user or confidentiality level. Out-of-scope operations are refused according to configured rules.\"},{\"question\":\"Do we need to rebuild the information system?\",\"answer\":\"No. Prosperify can be added as a document intelligence layer on top of existing systems. Integration can start with one corpus, one store and one business use case before expanding.\"},{\"question\":\"Which formats are supported?\",\"answer\":\"Prosperify is designed for structured and unstructured documents, including PDF, Word, Excel, CSV, JSON and other business corpora depending on project scope.\"},{\"question\":\"Which deployment modes are possible?\",\"answer\":\"Three approaches are possible: dedicated cloud, hybrid or local. The choice depends on confidentiality level, infrastructure constraints and sovereignty needs.\"}]},\"team\":{\"badge\":\"Team\",\"titlePrefix\":\"The team behind\",\"titleHighlight\":\"Prosperify\",\"subtitle\":\"A focused product and engineering team building document AI for organizations that work with sensitive information.\"},\"jobs\":{\"badge\":\"Jobs\",\"titlePrefix\":\"Build trusted\",\"titleHighlight\":\"document AI\",\"subtitle\":\"Open roles and hiring updates from Prosperify. We keep the team small, technical, and close to real customer problems.\",\"apply\":\"Apply\",\"emptyTitle\":\"No open role right now\",\"emptyDescription\":\"We are not hiring for a specific seat today, but strong infrastructure, product, and applied AI profiles can still reach out.\",\"viewAll\":\"View all roles\"},\"footer\":{\"tagline\":\"Query your documents with verifiable answers.\",\"product\":\"Product\",\"support\":\"Support\",\"legal\":\"Legal\",\"links\":{\"home\":\"Home\",\"overview\":\"Overview\",\"workflow\":\"Workflow\",\"deployment\":\"Deployment\",\"blog\":\"Blog\",\"team\":\"Team\",\"jobs\":\"Jobs\",\"faq\":\"FAQ\",\"contact\":\"Contact\",\"features\":\"Features\",\"sovereignty\":\"Sovereignty\",\"integration\":\"Integration\",\"architecture\":\"Architecture\",\"privacy\":\"Privacy\",\"terms\":\"Terms\",\"rgpd\":\"GDPR\"},\"copyright\":\"© 2025 Prosperify. All rights reserved.\",\"partnersTitle\":\"Support & Partners\"},\"roadmap\":{\"metaTitle\":\"Roadmap - Prosperify\",\"metaDescription\":\"Discover Prosperify's roadmap and upcoming work in sourced document intelligence.\",\"items\":[{\"date\":\"06/14/2024\",\"titlePrefix\":\"Start of the\",\"titleHighlight\":\"Prosperify\",\"lead\":\"Official launch of Prosperify, with a simple idea: make enterprise document search easier to verify and use.\",\"descriptionSegments\":[{\"text\":\"This milestone marks the birth of an ambitious project built around a single vision: enabling organizations to \"},{\"text\":\"make better use of their document knowledge\",\"emphasis\":true},{\"text\":\" by reducing information silos and making sources easier to retrieve through a \"},{\"text\":\"smart document search technology\",\"emphasis\":true},{\"text\":\".\"}],\"imageAlt\":\"Prosperify (logo, early stage)\",\"imageSrc\":\"/assets/brand/logo-mark.png\",\"imageVariant\":\"brandMark\"},{\"date\":\"09/26/2024\",\"titlePrefix\":\"Contact with\",\"titleHighlight\":\"Orpi\",\"lead\":\"First discussion with Orpi to explore a potential collaboration.\",\"description\":\"A meeting dedicated to understanding the barriers related to data exploitation in French mid-sized companies, and to analysing the impact of information fragmentation on missed business opportunities.\",\"imageAlt\":\"Orpi\",\"imageSrc\":\"/assets/partners/orpi.webp\",\"imageVariant\":\"partnerSmall\"},{\"date\":\"10/03/2024\",\"titlePrefix\":\"Design review with\",\"titleHighlight\":\"ESA\",\"lead\":\"Meeting with the European Space Agency for a first design review.\",\"descriptionSegments\":[{\"text\":\"A discussion focused on understanding the \"},{\"text\":\"security standards\",\"emphasis\":true},{\"text\":\" and \"},{\"text\":\"sovereignty requirements\",\"emphasis\":true},{\"text\":\" demanded by such agencies, while exploring their interest in a \"},{\"text\":\"document search technology\",\"emphasis\":true},{\"text\":\" adapted to their specific needs.\"}],\"imageAlt\":\"ESA\",\"imageSrc\":\"/assets/partners/esa.png\",\"imageVariant\":\"partnerMedium\"},{\"date\":\"01/02/2025\",\"title\":\"Joining Pépite France\",\"lead\":\"Prosperify joins the Pépite France network to support student innovation.\",\"imageAlt\":\"Pépite France\",\"imageSrc\":\"/assets/partners/pepite-beelyss.png\",\"imageVariant\":\"partnerLarge\"},{\"date\":\"01/04/2025\",\"titlePrefix\":\"Meeting with\",\"titleHighlight\":\"TUBA\",\"lead\":\"Discussion with the TUBA ecosystem around urban innovation and new digital uses.\",\"descriptionSegments\":[{\"text\":\"This meeting made it possible to explore the \"},{\"text\":\"challenges of leveraging data in urban environments\",\"emphasis\":true},{\"text\":\" and to identify opportunities offered by Prosperify in a context of \"},{\"text\":\"territorial innovation\",\"emphasis\":true},{\"text\":\". A key moment to understand how our technology can address the challenges of \"},{\"text\":\"information centralization\",\"emphasis\":true},{\"text\":\" and \"},{\"text\":\"data valorization\",\"emphasis\":true},{\"text\":\" for local stakeholders.\"}],\"imageAlt\":\"TUBA\",\"imageSrc\":\"/assets/partners/tuba.png\",\"imageVariant\":\"partnerWide\"},{\"date\":\"02/17/2025\",\"titlePrefix\":\"Contact with\",\"titleHighlight\":\"AXA\",\"lead\":\"First discussion with AXA about a potential strategic collaboration.\",\"descriptionSegments\":[{\"text\":\"A two-step meeting: first, an analysis of the \"},{\"text\":\"barriers related to document search\",\"emphasis\":true},{\"text\":\" in large groups, as well as of the \"},{\"text\":\"tools currently in use\",\"emphasis\":true},{\"text\":\". Then, a \"},{\"text\":\"presentation of Prosperify\",\"emphasis\":true},{\"text\":\", its mission and the \"},{\"text\":\"technology used\",\"emphasis\":true},{\"text\":\" to address these challenges.\"}],\"imageAlt\":\"AXA\",\"imageSrc\":\"/assets/partners/axa.png\",\"imageVariant\":\"partnerMedium\"},{\"date\":\"05/12/2025\",\"titlePrefix\":\"Joining\",\"titleHighlight\":\"La French Tech\",\"lead\":\"Prosperify joins La French Tech to become part of a national innovation ecosystem.\",\"descriptionSegments\":[{\"text\":\"This integration marks a new milestone in Prosperify's development as a \"},{\"text\":\"member start-up\",\"emphasis\":true},{\"text\":\". It opens access to an \"},{\"text\":\"active ecosystem of young companies\",\"emphasis\":true},{\"text\":\", opening opportunities for synergies, partnerships and visibility within the French innovation network.\"}],\"imageAlt\":\"La French Tech\",\"imageSrc\":\"/assets/partners/french-tech.png\",\"imageVariant\":\"partnerLarge\"},{\"date\":\"08/2025\",\"titlePrefix\":\"Official launch of\",\"titleHighlight\":\"Prosperify\",\"lead\":\"Go-to-market of the solution after several months of design, testing and ecosystem discussions.\",\"descriptionSegments\":[{\"text\":\"The launch makes the vision concrete: offering companies a \"},{\"text\":\"sovereign document assistant\",\"emphasis\":true},{\"text\":\" capable of \"},{\"text\":\"centralizing\",\"emphasis\":true},{\"text\":\" and \"},{\"text\":\"simplifying access to data\",\"emphasis\":true},{\"text\":\", with visible sources, governed access and a clear security perimeter.\"}],\"imageAlt\":\"Prosperify (launch)\",\"imageSrc\":\"/assets/brand/logo-full.png\",\"imageVariant\":\"brandFull\"}]}}"));}),
@@ -2919,9 +3082,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navi
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/index.js [app-ssr] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-i18next/dist/es/useTranslation.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$lib$2f$theme$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/landing/lib/theme.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/i18n.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -3067,12 +3232,8 @@ function LandingNavbar() {
         return ()=>obs.disconnect();
     }, []);
     const toggleTheme = ()=>{
-        const next = !isDark;
-        document.documentElement.classList.toggle("dark", next);
-        try {
-            localStorage.setItem("pf-theme", next ? "dark" : "light");
-        } catch  {}
-        setIsDark(next);
+        const next = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$lib$2f$theme$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getCurrentLandingTheme"])() === "dark" ? "light" : "dark";
+        setIsDark((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$lib$2f$theme$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["applyLandingTheme"])(next));
     };
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if (!isHome) return undefined;
@@ -3116,12 +3277,12 @@ function LandingNavbar() {
                         "aria-label": "Prosperify",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ProsperifyLogo, {}, void 0, false, {
                             fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                            lineNumber: 129,
+                            lineNumber: 127,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                        lineNumber: 128,
+                        lineNumber: 126,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3138,19 +3299,19 @@ function LandingNavbar() {
                                         className: "absolute inset-x-3 -bottom-[13px] h-0.5 bg-[#FF6A13]"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                        lineNumber: 150,
+                                        lineNumber: 148,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, link.href, true, {
                                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                lineNumber: 137,
+                                lineNumber: 135,
                                 columnNumber: 15
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                        lineNumber: 133,
+                        lineNumber: 131,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3169,7 +3330,7 @@ function LandingNavbar() {
                                         children: "FR"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                        lineNumber: 164,
+                                        lineNumber: 162,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3179,13 +3340,13 @@ function LandingNavbar() {
                                         children: "EN"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                        lineNumber: 176,
+                                        lineNumber: 174,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                lineNumber: 160,
+                                lineNumber: 158,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3198,16 +3359,16 @@ function LandingNavbar() {
                                 "aria-label": "Toggle theme",
                                 children: isDark ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SunIcon, {}, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                    lineNumber: 198,
+                                    lineNumber: 196,
                                     columnNumber: 23
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MoonIcon, {}, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                    lineNumber: 198,
+                                    lineNumber: 196,
                                     columnNumber: 37
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                lineNumber: 191,
+                                lineNumber: 189,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -3219,7 +3380,7 @@ function LandingNavbar() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                lineNumber: 201,
+                                lineNumber: 199,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3231,30 +3392,30 @@ function LandingNavbar() {
                                     className: "h-6 w-6"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                    lineNumber: 215,
+                                    lineNumber: 213,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconMenu2$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconMenu2$3e$__["IconMenu2"], {
                                     className: "h-6 w-6"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                    lineNumber: 217,
+                                    lineNumber: 215,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                lineNumber: 208,
+                                lineNumber: 206,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                        lineNumber: 158,
+                        lineNumber: 156,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                lineNumber: 127,
+                lineNumber: 125,
                 columnNumber: 7
             }, this),
             mobileOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3273,7 +3434,7 @@ function LandingNavbar() {
                                 children: currentLang === "en" ? link.labelEn : link.labelFr
                             }, link.href, false, {
                                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                lineNumber: 231,
+                                lineNumber: 229,
                                 columnNumber: 15
                             }, this)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3292,7 +3453,7 @@ function LandingNavbar() {
                                             children: "FR"
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                            lineNumber: 253,
+                                            lineNumber: 251,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3302,13 +3463,13 @@ function LandingNavbar() {
                                             children: "EN"
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                            lineNumber: 265,
+                                            lineNumber: 263,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                    lineNumber: 249,
+                                    lineNumber: 247,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3321,22 +3482,22 @@ function LandingNavbar() {
                                     "aria-label": "Toggle theme",
                                     children: isDark ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SunIcon, {}, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                        lineNumber: 285,
+                                        lineNumber: 283,
                                         columnNumber: 27
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MoonIcon, {}, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                        lineNumber: 285,
+                                        lineNumber: 283,
                                         columnNumber: 41
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                                    lineNumber: 278,
+                                    lineNumber: 276,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                            lineNumber: 248,
+                            lineNumber: 246,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -3349,24 +3510,24 @@ function LandingNavbar() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                            lineNumber: 289,
+                            lineNumber: 287,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                    lineNumber: 229,
+                    lineNumber: 227,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-                lineNumber: 225,
+                lineNumber: 223,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/navigation/navbar.tsx",
-        lineNumber: 123,
+        lineNumber: 121,
         columnNumber: 5
     }, this);
 }
@@ -4693,6 +4854,56 @@ function SovereigntySection() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
+                            borderBottom: "1px solid var(--pf-border)"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    padding: "12px 16px 8px",
+                                    fontFamily: "'JetBrains Mono', monospace",
+                                    fontSize: 10,
+                                    textTransform: "uppercase",
+                                    letterSpacing: "0.15em",
+                                    color: "var(--pf-fg-dim)",
+                                    background: "var(--pf-bg-card)",
+                                    border: "1px solid var(--pf-border)",
+                                    borderBottom: "none"
+                                },
+                                children: "Vos systèmes existants"
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                lineNumber: 502,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    display: "grid",
+                                    gridTemplateColumns: "repeat(4, 1fr)",
+                                    gap: 1,
+                                    background: "var(--pf-border)"
+                                },
+                                children: SOURCES.map((src, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SourceTile, {
+                                        src: src,
+                                        active: i === activeIdx,
+                                        isDark: isDark
+                                    }, src.label, false, {
+                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                        lineNumber: 507,
+                                        columnNumber: 15
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                                lineNumber: 505,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
+                        lineNumber: 501,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
                             position: "relative",
                             overflow: "hidden",
                             border: "1px solid var(--pf-border)",
@@ -4712,7 +4923,7 @@ function SovereigntySection() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 509,
+                                lineNumber: 521,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4745,7 +4956,7 @@ function SovereigntySection() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                            lineNumber: 526,
+                                            lineNumber: 538,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4778,28 +4989,28 @@ function SovereigntySection() {
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                                    lineNumber: 551,
+                                                    lineNumber: 563,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                                lineNumber: 542,
+                                                lineNumber: 554,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                            lineNumber: 537,
+                                            lineNumber: 549,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                    lineNumber: 520,
+                                    lineNumber: 532,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 516,
+                                lineNumber: 528,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4827,7 +5038,7 @@ function SovereigntySection() {
                                         children: "PROSPERIFY"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                        lineNumber: 573,
+                                        lineNumber: 585,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4840,13 +5051,13 @@ function SovereigntySection() {
                                         children: "CORE"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                        lineNumber: 574,
+                                        lineNumber: 586,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 566,
+                                lineNumber: 578,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4863,62 +5074,13 @@ function SovereigntySection() {
                                 children: "Moteur d'ingestion & RAG"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 576,
+                                lineNumber: 588,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 501,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        style: {
-                            borderBottom: "1px solid var(--pf-border)"
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                style: {
-                                    padding: "12px 16px 8px",
-                                    fontFamily: "'JetBrains Mono', monospace",
-                                    fontSize: 10,
-                                    textTransform: "uppercase",
-                                    letterSpacing: "0.15em",
-                                    color: "var(--pf-fg-dim)",
-                                    background: "var(--pf-bg-card)",
-                                    borderTop: "1px solid var(--pf-border)"
-                                },
-                                children: "Vos systèmes existants"
-                            }, void 0, false, {
-                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 587,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                style: {
-                                    display: "grid",
-                                    gridTemplateColumns: "repeat(4, 1fr)",
-                                    gap: 1,
-                                    background: "var(--pf-border)"
-                                },
-                                children: SOURCES.map((src, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SourceTile, {
-                                        src: src,
-                                        active: i === activeIdx,
-                                        isDark: isDark
-                                    }, src.label, false, {
-                                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                        lineNumber: 592,
-                                        columnNumber: 15
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                                lineNumber: 590,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/features/landing/components/sovereignty/sovereignty-section.tsx",
-                        lineNumber: 586,
+                        lineNumber: 513,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5206,7 +5368,7 @@ function PipelineArrow() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex shrink-0 flex-col items-center justify-center px-3 py-4 md:py-0",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-            className: "font-mono text-xl font-bold text-[#FF6A13] opacity-60 md:text-2xl",
+            className: "rotate-90 font-mono text-xl font-bold text-[#FF6A13] opacity-60 md:rotate-0 md:text-2xl",
             children: "→"
         }, void 0, false, {
             fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
@@ -6346,7 +6508,45 @@ function WorkflowSection() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mb-7 mt-11 flex flex-wrap items-center gap-y-3",
+                className: "mb-7 mt-11 grid grid-cols-3 gap-2 md:hidden",
+                children: stepLabels.map((label, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        onClick: ()=>selectStep(index),
+                        className: "flex cursor-pointer flex-col items-center gap-2 border-none bg-transparent p-0",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex h-10 w-10 items-center justify-center border font-mono text-[13px] font-semibold transition-all duration-300", activeStep === index ? "border-[#FF6A13] text-[#FF6A13]" : "text-[var(--pf-fg-muted)]"),
+                                style: {
+                                    borderColor: activeStep === index ? "#FF6A13" : activeStep > index ? "var(--pf-border-2)" : "var(--pf-border)",
+                                    background: activeStep === index ? "var(--pf-bg-active)" : "var(--pf-bg-dim)"
+                                },
+                                children: String(index + 1).padStart(2, "0")
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                lineNumber: 417,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("text-center text-xs font-semibold leading-tight", activeStep === index ? "text-[var(--pf-fg)]" : "text-[var(--pf-fg-dim)]"),
+                                children: label
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                                lineNumber: 429,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, index, true, {
+                        fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                        lineNumber: 411,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
+                lineNumber: 409,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mb-7 mt-11 hidden items-center gap-y-3 md:flex md:flex-wrap",
                 children: stepLabels.map((label, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex items-center",
                         children: [
@@ -6364,7 +6564,7 @@ function WorkflowSection() {
                                         children: String(index + 1).padStart(2, "0")
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 417,
+                                        lineNumber: 445,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6372,13 +6572,13 @@ function WorkflowSection() {
                                         children: label
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                        lineNumber: 429,
+                                        lineNumber: 457,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 412,
+                                lineNumber: 440,
                                 columnNumber: 13
                             }, this),
                             index < 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6396,23 +6596,23 @@ function WorkflowSection() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                    lineNumber: 435,
+                                    lineNumber: 463,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 434,
+                                lineNumber: 462,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, index, true, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 411,
+                        lineNumber: 439,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 409,
+                lineNumber: 437,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6434,7 +6634,7 @@ function WorkflowSection() {
                                 children: "01 / CONNECTER"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 455,
+                                lineNumber: 483,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -6447,7 +6647,7 @@ function WorkflowSection() {
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 456,
+                                lineNumber: 484,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6457,20 +6657,20 @@ function WorkflowSection() {
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 459,
+                                lineNumber: 487,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ConnecterPipeline, {
                                 pipeline: pipeline
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 462,
+                                lineNumber: 490,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 454,
+                        lineNumber: 482,
                         columnNumber: 11
                     }, this),
                     activeStep === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6484,7 +6684,7 @@ function WorkflowSection() {
                                 children: "02 / INTERROGER"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 469,
+                                lineNumber: 497,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -6497,7 +6697,7 @@ function WorkflowSection() {
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 470,
+                                lineNumber: 498,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6507,18 +6707,18 @@ function WorkflowSection() {
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 473,
+                                lineNumber: 501,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(InterrogerPipeline, {}, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 476,
+                                lineNumber: 504,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 468,
+                        lineNumber: 496,
                         columnNumber: 11
                     }, this),
                     activeStep === 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6532,7 +6732,7 @@ function WorkflowSection() {
                                 children: "03 / CONTRÔLER"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 483,
+                                lineNumber: 511,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -6545,7 +6745,7 @@ function WorkflowSection() {
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 484,
+                                lineNumber: 512,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6555,24 +6755,24 @@ function WorkflowSection() {
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 487,
+                                lineNumber: 515,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ControlerPipeline, {}, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                                lineNumber: 490,
+                                lineNumber: 518,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                        lineNumber: 482,
+                        lineNumber: 510,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/workflow/workflow-section.tsx",
-                lineNumber: 446,
+                lineNumber: 474,
                 columnNumber: 7
             }, this)
         ]
@@ -7702,4 +7902,4 @@ function Home() {
 }),
 ];
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__eb54c570._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__477158e2._.js.map

@@ -389,8 +389,73 @@
   "architecture": {
     "titlePrefix": "Une architecture pensée pour la",
     "titleHighlight": "confiance documentaire",
-    "subtitle": "Une chaîne claire pour passer de documents sensibles à des réponses sourcées, relisibles et contrôlables.",
-    "footerNote": "Sources, accès et vérification conservés à chaque étape"
+    "subtitle": "Une chaîne claire pour transformer des documents sensibles en réponses sourcées, vérifiables et traçables.",
+    "footerNote": "Sources, accès et vérification conservés à chaque étape",
+    "arch": {
+      "tabs": {
+        "index": { "label": "Indexation", "sub": "— structurer le corpus" },
+        "query": { "label": "Interrogation", "sub": "— interroger l'index" }
+      },
+      "phaseDesc": {
+        "index": "Cette étape s'exécute une seule fois par document : lecture multimodale, segmentation en passages, vectorisation sémantique, puis stockage dans un index chiffré interrogeable.",
+        "query": "À chaque question, l'agent interroge l'index par recherche hybride, sélectionne les passages les plus pertinents, rédige une réponse, puis la vérifie par recoupement avec les sources avant de vous la restituer."
+      },
+      "index": {
+        "deposit": {
+          "tag": "dépôt",
+          "title": "Ingestion du document",
+          "desc": "Le fichier — PDF, Word, Excel… — rejoint un corpus dont le périmètre d'accès a été défini au préalable."
+        },
+        "read": {
+          "tag": "lecture",
+          "title": "Lecture multimodale",
+          "desc": "Le texte, les tableaux et les images sont analysés conjointement pour préserver la structure du document."
+        },
+        "chunk": {
+          "tag": "segmentation",
+          "title": "Découpage en passages",
+          "desc": "Le contenu est segmenté en passages cohérents, dimensionnés pour une recherche précise."
+        },
+        "embed": {
+          "tag": "embeddings",
+          "title": "Vectorisation sémantique",
+          "desc": "Chaque passage est converti en vecteur numérique (embedding) qui encode son sens pour permettre des comparaisons sémantiques."
+        },
+        "store": {
+          "tag": "chiffré",
+          "title": "Index chiffré",
+          "desc": "Vecteurs et métadonnées sont stockés dans un index chiffré au repos, prêt à être interrogé."
+        }
+      },
+      "query": {
+        "question": {
+          "tag": "question",
+          "title": "Votre question",
+          "desc": "La question est posée en langage naturel, sans syntaxe de recherche particulière.",
+          "bubble": "Quelle est la durée du contrat Verdi ?"
+        },
+        "intent": {
+          "tag": "intention",
+          "title": "Analyse d'intention",
+          "desc": "L'agent identifie l'intention et décompose les questions à plusieurs volets en sous-requêtes."
+        },
+        "search": {
+          "tag": "recherche",
+          "title": "Recherche hybride",
+          "desc": "L'index est interrogé en parallèle par similarité sémantique et par correspondance lexicale."
+        },
+        "verify": {
+          "tag": "vérif.",
+          "title": "Génération vérifiée",
+          "desc": "Le modèle rédige une réponse, puis chaque affirmation est recoupée avec les passages source retenus."
+        },
+        "answer": {
+          "tag": "réponse",
+          "title": "Réponse sourcée",
+          "desc": "La réponse est restituée avec ses références précises : document, page, clause."
+        }
+      }
+    }
   },
   "technical": {
     "badge": "CHAÎNE DOCUMENTAIRE",

@@ -497,6 +497,18 @@ export function SovereigntySection() {
 
       {/* ── Mobile layout ── */}
       <div className="md:hidden" style={{ marginTop: 32 }}>
+        {/* Sources grid */}
+        <div style={{ borderBottom: "1px solid var(--pf-border)" }}>
+          <div style={{ padding: "12px 16px 8px", fontFamily: "'JetBrains Mono', monospace", fontSize: 10, textTransform: "uppercase", letterSpacing: "0.15em", color: "var(--pf-fg-dim)", background: "var(--pf-bg-card)", border: "1px solid var(--pf-border)", borderBottom: "none" }}>
+            Vos systèmes existants
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, background: "var(--pf-border)" }}>
+            {SOURCES.map((src, i) => (
+              <SourceTile key={src.label} src={src} active={i === activeIdx} isDark={isDark} />
+            ))}
+          </div>
+        </div>
+
         {/* Logo centré */}
         <div style={{
           position: "relative", overflow: "hidden",
@@ -580,18 +592,6 @@ export function SovereigntySection() {
           }}>
             Moteur d&apos;ingestion &amp; RAG
           </span>
-        </div>
-
-        {/* Sources grid */}
-        <div style={{ borderBottom: "1px solid var(--pf-border)" }}>
-          <div style={{ padding: "12px 16px 8px", fontFamily: "'JetBrains Mono', monospace", fontSize: 10, textTransform: "uppercase", letterSpacing: "0.15em", color: "var(--pf-fg-dim)", background: "var(--pf-bg-card)", borderTop: "1px solid var(--pf-border)" }}>
-            Vos systèmes existants
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, background: "var(--pf-border)" }}>
-            {SOURCES.map((src, i) => (
-              <SourceTile key={src.label} src={src} active={i === activeIdx} isDark={isDark} />
-            ))}
-          </div>
         </div>
 
         {/* Stores */}

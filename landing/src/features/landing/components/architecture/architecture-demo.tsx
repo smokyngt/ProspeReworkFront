@@ -79,22 +79,37 @@ function DocDropIcon() {
 
 function DocReadIcon() {
   return (
-    <div className="flex w-[42px] flex-col gap-1 p-1.5" style={{ height: 52, border: "1px solid var(--pf-border-2)", background: "var(--pf-bg)" }}>
+    <div className="relative flex w-[42px] flex-col gap-1 overflow-hidden p-1.5" style={{ height: 52, border: "1px solid var(--pf-border-2)", background: "var(--pf-bg)" }}>
       <div className="h-2" style={{ background: "rgba(255,106,19,0.5)" }} />
       <div className="grid h-3 grid-cols-2" style={{ border: "1px solid rgba(255,106,19,0.35)" }}>
         <span style={{ borderRight: "1px solid rgba(255,106,19,0.35)", borderBottom: "1px solid rgba(255,106,19,0.35)" }} />
         <span style={{ borderBottom: "1px solid rgba(255,106,19,0.35)" }} />
       </div>
       <div className="flex-1" style={{ background: "var(--pf-bg-card-2)", border: "1px solid var(--pf-border)" }} />
+      <div
+        className="pointer-events-none absolute inset-x-0"
+        style={{ height: 14, background: `linear-gradient(180deg, transparent, ${ACCENT}66, transparent)`, animation: "pf-store-scan 2.6s linear infinite" }}
+      />
     </div>
   );
 }
 
 function ChunkIcon() {
   return (
-    <div className="flex w-[58px] flex-col gap-1.5">
+    <div className="flex w-[58px] max-w-full flex-col gap-1.5">
       {[100, 84, 100, 70].map((w, i) => (
-        <div key={i} className="h-2.5" style={{ width: `${w}%`, background: "var(--pf-bg)", border: "1px solid var(--pf-border-2)", borderLeft: `2px solid ${ACCENT}` }} />
+        <div
+          key={i}
+          className="h-2.5"
+          style={{
+            width: `${w}%`,
+            background: "var(--pf-bg)",
+            border: "1px solid var(--pf-border-2)",
+            borderLeft: `2px solid ${ACCENT}`,
+            transformOrigin: "left",
+            animation: `pf-integration-appear 0.45s ease ${i * 0.12}s both`,
+          }}
+        />
       ))}
     </div>
   );
@@ -110,7 +125,14 @@ function EmbedIcon() {
   return (
     <div className="grid gap-1.5" style={{ gridTemplateColumns: "repeat(5, 7px)" }}>
       {EMBED_PATTERN.flat().map((on, i) => (
-        <span key={i} className="h-[7px] w-[7px]" style={{ background: on ? ACCENT : "var(--pf-border-2)" }} />
+        <span
+          key={i}
+          className="h-[7px] w-[7px]"
+          style={{
+            background: on ? ACCENT : "var(--pf-border-2)",
+            animation: on ? `pf-dot-blink 1.8s ease-in-out ${(i % 5) * 0.15}s infinite` : undefined,
+          }}
+        />
       ))}
     </div>
   );
@@ -124,7 +146,7 @@ function EncryptedIcon() {
           <span key={i} className="h-[7px] w-[7px]" style={{ background: on ? ACCENT : "rgba(255,106,19,0.18)" }} />
         ))}
       </div>
-      <div className="absolute -right-2.5 -top-3 flex flex-col items-center">
+      <div className="absolute -right-2.5 -top-3 flex flex-col items-center" style={{ animation: "pf-source-ping 2.2s ease-in-out infinite" }}>
         <span className="h-2 w-[11px] rounded-t-[6px]" style={{ border: `2px solid ${ACCENT}`, borderBottom: "none" }} />
         <span className="h-[11px] w-[15px]" style={{ background: ACCENT }} />
       </div>
@@ -137,8 +159,8 @@ function EncryptedIcon() {
 function QuestionIcon({ text }: { text: string }) {
   return (
     <div
-      className="max-w-[130px] px-2.5 py-2 text-[11px] font-semibold leading-[1.35]"
-      style={{ background: ACCENT, color: "#080808" }}
+      className="w-full max-w-[130px] px-2.5 py-2 text-[11px] font-semibold leading-[1.35]"
+      style={{ background: ACCENT, color: "#080808", animation: "pf-integration-appear 0.4s ease" }}
     >
       {text}
     </div>
@@ -152,7 +174,17 @@ function IntentIcon() {
       <div className="relative flex flex-col gap-1 pl-3">
         <span className="absolute bottom-1.5 left-1 top-0 w-px" style={{ background: "var(--pf-border-2)" }} />
         {[88, 70, 80].map((w, i) => (
-          <div key={i} className="h-[9px]" style={{ width: `${w}%`, background: "var(--pf-bg)", border: "1px solid var(--pf-border)" }} />
+          <div
+            key={i}
+            className="h-[9px]"
+            style={{
+              width: `${w}%`,
+              background: "var(--pf-bg)",
+              border: "1px solid var(--pf-border)",
+              transformOrigin: "left",
+              animation: `pf-integration-appear 0.4s ease ${0.2 + i * 0.15}s both`,
+            }}
+          />
         ))}
       </div>
     </div>
@@ -164,12 +196,19 @@ function HybridSearchIcon() {
     <div className="flex flex-col items-center gap-2">
       <div className="grid gap-1.5" style={{ gridTemplateColumns: "repeat(6, 7px)" }}>
         {[0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0].map((on, i) => (
-          <span key={i} className="h-[7px] w-[7px]" style={{ background: on ? ACCENT : "var(--pf-border-2)" }} />
+          <span
+            key={i}
+            className="h-[7px] w-[7px]"
+            style={{
+              background: on ? ACCENT : "var(--pf-border-2)",
+              animation: on ? `pf-dot-blink 1.6s ease-in-out ${(i % 4) * 0.2}s infinite` : undefined,
+            }}
+          />
         ))}
       </div>
-      <div className="flex gap-1.5">
-        <span className="font-mono text-[9px]" style={{ color: ACCENT, border: "1px solid rgba(255,106,19,0.35)", padding: "2px 6px" }}>sens</span>
-        <span className="font-mono text-[9px] text-[var(--pf-fg-muted)]" style={{ border: "1px solid var(--pf-border)", padding: "2px 6px" }}>mots-clés</span>
+      <div className="flex flex-wrap justify-center gap-1.5">
+        <span className="font-mono text-[9px]" style={{ color: ACCENT, border: "1px solid rgba(255,106,19,0.35)", padding: "2px 6px", animation: "pf-pulse 2.4s ease-in-out infinite" }}>sens</span>
+        <span className="font-mono text-[9px] text-[var(--pf-fg-muted)]" style={{ border: "1px solid var(--pf-border)", padding: "2px 6px", animation: "pf-pulse 2.4s ease-in-out 1.2s infinite" }}>mots-clés</span>
       </div>
     </div>
   );
@@ -184,7 +223,7 @@ function VerifyIcon() {
       <div className="h-[3px] w-[70%]" style={{ background: "var(--pf-border-2)" }} />
       <span
         className="absolute -bottom-1.5 -right-1.5 flex h-[19px] w-[19px] items-center justify-center"
-        style={{ background: ACCENT }}
+        style={{ background: ACCENT, animation: "pf-counter-pop 2s ease-in-out 0.5s infinite" }}
       >
         <span className="h-[9px] w-[5px] -translate-y-0.5 rotate-45" style={{ borderRight: "2px solid #080808", borderBottom: "2px solid #080808" }} />
       </span>
@@ -194,7 +233,7 @@ function VerifyIcon() {
 
 function AnswerIcon() {
   return (
-    <div className="w-[132px] px-2.5 py-2" style={{ border: "1px solid var(--pf-border)", background: "var(--pf-bg)" }}>
+    <div className="w-full max-w-[150px] px-2.5 py-2" style={{ border: "1px solid var(--pf-border)", background: "var(--pf-bg)", animation: "pf-integration-appear 0.4s ease" }}>
       <div className="flex flex-wrap items-center gap-1 text-[9px] text-[var(--pf-fg-muted)]">
         <span>durée :</span>
         <span className="font-semibold" style={{ background: "rgba(255,106,19,0.2)", color: "var(--pf-fg)", padding: "1px 4px" }}>trois ans</span>
@@ -216,45 +255,39 @@ export function ArchitectureDemo() {
   const { t } = useTranslation();
   const [phase, setPhase] = useState<Phase>("index");
 
-  const tt = (key: string, defaultValue: string) => t(`architecture.arch.${key}`, { defaultValue });
+  const tt = (key: string) => t(`architecture.arch.${key}`);
 
   const indexNodes = [
-    { tag: tt("index.deposit.tag", "dépôt"), title: tt("index.deposit.title", "Un document arrive"), desc: tt("index.deposit.desc", "Vous déposez un fichier — PDF, Word, Excel… — dans un corpus autorisé."), icon: <DocDropIcon /> },
-    { tag: tt("index.read.tag", "lecture"), title: tt("index.read.title", "Lecture multi-modale"), desc: tt("index.read.desc", "Prosperify lit tout : le texte, mais aussi les tableaux et les images."), icon: <DocReadIcon /> },
-    { tag: tt("index.chunk.tag", "chunking"), title: tt("index.chunk.title", "Découpage en passages"), desc: tt("index.chunk.desc", "Le document est coupé en petits morceaux cohérents, faciles à retrouver."), icon: <ChunkIcon /> },
-    { tag: tt("index.embed.tag", "embeddings"), title: tt("index.embed.title", "Empreinte sémantique"), desc: tt("index.embed.desc", "Chaque passage devient une « empreinte » que l'IA compare par le sens."), icon: <EmbedIcon /> },
-    { tag: tt("index.store.tag", "chiffré"), title: tt("index.store.title", "Index chiffré"), desc: tt("index.store.desc", "Tout est rangé dans un index chiffré au repos, prêt à être interrogé."), icon: <EncryptedIcon /> },
+    { tag: tt("index.deposit.tag"), title: tt("index.deposit.title"), desc: tt("index.deposit.desc"), icon: <DocDropIcon /> },
+    { tag: tt("index.read.tag"), title: tt("index.read.title"), desc: tt("index.read.desc"), icon: <DocReadIcon /> },
+    { tag: tt("index.chunk.tag"), title: tt("index.chunk.title"), desc: tt("index.chunk.desc"), icon: <ChunkIcon /> },
+    { tag: tt("index.embed.tag"), title: tt("index.embed.title"), desc: tt("index.embed.desc"), icon: <EmbedIcon /> },
+    { tag: tt("index.store.tag"), title: tt("index.store.title"), desc: tt("index.store.desc"), icon: <EncryptedIcon /> },
   ];
 
-  const questionText = tt("query.question.bubble", "Quelle est la durée du contrat Verdi ?");
+  const questionText = tt("query.question.bubble");
   const queryNodes = [
-    { tag: tt("query.question.tag", "question"), title: tt("query.question.title", "Votre question"), desc: tt("query.question.desc", "Vous demandez en langage naturel, comme à un collègue."), icon: <QuestionIcon text={questionText} /> },
-    { tag: tt("query.intent.tag", "intention"), title: tt("query.intent.title", "Analyse d'intention"), desc: tt("query.intent.desc", "Prosperify Agent comprend le besoin et découpe les questions complexes."), icon: <IntentIcon /> },
-    { tag: tt("query.search.tag", "recherche"), title: tt("query.search.title", "Recherche hybride"), desc: tt("query.search.desc", "Il fouille l'index par le sens ET par les mots-clés, en parallèle."), icon: <HybridSearchIcon /> },
-    { tag: tt("query.verify.tag", "vérif."), title: tt("query.verify.title", "Génération vérifiée"), desc: tt("query.verify.desc", "La réponse est rédigée puis recomparée aux passages retenus."), icon: <VerifyIcon /> },
-    { tag: tt("query.answer.tag", "réponse"), title: tt("query.answer.title", "Réponse sourcée"), desc: tt("query.answer.desc", "Vous recevez la réponse avec ses sources exactes : page, clause."), icon: <AnswerIcon /> },
+    { tag: tt("query.question.tag"), title: tt("query.question.title"), desc: tt("query.question.desc"), icon: <QuestionIcon text={questionText} /> },
+    { tag: tt("query.intent.tag"), title: tt("query.intent.title"), desc: tt("query.intent.desc"), icon: <IntentIcon /> },
+    { tag: tt("query.search.tag"), title: tt("query.search.title"), desc: tt("query.search.desc"), icon: <HybridSearchIcon /> },
+    { tag: tt("query.verify.tag"), title: tt("query.verify.title"), desc: tt("query.verify.desc"), icon: <VerifyIcon /> },
+    { tag: tt("query.answer.tag"), title: tt("query.answer.title"), desc: tt("query.answer.desc"), icon: <AnswerIcon /> },
   ];
 
   const nodes = phase === "index" ? indexNodes : queryNodes;
-  const phaseDesc =
-    phase === "index"
-      ? tt(
-          "phaseDesc.index",
-          "On ne le fait qu'une fois : chaque document déposé est lu, découpé en passages, transformé en empreintes, puis rangé dans un index chiffré interrogeable.",
-        )
-      : tt(
-          "phaseDesc.query",
-          "À chaque question, Prosperify Agent fouille l'index, assemble les meilleurs passages, rédige une réponse, puis la vérifie face aux sources avant de vous la montrer.",
-        );
+  const phaseDesc = phase === "index" ? tt("phaseDesc.index") : tt("phaseDesc.query");
 
   return (
     <div>
-      {/* Phase toggle */}
-      <div className="flex flex-wrap gap-2.5">
+      {/* Phase toggle — sticks to the top while scrolling through this section only */}
+      <div
+        className="sticky top-16 z-30 -mx-5 flex flex-wrap gap-2.5 border-b border-[var(--pf-border)] px-5 py-2 backdrop-blur-xl sm:-mx-8 sm:px-8 lg:-mx-12 lg:px-12"
+        style={{ background: "var(--pf-nav-bg)" }}
+      >
         <button
           type="button"
           onClick={() => setPhase("index")}
-          className="flex items-center gap-2.5 px-4 py-3 text-left transition-all duration-200"
+          className="flex flex-1 flex-wrap items-center gap-x-2.5 gap-y-1 px-4 py-3 text-left transition-all duration-200 sm:flex-none"
           style={{
             border: `1px solid ${phase === "index" ? ACCENT : "var(--pf-border)"}`,
             background: phase === "index" ? "var(--pf-bg-active)" : "transparent",
@@ -262,13 +295,13 @@ export function ArchitectureDemo() {
           }}
         >
           <span className="font-mono text-[11px] font-semibold">01</span>
-          <span className="text-sm font-bold">{tt("tabs.index.label", "Indexation")}</span>
-          <span className="text-xs opacity-70">{tt("tabs.index.sub", "— préparer les documents")}</span>
+          <span className="text-sm font-bold">{tt("tabs.index.label")}</span>
+          <span className="text-xs opacity-70">{tt("tabs.index.sub")}</span>
         </button>
         <button
           type="button"
           onClick={() => setPhase("query")}
-          className="flex items-center gap-2.5 px-4 py-3 text-left transition-all duration-200"
+          className="flex flex-1 flex-wrap items-center gap-x-2.5 gap-y-1 px-4 py-3 text-left transition-all duration-200 sm:flex-none"
           style={{
             border: `1px solid ${phase === "query" ? ACCENT : "var(--pf-border)"}`,
             background: phase === "query" ? "var(--pf-bg-active)" : "transparent",
@@ -276,16 +309,20 @@ export function ArchitectureDemo() {
           }}
         >
           <span className="font-mono text-[11px] font-semibold">02</span>
-          <span className="text-sm font-bold">{tt("tabs.query.label", "Interrogation")}</span>
-          <span className="text-xs opacity-70">{tt("tabs.query.sub", "— poser une question")}</span>
+          <span className="text-sm font-bold">{tt("tabs.query.label")}</span>
+          <span className="text-xs opacity-70">{tt("tabs.query.sub")}</span>
         </button>
       </div>
       <p className="mt-4 max-w-[680px] text-[0.98rem] leading-[1.6] text-[var(--pf-fg-muted)]">{phaseDesc}</p>
 
       {/* Flow */}
-      <div key={phase} className="mt-7 flex flex-col md:flex-row md:items-stretch" style={{ animation: "pf-fadeUp 0.4s ease" }}>
+      <div key={phase} className="mt-7 flex flex-col md:flex-row md:items-stretch">
         {nodes.map((node, i) => (
-          <div key={node.tag} className="flex flex-col md:flex-row md:flex-1 md:items-stretch">
+          <div
+            key={node.tag}
+            className="flex flex-col md:flex-row md:flex-1 md:items-stretch"
+            style={{ animation: `pf-fadeUp 0.5s ease ${i * 0.09}s both` }}
+          >
             <FlowNode n={String(i + 1).padStart(2, "0")} tag={node.tag} icon={node.icon} title={node.title} desc={node.desc} />
             {i < nodes.length - 1 && <FlowArrow delay={i * 0.3} />}
           </div>
@@ -294,7 +331,7 @@ export function ArchitectureDemo() {
 
       <div className="mt-5 flex items-center gap-2.5 font-mono text-[11px] tracking-[0.1em] text-[var(--pf-fg-dim)]">
         <span className="h-1.5 w-1.5" style={{ background: ACCENT }} />
-        {t("architecture.footerNote", { defaultValue: "Sources, accès et vérification conservés à chaque étape" })}
+        {t("architecture.footerNote")}
       </div>
     </div>
   );

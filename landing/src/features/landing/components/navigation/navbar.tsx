@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import { applyLandingTheme, getCurrentLandingTheme } from "@/features/landing/lib/theme";
 import i18n from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
@@ -79,10 +80,8 @@ export function LandingNavbar() {
   }, []);
 
   const toggleTheme = () => {
-    const next = !isDark;
-    document.documentElement.classList.toggle("dark", next);
-    try { localStorage.setItem("pf-theme", next ? "dark" : "light"); } catch {}
-    setIsDark(next);
+    const next = getCurrentLandingTheme() === "dark" ? "light" : "dark";
+    setIsDark(applyLandingTheme(next));
   };
 
   useEffect(() => {

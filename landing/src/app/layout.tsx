@@ -84,7 +84,7 @@ export default function RootLayout({
         {/* Runs synchronously before paint — prevents theme flash */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var s=localStorage.getItem('pf-theme');var d=s==='dark'||(!s&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(d)document.documentElement.classList.add('dark');}catch(e){}})();`,
+            __html: `(function(){try{if(localStorage.getItem('prosperify-theme')==='dark')document.documentElement.classList.add('dark');}catch(e){}})();`,
           }}
         />
         {gtmId ? (

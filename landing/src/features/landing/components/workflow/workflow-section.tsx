@@ -32,7 +32,7 @@ import { cn } from "@/lib/utils";
 function PipelineArrow() {
   return (
     <div className="flex shrink-0 flex-col items-center justify-center px-3 py-4 md:py-0">
-      <span className="font-mono text-xl font-bold text-[#FF6A13] opacity-60 md:text-2xl">→</span>
+      <span className="rotate-90 font-mono text-xl font-bold text-[#FF6A13] opacity-60 md:rotate-0 md:text-2xl">→</span>
     </div>
   );
 }
@@ -405,8 +405,36 @@ function WorkflowSection() {
         {t("workflow.subtitle")}
       </p>
 
-      {/* Step row */}
-      <div className="mb-7 mt-11 flex flex-wrap items-center gap-y-3">
+      {/* Step row — mobile: 3 equal columns side by side, number on top, label below */}
+      <div className="mb-7 mt-11 grid grid-cols-3 gap-2 md:hidden">
+        {stepLabels.map((label, index) => (
+          <button
+            key={index}
+            type="button"
+            onClick={() => selectStep(index)}
+            className="flex cursor-pointer flex-col items-center gap-2 border-none bg-transparent p-0"
+          >
+            <span
+              className={cn(
+                "flex h-10 w-10 items-center justify-center border font-mono text-[13px] font-semibold transition-all duration-300",
+                activeStep === index ? "border-[#FF6A13] text-[#FF6A13]" : "text-[var(--pf-fg-muted)]",
+              )}
+              style={{
+                borderColor: activeStep === index ? "#FF6A13" : activeStep > index ? "var(--pf-border-2)" : "var(--pf-border)",
+                background:  activeStep === index ? "var(--pf-bg-active)" : "var(--pf-bg-dim)",
+              }}
+            >
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            <span className={cn("text-center text-xs font-semibold leading-tight", activeStep === index ? "text-[var(--pf-fg)]" : "text-[var(--pf-fg-dim)]")}>
+              {label}
+            </span>
+          </button>
+        ))}
+      </div>
+
+      {/* Step row — desktop: horizontal with connectors */}
+      <div className="mb-7 mt-11 hidden items-center gap-y-3 md:flex md:flex-wrap">
         {stepLabels.map((label, index) => (
           <div key={index} className="flex items-center">
             <button

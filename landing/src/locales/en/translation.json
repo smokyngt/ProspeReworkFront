@@ -389,8 +389,73 @@
   "architecture": {
     "titlePrefix": "An architecture designed for",
     "titleHighlight": "document trust",
-    "subtitle": "A clear chain for moving from sensitive documents to sourced, reviewable and controllable answers.",
-    "footerNote": "Sources, access and verification kept at every step"
+    "subtitle": "A clear pipeline that turns sensitive documents into sourced, verifiable and traceable answers.",
+    "footerNote": "Sources, access and verification kept at every step",
+    "arch": {
+      "tabs": {
+        "index": { "label": "Indexing", "sub": "— structuring the corpus" },
+        "query": { "label": "Querying", "sub": "— interrogating the index" }
+      },
+      "phaseDesc": {
+        "index": "This step runs once per document: multimodal parsing, segmentation into passages, semantic vectorization, then storage in a queryable encrypted index.",
+        "query": "For every question, the agent queries the index with hybrid search, selects the most relevant passages, drafts an answer, then verifies it against the sources before returning it."
+      },
+      "index": {
+        "deposit": {
+          "tag": "ingest",
+          "title": "Document ingestion",
+          "desc": "The file — PDF, Word, Excel… — joins a corpus whose access perimeter has been defined in advance."
+        },
+        "read": {
+          "tag": "parsing",
+          "title": "Multimodal parsing",
+          "desc": "Text, tables and images are analyzed together to preserve the document's structure."
+        },
+        "chunk": {
+          "tag": "segmentation",
+          "title": "Segmentation into passages",
+          "desc": "Content is split into coherent passages, sized for precise retrieval."
+        },
+        "embed": {
+          "tag": "embeddings",
+          "title": "Semantic vectorization",
+          "desc": "Each passage is converted into a numerical vector (embedding) that encodes its meaning for semantic comparison."
+        },
+        "store": {
+          "tag": "encrypted",
+          "title": "Encrypted index",
+          "desc": "Vectors and metadata are stored in an index encrypted at rest, ready to be queried."
+        }
+      },
+      "query": {
+        "question": {
+          "tag": "question",
+          "title": "Your question",
+          "desc": "The question is asked in natural language, with no special search syntax.",
+          "bubble": "What is the term of the Verdi contract?"
+        },
+        "intent": {
+          "tag": "intent",
+          "title": "Intent analysis",
+          "desc": "The agent identifies the intent and breaks multi-part questions into sub-queries."
+        },
+        "search": {
+          "tag": "search",
+          "title": "Hybrid search",
+          "desc": "The index is queried in parallel by semantic similarity and lexical matching."
+        },
+        "verify": {
+          "tag": "verif.",
+          "title": "Verified generation",
+          "desc": "The model drafts an answer, then each claim is cross-checked against the retained source passages."
+        },
+        "answer": {
+          "tag": "answer",
+          "title": "Sourced answer",
+          "desc": "The answer is returned with precise references: document, page, clause."
+        }
+      }
+    }
   },
   "technical": {
     "badge": "DOCUMENT CHAIN",

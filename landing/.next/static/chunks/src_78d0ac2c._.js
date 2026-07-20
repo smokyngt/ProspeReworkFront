@@ -318,48 +318,48 @@ __turbopack_context__.s([
     ()=>getDemoContent
 ]);
 const demoDocumentConfig = {
-    emptyDocumentIcon: "file",
+    emptyDocumentIcon: 'file',
     metadataRows: [
         {
-            labelKey: "sourceFile",
-            valueKey: "fileName"
+            labelKey: 'sourceFile',
+            valueKey: 'fileName'
         },
         {
-            labelKey: "pages",
-            valueKey: "pages"
+            labelKey: 'pages',
+            valueKey: 'pages'
         },
         {
-            label: "MIME",
-            valueKey: "mime"
+            label: 'MIME',
+            valueKey: 'mime'
         },
         {
-            labelKey: "sourceParser",
-            valueKey: "sourceParser"
+            labelKey: 'sourceParser',
+            valueKey: 'sourceParser'
         },
         {
-            labelKey: "sourceAccess",
-            valueKey: "sourceAccess"
+            labelKey: 'sourceAccess',
+            valueKey: 'sourceAccess'
         }
     ],
     pdf: {
-        totalPages: 15,
-        url: "/assets/demo/attention-is-all-you-need.pdf"
+        totalPages: 7,
+        url: '/assets/demo/Rapport_DD_Projet_Helios.pdf'
     },
     sourcePanelTabs: [
         {
-            icon: "entities",
-            labelKey: "entities",
-            value: "entities"
+            icon: 'entities',
+            labelKey: 'entities',
+            value: 'entities'
         },
         {
-            icon: "metadata",
-            labelKey: "metadata",
-            value: "metadata"
+            icon: 'metadata',
+            labelKey: 'metadata',
+            value: 'metadata'
         },
         {
-            icon: "chunks",
-            labelKey: "chunks",
-            value: "chunks"
+            icon: 'chunks',
+            labelKey: 'chunks',
+            value: 'chunks'
         }
     ]
 };
@@ -367,40 +367,39 @@ const demoChatConfig = {
     assistants: [
         {
             disabled: false,
-            labelKey: "activeAssistant",
-            short: "A"
+            labelKey: 'activeAssistant',
+            short: 'A'
         },
         {
             disabled: true,
-            label: "Financial analyst",
-            short: "FA"
+            label: 'Financial analyst',
+            short: 'FA'
         },
         {
             disabled: true,
-            label: "Legal reviewer",
-            short: "LR"
+            label: 'Legal reviewer',
+            short: 'LR'
         },
         {
             disabled: true,
-            label: "Research scout",
-            short: "RS"
+            label: 'Research scout',
+            short: 'RS'
         }
     ],
     filterFiles: [
-        "attention-is-all-you-need.pdf",
-        "transformer-abstract-notes.md"
+        'Rapport_DD_Projet_Helios.pdf'
     ],
     filterFolders: [
         {
             disabled: true,
-            label: "Contracts"
+            label: 'Contracts'
         },
         {
             disabled: true,
-            label: "Board memos"
+            label: 'Board memos'
         }
     ],
-    userInitials: "CB"
+    userInitials: 'CB'
 };
 const demoPdfUrl = demoDocumentConfig.pdf.url;
 const demoOrchestrationDelays = [
@@ -415,259 +414,287 @@ const demoOrchestrationDelays = [
 ];
 const demoPdfLines = [
     {
-        content: "Attention Is All You Need",
-        entity: "Attention Is All You Need",
+        content: 'Rapport de due diligence financière — Projet HELIOS',
+        entity: 'Projet HELIOS',
         page: 1,
-        type: "title"
+        type: 'title'
     },
     {
-        content: "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit",
-        entity: "Ashish Vaswani",
+        content: 'Groupe Méridien Logistique SAS',
+        entity: 'Groupe Méridien Logistique',
         page: 1,
-        type: "authors"
+        type: 'company'
     },
     {
-        content: "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
-        entity: "attention mechanisms",
+        content: "La valorisation indicative repose sur un multiple de 8,0x l'EBITDA normalisé 2025.",
+        entity: 'multiple 8,0x',
         page: 2,
-        type: "abstract"
+        type: 'valuation'
     },
     {
-        content: "The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality.",
-        entity: "Transformer",
+        content: 'EBITDA normalisé 2025 retenu pour la valorisation : 14,2 M€.',
+        entity: 'EBITDA normalisé 14,2 M€',
         page: 2,
-        type: "abstract"
+        type: 'valuation'
     },
     {
-        content: "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks.",
-        entity: "sequence transduction",
+        content: "Valeur d'entreprise de 113,6 M€ sur la base de l'EBITDA normalisé de 14,2 M€ retenu par le vendeur.",
+        entity: 'VE 113,6 M€',
         page: 2,
-        type: "abstract"
+        type: 'valuation'
+    },
+    {
+        content: 'Coûts de sous-traitance logistique « ponctuelle » de 2,4 M€ qualifiés non récurrents.',
+        entity: 'retraitement 2,4 M€',
+        page: 5,
+        type: 'retreatment'
+    },
+    {
+        content: "Retraités correctement, l'EBITDA normalisé 2025 ressort à 11,8 M€, et non 14,2 M€.",
+        entity: 'EBITDA réel 11,8 M€',
+        page: 5,
+        type: 'retreatment'
+    },
+    {
+        content: "À 11,8 M€ d'EBITDA normalisé, le même multiple de 8,0x conduirait à 94,4 M€, soit un écart de VE de 19,2 M€.",
+        entity: 'écart VE 19,2 M€',
+        page: 7,
+        type: 'recommendation'
     }
 ];
 const demoChunks = [
     {
-        content: "Attention Is All You Need",
+        content: "Synthèse exécutive — EBITDA normalisé 2025 : 14,2 M€, multiple 8,0x, valeur d'entreprise 113,6 M€.",
         entities: [
             {
-                text: "Attention Is All You Need",
-                type: "document"
+                text: 'EBITDA normalisé 14,2 M€',
+                type: 'metric'
             },
             {
-                text: "Transformer",
-                type: "method"
+                text: 'multiple 8,0x',
+                type: 'metric'
+            },
+            {
+                text: 'VE 113,6 M€',
+                type: 'metric'
             }
         ],
-        id: "chunk-title",
+        id: 'chunk-synthese',
         metadata: {
-            section: "title",
-            source: "page_text"
-        },
-        pageNumber: 1,
-        retrievalCount: 6,
-        type: "text"
-    },
-    {
-        content: "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
-        entities: [
-            {
-                text: "Transformer",
-                type: "architecture"
-            },
-            {
-                text: "attention mechanisms",
-                type: "method"
-            },
-            {
-                text: "recurrence",
-                type: "architecture"
-            },
-            {
-                text: "convolutions",
-                type: "architecture"
-            }
-        ],
-        id: "chunk-architecture-claim",
-        metadata: {
-            section: "abstract",
-            source: "page_text"
+            section: 'Synthèse exécutive',
+            source: 'page_text'
         },
         pageNumber: 2,
         retrievalCount: 8,
-        type: "text"
+        type: 'text'
     },
     {
-        content: "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit",
+        content: "Pont de normalisation de l'EBITDA 2025 — retraitement « sous-traitance logistique ponctuelle » : +2,4 M€, qualifié non récurrent par le management.",
         entities: [
             {
-                text: "Ashish Vaswani",
-                type: "person"
+                text: 'sous-traitance logistique',
+                type: 'retreatment'
             },
             {
-                text: "Noam Shazeer",
-                type: "person"
+                text: '2,4 M€',
+                type: 'amount'
             },
             {
-                text: "Niki Parmar",
-                type: "person"
-            },
-            {
-                text: "Jakob Uszkoreit",
-                type: "person"
+                text: 'non récurrent',
+                type: 'qualification'
             }
         ],
-        id: "chunk-authors",
+        id: 'chunk-retraitement',
         metadata: {
-            section: "authors",
-            source: "page_text"
+            section: 'Quality of Earnings',
+            source: 'page_text'
         },
-        pageNumber: 1,
-        retrievalCount: 4,
-        type: "text"
+        pageNumber: 5,
+        retrievalCount: 8,
+        type: 'text'
     },
     {
-        content: "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder.",
+        content: "Observation des conseils — les coûts de sous-traitance de 2,4 M€ correspondent à trois contrats pluriannuels reconduits sur 2023-2025. Retraités, l'EBITDA normalisé ressort à 11,8 M€.",
         entities: [
             {
-                text: "recurrent",
-                type: "architecture"
+                text: 'contrats pluriannuels',
+                type: 'fact'
             },
             {
-                text: "convolutional neural networks",
-                type: "architecture"
+                text: 'EBITDA réel 11,8 M€',
+                type: 'metric'
             },
             {
-                text: "sequence transduction",
-                type: "task"
+                text: 'récurrent',
+                type: 'qualification'
             }
         ],
-        id: "chunk-sequence-models",
+        id: 'chunk-observation',
         metadata: {
-            section: "abstract",
-            source: "page_text"
+            section: 'Observation des conseils',
+            source: 'page_text'
         },
-        pageNumber: 2,
+        pageNumber: 5,
         retrievalCount: 7,
-        type: "text"
+        type: 'text'
     },
     {
-        content: "The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality.",
+        content: 'Endettement net normatif : 28,0 M€. Passerelle VE 113,6 M€ − endettement net 28,0 M€ = 85,6 M€ de valeur des titres.',
         entities: [
             {
-                text: "Transformer",
-                type: "method"
+                text: 'endettement net 28,0 M€',
+                type: 'metric'
             },
             {
-                text: "parallelization",
-                type: "property"
-            },
-            {
-                text: "translation quality",
-                type: "metric"
+                text: 'valeur des titres 85,6 M€',
+                type: 'metric'
             }
         ],
-        id: "chunk-transformer-parallel",
+        id: 'chunk-endettement',
         metadata: {
-            section: "abstract",
-            source: "page_text"
+            section: 'Endettement net & BFR',
+            source: 'page_text'
         },
-        pageNumber: 2,
+        pageNumber: 6,
         retrievalCount: 5,
-        type: "text"
+        type: 'text'
+    },
+    {
+        content: "Recommandation — le comité doit statuer sur la qualification du retraitement de 2,4 M€ : à 11,8 M€ d'EBITDA, le même multiple conduirait à 94,4 M€, soit un écart de VE de 19,2 M€.",
+        entities: [
+            {
+                text: 'VE 94,4 M€',
+                type: 'metric'
+            },
+            {
+                text: 'écart 19,2 M€',
+                type: 'metric'
+            },
+            {
+                text: 'recommandation',
+                type: 'action'
+            }
+        ],
+        id: 'chunk-recommandation',
+        metadata: {
+            section: 'Synthèse des risques',
+            source: 'page_text'
+        },
+        pageNumber: 7,
+        retrievalCount: 6,
+        type: 'text'
     }
 ];
 const demoMetadata = {
-    fileName: "attention-is-all-you-need.pdf",
-    mime: "application/pdf",
-    pages: "15",
-    sourceAccess: "Secure workspace",
-    sourceParser: "pdf text + page preview",
-    sourceScope: "API-ingested files, folders, and synced knowledge bases",
-    chunking: "Semantic sections, ~512 tokens, 128 overlap",
-    processing: "Layout-aware parsing + vector embedding",
-    pipeline: "Read → Parse → Embed → Retrieve → Cite → Verify"
+    fileName: 'Rapport_DD_Projet_Helios.pdf',
+    mime: 'application/pdf',
+    pages: '7',
+    sourceAccess: 'Secure workspace',
+    sourceParser: 'pdf text + page preview',
+    sourceScope: 'API-ingested files, folders, and synced knowledge bases',
+    chunking: 'Semantic sections, ~512 tokens, 128 overlap',
+    processing: 'Layout-aware parsing + vector embedding',
+    pipeline: 'Read -> Parse -> Embed -> Retrieve -> Cite -> Verify'
 };
 const sharedCitations = [
     {
-        confidence: "98%",
-        fileName: "attention-is-all-you-need.pdf",
-        highlightText: "Attention Is All You Need",
+        confidence: '98%',
+        fileName: 'Rapport_DD_Projet_Helios.pdf',
+        highlightText: "multiple de 8,0x l'EBITDA normalisé 2025",
         id: 1,
-        page: 1,
-        quote: "Attention Is All You Need"
+        page: 2,
+        quote: "EBITDA normalisé 2025 : 14,2 M€, multiple 8,0x, valeur d'entreprise 113,6 M€."
     },
     {
-        confidence: "95%",
-        fileName: "attention-is-all-you-need.pdf",
-        highlightText: "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
+        confidence: '95%',
+        fileName: 'Rapport_DD_Projet_Helios.pdf',
+        highlightText: 'Coûts de sous-traitance logistique « ponctuelle »',
         id: 2,
-        page: 2,
-        quote: "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms..."
+        page: 5,
+        quote: 'Coûts de sous-traitance logistique « ponctuelle » : 2,4 M€, qualifiés non récurrents par le management.'
     },
     {
-        confidence: "91%",
-        fileName: "attention-is-all-you-need.pdf",
-        highlightText: "The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality.",
+        confidence: '91%',
+        fileName: 'Rapport_DD_Projet_Helios.pdf',
+        highlightText: 'EBITDA normalisé 2025 ressort à 11,8 M€, et non 14,2 M€',
         id: 3,
-        page: 2,
-        quote: "The Transformer allows for significantly more parallelization..."
+        page: 5,
+        quote: "Retraités correctement, l'EBITDA normalisé 2025 ressort à 11,8 M€, et non 14,2 M€."
     }
 ];
 const baseDocument = {
-    articleOne: "Attention Is All You Need",
-    articleThree: "The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality.",
-    title: "Attention Is All You Need",
-    verifiedClause: "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely."
+    articleOne: 'EBITDA normalisé 2025 : 14,2 M€ — Synthèse exécutive p.2',
+    articleThree: 'Retraitement de 2,4 M€ qualifié non récurrent par le management — Quality of Earnings p.5',
+    title: 'Rapport de due diligence financière — Projet HELIOS',
+    verifiedClause: 'Les coûts de sous-traitance de 2,4 M€ sont en réalité récurrents (contrats pluriannuels 2023-2025) — Observation des conseils p.5'
 };
 const retrievalEntities = [
-    "Attention Is All You Need",
-    "Transformer",
-    "attention mechanisms",
-    "recurrence",
-    "convolutions",
-    "parallelization",
-    "translation quality"
+    'EBITDA normalisé 14,2 M€',
+    'multiple 8,0x',
+    "valeur d'entreprise 113,6 M€",
+    'retraitement 2,4 M€',
+    'sous-traitance logistique',
+    'EBITDA réel 11,8 M€',
+    'écart VE 19,2 M€'
 ];
 function getDemoContent(language) {
-    const isFrench = language === null || language === void 0 ? void 0 : language.startsWith("fr");
+    const isFrench = language === null || language === void 0 ? void 0 : language.startsWith('fr');
     if (isFrench) {
         return {
-            assistantName: "Assistant",
+            assistantName: 'Financial analyst',
             citations: sharedCitations,
             document: baseDocument,
-            finalAnswer: "Le document ouvert est bien Attention Is All You Need : le titre figure sur la première page [1]. La revendication technique principale est aussi vérifiable dans l'abstract : les auteurs écrivent qu'ils proposent une architecture simple, le Transformer, fondée uniquement sur des mécanismes d'attention et sans récurrence ni convolution [2]. Le passage sur la parallélisation est pertinent pour une note de due diligence technique, car il relie directement le choix d'architecture à un bénéfice opérationnel : le Transformer permet une parallélisation nettement plus importante et atteint un nouvel état de l'art en qualité de traduction [3].",
-            language: "fr",
-            question: "Je prépare une note d'ingénierie. Peux-tu confirmer quel PDF est ouvert, vérifier si la revendication sur le Transformer apparaît vraiment dans l'abstract, et me dire s'il y a une preuve sur la parallélisation ? Cite les passages exacts.",
-            reasoning: "Je commence par identifier le fichier ouvert et confirmer son titre sur la page de garde. Ensuite je limite la recherche à l'abstract, car la question demande une vérification technique courte plutôt qu'un résumé complet du papier. Je compare les passages récupérés aux formulations de la demande : architecture Transformer, attention seule, absence de récurrence ou convolution, puis bénéfice de parallélisation. Je retiens les extraits qui portent directement ces revendications et je les associe à des citations cliquables pour que chaque phrase importante puisse être contrôlée dans le PDF.",
+            finalAnswer: "La synthèse exécutive (p.2) retient un EBITDA normalisé 2025 de 14,2 M€ appliqué à un multiple de 8,0x, soit une valeur d'entreprise de 113,6 M€ [1]. Le pont de normalisation (section Quality of Earnings, p.5) détaille les retraitements : +0,7 M€ (rémunération dirigeant), +0,6 M€ (honoraires M&A), +2,4 M€ (sous-traitance logistique dite « ponctuelle »), −1,6 M€ (cession d'actifs). L'observation des conseils signale que les 2,4 M€ de sous-traitance correspondent à trois contrats pluriannuels reconduits sans interruption sur 2023-2025, donc de nature récurrente [2]. Retraités correctement, l'EBITDA normalisé ressort à 11,8 M€ et non 14,2 M€ [3]. La base de valorisation de la synthèse (14,2 M€) contredit donc le détail de la section 04. À 11,8 M€, le même multiple de 8,0x donne 94,4 M€, soit un écart de valeur d'entreprise d'environ 19,2 M€. Le chiffre n'est pas fiable tant que le comité n'a pas tranché la qualification du retraitement (p.7).",
+            hallucinations: [
+                {
+                    start: 341,
+                    end: 351,
+                    reason: "Conflit de source : le management qualifie ces coûts de ponctuels, mais l'annexe C montre trois contrats pluriannuels reconduits sur 2023‑2025.",
+                    score: 0.82,
+                    citation: sharedCitations[1]
+                }
+            ],
+            language: 'fr',
+            question: "Peux-tu vérifier l'EBITDA normalisé 2025 retenu dans la synthèse du rapport HELIOS, le comparer au pont de normalisation (section Quality of Earnings), et me dire si le multiple de 8,0x est fiable ? Cite les passages exacts (page et intitulé).",
+            reasoning: "La question porte sur la cohérence entre la synthèse (p.2) et le détail du Quality of Earnings (p.5). Je relève l'EBITDA normalisé de 14,2 M€ mentionné dans la synthèse avec le multiple de 8,0x, puis je compare avec le pont de normalisation. Je constate une contradiction : le management ajoute 2,4 M€ de sous-traitance logistique en « non récurrent », mais l'annexe C montre que ces contrats sont pluriannuels et reconduits. Je calcule l'impact : EBITDA retraité 11,8 M€ → VE 94,4 M€ au lieu de 113,6 M€, soit un écart de 19,2 M€. Je cite chaque passage avec sa page pour que le comité puisse vérifier.",
             retrievalEntities,
             retrievalQueries: [
-                "Attention Is All You Need title",
-                "Transformer based solely on attention mechanisms",
-                "dispensing with recurrence and convolutions",
-                "Transformer significantly more parallelization translation quality"
+                'EBITDA normalisé 2025 valorisation synthèse exécutive',
+                'pont de normalisation EBITDA retraitements management',
+                'sous-traitance logistique ponctuelle 2,4 M€',
+                'observation conseils EBITDA 11,8 M€ écart 19,2 M€'
             ],
             threads: [
-                "Transformer paper - diligence"
+                'Projet HELIOS - due diligence'
             ]
         };
     }
     return {
-        assistantName: "Assistant",
+        assistantName: 'Financial analyst',
         citations: sharedCitations,
         document: baseDocument,
-        finalAnswer: "The open document is Attention Is All You Need: the title appears on page 1 [1]. The core technical claim is verifiable in the abstract, where the authors state that they propose the Transformer, a simple network architecture based solely on attention mechanisms and dispensing with recurrence and convolutions [2]. The parallelization passage is the strongest diligence evidence because it ties the architecture choice to an operational advantage: the Transformer allows significantly more parallelization and reaches a new state of the art in translation quality [3].",
-        language: "en",
-        question: "I'm preparing an engineering memo. Can you confirm which PDF is open, verify whether the Transformer architecture claim is actually in the abstract, and tell me if there is evidence about parallelization? Cite the exact passages.",
-        reasoning: "I first need to identify the open file and verify the title from the cover page. Then I should stay inside the abstract because the request asks for a short diligence note, not a full paper summary. I am matching the retrieved passages against the technical claims in the prompt: Transformer architecture, attention-only design, no recurrence or convolution, and the claimed parallelization benefit. I will keep only the excerpts that directly support those claims and attach clickable citations so each sentence can be checked in the PDF.",
+        finalAnswer: "The executive summary (p.2) uses a normalized 2025 EBITDA of €14.2M applied to an 8.0x multiple, giving an enterprise value of €113.6M [1]. The EBITDA bridge (Quality of Earnings section, p.5) details the adjustments: +€0.7M (director excess remuneration), +€0.6M (M&A advisory fees), +€2.4M ('one-off' logistics subcontracting), −€1.6M (asset disposal gain). The advisors' note states that the €2.4M subcontracting cost corresponds to three multi-year contracts renewed without interruption over 2023-2025, making them recurring in nature [2]. Adjusted correctly, normalized EBITDA stands at €11.8M, not €14.2M [3]. The valuation basis in the summary (€14.2M) therefore contradicts the detailed section 04. At €11.8M, the same 8.0x multiple yields €94.4M, an enterprise value gap of approximately €19.2M. The figure is not reliable until the committee rules on the adjustment classification (p.7).",
+        hallucinations: [
+            {
+                start: 293,
+                end: 302,
+                reason: "Source conflict: management labels these costs as 'one-off', but Appendix C shows three multi-year contracts renewed over 2023‑2025.",
+                score: 0.82,
+                citation: sharedCitations[1]
+            }
+        ],
+        language: 'en',
+        question: 'Can you verify the normalized 2025 EBITDA used in the HELIOS report summary, compare it with the EBITDA bridge (Quality of Earnings section), and tell me if the 8.0x multiple is reliable? Cite exact passages (page and heading).',
+        reasoning: "The question is about consistency between the executive summary (p.2) and the Quality of Earnings detail (p.5). I extract the €14.2M normalized EBITDA from the summary with the 8.0x multiple, then compare against the bridge. I find a contradiction: management adds back €2.4M of logistics subcontracting as 'non-recurring', but Appendix C shows these are multi-year renewed contracts. I calculate the impact: restated EBITDA €11.8M → EV €94.4M instead of €113.6M, a gap of €19.2M. I cite each passage with its page so the committee can verify.",
         retrievalEntities,
         retrievalQueries: [
-            "Attention Is All You Need title",
-            "Transformer based solely on attention mechanisms",
-            "dispensing with recurrence and convolutions",
-            "Transformer significantly more parallelization translation quality"
+            'normalized EBITDA 2025 valuation executive summary',
+            'EBITDA bridge management adjustments normalization',
+            'logistics subcontracting 2.4M one-off retreatment',
+            'advisors observation EBITDA 11.8M gap 19.2M'
         ],
         threads: [
-            "Transformer paper - diligence"
+            'Projet HELIOS - due diligence'
         ]
     };
 }
@@ -683,171 +710,173 @@ __turbopack_context__.s([
     ()=>getDemoUi
 ]);
 function getDemoUi(language) {
-    const isFrench = language === null || language === void 0 ? void 0 : language.startsWith("fr");
+    const isFrench = language === null || language === void 0 ? void 0 : language.startsWith('fr');
     return isFrench ? {
-        active: "Actifs",
-        archived: "Archiv\u00e9s",
-        assistantStreaming: "G\u00e9n\u00e9ration",
-        chunks: "fragments",
-        closeSidebar: "Fermer le panneau",
-        closeReview: "Fermer",
-        confidence: "Confiance",
-        copy: "Copier",
-        currentMatch: "correspondance active",
+        active: 'Actifs',
+        archived: 'Archiv\u00e9s',
+        assistantStreaming: 'G\u00e9n\u00e9ration',
+        chunks: 'fragments',
+        closeSidebar: 'Fermer le panneau',
+        closeReview: 'Fermer',
+        confidence: 'Confiance',
+        copy: 'Copier',
+        currentMatch: 'correspondance active',
         emptySubtitle: "Fermez ce panneau pour ouvrir un espace document vide. Les sources citées y apparaîtront dès qu'une réponse référence un passage.",
-        emptyTitle: "Aucun document ouvert",
-        entities: "entit\u00e9s",
-        entitySearch: "Rechercher des entit\u00e9s",
-        enterHint: "Entr\u00e9e pour envoyer \u2022 Maj+Entr\u00e9e pour nouvelle ligne",
-        fast: "rapide",
-        findNoQuery: "Aucune recherche",
-        findNoResults: "Aucun r\u00e9sultat",
-        firstToken: "premier token",
-        folders: "Dossiers",
-        hideReasoning: "Masquer le raisonnement",
-        hideRetrieval: "Masquer la r\u00e9cup\u00e9ration",
+        emptyTitle: 'Aucun document ouvert',
+        entities: 'entit\u00e9s',
+        entitySearch: 'Rechercher des entit\u00e9s',
+        enterHint: 'Entr\u00e9e pour envoyer \u2022 Maj+Entr\u00e9e pour nouvelle ligne',
+        fast: 'rapide',
+        findNoQuery: 'Aucune recherche',
+        findNoResults: 'Aucun r\u00e9sultat',
+        firstToken: 'premier token',
+        folders: 'Dossiers',
+        hideReasoning: 'Masquer le raisonnement',
+        hideRetrieval: 'Masquer la r\u00e9cup\u00e9ration',
         justNow: "\u00e0 l'instant",
-        matches: "correspondances",
-        metadata: "m\u00e9tadonn\u00e9es",
-        mobileChat: "Chat",
-        mobileDocument: "Document",
-        mobileThreads: "Fils",
-        newChat: "Nouvelle conversation",
-        newContent: "Nouveau contenu",
-        openReview: "Essayer dans le chat",
-        papers: "Papers",
-        page: "p.",
-        pages: "pages",
-        pdfSearch: "Rechercher dans le document",
-        queries: "Requ\u00eates",
-        searchResults: "r\u00e9sultats",
-        scrollToBottom: "Aller en bas",
-        sendHint: "Cliquez sur envoyer",
-        sourceAccess: "Espace s\u00e9curis\u00e9",
-        sourceAccessLabel: "Acc\u00e8s",
-        sourceFile: "Fichier",
-        sourceParser: "Analyse PDF avec mise en page + extraction texte",
-        sourceParserLabel: "Analyse",
-        sourceScope: "Fichiers autoris\u00e9s et bases de connaissance",
-        sourceScopeLabel: "Port\u00e9e",
-        chunkingLabel: "D\u00e9coupage",
-        processingLabel: "Traitement",
-        pipelineLabel: "Pipeline",
-        showReasoning: "Afficher le raisonnement",
-        showRetrieval: "Afficher la r\u00e9cup\u00e9ration",
-        thorough: "approfondi",
-        balanced: "\u00e9quilibr\u00e9",
-        sourceMatch: "correspondance texte",
-        sourcePreview: "Aper\u00e7u du surlignage texte",
-        thinking: "Raisonnement",
+        matches: 'correspondances',
+        metadata: 'm\u00e9tadonn\u00e9es',
+        mobileChat: 'Chat',
+        mobileDocument: 'Document',
+        mobileThreads: 'Fils',
+        newChat: 'Nouvelle conversation',
+        newContent: 'Nouveau contenu',
+        openReview: 'Essayer dans le chat',
+        papers: 'Papers',
+        page: 'p.',
+        pages: 'pages',
+        pdfSearch: 'Rechercher dans le document',
+        queries: 'Requ\u00eates',
+        searchResults: 'r\u00e9sultats',
+        scrollToBottom: 'Aller en bas',
+        sendHint: 'Cliquez sur envoyer',
+        sourceAccess: 'Espace s\u00e9curis\u00e9',
+        sourceAccessLabel: 'Acc\u00e8s',
+        sourceFile: 'Fichier',
+        sourceParser: 'Analyse PDF avec mise en page + extraction texte',
+        sourceParserLabel: 'Analyse',
+        sourceScope: 'Fichiers autoris\u00e9s et bases de connaissance',
+        sourceScopeLabel: 'Port\u00e9e',
+        chunkingLabel: 'D\u00e9coupage',
+        processingLabel: 'Traitement',
+        pipelineLabel: 'Pipeline',
+        showReasoning: 'Afficher le raisonnement',
+        showRetrieval: 'Afficher la r\u00e9cup\u00e9ration',
+        thorough: 'approfondi',
+        balanced: '\u00e9quilibr\u00e9',
+        sourceMatch: 'correspondance texte',
+        sourcePreview: 'Aper\u00e7u du surlignage texte',
+        thinking: 'Raisonnement',
         today: "Aujourd'hui",
-        toolCall: "Appel outil",
-        topScore: "meilleur score",
-        tourBack: "Retour",
-        tourDone: "Terminer",
-        tourNext: "Suivant",
-        tourSkip: "Passer",
-        tourSendContent: "La question est pr\u00eate. Cliquez sur envoyer pour voir la r\u00e9ponse se construire avec les sources.",
-        tourSendTitle: "Envoyez le message",
-        tourCloseSidebarContent: "Fermez le panneau des fils pour gagner de la place. Vous pourrez le rouvrir \u00e0 tout moment avec le bouton lat\u00e9ral.",
+        toolCall: 'Appel outil',
+        topScore: 'meilleur score',
+        tourBack: 'Retour',
+        tourDone: 'Terminer',
+        tourNext: 'Suivant',
+        tourSkip: 'Passer',
+        tourSendContent: 'La question est pr\u00eate. Cliquez sur envoyer pour voir la r\u00e9ponse se construire avec les sources.',
+        tourSendTitle: 'Envoyez le message',
+        tourCloseSidebarContent: 'Fermez le panneau des fils pour gagner de la place. Vous pourrez le rouvrir \u00e0 tout moment avec le bouton lat\u00e9ral.',
         tourCloseSidebarTitle: "Lib\u00e9rez l'espace",
-        tourSidebarContent: "Le panneau des fils garde les conversations actives et archiv\u00e9es \u00e0 port\u00e9e de main. Pour une revue documentaire, il peut \u00eatre ferm\u00e9 afin de privil\u00e9gier la r\u00e9ponse et le PDF.",
-        tourSidebarTitle: "Fils de conversation",
-        tourSourcesContent: "Les r\u00e9f\u00e9rences ouvrent le PDF au bon endroit et gardent le passage cit\u00e9 v\u00e9rifiable.",
-        tourSourcesTitle: "Sources et PDF",
+        tourSidebarContent: 'Le panneau des fils garde les conversations actives et archiv\u00e9es \u00e0 port\u00e9e de main. Pour une revue documentaire, il peut \u00eatre ferm\u00e9 afin de privil\u00e9gier la r\u00e9ponse et le PDF.',
+        tourSidebarTitle: 'Fils de conversation',
+        tourSourcesContent: 'Les r\u00e9f\u00e9rences ouvrent le PDF au bon endroit et gardent le passage cit\u00e9 v\u00e9rifiable.',
+        tourSourcesTitle: 'Sources et PDF',
         tourPdfContent: "Le PDF s'ouvre directement sur la page cit\u00e9e avec un surlignage du passage source, pas seulement un num\u00e9ro de page.",
-        tourPdfTitle: "Preuve dans le document",
+        tourPdfTitle: 'Preuve dans le document',
         tourMetadataContent: "Les m\u00eames fichiers peuvent \u00eatre ing\u00e9r\u00e9s par API, organis\u00e9s en dossiers, enrichis avec m\u00e9tadonn\u00e9es et r\u00e9utilis\u00e9s par vos assistants avec contr\u00f4le d'acc\u00e8s.",
-        tourMetadataTitle: "Ingestion et gouvernance",
-        tourOrchestrationContent: "Lecture, recherche, passages retrouv\u00e9s et g\u00e9n\u00e9ration restent visibles. Ajustez les panneaux si vous voulez privil\u00e9gier le chat ou le document.",
-        tourOrchestrationTitle: "Orchestration",
+        tourMetadataTitle: 'Ingestion et gouvernance',
+        tourOrchestrationContent: 'Lecture, recherche, passages retrouv\u00e9s et g\u00e9n\u00e9ration restent visibles. Ajustez les panneaux si vous voulez privil\u00e9gier le chat ou le document.',
+        tourOrchestrationTitle: 'Orchestration',
         tourEntitiesContent: "Le rail lat\u00e9ral s'ouvre \u00e0 la demande pour inspecter entit\u00e9s, m\u00e9tadonn\u00e9es et fragments r\u00e9cup\u00e9r\u00e9s.",
         tourEntitiesTitle: "Rail d'entit\u00e9s",
-        verified: "v\u00e9rifi\u00e9",
-        waiting: "En attente du premier token",
-        you: "Vous"
+        potentialInaccuracy: 'Inexactitude potentielle',
+        verified: 'v\u00e9rifi\u00e9',
+        waiting: 'En attente du premier token',
+        you: 'Vous'
     } : {
-        active: "Active",
-        archived: "Archived",
-        assistantStreaming: "Generating",
-        chunks: "chunks",
-        closeSidebar: "Close sidebar",
-        closeReview: "Close",
-        confidence: "Confidence",
-        copy: "Copy",
-        currentMatch: "current match",
-        emptySubtitle: "Close this panel to open an empty document workspace. Cited sources will appear here as soon as an answer references a passage.",
-        emptyTitle: "No document open",
-        entities: "entities",
-        entitySearch: "Search entities",
-        enterHint: "Enter to send \u2022 Shift+Enter for newline",
-        fast: "fast",
-        findNoQuery: "No query",
-        findNoResults: "No results",
-        firstToken: "first token",
-        folders: "Folders",
-        hideReasoning: "Hide reasoning",
-        hideRetrieval: "Hide retrieval",
-        justNow: "just now",
-        matches: "matches",
-        metadata: "metadata",
-        mobileChat: "Chat",
-        mobileDocument: "Document",
-        mobileThreads: "Threads",
-        newChat: "New chat",
-        newContent: "New content",
-        openReview: "Try in chat",
-        papers: "Papers",
-        page: "p.",
-        pages: "pages",
-        pdfSearch: "Search in document",
-        queries: "Queries",
-        searchResults: "results",
-        scrollToBottom: "Scroll to bottom",
-        sendHint: "Click send",
-        sourceAccess: "Secure workspace",
-        sourceAccessLabel: "Access",
-        sourceFile: "File",
-        sourceParser: "Layout-aware PDF parsing + text extraction",
-        sourceParserLabel: "Parser",
-        sourceScope: "Authorized files and knowledge bases",
-        sourceScopeLabel: "Scope",
-        chunkingLabel: "Chunking",
-        processingLabel: "Processing",
-        pipelineLabel: "Pipeline",
-        showReasoning: "Show reasoning",
-        showRetrieval: "Show retrieval",
-        thorough: "thorough",
-        balanced: "balanced",
-        sourceMatch: "text match",
-        sourcePreview: "Text highlight preview",
-        thinking: "Thinking",
-        today: "Today",
-        toolCall: "Tool call",
-        topScore: "top score",
-        tourBack: "Back",
-        tourDone: "Done",
-        tourNext: "Next",
-        tourSkip: "Skip",
-        tourSendContent: "The question is ready. Click send to watch the answer build with sources.",
-        tourSendTitle: "Send the message",
-        tourCloseSidebarContent: "Close the thread sidebar to make room. You can reopen it at any time with the side toggle.",
-        tourCloseSidebarTitle: "Free up space",
-        tourSidebarContent: "The thread sidebar keeps active and archived conversations nearby. During document review, you can close it and focus on the answer plus the PDF.",
-        tourSidebarTitle: "Conversation threads",
-        tourSourcesContent: "References open the PDF at the right passage so every claim stays verifiable.",
-        tourSourcesTitle: "Sources and PDF",
-        tourPdfContent: "The PDF opens on the cited page and highlights the source passage, not just the page number.",
-        tourPdfTitle: "Document evidence",
-        tourMetadataContent: "The same files can be ingested by API, organized in folders, enriched with metadata and reused by assistants with access control.",
-        tourMetadataTitle: "Ingestion and governance",
-        tourOrchestrationContent: "Reading, search, retrieved passages and generation stay visible. Resize the panels whenever you want more room for chat or the document.",
-        tourOrchestrationTitle: "Orchestration",
-        tourEntitiesContent: "The side rail opens on demand for entities, metadata and retrieved chunks.",
-        tourEntitiesTitle: "Entity rail",
-        verified: "verified",
-        waiting: "Waiting for first token",
-        you: "You"
+        active: 'Active',
+        archived: 'Archived',
+        assistantStreaming: 'Generating',
+        chunks: 'chunks',
+        closeSidebar: 'Close sidebar',
+        closeReview: 'Close',
+        confidence: 'Confidence',
+        copy: 'Copy',
+        currentMatch: 'current match',
+        emptySubtitle: 'Close this panel to open an empty document workspace. Cited sources will appear here as soon as an answer references a passage.',
+        emptyTitle: 'No document open',
+        entities: 'entities',
+        entitySearch: 'Search entities',
+        enterHint: 'Enter to send \u2022 Shift+Enter for newline',
+        fast: 'fast',
+        findNoQuery: 'No query',
+        findNoResults: 'No results',
+        firstToken: 'first token',
+        folders: 'Folders',
+        hideReasoning: 'Hide reasoning',
+        hideRetrieval: 'Hide retrieval',
+        justNow: 'just now',
+        matches: 'matches',
+        metadata: 'metadata',
+        mobileChat: 'Chat',
+        mobileDocument: 'Document',
+        mobileThreads: 'Threads',
+        newChat: 'New chat',
+        newContent: 'New content',
+        openReview: 'Try in chat',
+        papers: 'Papers',
+        page: 'p.',
+        pages: 'pages',
+        pdfSearch: 'Search in document',
+        queries: 'Queries',
+        searchResults: 'results',
+        scrollToBottom: 'Scroll to bottom',
+        sendHint: 'Click send',
+        sourceAccess: 'Secure workspace',
+        sourceAccessLabel: 'Access',
+        sourceFile: 'File',
+        sourceParser: 'Layout-aware PDF parsing + text extraction',
+        sourceParserLabel: 'Parser',
+        sourceScope: 'Authorized files and knowledge bases',
+        sourceScopeLabel: 'Scope',
+        chunkingLabel: 'Chunking',
+        processingLabel: 'Processing',
+        pipelineLabel: 'Pipeline',
+        showReasoning: 'Show reasoning',
+        showRetrieval: 'Show retrieval',
+        thorough: 'thorough',
+        balanced: 'balanced',
+        sourceMatch: 'text match',
+        sourcePreview: 'Text highlight preview',
+        thinking: 'Thinking',
+        today: 'Today',
+        toolCall: 'Tool call',
+        topScore: 'top score',
+        tourBack: 'Back',
+        tourDone: 'Done',
+        tourNext: 'Next',
+        tourSkip: 'Skip',
+        tourSendContent: 'The question is ready. Click send to watch the answer build with sources.',
+        tourSendTitle: 'Send the message',
+        tourCloseSidebarContent: 'Close the thread sidebar to make room. You can reopen it at any time with the side toggle.',
+        tourCloseSidebarTitle: 'Free up space',
+        tourSidebarContent: 'The thread sidebar keeps active and archived conversations nearby. During document review, you can close it and focus on the answer plus the PDF.',
+        tourSidebarTitle: 'Conversation threads',
+        tourSourcesContent: 'References open the PDF at the right passage so every claim stays verifiable.',
+        tourSourcesTitle: 'Sources and PDF',
+        tourPdfContent: 'The PDF opens on the cited page and highlights the source passage, not just the page number.',
+        tourPdfTitle: 'Document evidence',
+        tourMetadataContent: 'The same files can be ingested by API, organized in folders, enriched with metadata and reused by assistants with access control.',
+        tourMetadataTitle: 'Ingestion and governance',
+        tourOrchestrationContent: 'Reading, search, retrieved passages and generation stay visible. Resize the panels whenever you want more room for chat or the document.',
+        tourOrchestrationTitle: 'Orchestration',
+        tourEntitiesContent: 'The side rail opens on demand for entities, metadata and retrieved chunks.',
+        tourEntitiesTitle: 'Entity rail',
+        potentialInaccuracy: 'Potential inaccuracy',
+        verified: 'verified',
+        waiting: 'Waiting for first token',
+        you: 'You'
     };
 }
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -870,6 +899,7 @@ __turbopack_context__.s([
     ()=>ThreadSidebar
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/triangle-alert.js [app-client] (ecmascript) <export default as AlertTriangle>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$archive$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Archive$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/archive.js [app-client] (ecmascript) <export default as Archive>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-down.js [app-client] (ecmascript) <export default as ArrowDown>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$brain$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Brain$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/brain.js [app-client] (ecmascript) <export default as Brain>");
@@ -907,7 +937,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$demo$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/landing/components/demo/demo-config.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$demo$2d$ui$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/landing/components/demo/demo-ui.ts [app-client] (ecmascript)");
 ;
-var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature(), _s3 = __turbopack_context__.k.signature(), _s4 = __turbopack_context__.k.signature(), _s5 = __turbopack_context__.k.signature(), _s6 = __turbopack_context__.k.signature(), _s7 = __turbopack_context__.k.signature(), _s8 = __turbopack_context__.k.signature();
+var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature(), _s3 = __turbopack_context__.k.signature(), _s4 = __turbopack_context__.k.signature(), _s5 = __turbopack_context__.k.signature(), _s6 = __turbopack_context__.k.signature(), _s7 = __turbopack_context__.k.signature(), _s8 = __turbopack_context__.k.signature(), _s9 = __turbopack_context__.k.signature();
 ;
 ;
 ;
@@ -921,10 +951,10 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
 function Spinner(param) {
     let { className } = param;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("inline-block h-3 w-3 animate-spin rounded-full border border-[#F47331]/30 border-t-[#F47331]", className)
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('inline-block h-3 w-3 animate-spin rounded-full border border-[#F47331]/30 border-t-[#F47331]', className)
     }, void 0, false, {
         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-        lineNumber: 44,
+        lineNumber: 50,
         columnNumber: 5
     }, this);
 }
@@ -934,19 +964,19 @@ function AssistantAvatar() {
         className: "flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-background text-foreground ring-1 ring-border/40",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             src: "/assets/brand/logo-icon.png",
-            alt: "",
+            alt: "Prosperify assistant icon",
             width: 22,
             height: 22,
             className: "h-5 w-5 object-contain",
             unoptimized: true
         }, void 0, false, {
             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-            lineNumber: 56,
+            lineNumber: 62,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-        lineNumber: 55,
+        lineNumber: 61,
         columnNumber: 5
     }, this);
 }
@@ -982,17 +1012,17 @@ function ThreadSidebar(param) {
                                 className: "h-3.5 w-3.5"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 106,
+                                lineNumber: 112,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 97,
+                            lineNumber: 103,
                             columnNumber: 13
                         }, this) : null
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 95,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1003,7 +1033,7 @@ function ThreadSidebar(param) {
                                 className: "h-4 w-4 shrink-0"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 114,
+                                lineNumber: 120,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1011,19 +1041,19 @@ function ThreadSidebar(param) {
                                 children: ui.newChat
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 115,
+                                lineNumber: 121,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 110,
+                        lineNumber: 116,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 94,
+                lineNumber: 100,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1036,7 +1066,7 @@ function ThreadSidebar(param) {
                             children: ui.active
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 121,
+                            lineNumber: 127,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1046,7 +1076,7 @@ function ThreadSidebar(param) {
                                     className: "mr-1 h-3 w-3 shrink-0"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 125,
+                                    lineNumber: 131,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1054,7 +1084,7 @@ function ThreadSidebar(param) {
                                     children: ui.archived
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 126,
+                                    lineNumber: 132,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1062,24 +1092,24 @@ function ThreadSidebar(param) {
                                     children: archivedCount
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 127,
+                                    lineNumber: 133,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 124,
+                            lineNumber: 130,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                    lineNumber: 120,
+                    lineNumber: 126,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 119,
+                lineNumber: 125,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1097,13 +1127,13 @@ function ThreadSidebar(param) {
                                         className: "h-3 w-3 shrink-0"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 142,
+                                        lineNumber: 148,
                                         columnNumber: 17
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                                         className: "h-3 w-3 shrink-0"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 144,
+                                        lineNumber: 150,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1111,7 +1141,7 @@ function ThreadSidebar(param) {
                                         children: ui.today
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 146,
+                                        lineNumber: 152,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1119,22 +1149,22 @@ function ThreadSidebar(param) {
                                         children: threads.length
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 147,
+                                        lineNumber: 153,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 137,
+                                lineNumber: 143,
                                 columnNumber: 13
                             }, this),
                             !collapsed && threads.map((thread)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("group flex min-w-0 items-center gap-2 rounded-xl px-3 py-2 cursor-pointer transition-colors hover:bg-muted/80", active === thread && "bg-muted"),
+                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('group flex min-w-0 items-center gap-2 rounded-xl px-3 py-2 cursor-pointer transition-colors hover:bg-muted/80', active === thread && 'bg-muted'),
                                     onClick: onRunDemo,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AssistantAvatar, {}, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 161,
+                                            lineNumber: 167,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1146,7 +1176,7 @@ function ThreadSidebar(param) {
                                                     children: thread
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 163,
+                                                    lineNumber: 169,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1158,7 +1188,7 @@ function ThreadSidebar(param) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 169,
+                                                    lineNumber: 175,
                                                     columnNumber: 21
                                                 }, this),
                                                 isStreaming && active === thread ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1168,7 +1198,7 @@ function ThreadSidebar(param) {
                                                             className: "h-3 w-3"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 174,
+                                                            lineNumber: 180,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1176,19 +1206,19 @@ function ThreadSidebar(param) {
                                                             children: ui.assistantStreaming
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 175,
+                                                            lineNumber: 181,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 173,
+                                                    lineNumber: 179,
                                                     columnNumber: 23
                                                 }, this) : null
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 162,
+                                            lineNumber: 168,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1203,12 +1233,12 @@ function ThreadSidebar(param) {
                                                         className: "h-3 w-3"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 188,
+                                                        lineNumber: 194,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 182,
+                                                    lineNumber: 188,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1220,46 +1250,46 @@ function ThreadSidebar(param) {
                                                         className: "h-3 w-3"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 196,
+                                                        lineNumber: 202,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 190,
+                                                    lineNumber: 196,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 181,
+                                            lineNumber: 187,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, thread, true, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 153,
+                                    lineNumber: 159,
                                     columnNumber: 17
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 136,
+                        lineNumber: 142,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                    lineNumber: 135,
+                    lineNumber: 141,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 134,
+                lineNumber: 140,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-        lineNumber: 90,
+        lineNumber: 96,
         columnNumber: 5
     }, this);
 }
@@ -1277,7 +1307,7 @@ function ChatHeader(param) {
         var _assistant_label;
         return {
             ...assistant,
-            label: assistant.labelKey === "activeAssistant" ? assistantName : (_assistant_label = assistant.label) !== null && _assistant_label !== void 0 ? _assistant_label : assistantName
+            label: assistant.labelKey === 'activeAssistant' ? assistantName : (_assistant_label = assistant.label) !== null && _assistant_label !== void 0 ? _assistant_label : assistantName
         };
     });
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
@@ -1296,7 +1326,7 @@ function ChatHeader(param) {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AssistantAvatar, {}, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 228,
+                                    lineNumber: 234,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1304,13 +1334,13 @@ function ChatHeader(param) {
                                     children: assistantName
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 229,
+                                    lineNumber: 235,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 223,
+                            lineNumber: 229,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1319,21 +1349,21 @@ function ChatHeader(param) {
                             type: "button",
                             "aria-label": "Assistant menu",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("h-4 w-4 shrink-0 text-muted-foreground transition-transform", assistantMenuOpen && "rotate-180")
+                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('h-4 w-4 shrink-0 text-muted-foreground transition-transform', assistantMenuOpen && 'rotate-180')
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 239,
+                                lineNumber: 245,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 233,
+                            lineNumber: 239,
                             columnNumber: 13
                         }, this),
                         assistantMenuOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "absolute left-0 top-full z-[120] mt-2 w-64 rounded-lg border border-border/70 bg-white p-1.5 shadow-2xl dark:bg-neutral-950",
                             children: assistants.map((assistant)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex w-full items-center gap-2 rounded-md px-2 py-2 text-left text-xs", assistant.disabled ? "cursor-not-allowed bg-white text-muted-foreground opacity-60 dark:bg-neutral-950" : "bg-orange-50 text-foreground dark:bg-orange-500/10"),
+                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('flex w-full items-center gap-2 rounded-md px-2 py-2 text-left text-xs', assistant.disabled ? 'cursor-not-allowed bg-white text-muted-foreground opacity-60 dark:bg-neutral-950' : 'bg-orange-50 text-foreground dark:bg-orange-500/10'),
                                     disabled: assistant.disabled,
                                     type: "button",
                                     children: [
@@ -1342,7 +1372,7 @@ function ChatHeader(param) {
                                             children: assistant.short
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 260,
+                                            lineNumber: 266,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1350,46 +1380,46 @@ function ChatHeader(param) {
                                             children: assistant.label
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 263,
+                                            lineNumber: 269,
                                             columnNumber: 21
                                         }, this),
                                         !assistant.disabled ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
                                             className: "h-3.5 w-3.5 text-primary"
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 267,
+                                            lineNumber: 273,
                                             columnNumber: 23
                                         }, this) : null
                                     ]
                                 }, assistant.label, true, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 249,
+                                    lineNumber: 255,
                                     columnNumber: 19
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 247,
+                            lineNumber: 253,
                             columnNumber: 15
                         }, this) : null
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                    lineNumber: 222,
+                    lineNumber: 228,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 221,
+                lineNumber: 227,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-            lineNumber: 220,
+            lineNumber: 226,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-        lineNumber: 219,
+        lineNumber: 225,
         columnNumber: 5
     }, this);
 }
@@ -1411,7 +1441,7 @@ function StepIcon(param) {
         className: "h-3 w-3 shrink-0"
     }, void 0, false, {
         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-        lineNumber: 291,
+        lineNumber: 297,
         columnNumber: 10
     }, this);
 }
@@ -1420,8 +1450,8 @@ function asChunks(response) {
     return Array.isArray(response === null || response === void 0 ? void 0 : response.chunks) ? response.chunks : [];
 }
 function scoreLabel(score) {
-    let verified = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : "verified";
-    return typeof score === "number" ? "".concat(Math.round(score * 100), "%") : verified;
+    let verified = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : 'verified';
+    return typeof score === 'number' ? "".concat(Math.round(score * 100), "%") : verified;
 }
 function ToolResponsePreview(param) {
     let { step } = param;
@@ -1437,7 +1467,7 @@ function ToolResponsePreview(param) {
     if (!step.toolName || chunks.length === 0) {
         return null;
     }
-    if (step.action === "readFileContent") {
+    if (step.action === 'readFileContent') {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "mt-1.5 flex flex-wrap gap-1",
             children: chunks.map((chunk, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1448,7 +1478,7 @@ function ToolResponsePreview(param) {
                             className: "h-2.5 w-2.5 text-sky-500/80"
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 324,
+                            lineNumber: 330,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1456,7 +1486,7 @@ function ToolResponsePreview(param) {
                             children: String(chunk.fileName)
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 325,
+                            lineNumber: 331,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1467,22 +1497,22 @@ function ToolResponsePreview(param) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 326,
+                            lineNumber: 332,
                             columnNumber: 13
                         }, this)
                     ]
                 }, "".concat(String(chunk.fileName), "-").concat(index), true, {
                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                    lineNumber: 319,
+                    lineNumber: 325,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-            lineNumber: 317,
+            lineNumber: 323,
             columnNumber: 7
         }, this);
     }
-    if (step.action === "screenshot") {
+    if (step.action === 'screenshot') {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "mt-1.5 space-y-1.5",
             children: chunks.map((chunk, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1495,7 +1525,7 @@ function ToolResponsePreview(param) {
                                     className: "h-2.5 w-2.5 shrink-0 text-warning"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 344,
+                                    lineNumber: 350,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1503,7 +1533,7 @@ function ToolResponsePreview(param) {
                                     children: String(chunk.fileName)
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 345,
+                                    lineNumber: 351,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1514,13 +1544,13 @@ function ToolResponsePreview(param) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 348,
+                                    lineNumber: 354,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 343,
+                            lineNumber: 349,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1528,18 +1558,18 @@ function ToolResponsePreview(param) {
                             children: String(chunk.content)
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 352,
+                            lineNumber: 358,
                             columnNumber: 13
                         }, this)
                     ]
                 }, "".concat(String(chunk.fileName), "-").concat(index), true, {
                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                    lineNumber: 339,
+                    lineNumber: 345,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-            lineNumber: 337,
+            lineNumber: 343,
             columnNumber: 7
         }, this);
     }
@@ -1554,7 +1584,7 @@ function ToolResponsePreview(param) {
                         className: "h-3 w-3"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 364,
+                        lineNumber: 370,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1565,14 +1595,14 @@ function ToolResponsePreview(param) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 365,
+                        lineNumber: 371,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "h-3 w-px bg-border/60"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 368,
+                        lineNumber: 374,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1583,13 +1613,13 @@ function ToolResponsePreview(param) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 369,
+                        lineNumber: 375,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 363,
+                lineNumber: 369,
                 columnNumber: 7
             }, this),
             chunks.slice(0, 3).map((chunk, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1602,7 +1632,7 @@ function ToolResponsePreview(param) {
                                     className: "h-3 w-3 shrink-0 text-primary/80"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 379,
+                                    lineNumber: 385,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1614,7 +1644,7 @@ function ToolResponsePreview(param) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 380,
+                                    lineNumber: 386,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1622,13 +1652,13 @@ function ToolResponsePreview(param) {
                                     children: scoreLabel(chunk.score, ui.verified)
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 383,
+                                    lineNumber: 389,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 378,
+                            lineNumber: 384,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1636,19 +1666,19 @@ function ToolResponsePreview(param) {
                             children: String(chunk.content)
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 387,
+                            lineNumber: 393,
                             columnNumber: 11
                         }, this)
                     ]
                 }, "".concat(String(chunk.fileName), "-").concat(String(chunk.pageNumber), "-").concat(index), true, {
                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                    lineNumber: 374,
+                    lineNumber: 380,
                     columnNumber: 9
                 }, this))
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-        lineNumber: 362,
+        lineNumber: 368,
         columnNumber: 5
     }, this);
 }
@@ -1684,7 +1714,7 @@ function StepTimeline(param) {
                         "aria-hidden": "true"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 421,
+                        lineNumber: 427,
                         columnNumber: 11
                     }, this) : null,
                     visibleSteps.map((step, index)=>{
@@ -1696,26 +1726,26 @@ function StepTimeline(param) {
                         const expanded = expandedSteps.has(step.id);
                         var _step_reasoning;
                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("relative pl-5 py-0.5", isDone && "opacity-75"),
+                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('relative pl-5 py-0.5', isDone && 'opacity-75'),
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("absolute left-0 top-[6px] h-3 w-3 rounded-full flex items-center justify-center z-10", isRunning ? "bg-primary" : "bg-emerald-500/70"),
+                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('absolute left-0 top-[6px] h-3 w-3 rounded-full flex items-center justify-center z-10', isRunning ? 'bg-primary' : 'bg-emerald-500/70'),
                                     children: isRunning ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "h-1.5 w-1.5 rounded-full bg-white/90 animate-pulse"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 450,
+                                        lineNumber: 456,
                                         columnNumber: 19
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
                                         className: "h-1.5 w-1.5 text-white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 452,
+                                        lineNumber: 458,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 443,
+                                    lineNumber: 449,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1725,7 +1755,7 @@ function StepTimeline(param) {
                                             action: step.action
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 456,
+                                            lineNumber: 462,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1751,11 +1781,11 @@ function StepTimeline(param) {
                                                     type: "button",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("min-w-0 flex-1 leading-relaxed", isRunning ? "text-foreground" : "text-foreground/85"),
+                                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('min-w-0 flex-1 leading-relaxed', isRunning ? 'text-foreground' : 'text-foreground/85'),
                                                             children: (_step_reasoning = step.reasoning) !== null && _step_reasoning !== void 0 ? _step_reasoning : step.action
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 477,
+                                                            lineNumber: 483,
                                                             columnNumber: 21
                                                         }, this),
                                                         step.chunks ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1765,7 +1795,7 @@ function StepTimeline(param) {
                                                                     className: "h-2.5 w-2.5"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                                    lineNumber: 487,
+                                                                    lineNumber: 493,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 step.chunks,
@@ -1774,20 +1804,20 @@ function StepTimeline(param) {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 486,
+                                                            lineNumber: 492,
                                                             columnNumber: 23
                                                         }, this) : null,
                                                         hasDetails ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("h-3.5 w-3.5 text-muted-foreground/60 transition-transform", expanded && "rotate-180")
+                                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('h-3.5 w-3.5 text-muted-foreground/60 transition-transform', expanded && 'rotate-180')
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 492,
+                                                            lineNumber: 498,
                                                             columnNumber: 23
                                                         }, this) : null
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 458,
+                                                    lineNumber: 464,
                                                     columnNumber: 19
                                                 }, this),
                                                 step.trace ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1795,7 +1825,7 @@ function StepTimeline(param) {
                                                     children: step.trace
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 501,
+                                                    lineNumber: 507,
                                                     columnNumber: 21
                                                 }, this) : null,
                                                 hasDetails && expanded ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1809,7 +1839,7 @@ function StepTimeline(param) {
                                                                     children: ui.thinking
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                                    lineNumber: 509,
+                                                                    lineNumber: 515,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1817,13 +1847,13 @@ function StepTimeline(param) {
                                                                     children: step.thinking
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                                    lineNumber: 512,
+                                                                    lineNumber: 518,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 508,
+                                                            lineNumber: 514,
                                                             columnNumber: 25
                                                         }, this) : null,
                                                         ((_step_queries1 = step.queries) === null || _step_queries1 === void 0 ? void 0 : _step_queries1.length) ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1833,12 +1863,12 @@ function StepTimeline(param) {
                                                                     children: query
                                                                 }, query, false, {
                                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                                    lineNumber: 520,
+                                                                    lineNumber: 526,
                                                                     columnNumber: 29
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 518,
+                                                            lineNumber: 524,
                                                             columnNumber: 25
                                                         }, this) : null,
                                                         ((_step_entities1 = step.entities) === null || _step_entities1 === void 0 ? void 0 : _step_entities1.length) ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1848,12 +1878,12 @@ function StepTimeline(param) {
                                                                     children: entity
                                                                 }, entity, false, {
                                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                                    lineNumber: 532,
+                                                                    lineNumber: 538,
                                                                     columnNumber: 29
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 530,
+                                                            lineNumber: 536,
                                                             columnNumber: 25
                                                         }, this) : null,
                                                         step.toolName ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1867,7 +1897,7 @@ function StepTimeline(param) {
                                                                             children: ui.toolCall
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                                            lineNumber: 544,
+                                                                            lineNumber: 550,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1875,57 +1905,57 @@ function StepTimeline(param) {
                                                                             children: step.toolName
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                                            lineNumber: 547,
+                                                                            lineNumber: 553,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                                    lineNumber: 543,
+                                                                    lineNumber: 549,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ToolResponsePreview, {
                                                                     step: step
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                                    lineNumber: 551,
+                                                                    lineNumber: 557,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 542,
+                                                            lineNumber: 548,
                                                             columnNumber: 25
                                                         }, this) : null
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 506,
+                                                    lineNumber: 512,
                                                     columnNumber: 21
                                                 }, this) : null
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 457,
+                                            lineNumber: 463,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 455,
+                                    lineNumber: 461,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, step.id, true, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 439,
+                            lineNumber: 445,
                             columnNumber: 13
                         }, this);
                     })
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 419,
+                lineNumber: 425,
                 columnNumber: 7
             }, this),
             isStreaming ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1935,33 +1965,33 @@ function StepTimeline(param) {
                         className: "h-1.5 w-1.5 rounded-full bg-primary/40 animate-bounce [animation-delay:0ms]"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 564,
+                        lineNumber: 570,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "h-1.5 w-1.5 rounded-full bg-primary/40 animate-bounce [animation-delay:150ms]"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 565,
+                        lineNumber: 571,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "h-1.5 w-1.5 rounded-full bg-primary/40 animate-bounce [animation-delay:300ms]"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 566,
+                        lineNumber: 572,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 563,
+                lineNumber: 569,
                 columnNumber: 9
             }, this) : null
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-        lineNumber: 415,
+        lineNumber: 421,
         columnNumber: 5
     }, this);
 }
@@ -1996,7 +2026,7 @@ function RetrievalMeta(param) {
                         className: "h-3.5 w-3.5"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 605,
+                        lineNumber: 611,
                         columnNumber: 9
                     }, this),
                     expanded ? ui.hideRetrieval : ui.showRetrieval,
@@ -2005,20 +2035,20 @@ function RetrievalMeta(param) {
                         children: retrievalChunks
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 607,
+                        lineNumber: 613,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("h-3 w-3 transition-transform", expanded && "rotate-180")
+                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('h-3 w-3 transition-transform', expanded && 'rotate-180')
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 610,
+                        lineNumber: 616,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 599,
+                lineNumber: 605,
                 columnNumber: 7
             }, this),
             expanded ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2031,7 +2061,7 @@ function RetrievalMeta(param) {
                                 className: "mt-0.5 h-3.5 w-3.5 shrink-0 text-muted-foreground/70"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 622,
+                                lineNumber: 628,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2042,7 +2072,7 @@ function RetrievalMeta(param) {
                                         children: ui.queries
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 624,
+                                        lineNumber: 630,
                                         columnNumber: 17
                                     }, this),
                                     visibleQueries.map((query)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2054,19 +2084,19 @@ function RetrievalMeta(param) {
                                             ]
                                         }, query, true, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 628,
+                                            lineNumber: 634,
                                             columnNumber: 19
                                         }, this))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 623,
+                                lineNumber: 629,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 621,
+                        lineNumber: 627,
                         columnNumber: 13
                     }, this) : null,
                     visibleEntities.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2076,7 +2106,7 @@ function RetrievalMeta(param) {
                                 className: "mt-0.5 h-3.5 w-3.5 shrink-0 text-orange-500/70"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 638,
+                                lineNumber: 644,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2087,7 +2117,7 @@ function RetrievalMeta(param) {
                                         children: ui.entities
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 640,
+                                        lineNumber: 646,
                                         columnNumber: 17
                                     }, this),
                                     visibleEntities.map((entity)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2095,19 +2125,19 @@ function RetrievalMeta(param) {
                                             children: entity
                                         }, entity, false, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 644,
+                                            lineNumber: 650,
                                             columnNumber: 19
                                         }, this))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 639,
+                                lineNumber: 645,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 637,
+                        lineNumber: 643,
                         columnNumber: 13
                     }, this) : null,
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2117,7 +2147,7 @@ function RetrievalMeta(param) {
                                 className: "h-3.5 w-3.5 shrink-0 text-muted-foreground/70"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 656,
+                                lineNumber: 662,
                                 columnNumber: 13
                             }, this),
                             retrievalChunks,
@@ -2126,7 +2156,7 @@ function RetrievalMeta(param) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 655,
+                        lineNumber: 661,
                         columnNumber: 11
                     }, this),
                     firstTokenLatency ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2136,7 +2166,7 @@ function RetrievalMeta(param) {
                                 className: "h-3.5 w-3.5 shrink-0 text-muted-foreground/70"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 661,
+                                lineNumber: 667,
                                 columnNumber: 15
                             }, this),
                             firstTokenLatency,
@@ -2145,19 +2175,19 @@ function RetrievalMeta(param) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 660,
+                        lineNumber: 666,
                         columnNumber: 13
                     }, this) : null
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 619,
+                lineNumber: 625,
                 columnNumber: 9
             }, this) : null
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-        lineNumber: 598,
+        lineNumber: 604,
         columnNumber: 5
     }, this);
 }
@@ -2177,7 +2207,8 @@ function CitationList(param) {
     }["CitationList.useMemo[ui]"], [
         i18n.language
     ]);
-    const pages = Array.from(new Set(citations.map((citation)=>citation.page))).sort((left, right)=>left - right).join(", ");
+    const [hoveredId, setHoveredId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const pages = Array.from(new Set(citations.map((citation)=>citation.page))).sort((left, right)=>left - right).join(', ');
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         "data-demo-tour": "citations",
         className: "mt-2 max-w-[78%] space-y-2",
@@ -2194,7 +2225,7 @@ function CitationList(param) {
                                     className: "h-3.5 w-3.5 shrink-0 text-primary"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 689,
+                                    lineNumber: 696,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2202,13 +2233,13 @@ function CitationList(param) {
                                     children: (_citations_ = citations[0]) === null || _citations_ === void 0 ? void 0 : _citations_.fileName
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 690,
+                                    lineNumber: 697,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 688,
+                            lineNumber: 695,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -2219,7 +2250,7 @@ function CitationList(param) {
                                     className: "h-3 w-3"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 695,
+                                    lineNumber: 702,
                                     columnNumber: 13
                                 }, this),
                                 "p.",
@@ -2227,153 +2258,629 @@ function CitationList(param) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 694,
+                            lineNumber: 701,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                    lineNumber: 687,
+                    lineNumber: 694,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "mt-2 flex flex-wrap gap-1.5",
                     children: citations.map((citation)=>{
                         const confidence = Number.parseInt(citation.confidence, 10);
-                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "inline-flex items-center gap-1.5 rounded-md border border-border/70 bg-background px-2 py-1.5 text-[11px] font-medium text-foreground transition-all hover:border-primary/40 hover:bg-primary/5",
-                            onClick: ()=>onSelect(citation),
-                            type: "button",
+                        const isHovered = hoveredId === citation.id;
+                        var _ui_confidence;
+                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "relative inline-flex",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$link$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link2$3e$__["Link2"], {
-                                    className: "h-3 w-3 text-primary"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 710,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "rounded bg-primary/10 px-1.5 py-0.5 text-[10px] font-semibold text-primary",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: "inline-flex items-center gap-1.5 rounded-md border border-border/70 bg-background px-2 py-1.5 text-[11px] font-medium text-foreground transition-all hover:border-primary/40 hover:bg-primary/5",
+                                    onClick: ()=>onSelect(citation),
+                                    onMouseEnter: ()=>setHoveredId(citation.id),
+                                    onMouseLeave: ()=>setHoveredId(null),
+                                    type: "button",
                                     children: [
-                                        "p.",
-                                        citation.page
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$link$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link2$3e$__["Link2"], {
+                                            className: "h-3 w-3 text-primary"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 720,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "rounded bg-primary/10 px-1.5 py-0.5 text-[10px] font-semibold text-primary",
+                                            children: [
+                                                "p.",
+                                                citation.page
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 721,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-[10px] text-muted-foreground",
+                                            children: ui.sourceMatch
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 724,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                            variant: "secondary",
+                                            className: "ml-0.5 px-1.5 text-[10px]",
+                                            children: [
+                                                confidence,
+                                                "%"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 727,
+                                            columnNumber: 19
+                                        }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 711,
+                                    lineNumber: 713,
                                     columnNumber: 17
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-[10px] text-muted-foreground",
-                                    children: ui.sourceMatch
-                                }, void 0, false, {
-                                    fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 714,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
-                                    variant: "secondary",
-                                    className: "ml-0.5 px-1.5 text-[10px]",
+                                isHovered && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "absolute bottom-[calc(100%+0.45rem)] left-1/2 z-50 w-72 -translate-x-1/2 rounded-lg border border-border/60 bg-popover p-3 text-left text-xs leading-relaxed text-popover-foreground shadow-xl",
                                     children: [
-                                        confidence,
-                                        "%"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "mb-2 flex items-center gap-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
+                                                    className: "h-3.5 w-3.5 shrink-0 text-primary"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                                    lineNumber: 737,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "min-w-0 flex-1 truncate font-semibold",
+                                                    children: citation.fileName
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                                    lineNumber: 738,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "rounded border border-border/60 bg-muted/40 px-1.5 py-0.5 font-mono text-[10px] text-muted-foreground",
+                                                    children: [
+                                                        "p.",
+                                                        citation.page
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                                    lineNumber: 741,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 736,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "block border-l-2 border-primary/50 pl-2 italic text-muted-foreground",
+                                            children: [
+                                                "“",
+                                                citation.quote,
+                                                "”"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 745,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "mt-2 flex items-center gap-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "min-w-[48px] text-[10px] font-medium uppercase tracking-wide text-muted-foreground",
+                                                    children: (_ui_confidence = ui.confidence) !== null && _ui_confidence !== void 0 ? _ui_confidence : 'Confidence'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                                    lineNumber: 749,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "h-1.5 flex-1 overflow-hidden rounded-full bg-muted/80",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "block h-full rounded-full bg-primary/60",
+                                                        style: {
+                                                            width: "".concat(confidence, "%")
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                                        lineNumber: 753,
+                                                        columnNumber: 25
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                                    lineNumber: 752,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-[10px] font-mono tabular-nums text-muted-foreground",
+                                                    children: [
+                                                        confidence,
+                                                        "%"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                                    lineNumber: 758,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 748,
+                                            columnNumber: 21
+                                        }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 717,
-                                    columnNumber: 17
+                                    lineNumber: 735,
+                                    columnNumber: 19
                                 }, this)
                             ]
                         }, citation.id, true, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 704,
+                            lineNumber: 712,
                             columnNumber: 15
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                    lineNumber: 699,
+                    lineNumber: 706,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-            lineNumber: 686,
+            lineNumber: 693,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-        lineNumber: 685,
+        lineNumber: 692,
         columnNumber: 5
     }, this);
 }
-_s5(CitationList, "wJUJC3Laq9tfdjDuVJODib1/9Mg=", false, function() {
+_s5(CitationList, "qDB2F1vKf4MRQyFTr5C/+cCosN4=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
     ];
 });
 _c8 = CitationList;
+function HallucinationSummary(param) {
+    let { hallucinations, onCitationSelect } = param;
+    _s6();
+    const [isHovered, setIsHovered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const maxScore = Math.round(Math.max(...hallucinations.map((h)=>h.score)) * 100);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+        className: "relative inline-flex",
+        onMouseEnter: ()=>setIsHovered(true),
+        onMouseLeave: ()=>setIsHovered(false),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "inline-flex items-center gap-2 rounded-md border border-border/60 bg-muted/40 px-2.5 py-1 text-xs cursor-help",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__["AlertTriangle"], {
+                        className: "h-3.5 w-3.5 shrink-0 text-warning"
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                        lineNumber: 792,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        children: [
+                            hallucinations.length,
+                            " hallucination",
+                            hallucinations.length > 1 ? 's' : '',
+                            " detected"
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                        lineNumber: 793,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "text-muted-foreground",
+                        children: "·"
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                        lineNumber: 797,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        children: [
+                            "Highest risk: ",
+                            maxScore,
+                            "%"
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                        lineNumber: 798,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                lineNumber: 791,
+                columnNumber: 7
+            }, this),
+            isHovered && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "absolute bottom-[calc(100%+0.45rem)] left-1/2 z-50 w-72 -translate-x-1/2 rounded-lg border border-border/60 bg-popover p-3 text-left text-xs leading-relaxed text-popover-foreground shadow-xl",
+                children: hallucinations.map((h, i)=>{
+                    const canOpen = !!h.citation && !!onCitationSelect;
+                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])(i > 0 ? 'mt-2 block border-t border-border/40 pt-2' : 'block', canOpen ? 'cursor-pointer rounded-sm px-0.5 -mx-0.5 transition-colors hover:bg-warning/15' : ''),
+                        onClick: canOpen ? ()=>onCitationSelect(h.citation) : undefined,
+                        role: canOpen ? 'button' : undefined,
+                        tabIndex: canOpen ? 0 : undefined,
+                        onKeyDown: canOpen ? (e)=>{
+                            if (e.key === 'Enter' || e.key === ' ') {
+                                e.preventDefault();
+                                onCitationSelect(h.citation);
+                            }
+                        } : undefined,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "flex items-center gap-2 text-foreground",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__["AlertTriangle"], {
+                                        className: "h-3 w-3 shrink-0 text-warning"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                        lineNumber: 832,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-[11px] font-semibold",
+                                        children: "Potential inaccuracy"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                        lineNumber: 833,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                lineNumber: 831,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "mt-1 block text-[11px] leading-relaxed text-muted-foreground",
+                                children: h.reason
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                lineNumber: 837,
+                                columnNumber: 17
+                            }, this),
+                            h.citation && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "mt-1 inline-flex items-center gap-1.5 rounded bg-primary/10 px-1.5 py-0.5 text-[10px] font-semibold text-primary",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$link$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link2$3e$__["Link2"], {
+                                        className: "h-2.5 w-2.5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                        lineNumber: 842,
+                                        columnNumber: 21
+                                    }, this),
+                                    "p.",
+                                    h.citation.page
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                lineNumber: 841,
+                                columnNumber: 19
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "mt-1.5 flex items-center gap-2",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "min-w-[48px] text-[10px] font-medium uppercase tracking-wide text-muted-foreground",
+                                        children: "Risk"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                        lineNumber: 847,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "h-1.5 flex-1 overflow-hidden rounded-full bg-muted/80",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "block h-full rounded-full bg-warning/70",
+                                            style: {
+                                                width: "".concat(Math.round(h.score * 100), "%")
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 851,
+                                            columnNumber: 21
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                        lineNumber: 850,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-[10px] font-mono tabular-nums text-muted-foreground",
+                                        children: [
+                                            Math.round(h.score * 100),
+                                            "%"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                        lineNumber: 856,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                lineNumber: 846,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, i, true, {
+                        fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                        lineNumber: 805,
+                        columnNumber: 15
+                    }, this);
+                })
+            }, void 0, false, {
+                fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                lineNumber: 801,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+        lineNumber: 786,
+        columnNumber: 5
+    }, this);
+}
+_s6(HallucinationSummary, "FPQn8a98tPjpohC7NUYORQR8GJE=");
+_c9 = HallucinationSummary;
 function stripCitationMarkers(value) {
-    return value.replace(/\s*\[(\d+)\]/g, "");
+    return value.replace(/\s*\[(\d+)\]/g, '');
 }
 function AssistantAnswer(param) {
-    let { citations = [], onCitationSelect, text } = param;
-    _s6();
+    let { citations = [], hallucinations = [], onCitationSelect, potentialInaccuracyLabel, text } = param;
+    _s7();
     const [activePreviewIndex, setActivePreviewIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    const parts = [];
+    const [activeHallucinationIndex, setActiveHallucinationIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const segments = [];
     const citationPattern = /([^[]+?)\s*\[(\d+)\]/g;
     let cursor = 0;
     let match;
     while((match = citationPattern.exec(text)) !== null){
         if (match.index > cursor) {
-            parts.push({
+            segments.push({
                 text: text.slice(cursor, match.index)
             });
         }
         const citation = citations[Number(match[2]) - 1];
-        parts.push({
+        segments.push({
             citation,
             text: match[1]
         });
         cursor = match.index + match[0].length;
     }
     if (cursor < text.length) {
-        parts.push({
+        segments.push({
             text: text.slice(cursor)
         });
     }
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-        children: parts.map((part, index)=>{
-            if (!part.citation) {
+    const hallucinationSegments = [];
+    for (const segment of segments){
+        const startOffset = text.indexOf(segment.text);
+        const overlapping = hallucinations.filter((h)=>h.start < startOffset + segment.text.length && h.end > startOffset);
+        if (overlapping.length === 0) {
+            hallucinationSegments.push(segment);
+            continue;
+        }
+        let segCursor = 0;
+        for (const h of overlapping.sort((a, b)=>a.start - b.start)){
+            const localStart = Math.max(0, h.start - startOffset);
+            const localEnd = Math.min(segment.text.length, h.end - startOffset);
+            if (localStart > segCursor) {
+                hallucinationSegments.push({
+                    text: segment.text.slice(segCursor, localStart)
+                });
+            }
+            hallucinationSegments.push({
+                text: segment.text.slice(localStart, localEnd),
+                citation: segment.citation,
+                hallucination: h
+            });
+            segCursor = localEnd;
+        }
+        if (segCursor < segment.text.length) {
+            hallucinationSegments.push({
+                text: segment.text.slice(segCursor),
+                citation: segment.citation
+            });
+        }
+    }
+    const finalSegments = hallucinationSegments.length > 0 ? hallucinationSegments : segments;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+        children: finalSegments.map((segment, index)=>{
+            if (segment.hallucination) {
+                const isOpen = activeHallucinationIndex === index;
+                const canOpenCitation = !!segment.citation;
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    children: part.text
-                }, "".concat(part.text, "-").concat(index), false, {
+                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('relative inline rounded-sm bg-warning/8 text-foreground underline decoration-wavy decoration-warning/50 underline-offset-4', canOpenCitation && 'decoration-2 cursor-pointer hover:bg-warning/15'),
+                    onClick: canOpenCitation ? ()=>onCitationSelect(segment.citation) : undefined,
+                    onKeyDown: canOpenCitation ? (event)=>{
+                        if (event.key === 'Enter' || event.key === ' ') {
+                            event.preventDefault();
+                            onCitationSelect(segment.citation);
+                        }
+                    } : undefined,
+                    onMouseEnter: ()=>setActiveHallucinationIndex(index),
+                    onMouseLeave: ()=>setActiveHallucinationIndex(null),
+                    role: canOpenCitation ? 'button' : 'note',
+                    tabIndex: canOpenCitation ? 0 : undefined,
+                    children: [
+                        segment.text,
+                        isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "absolute left-0 top-[calc(100%+0.45rem)] z-50 w-72 rounded-lg border border-border/60 bg-popover p-3 text-left text-xs leading-relaxed text-popover-foreground shadow-xl",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "flex items-center gap-2 text-foreground",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__["AlertTriangle"], {
+                                            className: "h-3.5 w-3.5 shrink-0 text-warning"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 1000,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-xs font-semibold tracking-wide",
+                                            children: potentialInaccuracyLabel
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 1001,
+                                            columnNumber: 21
+                                        }, this),
+                                        segment.citation && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "ml-auto rounded border border-border/60 bg-muted/40 px-1.5 py-0.5 font-mono text-[10px] text-muted-foreground",
+                                            children: [
+                                                "p.",
+                                                segment.citation.page
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 1005,
+                                            columnNumber: 23
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                    lineNumber: 999,
+                                    columnNumber: 19
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "mt-2 block text-xs leading-relaxed text-muted-foreground",
+                                    children: segment.hallucination.reason
+                                }, void 0, false, {
+                                    fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                    lineNumber: 1010,
+                                    columnNumber: 19
+                                }, this),
+                                segment.citation && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "mt-1.5 inline-flex items-center gap-1 rounded bg-primary/10 px-1.5 py-0.5 text-[10px] font-semibold text-primary",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
+                                            className: "h-2.5 w-2.5"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 1015,
+                                            columnNumber: 23
+                                        }, this),
+                                        segment.citation.fileName
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                    lineNumber: 1014,
+                                    columnNumber: 21
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "mt-2 flex items-center gap-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "min-w-[64px] text-[10px] font-medium uppercase tracking-wide text-muted-foreground",
+                                            children: "Risk"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 1020,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "h-1.5 flex-1 overflow-hidden rounded-full bg-muted/80",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "block h-full rounded-full bg-warning/70",
+                                                style: {
+                                                    width: "".concat(Math.round(segment.hallucination.score * 100), "%")
+                                                }
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                                lineNumber: 1024,
+                                                columnNumber: 23
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 1023,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-[10px] font-mono tabular-nums text-muted-foreground",
+                                            children: [
+                                                Math.round(segment.hallucination.score * 100),
+                                                "%"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                            lineNumber: 1031,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                    lineNumber: 1019,
+                                    columnNumber: 19
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                            lineNumber: 998,
+                            columnNumber: 17
+                        }, this)
+                    ]
+                }, "h-".concat(index), true, {
                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                    lineNumber: 771,
-                    columnNumber: 18
+                    lineNumber: 969,
+                    columnNumber: 13
+                }, this);
+            }
+            if (!segment.citation) {
+                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "inline",
+                    children: segment.text
+                }, "t-".concat(index), false, {
+                    fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                    lineNumber: 1043,
+                    columnNumber: 13
                 }, this);
             }
             const isPreviewOpen = activePreviewIndex === index;
             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "relative cursor-pointer rounded-sm bg-primary/10 px-0.5 underline decoration-solid decoration-primary/40 underline-offset-4 transition-colors hover:bg-primary/20 hover:decoration-primary/70",
-                onClick: ()=>onCitationSelect(part.citation),
+                className: "relative inline cursor-pointer rounded-sm bg-primary/10 px-0.5 underline decoration-solid decoration-primary/40 underline-offset-4 transition-colors hover:bg-primary/20 hover:decoration-primary/70",
+                onClick: ()=>onCitationSelect(segment.citation),
                 onBlur: ()=>setActivePreviewIndex(null),
                 onFocus: ()=>setActivePreviewIndex(index),
                 onKeyDown: (event)=>{
-                    if (event.key !== "Enter" && event.key !== " ") {
+                    if (event.key !== 'Enter' && event.key !== ' ') {
                         return;
                     }
                     event.preventDefault();
-                    onCitationSelect(part.citation);
+                    onCitationSelect(segment.citation);
                 },
                 onMouseEnter: ()=>setActivePreviewIndex(index),
                 onMouseLeave: ()=>setActivePreviewIndex(null),
                 role: "button",
                 tabIndex: 0,
                 children: [
-                    part.text,
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("pointer-events-none absolute left-0 top-[calc(100%+0.45rem)] z-50 w-72 rounded-lg border border-border/60 bg-popover p-3 text-left text-xs leading-relaxed text-popover-foreground shadow-xl", isPreviewOpen ? "block" : "hidden"),
+                    segment.text,
+                    isPreviewOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "absolute left-0 top-[calc(100%+0.45rem)] z-50 w-72 rounded-lg border border-border/60 bg-popover p-3 text-left text-xs leading-relaxed text-popover-foreground shadow-xl",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "mb-2 flex items-center gap-2",
@@ -2382,69 +2889,69 @@ function AssistantAnswer(param) {
                                         className: "h-3.5 w-3.5 shrink-0 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 803,
-                                        columnNumber: 17
+                                        lineNumber: 1074,
+                                        columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "min-w-0 flex-1 truncate font-semibold",
-                                        children: part.citation.fileName
+                                        children: segment.citation.fileName
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 804,
-                                        columnNumber: 17
+                                        lineNumber: 1075,
+                                        columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "rounded border border-border/60 bg-muted/40 px-1.5 py-0.5 font-mono text-[10px] text-muted-foreground",
                                         children: [
                                             "p.",
-                                            part.citation.page
+                                            segment.citation.page
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 807,
-                                        columnNumber: 17
+                                        lineNumber: 1078,
+                                        columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 802,
-                                columnNumber: 15
+                                lineNumber: 1073,
+                                columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "block border-l-2 border-primary/50 pl-2 italic text-muted-foreground",
                                 children: [
                                     "“",
-                                    part.citation.quote,
+                                    segment.citation.quote,
                                     "”"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 811,
-                                columnNumber: 15
+                                lineNumber: 1082,
+                                columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 796,
-                        columnNumber: 13
+                        lineNumber: 1072,
+                        columnNumber: 15
                     }, this)
                 ]
-            }, "".concat(part.text, "-").concat(index), true, {
+            }, "c-".concat(index), true, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 777,
+                lineNumber: 1052,
                 columnNumber: 11
             }, this);
         })
     }, void 0, false, {
         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-        lineNumber: 768,
+        lineNumber: 963,
         columnNumber: 5
     }, this);
 }
-_s6(AssistantAnswer, "jbxYPjZo9TKWJm9nFH2bdBFpWck=");
-_c9 = AssistantAnswer;
+_s7(AssistantAnswer, "lx1QtPsO8WS6IA5hWJTO6MtPng4=");
+_c10 = AssistantAnswer;
 function MessageActions() {
-    _s7();
+    _s8();
     const { i18n } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"])();
     const ui = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "MessageActions.useMemo[ui]": ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$demo$2d$ui$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getDemoUi"])(i18n.language)
@@ -2463,21 +2970,21 @@ function MessageActions() {
                         className: "h-3.5 w-3.5"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 833,
+                        lineNumber: 1105,
                         columnNumber: 9
                     }, this),
                     ui.copy
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 828,
+                lineNumber: 1100,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 className: "mx-1 h-4 w-px bg-border/50"
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 836,
+                lineNumber: 1108,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -2489,12 +2996,12 @@ function MessageActions() {
                     className: "h-3.5 w-3.5"
                 }, void 0, false, {
                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                    lineNumber: 843,
+                    lineNumber: 1115,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 837,
+                lineNumber: 1109,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -2506,30 +3013,30 @@ function MessageActions() {
                     className: "h-3.5 w-3.5"
                 }, void 0, false, {
                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                    lineNumber: 851,
+                    lineNumber: 1123,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 845,
+                lineNumber: 1117,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-        lineNumber: 827,
+        lineNumber: 1099,
         columnNumber: 5
     }, this);
 }
-_s7(MessageActions, "wJUJC3Laq9tfdjDuVJODib1/9Mg=", false, function() {
+_s8(MessageActions, "wJUJC3Laq9tfdjDuVJODib1/9Mg=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
     ];
 });
-_c10 = MessageActions;
+_c11 = MessageActions;
 function ChatMessages(param) {
     let { activeCitation, assistantName, currentStepIndex, hasRun, isRunning, messages, onCitationSelect, onRunDemo, question, retrievalEntities, retrievalQueries, steps, streamedText } = param;
-    _s8();
+    _s9();
     const { i18n } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"])();
     const ui = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
         "ChatMessages.useMemo[ui]": ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$demo$2d$ui$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getDemoUi"])(i18n.language)
@@ -2561,7 +3068,7 @@ function ChatMessages(param) {
                 return;
             }
             container.scrollTo({
-                behavior: "smooth",
+                behavior: 'smooth',
                 top: container.scrollHeight
             });
         }
@@ -2597,10 +3104,10 @@ function ChatMessages(param) {
                                     className: "h-[360px]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 947,
+                                    lineNumber: 1219,
                                     columnNumber: 38
                                 }, this) : null,
-                                messages.map((message, index)=>message.role === "user" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                messages.map((message, index)=>message.role === 'user' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "group flex flex-row-reverse gap-4 py-4 opacity-100 duration-200",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2608,7 +3115,7 @@ function ChatMessages(param) {
                                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$demo$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["demoChatConfig"].userInitials
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                lineNumber: 955,
+                                                lineNumber: 1227,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2622,7 +3129,7 @@ function ChatMessages(param) {
                                                                 children: ui.justNow
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                                lineNumber: 960,
+                                                                lineNumber: 1232,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2630,13 +3137,13 @@ function ChatMessages(param) {
                                                                 children: ui.you
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                                lineNumber: 963,
+                                                                lineNumber: 1235,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 959,
+                                                        lineNumber: 1231,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2644,19 +3151,19 @@ function ChatMessages(param) {
                                                         children: message.text
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 965,
+                                                        lineNumber: 1237,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                lineNumber: 958,
+                                                lineNumber: 1230,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, "".concat(message.role, "-").concat(index), true, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 951,
+                                        lineNumber: 1223,
                                         columnNumber: 17
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "group flex gap-4 py-4 opacity-100 duration-200",
@@ -2667,12 +3174,12 @@ function ChatMessages(param) {
                                                     className: "h-4 w-4 text-foreground"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 976,
+                                                    lineNumber: 1248,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                lineNumber: 975,
+                                                lineNumber: 1247,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2686,7 +3193,7 @@ function ChatMessages(param) {
                                                                 children: assistantName
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                                lineNumber: 980,
+                                                                lineNumber: 1252,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2694,13 +3201,13 @@ function ChatMessages(param) {
                                                                 children: ui.justNow
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                                lineNumber: 983,
+                                                                lineNumber: 1255,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 979,
+                                                        lineNumber: 1251,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StepTimeline, {
@@ -2709,7 +3216,7 @@ function ChatMessages(param) {
                                                         steps: steps
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 987,
+                                                        lineNumber: 1259,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(RetrievalMeta, {
@@ -2719,23 +3226,25 @@ function ChatMessages(param) {
                                                         retrievalChunks: 20
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 992,
+                                                        lineNumber: 1264,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "max-w-[78%] rounded-xl border border-border/40 bg-muted/70 px-4 py-3 text-sm leading-relaxed text-foreground shadow-sm",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AssistantAnswer, {
                                                             citations: message.citations,
+                                                            hallucinations: message.hallucinations,
                                                             onCitationSelect: onCitationSelect,
+                                                            potentialInaccuracyLabel: ui.potentialInaccuracy,
                                                             text: message.text
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 999,
+                                                            lineNumber: 1271,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 998,
+                                                        lineNumber: 1270,
                                                         columnNumber: 21
                                                     }, this),
                                                     message.citations ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CitationList, {
@@ -2743,24 +3252,32 @@ function ChatMessages(param) {
                                                         onSelect: onCitationSelect
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 1006,
+                                                        lineNumber: 1280,
+                                                        columnNumber: 23
+                                                    }, this) : null,
+                                                    message.hallucinations && message.hallucinations.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HallucinationSummary, {
+                                                        hallucinations: message.hallucinations,
+                                                        onCitationSelect: onCitationSelect
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
+                                                        lineNumber: 1287,
                                                         columnNumber: 23
                                                     }, this) : null,
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MessageActions, {}, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 1011,
+                                                        lineNumber: 1292,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                lineNumber: 978,
+                                                lineNumber: 1250,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, "".concat(message.role, "-").concat(index), true, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 971,
+                                        lineNumber: 1243,
                                         columnNumber: 17
                                     }, this)),
                                 isRunning ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2772,12 +3289,12 @@ function ChatMessages(param) {
                                                 className: "h-4 w-4 text-foreground"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                lineNumber: 1020,
+                                                lineNumber: 1301,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 1019,
+                                            lineNumber: 1300,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2791,7 +3308,7 @@ function ChatMessages(param) {
                                                             children: assistantName
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 1024,
+                                                            lineNumber: 1305,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2799,13 +3316,13 @@ function ChatMessages(param) {
                                                             children: ui.assistantStreaming.toLowerCase()
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 1025,
+                                                            lineNumber: 1306,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 1023,
+                                                    lineNumber: 1304,
                                                     columnNumber: 19
                                                 }, this),
                                                 currentStepIndex >= 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StepTimeline, {
@@ -2814,7 +3331,7 @@ function ChatMessages(param) {
                                                     steps: steps
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 1030,
+                                                    lineNumber: 1311,
                                                     columnNumber: 21
                                                 }, this) : null,
                                                 currentStepIndex >= 2 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(RetrievalMeta, {
@@ -2825,7 +3342,7 @@ function ChatMessages(param) {
                                                     visibleQueryCount: visibleQueryCount
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 1037,
+                                                    lineNumber: 1318,
                                                     columnNumber: 21
                                                 }, this) : null,
                                                 streamedText ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2836,39 +3353,39 @@ function ChatMessages(param) {
                                                             className: "ml-0.5 inline-block h-4 w-1 animate-pulse bg-current"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 1051,
+                                                            lineNumber: 1332,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 1049,
+                                                    lineNumber: 1330,
                                                     columnNumber: 21
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "mb-2 inline-flex w-fit items-center gap-2 rounded-full border border-border/50 bg-background/80 px-3 py-1 text-xs text-muted-foreground",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Spinner, {}, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 1055,
+                                                            lineNumber: 1336,
                                                             columnNumber: 23
                                                         }, this),
                                                         ui.waiting
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 1054,
+                                                    lineNumber: 1335,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 1022,
+                                            lineNumber: 1303,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 1018,
+                                    lineNumber: 1299,
                                     columnNumber: 15
                                 }, this) : null,
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2876,18 +3393,18 @@ function ChatMessages(param) {
                                     className: "h-px"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                    lineNumber: 1062,
+                                    lineNumber: 1343,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                            lineNumber: 946,
+                            lineNumber: 1218,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 941,
+                        lineNumber: 1213,
                         columnNumber: 9
                     }, this),
                     !atBottom ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2899,20 +3416,20 @@ function ChatMessages(param) {
                                 className: "h-3 w-3"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 1071,
+                                lineNumber: 1352,
                                 columnNumber: 13
                             }, this),
                             isRunning ? ui.newContent : ui.scrollToBottom
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 1066,
+                        lineNumber: 1347,
                         columnNumber: 11
                     }, this) : null
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 940,
+                lineNumber: 1212,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
@@ -2935,7 +3452,7 @@ function ChatMessages(param) {
                                                 children: "Filter by files & folders"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                lineNumber: 1087,
+                                                lineNumber: 1368,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -2949,25 +3466,25 @@ function ChatMessages(param) {
                                                     className: "h-3.5 w-3.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 1098,
+                                                    lineNumber: 1379,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                lineNumber: 1090,
+                                                lineNumber: 1371,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 1086,
+                                        lineNumber: 1367,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "max-h-72 space-y-0.5 overflow-y-auto p-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex w-full cursor-pointer items-center gap-1.5 rounded-md px-2 py-1 text-left transition-colors hover:bg-accent", selectedFolder === ui.papers && "bg-primary/10"),
+                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('flex w-full cursor-pointer items-center gap-1.5 rounded-md px-2 py-1 text-left transition-colors hover:bg-accent', selectedFolder === ui.papers && 'bg-primary/10'),
                                                 onClick: ()=>setSelectedFolder(ui.papers),
                                                 type: "button",
                                                 children: [
@@ -2975,14 +3492,14 @@ function ChatMessages(param) {
                                                         className: "h-3 w-3"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 1110,
+                                                        lineNumber: 1391,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$folder$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FolderOpen$3e$__["FolderOpen"], {
                                                         className: "h-3.5 w-3.5 text-yellow-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 1111,
+                                                        lineNumber: 1392,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2990,20 +3507,20 @@ function ChatMessages(param) {
                                                         children: ui.papers
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 1112,
+                                                        lineNumber: 1393,
                                                         columnNumber: 21
                                                     }, this),
                                                     selectedFolder === ui.papers ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
                                                         className: "h-3 w-3 text-primary"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 1116,
+                                                        lineNumber: 1397,
                                                         columnNumber: 23
                                                     }, this) : null
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                lineNumber: 1102,
+                                                lineNumber: 1383,
                                                 columnNumber: 19
                                             }, this),
                                             __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$demo$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["demoChatConfig"].filterFiles.map((file)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3014,7 +3531,7 @@ function ChatMessages(param) {
                                                             className: "h-3.5 w-3.5 text-orange-500"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 1125,
+                                                            lineNumber: 1406,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3022,13 +3539,13 @@ function ChatMessages(param) {
                                                             children: file
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 1126,
+                                                            lineNumber: 1407,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, file, true, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 1120,
+                                                    lineNumber: 1401,
                                                     columnNumber: 21
                                                 }, this)),
                                             __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$demo$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["demoChatConfig"].filterFolders.map((folder)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3040,14 +3557,14 @@ function ChatMessages(param) {
                                                             className: "h-3 w-3"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 1138,
+                                                            lineNumber: 1419,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$folder$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Folder$3e$__["Folder"], {
                                                             className: "h-3.5 w-3.5 text-yellow-500"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 1139,
+                                                            lineNumber: 1420,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3055,25 +3572,25 @@ function ChatMessages(param) {
                                                             children: folder.label
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                            lineNumber: 1140,
+                                                            lineNumber: 1421,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, folder.label, true, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 1132,
+                                                    lineNumber: 1413,
                                                     columnNumber: 21
                                                 }, this))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 1101,
+                                        lineNumber: 1382,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 1085,
+                                lineNumber: 1366,
                                 columnNumber: 15
                             }, this) : null,
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3085,14 +3602,14 @@ function ChatMessages(param) {
                                             type: "button",
                                             variant: "ghost",
                                             size: "sm",
-                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("h-8 gap-1.5 px-2.5", selectedFilterCount > 0 && "text-primary"),
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('h-8 gap-1.5 px-2.5', selectedFilterCount > 0 && 'text-primary'),
                                             onClick: ()=>setFilterOpen((open)=>!open),
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$filter$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Filter$3e$__["Filter"], {
                                                     className: "h-3.5 w-3.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 1160,
+                                                    lineNumber: 1441,
                                                     columnNumber: 19
                                                 }, this),
                                                 selectedFilterCount > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3100,25 +3617,25 @@ function ChatMessages(param) {
                                                     children: selectedFilterCount
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 1162,
+                                                    lineNumber: 1443,
                                                     columnNumber: 21
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "hidden text-xs sm:inline",
                                                     children: "Filter"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                    lineNumber: 1166,
+                                                    lineNumber: 1447,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 1150,
+                                            lineNumber: 1431,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 1149,
+                                        lineNumber: 1430,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3127,17 +3644,17 @@ function ChatMessages(param) {
                                             "aria-label": "Chat message",
                                             readOnly: true,
                                             "data-chat-input": true,
-                                            value: hasRun ? "" : question,
+                                            value: hasRun ? '' : question,
                                             className: "min-h-[42px] max-h-[132px] w-full resize-none overflow-hidden border-0 bg-transparent px-1 py-2 text-[15px] leading-6 shadow-none outline-none focus-visible:ring-0 focus-visible:ring-offset-0 [field-sizing:content]",
                                             rows: 1
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 1171,
+                                            lineNumber: 1452,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 1170,
+                                        lineNumber: 1451,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3154,23 +3671,23 @@ function ChatMessages(param) {
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                lineNumber: 1190,
+                                                lineNumber: 1471,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                            lineNumber: 1181,
+                                            lineNumber: 1462,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 1180,
+                                        lineNumber: 1461,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 1148,
+                                lineNumber: 1429,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3196,13 +3713,13 @@ function ChatMessages(param) {
                                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 type: "button",
                                                 "aria-label": "".concat(String(level), " mode"),
-                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-medium transition-all", level === ui.balanced ? "bg-background text-orange-600 shadow-sm" : "text-muted-foreground hover:bg-background/50 hover:text-foreground"),
+                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-medium transition-all', level === ui.balanced ? 'bg-background text-orange-600 shadow-sm' : 'text-muted-foreground hover:bg-background/50 hover:text-foreground'),
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
                                                         className: "h-3 w-3"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 1212,
+                                                        lineNumber: 1493,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3210,19 +3727,19 @@ function ChatMessages(param) {
                                                         children: String(level)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                        lineNumber: 1213,
+                                                        lineNumber: 1494,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, String(level), true, {
                                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                                lineNumber: 1201,
+                                                lineNumber: 1482,
                                                 columnNumber: 19
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 1195,
+                                        lineNumber: 1476,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3230,29 +3747,29 @@ function ChatMessages(param) {
                                         children: ui.enterHint
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                        lineNumber: 1217,
+                                        lineNumber: 1498,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                                lineNumber: 1194,
+                                lineNumber: 1475,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                        lineNumber: 1079,
+                        lineNumber: 1360,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                    lineNumber: 1078,
+                    lineNumber: 1359,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 1077,
+                lineNumber: 1358,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3263,18 +3780,18 @@ function ChatMessages(param) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 1225,
+                lineNumber: 1506,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s8(ChatMessages, "LltSB011RCKZL4s0RG2LPJRuurM=", false, function() {
+_s9(ChatMessages, "LltSB011RCKZL4s0RG2LPJRuurM=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
     ];
 });
-_c11 = ChatMessages;
+_c12 = ChatMessages;
 function ChatPanel(param) {
     let { activeCitation, assistantName, currentStepIndex, hasRun, isRunning, messages, onCitationSelect, onRunDemo, question, retrievalEntities, retrievalQueries, steps, streamedText } = param;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3284,7 +3801,7 @@ function ChatPanel(param) {
                 assistantName: assistantName
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 1263,
+                lineNumber: 1544,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ChatMessages, {
@@ -3303,18 +3820,18 @@ function ChatPanel(param) {
                 streamedText: streamedText
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-                lineNumber: 1264,
+                lineNumber: 1545,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/demo/chat/chat-panel.tsx",
-        lineNumber: 1262,
+        lineNumber: 1543,
         columnNumber: 5
     }, this);
 }
-_c12 = ChatPanel;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12;
+_c13 = ChatPanel;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13;
 __turbopack_context__.k.register(_c, "Spinner");
 __turbopack_context__.k.register(_c1, "AssistantAvatar");
 __turbopack_context__.k.register(_c2, "ThreadSidebar");
@@ -3324,10 +3841,11 @@ __turbopack_context__.k.register(_c5, "ToolResponsePreview");
 __turbopack_context__.k.register(_c6, "StepTimeline");
 __turbopack_context__.k.register(_c7, "RetrievalMeta");
 __turbopack_context__.k.register(_c8, "CitationList");
-__turbopack_context__.k.register(_c9, "AssistantAnswer");
-__turbopack_context__.k.register(_c10, "MessageActions");
-__turbopack_context__.k.register(_c11, "ChatMessages");
-__turbopack_context__.k.register(_c12, "ChatPanel");
+__turbopack_context__.k.register(_c9, "HallucinationSummary");
+__turbopack_context__.k.register(_c10, "AssistantAnswer");
+__turbopack_context__.k.register(_c11, "MessageActions");
+__turbopack_context__.k.register(_c12, "ChatMessages");
+__turbopack_context__.k.register(_c13, "ChatPanel");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
@@ -3366,221 +3884,221 @@ __turbopack_context__.s([
     ()=>buildSteps
 ]);
 function buildSteps(copy) {
-    const fr = copy.language === "fr";
+    const fr = copy.language === 'fr';
     const stepText = fr ? {
-        analyze: "Décomposer la demande, identifier les preuves nécessaires et limiter la réponse au PDF ouvert.",
-        analyzeTrace: "La réponse doit prouver trois éléments séparés : l'identité du document, la revendication d'architecture et le bénéfice de parallélisation. Je garde ces objectifs séparés pour éviter de réutiliser un même extrait comme preuve de tout.",
-        read: "Ouvrir le PDF chargé, lire les premières pages et isoler les passages candidats.",
-        readTrace: "Lecture ciblée des pages 1 et 2 : le titre sert d'ancrage, l'abstract contient les revendications techniques. Les autres pages ne sont pas nécessaires tant que les preuves demandées sont présentes dans cette fenêtre.",
-        screenshot: "Capturer un aperçu de page pour vérifier visuellement la source.",
-        screenshotResponse: "L'aperçu confirme la page de titre du papier Attention Is All You Need.",
-        screenshotTrace: "Le titre de la page 1 sert d'ancrage avant de citer l'abstract. Cette étape simule la vérification visuelle utilisée quand une réponse doit être auditée au-delà du texte extrait.",
-        lexical: "Rechercher les formulations exactes du titre et de la revendication Transformer.",
-        lexicalResults: "Passages retrouvés et classés par utilité : titre, architecture Transformer, puis parallélisation.",
-        lexicalTrace: "Le titre est sur la page 1 ; la revendication d'architecture est sur la page 2. Les résultats exacts sont conservés avec leur page pour que le clic citation ouvre le bon passage.",
-        semantic: "Faire une seconde recherche sémantique pour ne pas confondre la preuve d'architecture avec la preuve de parallélisation.",
-        semanticResults: "Passage retrouvé dans l'abstract sur la parallélisation du Transformer.",
-        semanticTrace: "Je conserve le passage de parallélisation comme preuve distincte du passage sur l'architecture. Cela rend la note plus défendable : chaque phrase finale pointe vers un extrait précis.",
-        reviewNote: "The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality.",
-        generate: "Composer une note courte avec une citation pour chaque affirmation vérifiable.",
-        generateTrace: "La réponse finale garde les citations proches des phrases qu'elles justifient, puis ouvre le PDF sur le passage sélectionné.",
-        thinking: "Règle de rédaction : identifier le document, séparer la revendication sur l'architecture du bénéfice de parallélisation, puis garder chaque phrase importante reliée à sa page. Je dois aussi éviter de sur-vendre le papier : la réponse dit seulement ce que les passages cités prouvent, et laisse l'utilisateur ouvrir le PDF pour vérifier."
+        analyze: 'Décomposer la demande : confirmer la base de valorisation, vérifier la cohérence avec le détail QoE, évaluer la fiabilité du multiple.',
+        analyzeTrace: "La réponse doit prouver trois choses : (1) l'EBITDA normalisé retenu dans la synthèse, (2) le détail du pont de normalisation, (3) la contradiction avec l'observation des conseils. Chaque point a sa propre source dans le PDF.",
+        read: 'Ouvrir le PDF et lire les sections clés : Synthèse exécutive (p.2), Analyse financière (p.4), Quality of Earnings (p.5).',
+        readTrace: "Lecture ciblée des pages 2, 4 et 5 : la synthèse donne le chiffre de valorisation, le pont de normalisation détaille les retraitements, l'observation des conseils révèle la contradiction. Les pages 3, 6 et 7 sont utiles pour le contexte mais pas pour les preuves demandées.",
+        screenshot: 'Capturer un aperçu de page pour vérifier visuellement la source.',
+        screenshotResponse: "L'aperçu confirme la page de garde du rapport Projet HELIOS (Cabinet Verrière).",
+        screenshotTrace: "La page de garde identifie l'émetteur (Cabinet Verrière), l'opération (Projet HELIOS) et la cible (Groupe Méridien Logistique). Cette étape simule la vérification visuelle pour les réponses qui doivent être auditables au-delà du texte extrait.",
+        lexical: 'Rechercher les formulations exactes : EBITDA normalisé, multiple 8,0x, retraitement sous-traitance.',
+        lexicalResults: 'Passages retrouvés et classés : synthèse p.2, pont de normalisation p.5, observation conseils p.5.',
+        lexicalTrace: "Le chiffre de 14,2 M€ est dans la synthèse p.2 ; le retraitement de 2,4 M€ est dans le tableau p.5 ; la remise en cause par les conseils est dans l'observation p.5. Chaque résultat est conservé avec son numéro de page pour un accès direct.",
+        semantic: "Faire une seconde recherche sémantique pour retrouver la conclusion et l'écart de valorisation.",
+        semanticResults: 'Passage retrouvé dans la synthèse des risques p.7 : écart de VE de 19,2 M€ selon la qualification du retraitement.',
+        semanticTrace: "Je conserve le passage de la recommandation (p.7) comme preuve autonome : il quantifie explicitement l'impact de la divergence (19,2 M€ d'écart) et confirme que le comité doit trancher.",
+        reviewNote: "À 11,8 M€ d'EBITDA normalisé, le même multiple de 8,0x donnerait 94,4 M€, soit un écart de VE d'environ 19,2 M€.",
+        generate: 'Composer une note structurée : chiffre synthèse, détail QoE, contradiction, impact.',
+        generateTrace: "La réponse finale présente d'abord la base de la synthèse (citation p.2), puis le détail des retraitements (citation p.5), puis l'avis des conseils (citation p.5), et enfin l'impact quantifié (citation p.7). Chaque phrase importante est associée à une citation cliquable.",
+        thinking: "Règle de rédaction : la question exige une réponse qui compare deux sections du même document. Je dois présenter la synthèse et le détail côte à côte, puis laisser la contradiction parler d'elle-même. Le comité a besoin de voir les deux chiffres (14,2 vs 11,8 M€) et l'impact (19,2 M€) sans interprétation surajoutée. Les citations doivent permettre d'ouvrir chaque page pertinente."
     } : {
-        analyze: "Breaking down the diligence request, required evidence and scope of the open PDF.",
-        analyzeTrace: "The answer needs three separate proofs: document identity, architecture claim and parallelization benefit. I keep those objectives separate so one retrieved passage is not reused as evidence for every claim.",
-        read: "Opening the uploaded PDF fixture, reading the first pages and isolating candidate passages.",
-        readTrace: "Targeted read of pages 1 and 2: the title anchors the file, while the abstract carries the technical claims. There is no reason to fan out across the full PDF while the requested evidence is in this window.",
-        screenshot: "Capturing page preview for visual verification.",
-        screenshotResponse: "Visual capture confirms the Attention Is All You Need title page.",
-        screenshotTrace: "The page 1 title anchors the document before abstract claims are cited. This simulates the visual verification path used when an answer needs to be audited beyond extracted text.",
-        lexical: "Searching exact wording for the title and Transformer architecture claim.",
-        lexicalResults: "Retrieved and ranked passages for title, Transformer architecture and parallelization.",
-        lexicalTrace: "The title is on page 1; the architecture claim is on page 2. Exact results are kept with page context so citation clicks can open the right passage.",
-        semantic: "Running a second semantic search so the architecture evidence is not conflated with the parallelization evidence.",
-        semanticResults: "Retrieved the abstract passage about Transformer parallelization.",
-        semanticTrace: "Keep the parallelization passage separate from the architecture claim. That makes the memo defensible: every final sentence points to a precise source excerpt.",
-        reviewNote: "The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality.",
-        generate: "Composing a short diligence note with one citation per checkable claim.",
-        generateTrace: "The final answer keeps citations close to the claims they support, then opens the PDF on the selected passage.",
-        thinking: "Drafting rule: identify the document, separate the architecture claim from the parallelization benefit, then keep each important sentence tied to its page. I should not overstate the paper; the answer only says what the cited passages prove and lets the user open the PDF to verify."
+        analyze: 'Breaking down the request: confirm the valuation basis, verify QoE consistency, assess multiple reliability.',
+        analyzeTrace: "Three separate proofs needed: (1) normalized EBITDA used in the executive summary, (2) detailed EBITDA bridge adjustments, (3) the contradiction in the advisors' observation. Each has its own source page in the PDF.",
+        read: 'Opening the uploaded PDF and reading key sections: Executive Summary (p.2), Financial Analysis (p.4), Quality of Earnings (p.5).',
+        readTrace: "Targeted read of pages 2, 4 and 5: the summary holds the valuation figure, the bridge details the adjustments, the advisors' observation reveals the contradiction. Pages 3, 6 and 7 provide context but not the direct evidence requested.",
+        screenshot: 'Capturing page preview for visual verification.',
+        screenshotResponse: 'Visual capture confirms the Projet HELIOS cover page (Cabinet Verrière).',
+        screenshotTrace: 'The cover page identifies the issuer (Cabinet Verrière), the transaction (Projet HELIOS) and the target (Groupe Méridien Logistique). This simulates visual verification for answers that need to be auditable beyond extracted text.',
+        lexical: 'Searching exact wording: normalized EBITDA, 8.0x multiple, subcontracting retreatment.',
+        lexicalResults: 'Retrieved and ranked passages: summary p.2, EBITDA bridge p.5, advisors observation p.5.',
+        lexicalTrace: "The €14.2M figure is in the executive summary p.2; the €2.4M adjustment is in the bridge table p.5; the advisors' challenge is in the observation p.5. Each result keeps its page number for direct access.",
+        semantic: 'Running a second semantic search to find the conclusion and valuation gap.',
+        semanticResults: 'Retrieved the risk summary passage p.7: EV gap of €19.2M depending on retreatment qualification.',
+        semanticTrace: 'I keep the recommendation passage (p.7) as independent evidence: it explicitly quantifies the divergence impact (€19.2M gap) and confirms the committee must decide.',
+        reviewNote: 'At €11.8M normalized EBITDA, the same 8.0x multiple would give €94.4M, an EV gap of approximately €19.2M.',
+        generate: 'Composing a structured note: summary figure, QoE detail, contradiction, impact.',
+        generateTrace: "The final answer presents the summary basis first (citation p.2), then the adjustments detail (citation p.5), then the advisors' opinion (citation p.5), and finally the quantified impact (citation p.7). Each important sentence links to a clickable citation.",
+        thinking: 'Drafting rule: the question requires comparing two sections of the same document. Present the summary and the detail side by side, then let the contradiction speak for itself. The committee needs to see both figures (€14.2M vs €11.8M) and the impact (€19.2M) without added interpretation. Citations must open each relevant page.'
     };
     return [
         {
-            action: "analyzing",
+            action: 'analyzing',
             entities: [
-                "Attention Is All You Need",
-                "Transformer",
-                "attention mechanisms"
+                'Projet HELIOS',
+                'EBITDA normalisé',
+                'retraitement sous-traitance'
             ],
-            id: "intent",
+            id: 'intent',
             queries: copy.retrievalQueries,
             reasoning: stepText.analyze,
             trace: stepText.analyzeTrace
         },
         {
-            action: "readFileContent",
-            id: "read-file",
+            action: 'readFileContent',
+            id: 'read-file',
             reasoning: stepText.read,
             trace: stepText.readTrace,
-            toolName: "readFileContent",
+            toolName: 'readFileContent',
             toolParams: {
-                fileName: "attention-is-all-you-need.pdf",
-                pageRange: "1-2"
+                fileName: 'Rapport_DD_Projet_Helios.pdf',
+                pageRange: '2,4-5'
             },
             toolResponse: {
                 chunks: [
                     {
-                        content: "Attention Is All You Need",
-                        fileName: "attention-is-all-you-need.pdf",
-                        pageNumber: 1,
+                        content: "Synthèse exécutive — EBITDA normalisé 2025 : 14,2 M€, multiple 8,0x, valeur d'entreprise 113,6 M€.",
+                        fileName: 'Rapport_DD_Projet_Helios.pdf',
+                        pageNumber: 2,
                         score: 0.98
                     },
                     {
-                        content: "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
-                        fileName: "attention-is-all-you-need.pdf",
-                        pageNumber: 2,
+                        content: "Pont de normalisation de l'EBITDA 2025 — retraitement « sous-traitance logistique ponctuelle » : +2,4 M€, qualifié non récurrent par le management.",
+                        fileName: 'Rapport_DD_Projet_Helios.pdf',
+                        pageNumber: 5,
                         score: 0.95
                     },
                     {
-                        content: "The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality.",
-                        fileName: "attention-is-all-you-need.pdf",
-                        pageNumber: 2,
+                        content: "Observation des conseils — les coûts de sous-traitance de 2,4 M€ correspondent à trois contrats pluriannuels reconduits sur 2023-2025. Retraités, l'EBITDA normalisé ressort à 11,8 M€.",
+                        fileName: 'Rapport_DD_Projet_Helios.pdf',
+                        pageNumber: 5,
                         score: 0.91
                     }
                 ],
                 count: 3,
-                status: "ok"
+                status: 'ok'
             }
         },
         {
-            action: "screenshot",
-            id: "page-screenshot",
+            action: 'screenshot',
+            id: 'page-screenshot',
             reasoning: stepText.screenshot,
             trace: stepText.screenshotTrace,
-            toolName: "screenshot",
+            toolName: 'screenshot',
             toolParams: {
-                fileName: "attention-is-all-you-need.pdf",
+                fileName: 'Rapport_DD_Projet_Helios.pdf',
                 page: 1
             },
             toolResponse: {
                 chunks: [
                     {
                         content: stepText.screenshotResponse,
-                        fileName: "attention-is-all-you-need.pdf",
+                        fileName: 'Rapport_DD_Projet_Helios.pdf',
                         metadata: {
-                            type: "screenshot"
+                            type: 'screenshot'
                         },
                         pageNumber: 1,
                         score: 0.94,
-                        type: "image"
+                        type: 'image'
                     }
                 ],
                 count: 1,
-                status: "ok"
+                status: 'ok'
             }
         },
         {
-            action: "searching",
-            id: "lexical-search",
+            action: 'searching',
+            id: 'lexical-search',
             queries: [
-                "Attention Is All You Need",
-                "Transformer"
+                'EBITDA normalisé 2025 valorisation',
+                'retraitement sous-traitance logistique'
             ],
             reasoning: stepText.lexical,
             trace: stepText.lexicalTrace
         },
         {
-            action: "retrieved",
+            action: 'retrieved',
             chunks: 8,
-            id: "lexical-results",
+            id: 'lexical-results',
             reasoning: stepText.lexicalResults,
             trace: stepText.lexicalTrace,
-            toolName: "search",
+            toolName: 'search',
             toolResponse: {
                 chunks: [
                     {
-                        content: copy.document.articleOne,
-                        fileName: "attention-is-all-you-need.pdf",
+                        content: copy.document.title,
+                        fileName: 'Rapport_DD_Projet_Helios.pdf',
                         metadata: {
-                            section: "title",
-                            type: "text"
+                            section: 'Synthèse exécutive',
+                            type: 'text'
                         },
-                        pageNumber: 1,
+                        pageNumber: 2,
                         score: 0.91
                     },
                     {
-                        content: copy.document.verifiedClause,
-                        fileName: "attention-is-all-you-need.pdf",
+                        content: copy.document.articleOne,
+                        fileName: 'Rapport_DD_Projet_Helios.pdf',
                         metadata: {
-                            section: "abstract",
-                            type: "text"
+                            section: 'Synthèse exécutive',
+                            type: 'text'
                         },
                         pageNumber: 2,
                         score: 0.89
                     },
                     {
                         content: copy.document.articleThree,
-                        fileName: "attention-is-all-you-need.pdf",
+                        fileName: 'Rapport_DD_Projet_Helios.pdf',
                         metadata: {
-                            section: "abstract",
-                            type: "text"
+                            section: 'Quality of Earnings',
+                            type: 'text'
                         },
-                        pageNumber: 2,
+                        pageNumber: 5,
                         score: 0.84
                     }
                 ],
                 count: 3,
-                status: "ok"
+                status: 'ok'
             },
             topScore: 0.91
         },
         {
-            action: "searching",
-            id: "semantic-search",
+            action: 'searching',
+            id: 'semantic-search',
             queries: [
-                "Transformer based solely on attention mechanisms"
+                'impact écart valorisation EBITDA normalisé comité'
             ],
             reasoning: stepText.semantic,
             trace: stepText.semanticTrace
         },
         {
-            action: "retrieved",
+            action: 'retrieved',
             chunks: 12,
-            id: "semantic-results",
+            id: 'semantic-results',
             reasoning: stepText.semanticResults,
             trace: stepText.semanticTrace,
-            toolName: "search",
+            toolName: 'search',
             toolResponse: {
                 chunks: [
                     {
                         content: copy.document.verifiedClause,
-                        fileName: "attention-is-all-you-need.pdf",
+                        fileName: 'Rapport_DD_Projet_Helios.pdf',
                         metadata: {
-                            section: "abstract",
-                            type: "text"
+                            section: 'Observation des conseils',
+                            type: 'text'
                         },
-                        pageNumber: 2,
+                        pageNumber: 5,
                         score: 0.86
                     },
                     {
                         content: stepText.reviewNote,
-                        fileName: "attention-is-all-you-need.pdf",
+                        fileName: 'Rapport_DD_Projet_Helios.pdf',
                         metadata: {
-                            section: "abstract",
-                            type: "text"
+                            section: 'Synthèse des risques',
+                            type: 'text'
                         },
-                        pageNumber: 2,
+                        pageNumber: 7,
                         score: 0.74
                     }
                 ],
                 count: 2,
-                status: "ok"
+                status: 'ok'
             },
             topScore: 0.86
         },
         {
-            action: "generating",
-            id: "answer",
+            action: 'generating',
+            id: 'answer',
             reasoning: stepText.generate,
             trace: stepText.generateTrace,
             thinking: "".concat(copy.reasoning, "\n\n").concat(stepText.thinking)
@@ -3600,8 +4118,8 @@ __turbopack_context__.s([
 ]);
 function getGuidedTourSteps(ui) {
     let isMobile = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : false;
-    const edgePlacement = isMobile ? "center" : "right";
-    const documentPlacement = isMobile ? "center" : "left";
+    const edgePlacement = isMobile ? 'center' : 'right';
+    const documentPlacement = isMobile ? 'center' : 'left';
     return [
         {
             content: ui.tourSidebarContent,
@@ -3623,7 +4141,7 @@ function getGuidedTourSteps(ui) {
         },
         {
             content: ui.tourSendContent,
-            placement: isMobile ? "center" : "top",
+            placement: isMobile ? 'center' : 'top',
             skipBeacon: true,
             skipScroll: true,
             target: "[data-demo-tour='send']",
@@ -3631,7 +4149,7 @@ function getGuidedTourSteps(ui) {
         },
         {
             content: ui.tourOrchestrationContent,
-            placement: "center",
+            placement: 'center',
             skipBeacon: true,
             skipScroll: true,
             targetWaitTimeout: 8000,
@@ -3691,21 +4209,21 @@ __turbopack_context__.s([
 ]);
 const normCharRe = /[\u2010-\u2015\u2212\u2018-\u201B\u201C-\u201F]/g;
 const normCharMap = {
-    "\u2010": "-",
-    "\u2011": "-",
-    "\u2012": "-",
-    "\u2013": "-",
-    "\u2014": "-",
-    "\u2015": "-",
-    "\u2018": "'",
-    "\u2019": "'",
-    "\u201A": "'",
-    "\u201B": "'",
-    "\u201C": '"',
-    "\u201D": '"',
-    "\u201E": '"',
-    "\u201F": '"',
-    "\u2212": "-"
+    '\u2010': '-',
+    '\u2011': '-',
+    '\u2012': '-',
+    '\u2013': '-',
+    '\u2014': '-',
+    '\u2015': '-',
+    '\u2018': "'",
+    '\u2019': "'",
+    '\u201A': "'",
+    '\u201B': "'",
+    '\u201C': '"',
+    '\u201D': '"',
+    '\u201E': '"',
+    '\u201F': '"',
+    '\u2212': '-'
 };
 function normChars(value) {
     return value.replace(normCharRe, (char)=>{
@@ -3718,12 +4236,12 @@ function fuzzyMatch(hay, needle) {
     const hayC = normChars(hay);
     const needleC = normChars(needle);
     const mapped = [];
-    let norm = "";
+    let norm = '';
     let wasSpace = true;
     for(let i = 0; i < hayC.length; i += 1){
         if (/\s/.test(hayC[i])) {
             if (!wasSpace && norm.length) {
-                norm += " ";
+                norm += ' ';
                 mapped.push(i);
             }
             wasSpace = true;
@@ -3733,11 +4251,11 @@ function fuzzyMatch(hay, needle) {
             wasSpace = false;
         }
     }
-    if (norm.endsWith(" ")) {
+    if (norm.endsWith(' ')) {
         norm = norm.slice(0, -1);
         mapped.pop();
     }
-    const nNeedle = needleC.replace(/\s+/g, " ").trim();
+    const nNeedle = needleC.replace(/\s+/g, ' ').trim();
     if (!nNeedle || !norm) {
         return null;
     }
@@ -3826,21 +4344,21 @@ function fuzzyMatch(hay, needle) {
     };
 }
 function readTextLayer(root) {
-    const container = root.querySelector(".react-pdf__Page__textContent");
+    const container = root.querySelector('.react-pdf__Page__textContent');
     if (!container) {
         return null;
     }
-    const elements = Array.from(container.querySelectorAll("span:not(.markedContent)"));
+    const elements = Array.from(container.querySelectorAll('span:not(.markedContent)'));
     if (elements.length === 0) {
         return null;
     }
-    let raw = "";
+    let raw = '';
     const spans = [];
     for (const element of elements){
         var _element_textContent;
-        const text = (_element_textContent = element.textContent) !== null && _element_textContent !== void 0 ? _element_textContent : "";
+        const text = (_element_textContent = element.textContent) !== null && _element_textContent !== void 0 ? _element_textContent : '';
         if (raw.length > 0 && text.length > 0 && !/\s$/.test(raw) && !/^\s/.test(text)) {
-            raw += " ";
+            raw += ' ';
         }
         spans.push({
             el: element,
@@ -3862,13 +4380,13 @@ function styleTextLayerSpans(spans, from, to, out) {
             continue;
         }
         var _el_textContent;
-        const text = (_el_textContent = el.textContent) !== null && _el_textContent !== void 0 ? _el_textContent : "";
+        const text = (_el_textContent = el.textContent) !== null && _el_textContent !== void 0 ? _el_textContent : '';
         const localStart = Math.max(from, spanFrom) - spanFrom;
         const localEnd = Math.min(to, spanTo) - spanFrom;
         if (localStart < 0 || localEnd > text.length || localStart >= localEnd) {
             continue;
         }
-        const page = el.closest("[data-page]");
+        const page = el.closest('[data-page]');
         if (!page || text.length === 0) {
             continue;
         }
@@ -3876,17 +4394,17 @@ function styleTextLayerSpans(spans, from, to, out) {
         const pageRect = page.getBoundingClientRect();
         const startRatio = localStart / text.length;
         const endRatio = localEnd / text.length;
-        const overlay = document.createElement("span");
-        overlay.dataset.demoPdfHighlight = "true";
-        overlay.style.position = "absolute";
+        const overlay = document.createElement('span');
+        overlay.dataset.demoPdfHighlight = 'true';
+        overlay.style.position = 'absolute';
         overlay.style.left = "".concat(spanRect.left - pageRect.left + spanRect.width * startRatio, "px");
         overlay.style.top = "".concat(spanRect.top - pageRect.top + spanRect.height * 0.34, "px");
         overlay.style.width = "".concat(Math.max(2, spanRect.width * (endRatio - startRatio)), "px");
         overlay.style.height = "".concat(Math.max(2, spanRect.height * 0.52), "px");
-        overlay.style.borderRadius = "2px";
-        overlay.style.backgroundColor = "rgba(34, 197, 94, 0.34)";
-        overlay.style.pointerEvents = "none";
-        overlay.style.zIndex = "3";
+        overlay.style.borderRadius = '2px';
+        overlay.style.backgroundColor = 'rgba(34, 197, 94, 0.34)';
+        overlay.style.pointerEvents = 'none';
+        overlay.style.zIndex = '3';
         page.appendChild(overlay);
         out.push(overlay);
         if (!first) {
@@ -3937,6 +4455,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$2f$browser$2d$frame$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/shared/browser-frame.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/button.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$resizable$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/components/ui/resizable.tsx [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$lib$2f$theme$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/landing/lib/theme.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$chat$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/features/landing/components/demo/chat/index.ts [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$chat$2f$chat$2d$panel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/landing/components/demo/chat/chat-panel.tsx [app-client] (ecmascript)");
@@ -3948,7 +4467,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$pdf$2d$highlight$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/landing/components/demo/pdf-highlight.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature();
-"use client";
+'use client';
 ;
 ;
 ;
@@ -3968,7 +4487,8 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
 ;
 ;
 ;
-__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$pdfjs$2d$dist$2f$build$2f$pdf$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__pdfjs$3e$__["pdfjs"].GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
+;
+__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$pdfjs$2d$dist$2f$build$2f$pdf$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__pdfjs$3e$__["pdfjs"].GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
 const sourcePanelIcons = {
     chunks: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Layers$3e$__["Layers"],
     entities: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$tag$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Tag$3e$__["Tag"],
@@ -3983,7 +4503,7 @@ function PdfLoadError(param) {
                 className: "h-8 w-8 text-muted-foreground/40"
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 81,
+                lineNumber: 87,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3991,7 +4511,7 @@ function PdfLoadError(param) {
                 children: "Unable to load PDF"
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 82,
+                lineNumber: 88,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3999,7 +4519,7 @@ function PdfLoadError(param) {
                 children: "The demo document failed to render."
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 83,
+                lineNumber: 89,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -4010,13 +4530,13 @@ function PdfLoadError(param) {
                 children: "Retry"
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 86,
+                lineNumber: 92,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-        lineNumber: 80,
+        lineNumber: 86,
         columnNumber: 5
     }, this);
 }
@@ -4043,12 +4563,12 @@ function EmptyDocumentPanel() {
                             className: "h-5 w-5"
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 110,
+                            lineNumber: 116,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 109,
+                        lineNumber: 115,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -4056,7 +4576,7 @@ function EmptyDocumentPanel() {
                         children: ui.emptyTitle
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 112,
+                        lineNumber: 118,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4064,23 +4584,23 @@ function EmptyDocumentPanel() {
                         children: ui.emptySubtitle
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 115,
+                        lineNumber: 121,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 108,
+                lineNumber: 114,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-            lineNumber: 107,
+            lineNumber: 113,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-        lineNumber: 103,
+        lineNumber: 109,
         columnNumber: 5
     }, this);
 }
@@ -4100,10 +4620,10 @@ function PdfSidebar(param) {
         i18n.language
     ]);
     const [findOpen, setFindOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [findQuery, setFindQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [highlightQuery, setHighlightQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [highlightedEntity, setHighlightedEntity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [entityFilter, setEntityFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [findQuery, setFindQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    const [highlightQuery, setHighlightQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    const [highlightedEntity, setHighlightedEntity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    const [entityFilter, setEntityFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [findIndex, setFindIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [pageNumber, setPageNumber] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(activeCitation.page);
     const [zoom, setZoom] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(100);
@@ -4114,6 +4634,25 @@ function PdfSidebar(param) {
     const [numPages, setNumPages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$demo$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["demoDocumentConfig"].pdf.totalPages);
     const [pageRenderTick, setPageRenderTick] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [pdfLoadError, setPdfLoadError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [viewerWidth, setViewerWidth] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "PdfSidebar.useEffect": ()=>{
+            const container = scrollRef.current;
+            if (!container) {
+                return;
+            }
+            const updateWidth = {
+                "PdfSidebar.useEffect.updateWidth": ()=>setViewerWidth(container.clientWidth)
+            }["PdfSidebar.useEffect.updateWidth"];
+            updateWidth();
+            const observer = new ResizeObserver(updateWidth);
+            observer.observe(container);
+            return ({
+                "PdfSidebar.useEffect": ()=>observer.disconnect()
+            })["PdfSidebar.useEffect"];
+        }
+    }["PdfSidebar.useEffect"], []);
+    const mobilePageWidth = viewerWidth > 0 && viewerWidth < 640 ? Math.max(280, viewerWidth - 24) : undefined;
     const scrollPdfToElement = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "PdfSidebar.useCallback[scrollPdfToElement]": (element)=>{
             const container = scrollRef.current;
@@ -4124,7 +4663,7 @@ function PdfSidebar(param) {
             const elementRect = element.getBoundingClientRect();
             const nextTop = container.scrollTop + elementRect.top - containerRect.top - container.clientHeight / 2 + elementRect.height / 2;
             container.scrollTo({
-                behavior: "smooth",
+                behavior: 'smooth',
                 top: Math.max(0, nextTop)
             });
         }
@@ -4136,13 +4675,13 @@ function PdfSidebar(param) {
                 return;
             }
             var _activeCitation_highlightText;
-            const citationQuery = (_activeCitation_highlightText = activeCitation.highlightText) !== null && _activeCitation_highlightText !== void 0 ? _activeCitation_highlightText : activeCitation.quote.replace("...", "").trim();
+            const citationQuery = (_activeCitation_highlightText = activeCitation.highlightText) !== null && _activeCitation_highlightText !== void 0 ? _activeCitation_highlightText : activeCitation.quote.replace('...', '').trim();
             if (citationQuery) {
                 setFindOpen(false);
-                setFindQuery("");
+                setFindQuery('');
                 setHighlightQuery(citationQuery);
                 setFindIndex(0);
-                setHighlightedEntity("");
+                setHighlightedEntity('');
             }
         }
     }["PdfSidebar.useEffect"], [
@@ -4159,7 +4698,7 @@ function PdfSidebar(param) {
             for (const chunk of chunks){
                 for (const entity of chunk.entities){
                     var _entity_type;
-                    const key = "".concat(entity.text.toLowerCase(), "::").concat((_entity_type = entity.type) !== null && _entity_type !== void 0 ? _entity_type : "");
+                    const key = "".concat(entity.text.toLowerCase(), "::").concat((_entity_type = entity.type) !== null && _entity_type !== void 0 ? _entity_type : '');
                     const current = map.get(key);
                     if (current) {
                         current.count += 1;
@@ -4189,7 +4728,7 @@ function PdfSidebar(param) {
     ]);
     const filteredEntities = entityFilter ? entities.filter((entity)=>{
         var _entity_type;
-        return entity.label.toLowerCase().includes(entityFilter.toLowerCase()) || ((_entity_type = entity.type) !== null && _entity_type !== void 0 ? _entity_type : "").toLowerCase().includes(entityFilter.toLowerCase());
+        return entity.label.toLowerCase().includes(entityFilter.toLowerCase()) || ((_entity_type = entity.type) !== null && _entity_type !== void 0 ? _entity_type : '').toLowerCase().includes(entityFilter.toLowerCase());
     }) : entities;
     const activeFindQuery = (findOpen && findQuery.trim() ? findQuery : highlightQuery).trim();
     const normalizedFindQuery = activeFindQuery.toLowerCase();
@@ -4232,12 +4771,12 @@ function PdfSidebar(param) {
     const setHitActive = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "PdfSidebar.useCallback[setHitActive]": (spans, active)=>{
             for (const span of spans !== null && spans !== void 0 ? spans : []){
-                const marks = span.dataset.demoPdfHighlight === "true" ? [
+                const marks = span.dataset.demoPdfHighlight === 'true' ? [
                     span
                 ] : Array.from(span.querySelectorAll("[data-demo-pdf-highlight='true']"));
                 for (const mark of marks){
-                    mark.style.backgroundColor = active ? "rgba(16, 185, 129, 0.48)" : "rgba(34, 197, 94, 0.34)";
-                    mark.style.boxShadow = active ? "0 0 0 1px rgba(5, 150, 105, 0.25)" : "none";
+                    mark.style.backgroundColor = active ? 'rgba(16, 185, 129, 0.48)' : 'rgba(34, 197, 94, 0.34)';
+                    mark.style.boxShadow = active ? '0 0 0 1px rgba(5, 150, 105, 0.25)' : 'none';
                 }
             }
         }
@@ -4247,20 +4786,20 @@ function PdfSidebar(param) {
             var _window_getSelection;
             (_window_getSelection = window.getSelection()) === null || _window_getSelection === void 0 ? void 0 : _window_getSelection.removeAllRanges();
             for (const element of markedRef.current){
-                if (element.dataset.demoPdfHighlight === "true") {
+                if (element.dataset.demoPdfHighlight === 'true') {
                     element.remove();
                     continue;
                 }
-                element.style.removeProperty("background-color");
-                element.style.removeProperty("background-image");
-                element.style.removeProperty("background-repeat");
-                element.style.removeProperty("background-size");
-                element.style.removeProperty("border-radius");
-                element.style.removeProperty("box-decoration-break");
-                element.style.removeProperty("box-shadow");
-                element.style.removeProperty("mix-blend-mode");
-                element.style.removeProperty("outline");
-                element.style.removeProperty("-webkit-box-decoration-break");
+                element.style.removeProperty('background-color');
+                element.style.removeProperty('background-image');
+                element.style.removeProperty('background-repeat');
+                element.style.removeProperty('background-size');
+                element.style.removeProperty('border-radius');
+                element.style.removeProperty('box-decoration-break');
+                element.style.removeProperty('box-shadow');
+                element.style.removeProperty('mix-blend-mode');
+                element.style.removeProperty('outline');
+                element.style.removeProperty('-webkit-box-decoration-break');
             }
             markedRef.current = [];
             setTextHits([]);
@@ -4293,8 +4832,8 @@ function PdfSidebar(param) {
                         }
                         readyPages += 1;
                         const hay = layer.raw.toLowerCase();
-                        const normalizedHay = hay.replace(/\s+/g, " ");
-                        const normalizedQuery = query.replace(/\s+/g, " ");
+                        const normalizedHay = hay.replace(/\s+/g, ' ');
+                        const normalizedQuery = query.replace(/\s+/g, ' ');
                         let match = null;
                         const exactIndex = hay.indexOf(query);
                         if (exactIndex !== -1) {
@@ -4383,7 +4922,7 @@ function PdfSidebar(param) {
     };
     const sourcePanel = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         "data-demo-tour": "entities",
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex min-h-0 flex-col border-l border-border/40 bg-background", sourceOnly ? "h-full w-full border-l-0" : "hidden w-56 shrink-0 lg:flex"),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('flex min-h-0 flex-col border-l border-border/40 bg-background', sourceOnly ? 'h-full w-full border-l-0' : 'hidden w-56 shrink-0 lg:flex'),
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "grid grid-cols-3 gap-1 border-b border-border/40 bg-muted/20 p-1.5",
@@ -4392,14 +4931,14 @@ function PdfSidebar(param) {
                     const Icon = sourcePanelIcons[icon];
                     const label = ui[labelKey];
                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex items-center justify-center gap-1 rounded-md px-1 py-1 text-[10px] font-medium transition-all", activeTab === value ? "border border-border/50 bg-background text-foreground shadow-sm" : "text-muted-foreground hover:bg-muted/60 hover:text-foreground"),
+                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('flex items-center justify-center gap-1 rounded-md px-1 py-1 text-[10px] font-medium transition-all', activeTab === value ? 'border border-border/50 bg-background text-foreground shadow-sm' : 'text-muted-foreground hover:bg-muted/60 hover:text-foreground'),
                         onClick: ()=>onTabChange(value),
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
                                 className: "h-3 w-3"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 474,
+                                lineNumber: 501,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4407,25 +4946,25 @@ function PdfSidebar(param) {
                                 children: label
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 475,
+                                lineNumber: 502,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, value, true, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 464,
+                        lineNumber: 491,
                         columnNumber: 13
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 458,
+                lineNumber: 485,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "min-h-0 flex-1 overflow-y-auto p-3 text-xs",
                 children: [
-                    activeTab === "entities" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    activeTab === 'entities' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex h-full min-h-0 flex-col",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4437,7 +4976,7 @@ function PdfSidebar(param) {
                                             className: "absolute left-2 top-2 h-3 w-3 text-muted-foreground"
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                            lineNumber: 485,
+                                            lineNumber: 512,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4447,18 +4986,18 @@ function PdfSidebar(param) {
                                             className: "h-7 w-full rounded-md border border-border/50 bg-background pl-7 pr-2 text-xs outline-none focus:border-primary/40"
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                            lineNumber: 486,
+                                            lineNumber: 513,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                    lineNumber: 484,
+                                    lineNumber: 511,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 483,
+                                lineNumber: 510,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4470,7 +5009,7 @@ function PdfSidebar(param) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 494,
+                                lineNumber: 521,
                                 columnNumber: 13
                             }, this),
                             highlightedEntity ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4481,15 +5020,15 @@ function PdfSidebar(param) {
                                         children: highlightedEntity
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 499,
+                                        lineNumber: 526,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "shrink-0 text-[10px] tabular-nums text-muted-foreground",
-                                        children: effectiveHitCount > 0 ? "".concat(Math.min(findIndex + 1, effectiveHitCount), "/").concat(effectiveHitCount) : "0/0"
+                                        children: effectiveHitCount > 0 ? "".concat(Math.min(findIndex + 1, effectiveHitCount), "/").concat(effectiveHitCount) : '0/0'
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 502,
+                                        lineNumber: 529,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4499,12 +5038,12 @@ function PdfSidebar(param) {
                                             className: "h-3 w-3 rotate-180 text-primary"
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                            lineNumber: 511,
+                                            lineNumber: 538,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 507,
+                                        lineNumber: 534,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4514,18 +5053,18 @@ function PdfSidebar(param) {
                                             className: "h-3 w-3 text-primary"
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                            lineNumber: 517,
+                                            lineNumber: 544,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 513,
+                                        lineNumber: 540,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 498,
+                                lineNumber: 525,
                                 columnNumber: 15
                             }, this) : null,
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4534,9 +5073,9 @@ function PdfSidebar(param) {
                                     const isActive = highlightedEntity.toLowerCase() === entity.label.toLowerCase();
                                     var _entity_type;
                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("group inline-flex max-w-full items-center rounded-full border px-2 py-1 text-[10px] font-medium shadow-sm transition-colors hover:bg-primary hover:text-primary-foreground dark:hover:border-orange-500 dark:hover:bg-orange-500 dark:hover:text-white", isActive ? "border-primary bg-primary/10 text-primary ring-1 ring-primary dark:border-orange-500 dark:bg-orange-500/15 dark:text-orange-200 dark:ring-orange-500/70" : "border-neutral-200 bg-white text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200"),
+                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('group inline-flex max-w-full items-center rounded-full border px-2 py-1 text-[10px] font-medium shadow-sm transition-colors hover:bg-primary hover:text-primary-foreground dark:hover:border-orange-500 dark:hover:bg-orange-500 dark:hover:text-white', isActive ? 'border-primary bg-primary/10 text-primary ring-1 ring-primary dark:border-orange-500 dark:bg-orange-500/15 dark:text-orange-200 dark:ring-orange-500/70' : 'border-neutral-200 bg-white text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200'),
                                         onClick: ()=>{
-                                            const next = isActive ? "" : entity.label;
+                                            const next = isActive ? '' : entity.label;
                                             setHighlightedEntity(next);
                                             setFindOpen(Boolean(next));
                                             setFindQuery(next);
@@ -4551,7 +5090,7 @@ function PdfSidebar(param) {
                                                 children: entity.label
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 546,
+                                                lineNumber: 573,
                                                 columnNumber: 21
                                             }, this),
                                             entity.count > 1 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4562,36 +5101,36 @@ function PdfSidebar(param) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 548,
+                                                lineNumber: 575,
                                                 columnNumber: 23
                                             }, this) : null,
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "ml-1 text-[9px] opacity-70",
-                                                children: entity.pages.length <= 3 ? entity.pages.map((page)=>"p.".concat(page)).join(", ") : "".concat(entity.pages.slice(0, 2).map((page)=>"p.".concat(page)).join(", "), " +").concat(entity.pages.length - 2)
+                                                children: entity.pages.length <= 3 ? entity.pages.map((page)=>"p.".concat(page)).join(', ') : "".concat(entity.pages.slice(0, 2).map((page)=>"p.".concat(page)).join(', '), " +").concat(entity.pages.length - 2)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 552,
+                                                lineNumber: 579,
                                                 columnNumber: 21
                                             }, this)
                                         ]
-                                    }, "".concat(entity.label, "-").concat((_entity_type = entity.type) !== null && _entity_type !== void 0 ? _entity_type : "entity", "-").concat(index), true, {
+                                    }, "".concat(entity.label, "-").concat((_entity_type = entity.type) !== null && _entity_type !== void 0 ? _entity_type : 'entity', "-").concat(index), true, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 528,
+                                        lineNumber: 555,
                                         columnNumber: 19
                                     }, this);
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 521,
+                                lineNumber: 548,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 482,
+                        lineNumber: 509,
                         columnNumber: 11
                     }, this) : null,
-                    activeTab === "metadata" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    activeTab === 'metadata' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "space-y-1.5 text-muted-foreground",
                         children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$demo$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["demoDocumentConfig"].metadataRows.map((row)=>{
                             const label = row.labelKey ? ({
@@ -4613,7 +5152,7 @@ function PdfSidebar(param) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 587,
+                                        lineNumber: 614,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4621,22 +5160,22 @@ function PdfSidebar(param) {
                                         children: value
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 590,
+                                        lineNumber: 617,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, label, true, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 583,
+                                lineNumber: 610,
                                 columnNumber: 17
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 567,
+                        lineNumber: 594,
                         columnNumber: 11
                     }, this) : null,
-                    activeTab === "chunks" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    activeTab === 'chunks' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "space-y-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4648,7 +5187,7 @@ function PdfSidebar(param) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 600,
+                                lineNumber: 627,
                                 columnNumber: 13
                             }, this),
                             chunks.map((chunk)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4665,7 +5204,7 @@ function PdfSidebar(param) {
                                                             children: chunk.type
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                            lineNumber: 610,
+                                                            lineNumber: 637,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4677,13 +5216,13 @@ function PdfSidebar(param) {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                            lineNumber: 613,
+                                                            lineNumber: 640,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                    lineNumber: 609,
+                                                    lineNumber: 636,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4693,20 +5232,20 @@ function PdfSidebar(param) {
                                                             className: "h-2.5 w-2.5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                            lineNumber: 621,
+                                                            lineNumber: 648,
                                                             columnNumber: 21
                                                         }, this),
                                                         chunk.retrievalCount
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                    lineNumber: 620,
+                                                    lineNumber: 647,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                            lineNumber: 608,
+                                            lineNumber: 635,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4714,7 +5253,7 @@ function PdfSidebar(param) {
                                             children: chunk.content
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                            lineNumber: 625,
+                                            lineNumber: 652,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4724,12 +5263,12 @@ function PdfSidebar(param) {
                                                     children: entity.text
                                                 }, "".concat(chunk.id, "-").concat(entity.text), false, {
                                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                    lineNumber: 630,
+                                                    lineNumber: 657,
                                                     columnNumber: 21
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                            lineNumber: 628,
+                                            lineNumber: 655,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4746,7 +5285,7 @@ function PdfSidebar(param) {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                            lineNumber: 641,
+                                                            lineNumber: 668,
                                                             columnNumber: 23
                                                         }, this),
                                                         " ",
@@ -4754,37 +5293,37 @@ function PdfSidebar(param) {
                                                     ]
                                                 }, "".concat(chunk.id, "-").concat(key), true, {
                                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                    lineNumber: 640,
+                                                    lineNumber: 667,
                                                     columnNumber: 21
                                                 }, this);
                                             })
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                            lineNumber: 638,
+                                            lineNumber: 665,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, chunk.id, true, {
                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                    lineNumber: 604,
+                                    lineNumber: 631,
                                     columnNumber: 15
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 599,
+                        lineNumber: 626,
                         columnNumber: 11
                     }, this) : null
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 480,
+                lineNumber: 507,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-        lineNumber: 449,
+        lineNumber: 476,
         columnNumber: 5
     }, this);
     if (sourceOnly) {
@@ -4794,7 +5333,7 @@ function PdfSidebar(param) {
             children: sourcePanel
         }, void 0, false, {
             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-            lineNumber: 655,
+            lineNumber: 682,
             columnNumber: 7
         }, this);
     }
@@ -4816,7 +5355,7 @@ function PdfSidebar(param) {
                                         className: "h-3.5 w-3.5 shrink-0 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 673,
+                                        lineNumber: 700,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4826,40 +5365,70 @@ function PdfSidebar(param) {
                                             children: activeCitation.fileName
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                            lineNumber: 675,
+                                            lineNumber: 702,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 674,
+                                        lineNumber: 701,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                                         className: "h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 679,
+                                        lineNumber: 706,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 672,
+                                lineNumber: 699,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 671,
+                            lineNumber: 698,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 670,
+                        lineNumber: 697,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex items-center gap-1 border-l border-border/40 px-2",
                         children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                variant: "ghost",
+                                size: "icon",
+                                className: "h-7 w-7 text-muted-foreground hover:text-foreground lg:hidden",
+                                "aria-label": sourcePanelOpen ? 'Close entity rail' : 'Open entity rail',
+                                onClick: ()=>{
+                                    const next = !sourcePanelOpen;
+                                    if (next) {
+                                        onTabChange('entities');
+                                    }
+                                    onSourcePanelOpenChange(next);
+                                },
+                                children: sourcePanelOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$panel$2d$right$2d$close$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__PanelRightClose$3e$__["PanelRightClose"], {
+                                    className: "h-4 w-4"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
+                                    lineNumber: 727,
+                                    columnNumber: 15
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$panel$2d$right$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__PanelRightOpen$3e$__["PanelRightOpen"], {
+                                    className: "h-4 w-4"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
+                                    lineNumber: 729,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
+                                lineNumber: 711,
+                                columnNumber: 11
+                            }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                 variant: "ghost",
                                 size: "icon",
@@ -4869,7 +5438,7 @@ function PdfSidebar(param) {
                                     setFindOpen((open)=>{
                                         const next = !open;
                                         if (next) {
-                                            setFindQuery("");
+                                            setFindQuery('');
                                         }
                                         return next;
                                     });
@@ -4878,12 +5447,12 @@ function PdfSidebar(param) {
                                     className: "h-4 w-4"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                    lineNumber: 699,
+                                    lineNumber: 747,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 684,
+                                lineNumber: 732,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -4895,24 +5464,24 @@ function PdfSidebar(param) {
                                     className: "h-4 w-4"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                    lineNumber: 707,
+                                    lineNumber: 755,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 701,
+                                lineNumber: 749,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 683,
+                        lineNumber: 710,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 669,
+                lineNumber: 696,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4929,12 +5498,12 @@ function PdfSidebar(param) {
                             className: "h-3.5 w-3.5 rotate-180"
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 721,
+                            lineNumber: 769,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 713,
+                        lineNumber: 761,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4944,27 +5513,27 @@ function PdfSidebar(param) {
                                 children: pageNumber
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 724,
+                                lineNumber: 772,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: "/"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 725,
+                                lineNumber: 773,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: numPages
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 726,
+                                lineNumber: 774,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 723,
+                        lineNumber: 771,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -4978,19 +5547,19 @@ function PdfSidebar(param) {
                             className: "h-3.5 w-3.5"
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 736,
+                            lineNumber: 784,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 728,
+                        lineNumber: 776,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "mx-1 h-5 w-px bg-border/60"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 738,
+                        lineNumber: 786,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -5004,12 +5573,12 @@ function PdfSidebar(param) {
                             className: "h-3.5 w-3.5"
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 747,
+                            lineNumber: 795,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 739,
+                        lineNumber: 787,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5020,7 +5589,7 @@ function PdfSidebar(param) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 749,
+                        lineNumber: 797,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -5034,12 +5603,12 @@ function PdfSidebar(param) {
                             className: "h-3.5 w-3.5"
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 760,
+                            lineNumber: 808,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 752,
+                        lineNumber: 800,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -5051,18 +5620,18 @@ function PdfSidebar(param) {
                             className: "h-3.5 w-3.5"
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 768,
+                            lineNumber: 816,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 762,
+                        lineNumber: 810,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 712,
+                lineNumber: 760,
                 columnNumber: 7
             }, this),
             findOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5072,7 +5641,7 @@ function PdfSidebar(param) {
                         className: "h-3.5 w-3.5 shrink-0 text-muted-foreground"
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 774,
+                        lineNumber: 822,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -5080,13 +5649,13 @@ function PdfSidebar(param) {
                         onChange: (event)=>{
                             setFindQuery(event.target.value);
                             setHighlightQuery(event.target.value);
-                            setHighlightedEntity("");
+                            setHighlightedEntity('');
                         },
                         className: "h-7 min-w-0 flex-1 rounded-md border border-border/50 bg-background px-2 text-xs outline-none focus:border-primary/40",
                         placeholder: ui.pdfSearch
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 775,
+                        lineNumber: 823,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5094,7 +5663,7 @@ function PdfSidebar(param) {
                         children: findStatus
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 785,
+                        lineNumber: 833,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -5108,12 +5677,12 @@ function PdfSidebar(param) {
                             className: "h-3.5 w-3.5 rotate-180"
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 796,
+                            lineNumber: 844,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 788,
+                        lineNumber: 836,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -5127,12 +5696,12 @@ function PdfSidebar(param) {
                             className: "h-3.5 w-3.5"
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 806,
+                            lineNumber: 854,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 798,
+                        lineNumber: 846,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -5142,39 +5711,42 @@ function PdfSidebar(param) {
                         "aria-label": ui.closeReview,
                         onClick: ()=>{
                             setFindOpen(false);
-                            setFindQuery("");
-                            setHighlightQuery("");
-                            setHighlightedEntity("");
+                            setFindQuery('');
+                            setHighlightQuery('');
+                            setHighlightedEntity('');
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                             className: "h-3.5 w-3.5"
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 820,
+                            lineNumber: 868,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 808,
+                        lineNumber: 856,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 773,
+                lineNumber: 821,
                 columnNumber: 9
             }, this) : null,
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex min-h-0 flex-1",
+                className: "relative flex min-h-0 flex-1",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         ref: scrollRef,
-                        className: "min-w-0 flex-1 overflow-y-auto bg-muted/20 p-4 scrollbar-thin",
+                        className: "min-w-0 flex-1 overflow-auto bg-muted/20 p-3 scrollbar-thin sm:p-4",
+                        style: {
+                            touchAction: 'pan-x pan-y pinch-zoom'
+                        },
                         children: pdfLoadError ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PdfLoadError, {
                             onRetry: ()=>setPdfLoadError(false)
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 831,
+                            lineNumber: 880,
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$pdf$2f$dist$2f$esm$2f$Document$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Document$3e$__["Document"], {
                             file: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$demo$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["demoPdfUrl"],
@@ -5182,12 +5754,12 @@ function PdfSidebar(param) {
                                 className: "flex h-full items-center justify-center text-xs text-muted-foreground",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$chat$2f$chat$2d$panel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Spinner"], {}, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                    lineNumber: 837,
+                                    lineNumber: 886,
                                     columnNumber: 19
                                 }, void 0)
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 836,
+                                lineNumber: 885,
                                 columnNumber: 17
                             }, void 0),
                             onLoadError: ()=>setPdfLoadError(true),
@@ -5195,7 +5767,7 @@ function PdfSidebar(param) {
                                 setNumPages(document1.numPages);
                             },
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mx-auto flex w-fit flex-col gap-4",
+                                className: "mx-auto flex w-fit max-w-full flex-col gap-4",
                                 "data-demo-pdf-pages": true,
                                 children: Array.from({
                                     length: numPages
@@ -5207,37 +5779,38 @@ function PdfSidebar(param) {
                                                 pageMapRef.current.delete(page);
                                             }
                                         },
-                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("relative overflow-hidden rounded border border-border/60 bg-white shadow-sm", pageNumber === page && "ring-1 ring-primary/25"),
+                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('relative overflow-hidden rounded border border-border/60 bg-white shadow-sm', pageNumber === page && 'ring-1 ring-primary/25'),
                                         "data-page": page,
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$pdf$2f$dist$2f$esm$2f$Page$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Page$3e$__["Page"], {
                                             onRenderSuccess: ()=>setPageRenderTick((tick)=>tick + 1),
                                             pageNumber: page,
                                             renderAnnotationLayer: true,
                                             renderTextLayer: true,
+                                            width: mobilePageWidth,
                                             scale: Math.max(0.75, Math.min(1.5, zoom / 100))
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                            lineNumber: 866,
+                                            lineNumber: 915,
                                             columnNumber: 23
                                         }, this)
                                     }, page, false, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 851,
+                                        lineNumber: 900,
                                         columnNumber: 21
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 845,
+                                lineNumber: 894,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 833,
+                            lineNumber: 882,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 826,
+                        lineNumber: 874,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5246,11 +5819,11 @@ function PdfSidebar(param) {
                             variant: "ghost",
                             size: "icon",
                             className: "h-7 w-7",
-                            "aria-label": sourcePanelOpen ? "Close entity rail" : "Open entity rail",
+                            "aria-label": sourcePanelOpen ? 'Close entity rail' : 'Open entity rail',
                             onClick: ()=>{
                                 const next = !sourcePanelOpen;
                                 if (next) {
-                                    onTabChange("entities");
+                                    onTabChange('entities');
                                 }
                                 onSourcePanelOpenChange(next);
                             },
@@ -5258,28 +5831,28 @@ function PdfSidebar(param) {
                                 className: "h-4 w-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 899,
+                                lineNumber: 949,
                                 columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$panel$2d$right$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__PanelRightOpen$3e$__["PanelRightOpen"], {
                                 className: "h-4 w-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 901,
+                                lineNumber: 951,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 883,
+                            lineNumber: 933,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 882,
+                        lineNumber: 932,
                         columnNumber: 9
                     }, this),
                     sourcePanelOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         "data-demo-tour": "entities",
-                        className: "hidden w-56 shrink-0 flex-col border-l border-border/40 bg-background lg:flex",
+                        className: "absolute inset-y-0 right-0 z-40 flex w-[min(84vw,20rem)] shrink-0 flex-col border-l border-border/40 bg-background shadow-2xl lg:static lg:w-56 lg:shadow-none",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grid grid-cols-3 gap-1 border-b border-border/40 bg-muted/20 p-1.5",
@@ -5288,14 +5861,14 @@ function PdfSidebar(param) {
                                     const Icon = sourcePanelIcons[icon];
                                     const label = ui[labelKey];
                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex items-center justify-center gap-1 rounded-md px-1 py-1 text-[10px] font-medium transition-all", activeTab === value ? "border border-border/50 bg-background text-foreground shadow-sm" : "text-muted-foreground hover:bg-muted/60 hover:text-foreground"),
+                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('flex items-center justify-center gap-1 rounded-md px-1 py-1 text-[10px] font-medium transition-all', activeTab === value ? 'border border-border/50 bg-background text-foreground shadow-sm' : 'text-muted-foreground hover:bg-muted/60 hover:text-foreground'),
                                         onClick: ()=>onTabChange(value),
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
                                                 className: "h-3 w-3"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 927,
+                                                lineNumber: 977,
                                                 columnNumber: 23
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5303,25 +5876,25 @@ function PdfSidebar(param) {
                                                 children: label
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 928,
+                                                lineNumber: 978,
                                                 columnNumber: 23
                                             }, this)
                                         ]
                                     }, value, true, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 917,
+                                        lineNumber: 967,
                                         columnNumber: 21
                                     }, this);
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 910,
+                                lineNumber: 960,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "min-h-0 flex-1 overflow-y-auto p-3 text-xs",
                                 children: [
-                                    activeTab === "entities" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    activeTab === 'entities' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex h-full min-h-0 flex-col",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5333,7 +5906,7 @@ function PdfSidebar(param) {
                                                             className: "absolute left-2 top-2 h-3 w-3 text-muted-foreground"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                            lineNumber: 939,
+                                                            lineNumber: 989,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -5343,18 +5916,18 @@ function PdfSidebar(param) {
                                                             className: "h-7 w-full rounded-md border border-border/50 bg-background pl-7 pr-2 text-xs outline-none focus:border-primary/40"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                            lineNumber: 940,
+                                                            lineNumber: 990,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                    lineNumber: 938,
+                                                    lineNumber: 988,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 937,
+                                                lineNumber: 987,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5366,7 +5939,7 @@ function PdfSidebar(param) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 950,
+                                                lineNumber: 1000,
                                                 columnNumber: 19
                                             }, this),
                                             highlightedEntity ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5377,15 +5950,15 @@ function PdfSidebar(param) {
                                                         children: highlightedEntity
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                        lineNumber: 955,
+                                                        lineNumber: 1005,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "shrink-0 text-[10px] tabular-nums text-muted-foreground",
-                                                        children: effectiveHitCount > 0 ? "".concat(Math.min(findIndex + 1, effectiveHitCount), "/").concat(effectiveHitCount) : "0/0"
+                                                        children: effectiveHitCount > 0 ? "".concat(Math.min(findIndex + 1, effectiveHitCount), "/").concat(effectiveHitCount) : '0/0'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                        lineNumber: 958,
+                                                        lineNumber: 1008,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5395,12 +5968,12 @@ function PdfSidebar(param) {
                                                             className: "h-3 w-3 rotate-180 text-primary"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                            lineNumber: 967,
+                                                            lineNumber: 1017,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                        lineNumber: 963,
+                                                        lineNumber: 1013,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5410,18 +5983,18 @@ function PdfSidebar(param) {
                                                             className: "h-3 w-3 text-primary"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                            lineNumber: 973,
+                                                            lineNumber: 1023,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                        lineNumber: 969,
+                                                        lineNumber: 1019,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 954,
+                                                lineNumber: 1004,
                                                 columnNumber: 21
                                             }, this) : null,
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5430,9 +6003,9 @@ function PdfSidebar(param) {
                                                     const isActive = highlightedEntity.toLowerCase() === entity.label.toLowerCase();
                                                     var _entity_type;
                                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("group inline-flex max-w-full items-center rounded-full border px-2 py-1 text-[10px] font-medium shadow-sm transition-colors hover:bg-primary hover:text-primary-foreground dark:hover:border-orange-500 dark:hover:bg-orange-500 dark:hover:text-white", isActive ? "border-primary bg-primary/10 text-primary ring-1 ring-primary dark:border-orange-500 dark:bg-orange-500/15 dark:text-orange-200 dark:ring-orange-500/70" : "border-neutral-200 bg-white text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200"),
+                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('group inline-flex max-w-full items-center rounded-full border px-2 py-1 text-[10px] font-medium shadow-sm transition-colors hover:bg-primary hover:text-primary-foreground dark:hover:border-orange-500 dark:hover:bg-orange-500 dark:hover:text-white', isActive ? 'border-primary bg-primary/10 text-primary ring-1 ring-primary dark:border-orange-500 dark:bg-orange-500/15 dark:text-orange-200 dark:ring-orange-500/70' : 'border-neutral-200 bg-white text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200'),
                                                         onClick: ()=>{
-                                                            const next = isActive ? "" : entity.label;
+                                                            const next = isActive ? '' : entity.label;
                                                             setHighlightedEntity(next);
                                                             setFindOpen(Boolean(next));
                                                             setFindQuery(next);
@@ -5447,7 +6020,7 @@ function PdfSidebar(param) {
                                                                 children: entity.label
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                                lineNumber: 1002,
+                                                                lineNumber: 1052,
                                                                 columnNumber: 27
                                                             }, this),
                                                             entity.count > 1 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5458,36 +6031,36 @@ function PdfSidebar(param) {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                                lineNumber: 1004,
+                                                                lineNumber: 1054,
                                                                 columnNumber: 29
                                                             }, this) : null,
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "ml-1 text-[9px] opacity-70",
-                                                                children: entity.pages.length <= 3 ? entity.pages.map((page)=>"p.".concat(page)).join(", ") : "".concat(entity.pages.slice(0, 2).map((page)=>"p.".concat(page)).join(", "), " +").concat(entity.pages.length - 2)
+                                                                children: entity.pages.length <= 3 ? entity.pages.map((page)=>"p.".concat(page)).join(', ') : "".concat(entity.pages.slice(0, 2).map((page)=>"p.".concat(page)).join(', '), " +").concat(entity.pages.length - 2)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                                lineNumber: 1008,
+                                                                lineNumber: 1058,
                                                                 columnNumber: 27
                                                             }, this)
                                                         ]
-                                                    }, "".concat(entity.label, "-").concat((_entity_type = entity.type) !== null && _entity_type !== void 0 ? _entity_type : "entity", "-").concat(index), true, {
+                                                    }, "".concat(entity.label, "-").concat((_entity_type = entity.type) !== null && _entity_type !== void 0 ? _entity_type : 'entity', "-").concat(index), true, {
                                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                        lineNumber: 984,
+                                                        lineNumber: 1034,
                                                         columnNumber: 25
                                                     }, this);
                                                 })
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 977,
+                                                lineNumber: 1027,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 936,
+                                        lineNumber: 986,
                                         columnNumber: 17
                                     }, this) : null,
-                                    activeTab === "metadata" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    activeTab === 'metadata' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "space-y-1.5 text-muted-foreground",
                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$demo$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["demoDocumentConfig"].metadataRows.map((row)=>{
                                             const label = row.labelKey ? ({
@@ -5509,7 +6082,7 @@ function PdfSidebar(param) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                        lineNumber: 1045,
+                                                        lineNumber: 1095,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5517,22 +6090,22 @@ function PdfSidebar(param) {
                                                         children: value
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                        lineNumber: 1048,
+                                                        lineNumber: 1098,
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, label, true, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 1041,
+                                                lineNumber: 1091,
                                                 columnNumber: 23
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 1025,
+                                        lineNumber: 1075,
                                         columnNumber: 17
                                     }, this) : null,
-                                    activeTab === "chunks" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    activeTab === 'chunks' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "space-y-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5544,7 +6117,7 @@ function PdfSidebar(param) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 1058,
+                                                lineNumber: 1108,
                                                 columnNumber: 19
                                             }, this),
                                             chunks.map((chunk)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5561,7 +6134,7 @@ function PdfSidebar(param) {
                                                                             children: chunk.type
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                                            lineNumber: 1068,
+                                                                            lineNumber: 1118,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5573,13 +6146,13 @@ function PdfSidebar(param) {
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                                            lineNumber: 1071,
+                                                                            lineNumber: 1121,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                                    lineNumber: 1067,
+                                                                    lineNumber: 1117,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5589,20 +6162,20 @@ function PdfSidebar(param) {
                                                                             className: "h-2.5 w-2.5"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                                            lineNumber: 1079,
+                                                                            lineNumber: 1129,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         chunk.retrievalCount
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                                    lineNumber: 1078,
+                                                                    lineNumber: 1128,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                            lineNumber: 1066,
+                                                            lineNumber: 1116,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5610,7 +6183,7 @@ function PdfSidebar(param) {
                                                             children: chunk.content
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                            lineNumber: 1083,
+                                                            lineNumber: 1133,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5620,12 +6193,12 @@ function PdfSidebar(param) {
                                                                     children: entity.text
                                                                 }, "".concat(chunk.id, "-").concat(entity.text), false, {
                                                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                                    lineNumber: 1088,
+                                                                    lineNumber: 1138,
                                                                     columnNumber: 27
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                            lineNumber: 1086,
+                                                            lineNumber: 1136,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5642,7 +6215,7 @@ function PdfSidebar(param) {
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                                            lineNumber: 1099,
+                                                                            lineNumber: 1149,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         " ",
@@ -5650,53 +6223,53 @@ function PdfSidebar(param) {
                                                                     ]
                                                                 }, "".concat(chunk.id, "-").concat(key), true, {
                                                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                                    lineNumber: 1098,
+                                                                    lineNumber: 1148,
                                                                     columnNumber: 27
                                                                 }, this);
                                                             })
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                            lineNumber: 1096,
+                                                            lineNumber: 1146,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, chunk.id, true, {
                                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                    lineNumber: 1062,
+                                                    lineNumber: 1112,
                                                     columnNumber: 21
                                                 }, this))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 1057,
+                                        lineNumber: 1107,
                                         columnNumber: 17
                                     }, this) : null
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 934,
+                                lineNumber: 984,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                        lineNumber: 906,
+                        lineNumber: 956,
                         columnNumber: 11
                     }, this) : null
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 825,
+                lineNumber: 873,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-        lineNumber: 665,
+        lineNumber: 692,
         columnNumber: 5
     }, this);
 }
-_s1(PdfSidebar, "YVIkaxwA1WYmQAatHzGa3VTC5ZY=", false, function() {
+_s1(PdfSidebar, "utmUor34Y6ZnCh7ox9YsTnQZwtc=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
     ];
@@ -5721,23 +6294,17 @@ function DocumentIntelligenceDemo() {
         copy
     ]);
     const [activeCitation, setActiveCitation] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(copy.citations[0]);
-    const [activePdfTab, setActivePdfTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("entities");
+    const [activePdfTab, setActivePdfTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('entities');
     const [currentStepIndex, setCurrentStepIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(-1);
     const [documentOpen, setDocumentOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isRunning, setIsRunning] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [messages, setMessages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
-    const [streamedText, setStreamedText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [streamedText, setStreamedText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [threadOpen, setThreadOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const [fullscreen, setFullscreen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [hasRun, setHasRun] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [mounted, setMounted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [demoDark, setDemoDark] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
-        "DocumentIntelligenceDemo.useState": ()=>{
-            if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
-            ;
-            return document.documentElement.classList.contains("dark");
-        }
-    }["DocumentIntelligenceDemo.useState"]);
+    const [demoDark, setDemoDark] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [citationFocusTick, setCitationFocusTick] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [documentEmpty, setDocumentEmpty] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [sourcePanelOpen, setSourcePanelOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -5752,21 +6319,21 @@ function DocumentIntelligenceDemo() {
     ]);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "DocumentIntelligenceDemo.useEffect": ()=>{
-            const mql = window.matchMedia("(max-width: 767px)");
+            const mql = window.matchMedia('(max-width: 767px)');
             setIsMobile(mql.matches);
             const handler = {
                 "DocumentIntelligenceDemo.useEffect.handler": (e)=>setIsMobile(e.matches)
             }["DocumentIntelligenceDemo.useEffect.handler"];
-            mql.addEventListener("change", handler);
+            mql.addEventListener('change', handler);
             return ({
-                "DocumentIntelligenceDemo.useEffect": ()=>mql.removeEventListener("change", handler)
+                "DocumentIntelligenceDemo.useEffect": ()=>mql.removeEventListener('change', handler)
             })["DocumentIntelligenceDemo.useEffect"];
         }
     }["DocumentIntelligenceDemo.useEffect"], []);
     const resetDemo = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "DocumentIntelligenceDemo.useCallback[resetDemo]": (options)=>{
             setActiveCitation(copy.citations[0]);
-            setActivePdfTab("entities");
+            setActivePdfTab('entities');
             setCurrentStepIndex(-1);
             setDocumentOpen(false);
             setDocumentEmpty(false);
@@ -5774,7 +6341,7 @@ function DocumentIntelligenceDemo() {
             setIsRunning(false);
             setMessages([]);
             setSourcePanelOpen(false);
-            setStreamedText("");
+            setStreamedText('');
             setThreadOpen(true);
             setTourRun(false);
             setTourStep(0);
@@ -5794,39 +6361,32 @@ function DocumentIntelligenceDemo() {
         "DocumentIntelligenceDemo.useEffect": ()=>{
             const syncDemoTheme = {
                 "DocumentIntelligenceDemo.useEffect.syncDemoTheme": ()=>{
-                    const nextDark = document.documentElement.classList.contains("dark");
+                    const nextDark = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$lib$2f$theme$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCurrentLandingTheme"])() === 'dark';
                     setDemoDark({
                         "DocumentIntelligenceDemo.useEffect.syncDemoTheme": (current)=>current === nextDark ? current : nextDark
                     }["DocumentIntelligenceDemo.useEffect.syncDemoTheme"]);
                 }
             }["DocumentIntelligenceDemo.useEffect.syncDemoTheme"];
-            syncDemoTheme();
+            setDemoDark((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$lib$2f$theme$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["initializeLandingTheme"])());
             const observer = new MutationObserver(syncDemoTheme);
             observer.observe(document.documentElement, {
                 attributeFilter: [
-                    "class"
+                    'class'
                 ],
                 attributes: true
             });
-            window.addEventListener("prosperify-theme-change", syncDemoTheme);
+            window.addEventListener(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$lib$2f$theme$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LANDING_THEME_CHANGE_EVENT"], syncDemoTheme);
             return ({
                 "DocumentIntelligenceDemo.useEffect": ()=>{
                     observer.disconnect();
-                    window.removeEventListener("prosperify-theme-change", syncDemoTheme);
+                    window.removeEventListener(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$lib$2f$theme$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LANDING_THEME_CHANGE_EVENT"], syncDemoTheme);
                 }
             })["DocumentIntelligenceDemo.useEffect"];
         }
     }["DocumentIntelligenceDemo.useEffect"], []);
     const setSyncedTheme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "DocumentIntelligenceDemo.useCallback[setSyncedTheme]": (nextDark)=>{
-            document.documentElement.classList.toggle("dark", nextDark);
-            window.localStorage.setItem("prosperify-theme", nextDark ? "dark" : "light");
-            window.dispatchEvent(new CustomEvent("prosperify-theme-change", {
-                detail: {
-                    dark: nextDark
-                }
-            }));
-            setDemoDark(nextDark);
+            setDemoDark((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$lib$2f$theme$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["applyLandingTheme"])(nextDark ? 'dark' : 'light'));
         }
     }["DocumentIntelligenceDemo.useCallback[setSyncedTheme]"], []);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
@@ -5846,7 +6406,7 @@ function DocumentIntelligenceDemo() {
                 return;
             }
             const previousOverflow = document.body.style.overflow;
-            document.body.style.overflow = "hidden";
+            document.body.style.overflow = 'hidden';
             return ({
                 "DocumentIntelligenceDemo.useEffect": ()=>{
                     document.body.style.overflow = previousOverflow;
@@ -5863,14 +6423,14 @@ function DocumentIntelligenceDemo() {
             }
             const handleKeyDown = {
                 "DocumentIntelligenceDemo.useEffect.handleKeyDown": (event)=>{
-                    if (event.key === "Escape") {
+                    if (event.key === 'Escape') {
                         resetDemo();
                     }
                 }
             }["DocumentIntelligenceDemo.useEffect.handleKeyDown"];
-            window.addEventListener("keydown", handleKeyDown);
+            window.addEventListener('keydown', handleKeyDown);
             return ({
-                "DocumentIntelligenceDemo.useEffect": ()=>window.removeEventListener("keydown", handleKeyDown)
+                "DocumentIntelligenceDemo.useEffect": ()=>window.removeEventListener('keydown', handleKeyDown)
             })["DocumentIntelligenceDemo.useEffect"];
         }
     }["DocumentIntelligenceDemo.useEffect"], [
@@ -5886,11 +6446,11 @@ function DocumentIntelligenceDemo() {
             setIsRunning(true);
             setMessages([
                 {
-                    role: "user",
+                    role: 'user',
                     text: copy.question
                 }
             ]);
-            setStreamedText("");
+            setStreamedText('');
             setCurrentStepIndex(-1);
             let elapsed = 0;
             steps.forEach({
@@ -5906,31 +6466,32 @@ function DocumentIntelligenceDemo() {
             }["DocumentIntelligenceDemo.useCallback[runDemo]"]);
             window.setTimeout({
                 "DocumentIntelligenceDemo.useCallback[runDemo]": ()=>{
-                    const words = copy.finalAnswer.split(" ");
+                    const words = copy.finalAnswer.split(' ');
                     let cursor = 0;
                     const streamNext = {
                         "DocumentIntelligenceDemo.useCallback[runDemo].streamNext": ()=>{
                             cursor += 1;
-                            setStreamedText(words.slice(0, cursor).join(" "));
+                            setStreamedText(words.slice(0, cursor).join(' '));
                             if (cursor >= words.length) {
                                 setIsRunning(false);
                                 setCurrentStepIndex(steps.length - 1);
                                 setMessages([
                                     {
-                                        role: "user",
+                                        role: 'user',
                                         text: copy.question
                                     },
                                     {
                                         citations: copy.citations,
-                                        role: "assistant",
+                                        hallucinations: copy.hallucinations,
+                                        role: 'assistant',
                                         text: copy.finalAnswer
                                     }
                                 ]);
-                                setStreamedText("");
+                                setStreamedText('');
                                 return;
                             }
                             var _words_Math_max;
-                            const lastWord = (_words_Math_max = words[Math.max(0, cursor - 1)]) !== null && _words_Math_max !== void 0 ? _words_Math_max : "";
+                            const lastWord = (_words_Math_max = words[Math.max(0, cursor - 1)]) !== null && _words_Math_max !== void 0 ? _words_Math_max : '';
                             const pause = /[.:;]$/.test(lastWord) ? 320 : /[,]$/.test(lastWord) ? 150 : cursor % 13 === 0 ? 125 : 64;
                             window.setTimeout(streamNext, pause);
                         }
@@ -5942,12 +6503,13 @@ function DocumentIntelligenceDemo() {
     }["DocumentIntelligenceDemo.useCallback[runDemo]"], [
         copy.citations,
         copy.finalAnswer,
+        copy.hallucinations,
         copy.question,
         hasRun,
         isRunning,
         steps
     ]);
-    const hasAssistantAnswer = messages.some((message)=>message.role === "assistant");
+    const hasAssistantAnswer = messages.some((message)=>message.role === 'assistant');
     const openEmptyDocumentWorkspace = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "DocumentIntelligenceDemo.useCallback[openEmptyDocumentWorkspace]": ()=>{
             setDocumentOpen(true);
@@ -5969,7 +6531,12 @@ function DocumentIntelligenceDemo() {
     const handleRunDemo = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "DocumentIntelligenceDemo.useCallback[handleRunDemo]": ()=>{
             setThreadOpen(false);
-            openEmptyDocumentWorkspace();
+            if (isMobile) {
+                setDocumentOpen(false);
+                setDocumentEmpty(false);
+            } else {
+                openEmptyDocumentWorkspace();
+            }
             runDemo();
             if (tourRun && tourStep <= 2) {
                 window.setTimeout({
@@ -5978,6 +6545,7 @@ function DocumentIntelligenceDemo() {
             }
         }
     }["DocumentIntelligenceDemo.useCallback[handleRunDemo]"], [
+        isMobile,
         openEmptyDocumentWorkspace,
         runDemo,
         tourRun,
@@ -5992,8 +6560,8 @@ function DocumentIntelligenceDemo() {
                 "DocumentIntelligenceDemo.useEffect.timeout": ()=>{
                     var _document_querySelector;
                     (_document_querySelector = document.querySelector("[data-demo-tour='citations']")) === null || _document_querySelector === void 0 ? void 0 : _document_querySelector.scrollIntoView({
-                        behavior: "smooth",
-                        block: "center"
+                        behavior: 'smooth',
+                        block: 'center'
                     });
                     setTourStep(4);
                 }
@@ -6010,10 +6578,8 @@ function DocumentIntelligenceDemo() {
     const handleCitationSelect = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "DocumentIntelligenceDemo.useCallback[handleCitationSelect]": (citation)=>{
             setActiveCitation(citation);
-            setActivePdfTab("entities");
             setDocumentOpen(true);
             setDocumentEmpty(false);
-            setSourcePanelOpen(true);
             setCitationFocusTick({
                 "DocumentIntelligenceDemo.useCallback[handleCitationSelect]": (tick)=>tick + 1
             }["DocumentIntelligenceDemo.useCallback[handleCitationSelect]"]);
@@ -6042,13 +6608,13 @@ function DocumentIntelligenceDemo() {
     ]);
     const selectMobilePanel = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "DocumentIntelligenceDemo.useCallback[selectMobilePanel]": (panel)=>{
-            if (panel === "threads") {
+            if (panel === 'threads') {
                 setThreadOpen(true);
                 setDocumentOpen(false);
                 return;
             }
             setThreadOpen(false);
-            if (panel === "document") {
+            if (panel === 'document') {
                 openDocumentWorkspace();
                 return;
             }
@@ -6097,7 +6663,7 @@ function DocumentIntelligenceDemo() {
                 setDocumentOpen(true);
                 setDocumentEmpty(false);
                 setSourcePanelOpen(true);
-                setActivePdfTab("entities");
+                setActivePdfTab('entities');
                 window.setTimeout({
                     "DocumentIntelligenceDemo.useCallback[handleTour]": ()=>setTourStep(6)
                 }["DocumentIntelligenceDemo.useCallback[handleTour]"], 120);
@@ -6107,7 +6673,7 @@ function DocumentIntelligenceDemo() {
                 setDocumentOpen(true);
                 setDocumentEmpty(false);
                 setSourcePanelOpen(true);
-                setActivePdfTab("metadata");
+                setActivePdfTab('metadata');
                 window.setTimeout({
                     "DocumentIntelligenceDemo.useCallback[handleTour]": ()=>setTourStep(7)
                 }["DocumentIntelligenceDemo.useCallback[handleTour]"], 120);
@@ -6142,7 +6708,7 @@ function DocumentIntelligenceDemo() {
     const showDocumentPanel = fullscreen && documentOpen;
     const showChatPanel = !fullscreen || !isMobile || !showThreadPanel && !showDocumentPanel;
     const fullscreenControls = fullscreen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("client-ui relative z-[10001] flex items-center gap-1.5", demoDark && "dark"),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('client-ui relative z-[10001] flex items-center gap-1.5', demoDark && 'dark'),
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                 type: "button",
@@ -6150,23 +6716,23 @@ function DocumentIntelligenceDemo() {
                 size: "icon",
                 className: "h-7 w-7 rounded-full bg-background/95 shadow-sm backdrop-blur",
                 onClick: ()=>setSyncedTheme(!demoDark),
-                "aria-label": demoDark ? "Light theme" : "Dark theme",
+                "aria-label": demoDark ? 'Light theme' : 'Dark theme',
                 children: demoDark ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__["Sun"], {
                     className: "h-4 w-4"
                 }, void 0, false, {
                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                    lineNumber: 1510,
+                    lineNumber: 1550,
                     columnNumber: 21
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {
                     className: "h-4 w-4"
                 }, void 0, false, {
                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                    lineNumber: 1510,
+                    lineNumber: 1550,
                     columnNumber: 51
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 1502,
+                lineNumber: 1542,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -6184,27 +6750,27 @@ function DocumentIntelligenceDemo() {
                     className: "h-4 w-4"
                 }, void 0, false, {
                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                    lineNumber: 1524,
+                    lineNumber: 1564,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 1512,
+                lineNumber: 1552,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-        lineNumber: 1496,
+        lineNumber: 1536,
         columnNumber: 5
     }, this) : null;
     const demoShell = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("client-ui relative overflow-hidden rounded-[8px] border border-border/60 bg-background shadow-2xl transition-all duration-500 ease-out", fullscreen ? "h-full w-full" : "mx-auto w-full max-w-7xl", demoDark && "dark"),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('client-ui relative overflow-hidden rounded-[8px] border border-border/60 bg-background shadow-2xl transition-all duration-500 ease-out', fullscreen ? 'h-full w-full' : 'mx-auto w-full max-w-7xl', demoDark && 'dark'),
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$shared$2f$browser$2d$frame$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Safari"], {
                 url: "prosperify.ai/chat",
                 headerActions: fullscreenControls,
-                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("w-full", fullscreen ? "h-full" : "max-sm:h-[520px] h-[720px]"),
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('w-full', fullscreen ? 'h-full' : 'max-sm:h-[520px] h-[720px]'),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "relative h-full min-w-0 overflow-hidden bg-background text-foreground",
                     children: [
@@ -6217,12 +6783,12 @@ function DocumentIntelligenceDemo() {
                                 className: "h-4 w-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 1555,
+                                lineNumber: 1595,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 1549,
+                            lineNumber: 1589,
                             columnNumber: 13
                         }, this) : null,
                         fullscreen && !isMobile && !showDocumentPanel && showChatPanel ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -6234,12 +6800,12 @@ function DocumentIntelligenceDemo() {
                                 className: "h-4 w-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 1565,
+                                lineNumber: 1605,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 1559,
+                            lineNumber: 1599,
                             columnNumber: 13
                         }, this) : null,
                         fullscreen && isMobile && showDocumentPanel ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -6252,12 +6818,12 @@ function DocumentIntelligenceDemo() {
                                 className: "h-4 w-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 1576,
+                                lineNumber: 1616,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 1569,
+                            lineNumber: 1609,
                             columnNumber: 13
                         }, this) : null,
                         fullscreen && isMobile ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6269,32 +6835,32 @@ function DocumentIntelligenceDemo() {
                                         active: showThreadPanel,
                                         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$panel$2d$left$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__PanelLeftOpen$3e$__["PanelLeftOpen"],
                                         label: ui.mobileThreads,
-                                        panel: "threads"
+                                        panel: 'threads'
                                     },
                                     {
                                         active: showChatPanel,
                                         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"],
                                         label: ui.mobileChat,
-                                        panel: "chat"
+                                        panel: 'chat'
                                     },
                                     {
                                         active: showDocumentPanel,
                                         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"],
                                         label: ui.mobileDocument,
-                                        panel: "document"
+                                        panel: 'document'
                                     }
                                 ].map((param)=>{
                                     let { active, icon: Icon, label, panel } = param;
                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         type: "button",
-                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex h-9 min-w-0 items-center justify-center gap-1.5 rounded-full px-2 text-xs font-medium transition-colors", active ? "bg-primary text-primary-foreground shadow-sm" : "text-muted-foreground hover:bg-muted hover:text-foreground"),
+                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])('flex h-9 min-w-0 items-center justify-center gap-1.5 rounded-full px-2 text-xs font-medium transition-colors', active ? 'bg-primary text-primary-foreground shadow-sm' : 'text-muted-foreground hover:bg-muted hover:text-foreground'),
                                         onClick: ()=>selectMobilePanel(panel),
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
                                                 className: "h-3.5 w-3.5 shrink-0"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 1613,
+                                                lineNumber: 1653,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6302,24 +6868,24 @@ function DocumentIntelligenceDemo() {
                                                 children: label
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 1614,
+                                                lineNumber: 1654,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, panel, true, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 1602,
+                                        lineNumber: 1642,
                                         columnNumber: 19
                                     }, this);
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 1581,
+                                lineNumber: 1621,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 1580,
+                            lineNumber: 1620,
                             columnNumber: 13
                         }, this) : null,
                         isMobile ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6335,11 +6901,11 @@ function DocumentIntelligenceDemo() {
                                 threads: copy.threads
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 1627,
+                                lineNumber: 1667,
                                 columnNumber: 17
                             }, this) : showDocumentPanel ? documentEmpty ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(EmptyDocumentPanel, {}, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 1638,
+                                lineNumber: 1678,
                                 columnNumber: 19
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PdfSidebar, {
                                 activeTab: activePdfTab,
@@ -6347,11 +6913,10 @@ function DocumentIntelligenceDemo() {
                                 citationFocusTick: citationFocusTick,
                                 onSourcePanelOpenChange: setSourcePanelOpen,
                                 onTabChange: setActivePdfTab,
-                                sourceOnly: true,
                                 sourcePanelOpen: sourcePanelOpen
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 1640,
+                                lineNumber: 1680,
                                 columnNumber: 19
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$landing$2f$components$2f$demo$2f$chat$2f$chat$2d$panel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ChatPanel"], {
                                 activeCitation: activeCitation,
@@ -6369,12 +6934,12 @@ function DocumentIntelligenceDemo() {
                                 streamedText: streamedText
                             }, void 0, false, {
                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                lineNumber: 1651,
+                                lineNumber: 1690,
                                 columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 1622,
+                            lineNumber: 1662,
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$resizable$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ResizablePanelGroup"], {
                             "data-demo-tour": "chat-ui",
@@ -6401,12 +6966,12 @@ function DocumentIntelligenceDemo() {
                                                 threads: copy.threads
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 1685,
+                                                lineNumber: 1724,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                            lineNumber: 1676,
+                                            lineNumber: 1715,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$resizable$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ResizableHandle"], {
@@ -6414,7 +6979,7 @@ function DocumentIntelligenceDemo() {
                                             className: "z-30 -mx-0.5 bg-border/30 hover:bg-border/50"
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                            lineNumber: 1695,
+                                            lineNumber: 1734,
                                             columnNumber: 19
                                         }, this)
                                     ]
@@ -6439,12 +7004,12 @@ function DocumentIntelligenceDemo() {
                                         streamedText: streamedText
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                        lineNumber: 1707,
+                                        lineNumber: 1746,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                    lineNumber: 1702,
+                                    lineNumber: 1741,
                                     columnNumber: 15
                                 }, this),
                                 showDocumentPanel ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -6454,12 +7019,12 @@ function DocumentIntelligenceDemo() {
                                             className: "z-30 -mx-0.5 bg-border/30 hover:bg-border/50"
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                            lineNumber: 1726,
+                                            lineNumber: 1765,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$resizable$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ResizablePanel"], {
                                             id: "chat-docs",
-                                            defaultSize: showThreadPanel ? "44%" : "52%",
+                                            defaultSize: showThreadPanel ? '44%' : '52%',
                                             minSize: "18%",
                                             maxSize: "68%",
                                             collapsible: true,
@@ -6467,7 +7032,7 @@ function DocumentIntelligenceDemo() {
                                             className: "min-w-0 overflow-hidden",
                                             children: documentEmpty ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(EmptyDocumentPanel, {}, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 1740,
+                                                lineNumber: 1779,
                                                 columnNumber: 23
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PdfSidebar, {
                                                 activeTab: activePdfTab,
@@ -6478,12 +7043,12 @@ function DocumentIntelligenceDemo() {
                                                 sourcePanelOpen: sourcePanelOpen
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                                lineNumber: 1742,
+                                                lineNumber: 1781,
                                                 columnNumber: 23
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                                            lineNumber: 1730,
+                                            lineNumber: 1769,
                                             columnNumber: 19
                                         }, this)
                                     ]
@@ -6491,23 +7056,23 @@ function DocumentIntelligenceDemo() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 1669,
+                            lineNumber: 1708,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                    lineNumber: 1545,
+                    lineNumber: 1585,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 1537,
+                lineNumber: 1577,
                 columnNumber: 7
             }, this),
             !fullscreen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 type: "button",
-                className: "absolute inset-0 z-50 flex items-center justify-center bg-background/40 backdrop-blur-[2px] focus-visible:outline-none",
+                className: "absolute inset-0 z-50 flex items-center justify-center bg-background/45 opacity-100 backdrop-blur-[1px] transition-all duration-300 focus-visible:outline-none sm:bg-background/5 sm:opacity-0 sm:hover:bg-background/45 sm:hover:opacity-100 sm:focus-visible:bg-background/45 sm:focus-visible:opacity-100",
                 onClick: openInteractiveDemo,
                 "aria-label": ui.openReview,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6517,25 +7082,25 @@ function DocumentIntelligenceDemo() {
                             className: "h-4 w-4 text-primary"
                         }, void 0, false, {
                             fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                            lineNumber: 1766,
+                            lineNumber: 1805,
                             columnNumber: 13
                         }, this),
                         ui.openReview
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                    lineNumber: 1765,
+                    lineNumber: 1804,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 1759,
+                lineNumber: 1798,
                 columnNumber: 9
             }, this) : null
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-        lineNumber: 1530,
+        lineNumber: 1570,
         columnNumber: 5
     }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -6551,25 +7116,25 @@ function DocumentIntelligenceDemo() {
                 },
                 onEvent: handleTour,
                 options: {
-                    arrowColor: demoDark ? "hsl(240 10% 3.9%)" : "#fff",
-                    backgroundColor: demoDark ? "hsl(240 10% 3.9%)" : "#fff",
+                    arrowColor: demoDark ? 'hsl(240 10% 3.9%)' : '#fff',
+                    backgroundColor: demoDark ? 'hsl(240 10% 3.9%)' : '#fff',
                     blockTargetInteraction: false,
                     buttons: [
-                        "back",
-                        "skip",
-                        "primary"
+                        'back',
+                        'skip',
+                        'primary'
                     ],
-                    closeButtonAction: "skip",
+                    closeButtonAction: 'skip',
                     hideOverlay: true,
                     overlayClickAction: false,
-                    overlayColor: "rgba(0, 0, 0, 0)",
-                    primaryColor: "#f97316",
+                    overlayColor: 'rgba(0, 0, 0, 0)',
+                    primaryColor: '#f97316',
                     scrollDuration: 0,
                     scrollOffset: 20,
                     showProgress: true,
                     skipScroll: true,
                     spotlightPadding: 6,
-                    textColor: demoDark ? "hsl(0 0% 98%)" : "hsl(240 10% 3.9%)",
+                    textColor: demoDark ? 'hsl(0 0% 98%)' : 'hsl(240 10% 3.9%)',
                     zIndex: 20000
                 },
                 run: tourRun,
@@ -6577,25 +7142,25 @@ function DocumentIntelligenceDemo() {
                 steps: tourSteps,
                 styles: {
                     floater: {
-                        filter: "drop-shadow(0 18px 40px rgba(15, 23, 42, 0.18))"
+                        filter: 'drop-shadow(0 18px 40px rgba(15, 23, 42, 0.18))'
                     },
                     overlay: {
-                        backgroundColor: "rgba(0, 0, 0, 0)"
+                        backgroundColor: 'rgba(0, 0, 0, 0)'
                     },
                     spotlight: {
-                        fill: "rgba(0, 0, 0, 0)",
-                        stroke: "rgba(249, 115, 22, 0.45)",
+                        fill: 'rgba(0, 0, 0, 0)',
+                        stroke: 'rgba(249, 115, 22, 0.45)',
                         strokeWidth: 2
                     },
                     tooltip: {
                         borderRadius: 12,
-                        maxWidth: isMobile ? "calc(100vw - 32px)" : 360,
-                        width: isMobile ? "calc(100vw - 32px)" : undefined
+                        maxWidth: isMobile ? 'calc(100vw - 32px)' : 360,
+                        width: isMobile ? 'calc(100vw - 32px)' : undefined
                     }
                 }
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 1777,
+                lineNumber: 1816,
                 columnNumber: 9
             }, this) : null,
             fullscreen && mounted ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2d$dom$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createPortal"])(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6605,12 +7170,12 @@ function DocumentIntelligenceDemo() {
                     children: demoShell
                 }, void 0, false, {
                     fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                    lineNumber: 1831,
+                    lineNumber: 1870,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/features/landing/components/demo/document-intelligence-demo.tsx",
-                lineNumber: 1830,
+                lineNumber: 1869,
                 columnNumber: 11
             }, this), document.body) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                 children: demoShell
@@ -6618,7 +7183,7 @@ function DocumentIntelligenceDemo() {
         ]
     }, void 0, true);
 }
-_s2(DocumentIntelligenceDemo, "QG3lgnvWqIQ+NvfzF5iEtVzFTsI=", false, function() {
+_s2(DocumentIntelligenceDemo, "AEKu6rXaxXTRdRRULQh8k2zWwjI=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$useTranslation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslation"]
     ];
